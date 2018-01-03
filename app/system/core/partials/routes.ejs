@@ -1,0 +1,3 @@
+<% for (var i in routes) { %>
+  <%= require('./route.ejs')({routes: routes[i].routing, middleware: routes[i].middleware, route: i, page: routes[i].page}) %>
+<% } %>

@@ -1,0 +1,119 @@
+{
+  "app": {
+    "title": "Form Function Class",
+    "shortTitle": "FFC",
+    "description": "This Web App is based on Smallprint architecture",
+    "twitter": "",
+    "image": ""
+  },
+  "build": {
+    "name": "dev",
+    "baseHref": "/",
+    "analytics": "",
+    "firebaseVersion": "4.3.0",
+    "database": "dev",
+    "waitBeforeFetchingSameURLInRest": 60,
+    "sentryUrl": "",
+    "firebaseConfig": [
+    ]
+  },
+  "theme": {
+    "webApp": {}
+  },
+  "fragments": {
+    "page-home": "page-home",
+    "page-not-authorized": "page-not-authorized",
+    "page-not-found": "page-not-found"
+  },
+  "routes": {
+    "defaultRedirect": "page-not-authorized",
+    "notFound": "page-not-found",
+    "routing": {
+      "/": {
+        "page": "page-home"
+      }
+    }
+  },
+  "hosting": {
+    "rewrites": [
+      {
+        "source": "/api/v0/**",
+        "function": "apiV0"
+      }
+    ],
+    "headers": [
+      {
+        "source" : "**/*.@(jpg|jpeg|gif|png)",
+        "headers" : [
+          {
+            "key" : "Cache-Control",
+            "value" : "max-age=7200"
+          }
+        ]
+      },
+      {
+        "source" : "404.html",
+        "headers" : [
+          {
+            "key" : "Cache-Control",
+            "value" : "max-age=300"
+          }
+        ]
+      },
+      {
+        "source": "service-worker.js",
+        "headers" : [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "routing-sw-src.js",
+        "headers" : [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "routing-sw.js",
+        "headers" : [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "sw.js",
+        "headers" : [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "workbox-routing.js",
+        "headers" : [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "workbox-sw.*.js",
+        "headers" : [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      }
+    ]
+  }
+}

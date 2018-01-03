@@ -1,0 +1,40 @@
+<%
+ const config = htmlWebpackPlugin.options.getConfig();
+ const theme = config.theme;
+ const head = require('core/partials/head.ejs')({config, theme});
+ const router = require('core/partials/router.ejs')({config});
+ const scripts = require('core/partials/scripts.ejs')();
+%>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Load Head Essentials here -->
+    <%= head %>
+
+    <style>
+      * {
+        color: #8d8d8d;
+        font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 400;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Nav -->
+    <!-- Content -->
+    <!-- Router here -->
+    <%= router %>
+
+    <!-- Load Scripts here -->
+    <%= scripts %>
+  </body>
+</html>

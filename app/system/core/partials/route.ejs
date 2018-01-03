@@ -1,0 +1,4 @@
+    <littleq-route route="<%= route %>" page="<%= page %>">
+      <%= middleware ? require('./middleware.ejs')({middleware}) : '' %>
+      <%= routes ? require('./routes.ejs')({routes}) : '' %>
+    </littleq-route>

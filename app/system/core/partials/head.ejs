@@ -1,0 +1,111 @@
+  <meta charset="utf-8">
+  <meta name="generator" content="<%= config.app.title %>">
+  <meta name="viewport" content="width=device-width, minimum-scale = 1.0, initial-scale = 1.0, maximum-scale = 1.0, user-scalable=no">
+
+  <title><%= config.app.title %></title>
+  <meta name="description" content="<%= config.app.description %>">
+
+  <meta property="og:title" content="<%= config.app.title %>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="<%= config.app.image %>" />
+  <meta property="og:description" content="<%= config.app.description %>" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="<%= config.app.twitter %>" />
+  <meta name="twitter:creator" content="<%= config.app.twitter %>" />
+  <meta name="twitter:title" content="<%= config.app.title %>" />
+  <meta name="twitter:description" content="<%= config.app.description %>" />
+  <meta name="twitter:image" content="<%= config.app.image %>" />
+
+  <!--
+    If deploying to a non-root path, replace href="/" with the full path to the project root.
+    For example: href="/polymer-starter-kit/relative-path-example/"
+  -->
+  <base href="<%= config.build.baseHref %>">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- See https://goo.gl/OOhYW5 -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- See https://goo.gl/qRE0vM -->
+  <meta name="theme-color" content="<%= theme.themeColor %>">
+
+  <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+  <meta name="mobile-web-app-capable" content="<%= theme.webApp.capable %>">
+  <meta name="application-name" content="<%= config.app.title %>">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="<%= theme.webApp.capable %>">
+  <meta name="apple-mobile-web-app-status-bar-style" content="<%= theme.webApp.statusBarStyle%>">
+  <meta name="apple-mobile-web-app-title" content="<%= config.app.title %>">
+
+  <!-- Homescreen icons -->
+  <% for (var i in theme.icons) { %>
+  <link rel="apple-touch-icon" <% if (theme.icons[i].sizes) { %> sizes="<%= theme.icons[i].sizes %>"<% } %> href="images/manifest/<%= theme.icons[i].src %>">
+  <% } %>
+
+  <% for (var j in theme.icons) {%>
+    <% if (theme.icons[j].tileImage) { %>
+      <meta name="msapplication-TileImage" content="images/manifest/<%= theme.icons[i].src %>">
+    <% } %>
+  <% } %>
+  <meta name="msapplication-TileColor" content="<%= theme.webApp.themeColor %>">
+  <meta name="msapplication-tap-highlight" content="<%= theme.webApp.tapHighlight %>">
+
+  <script>
+    // polyfill detector
+    /*! modernizr 3.5.0 (Custom Build) | MIT *
+  * https://modernizr.com/download/?-es5array-es5date-es5function-es5object-es5string-es6array-es6collections-es6math-es6number-es6object-es6string-promises !*/
+  !function(t,e,r){function o(t,e){return typeof t===e}function n(){var t,e,r,n,i,p,y;for(var c in a)if(a.hasOwnProperty(c)){if(t=[],e=a[c],e.name&&(t.push(e.name.toLowerCase()),e.options&&e.options.aliases&&e.options.aliases.length))for(r=0;r<e.options.aliases.length;r++)t.push(e.options.aliases[r].toLowerCase());for(n=o(e.fn,"function")?e.fn():e.fn,i=0;i<t.length;i++)p=t[i],y=p.split("."),1===y.length?Modernizr[y[0]]=n:(!Modernizr[y[0]]||Modernizr[y[0]]instanceof Boolean||(Modernizr[y[0]]=new Boolean(Modernizr[y[0]])),Modernizr[y[0]][y[1]]=n),s.push((n?"":"no-")+y.join("-"))}}var a=[],i={_version:"3.5.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(t,e){var r=this;setTimeout(function(){e(r[t])},0)},addTest:function(t,e,r){a.push({name:t,fn:e,options:r})},addAsyncTest:function(t){a.push({name:null,fn:t})}},Modernizr=function(){};Modernizr.prototype=i,Modernizr=new Modernizr,Modernizr.addTest("es5array",function(){return!!(Array.prototype&&Array.prototype.every&&Array.prototype.filter&&Array.prototype.forEach&&Array.prototype.indexOf&&Array.prototype.lastIndexOf&&Array.prototype.map&&Array.prototype.some&&Array.prototype.reduce&&Array.prototype.reduceRight&&Array.isArray)}),Modernizr.addTest("es5date",function(){var t="2013-04-12T06:06:37.307Z",e=!1;try{e=!!Date.parse(t)}catch(r){}return!!(Date.now&&Date.prototype&&Date.prototype.toISOString&&Date.prototype.toJSON&&e)}),Modernizr.addTest("es5function",function(){return!(!Function.prototype||!Function.prototype.bind)}),Modernizr.addTest("es5object",function(){return!!(Object.keys&&Object.create&&Object.getPrototypeOf&&Object.getOwnPropertyNames&&Object.isSealed&&Object.isFrozen&&Object.isExtensible&&Object.getOwnPropertyDescriptor&&Object.defineProperty&&Object.defineProperties&&Object.seal&&Object.freeze&&Object.preventExtensions)}),Modernizr.addTest("es5string",function(){return!(!String.prototype||!String.prototype.trim)}),Modernizr.addTest("es6array",!!(Array.prototype&&Array.prototype.copyWithin&&Array.prototype.fill&&Array.prototype.find&&Array.prototype.findIndex&&Array.prototype.keys&&Array.prototype.entries&&Array.prototype.values&&Array.from&&Array.of)),Modernizr.addTest("es6collections",!!(t.Map&&t.Set&&t.WeakMap&&t.WeakSet)),Modernizr.addTest("es6math",!!(Math&&Math.clz32&&Math.cbrt&&Math.imul&&Math.sign&&Math.log10&&Math.log2&&Math.log1p&&Math.expm1&&Math.cosh&&Math.sinh&&Math.tanh&&Math.acosh&&Math.asinh&&Math.atanh&&Math.hypot&&Math.trunc&&Math.fround)),Modernizr.addTest("es6number",!!(Number.isFinite&&Number.isInteger&&Number.isSafeInteger&&Number.isNaN&&Number.parseInt&&Number.parseFloat&&Number.isInteger(Number.MAX_SAFE_INTEGER)&&Number.isInteger(Number.MIN_SAFE_INTEGER)&&Number.isFinite(Number.EPSILON))),Modernizr.addTest("es6object",!!(Object.assign&&Object.is&&Object.setPrototypeOf)),Modernizr.addTest("promises",function(){return"Promise"in t&&"resolve"in t.Promise&&"reject"in t.Promise&&"all"in t.Promise&&"race"in t.Promise&&function(){var e;return new t.Promise(function(t){e=t}),"function"==typeof e}()}),Modernizr.addTest("es6string",!!(String.fromCodePoint&&String.raw&&String.prototype.codePointAt&&String.prototype.repeat&&String.prototype.startsWith&&String.prototype.endsWith&&String.prototype.includes));var s=[];n(),delete i.addTest,delete i.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();t.Modernizr=Modernizr}(window,document);
+
+    (function() {
+      var refScript = document.getElementsByTagName('script')[0]
+
+      if (!Modernizr.es5array || !Modernizr.es5date || !Modernizr.es5function || !Modernizr.es5object || !Modernizr.es5string) {
+        // not supportedm load es5 shim and sham
+        var es5 = document.createElement('script')
+        es5.src = '/scripts/es5.js'
+        refScript.parentNode.insertBefore(es5, refScript)
+      }
+
+      if (!Modernizr.es6collections || !Modernizr.es6math || !Modernizr.es6number || !Modernizr.es6object || !Modernizr.es6string) {
+        var es6 = document.createElement('script')
+        es6.src = '/scripts/es6.js'
+        refScript.parentNode.insertBefore(es6, refScript)
+      }
+
+      if (!Modernizr.promises) {
+        var promise = document.createElement('script')
+        promise.src = '/scripts/promise.js'
+        refScript.parentNode.insertBefore(promise, refScript)
+      }
+
+      if (!window.IntersectionObserver) {
+        var io = document.createElement('script')
+        io.src = '/scripts/intersection-observer.js'
+        refScript.parentNode.insertBefore(io, refScript)
+      }
+
+      if (!('attachShadow' in Element.prototype && 'getRootNode' in Element.prototype) ||
+        (window.ShadyDOM && window.ShadyDOM.force)) {
+        var shady = document.createElement('script')
+        shady.src = '/scripts/shady.js'
+        refScript.parentNode.insertBefore(shady, refScript)
+      }
+
+      window.onerror = function(err, url, line) {
+        try {
+          if (window.ga) {
+            ga('send', 'exception', {
+              exDescription: err.message,
+              exFatal: true
+            })
+          }
+        } catch (e) {
+          console.error(err)
+          console.error(e)
+        }
+      }
+    })()
+  </script>
