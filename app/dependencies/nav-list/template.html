@@ -1,0 +1,11 @@
+<nav class="nav">
+  <ul class="nav-list">
+    <template is="dom-repeat" items="[[nav]]">
+      <li class="nav-item">
+        <a class="nav-anchor" href="[[item.href]]">
+          [[item.label]]
+        </a>
+      </li>
+    </template>
+  </ul>
+</nav>

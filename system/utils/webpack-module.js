@@ -23,16 +23,17 @@ module.exports = () => {
         // polymer-webpack-loader, and hand the output to
         // babel-loader. This let's us transpile JS in our `<script>` elements.
         use: [
-          {
-            loader: 'babel-loader',
-            options: babelOptions
-          },
-          {
-            loader: 'polymer-webpack-loader',
-            options: {
-              processStyleLinks: true
-            }
-          }
+          'text-loader'
+          // {
+          //   loader: 'babel-loader',
+          //   options: babelOptions
+          // },
+          // {
+          //   loader: 'polymer-webpack-loader',
+          //   options: {
+          //     processStyleLinks: true
+          //   }
+          // }
         ]
       },
       {

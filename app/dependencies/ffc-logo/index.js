@@ -5,7 +5,7 @@ import css from './style.scss';
 import template from './template.html';
 
 class Component extends GestureEventListeners(Element) {
-  static get is () { return 'page-not-authorized'; }
+  static get is () { return 'ffc-logo'; }
 
   static get template () {
     return `

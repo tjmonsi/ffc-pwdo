@@ -86,7 +86,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"page-not-found","1":"page-not-authorized","2":"page-home"}[chunkId]||chunkId) + ".fragment." + chunkId + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"page-home","1":"page-not-found","2":"page-not-authorized"}[chunkId]||chunkId) + ".fragment." + chunkId + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -2408,13 +2408,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
   'page-home': function pageHome() {
-    return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 88));
+    return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 86));
   },
   'page-not-authorized': function pageNotAuthorized() {
-    return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 89));
+    return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 87));
   },
   'page-not-found': function pageNotFound() {
-    return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 90));
+    return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 88));
   }
 };
 
@@ -10003,85 +10003,12 @@ var GestureEventListeners = exports.GestureEventListeners = (0, _mixin.dedupingM
 });
 
 /***/ }),
-/* 86 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-/* eslint-env browser */
-
-var RegisterHtmlTemplate = function () {
-  function RegisterHtmlTemplate() {
-    _classCallCheck(this, RegisterHtmlTemplate);
-  }
-
-  _createClass(RegisterHtmlTemplate, null, [{
-    key: 'register',
-
-    /**
-     * Create a `<template>` element to hold `<dom-module>` content.
-     * This bit of code will execute in the context of the main document,
-     * calling `importNode` on the `<template>`, which in turn triggers
-     * the lifecycle of the `<dom-module>` and allows it to insert its
-     * content into Polymer's global module map. When a Polymer element
-     * boots up it will fetch its template from this module map.
-     * https://github.com/Polymer/polymer/blob/master/lib/mixins/element-mixin.html#L501-L538
-     * @param {string} val A `<dom-module>` as an HTML string
-     */
-    value: function register(val) {
-      var content = void 0;
-      var template = document.createElement('template');
-      template.innerHTML = val;
-      if (template.content) {
-        content = template.content; // eslint-disable-line prefer-destructuring
-      } else {
-        content = document.createDocumentFragment();
-        while (template.firstChild) {
-          content.appendChild(template.firstChild);
-        }
-      }
-      document.importNode(content, true);
-    }
-    /**
-     * Content that will be injected into the main document. This is primarily
-     * for things like `<iron-iconset>` and `<custom-style>` which do not have
-     * templates but rely on HTML Imports ability to apply content to the main
-     * document.
-     * @param {string} val An HTML string
-     */
-
-  }, {
-    key: 'toBody',
-    value: function toBody(val) {
-      var trimmedVal = val.trim();
-      if (trimmedVal) {
-        var div = document.createElement('div');
-        div.innerHTML = trimmedVal;
-        if (div.firstChild) {
-          if (document.body) {
-            document.body.insertBefore(div.firstChild, document.body.firstChild);
-          } else {
-            document.addEventListener('DOMContentLoaded', function () {
-              document.body.insertBefore(div.firstChild, document.body.firstChild);
-            });
-          }
-        }
-      }
-    }
-  }]);
-
-  return RegisterHtmlTemplate;
-}();
-
-module.exports = RegisterHtmlTemplate;
-
-/***/ }),
-/* 87 */
+/* 86 */,
+/* 87 */,
+/* 88 */,
+/* 89 */,
+/* 90 */,
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

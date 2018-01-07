@@ -1,10 +1,22 @@
 import { Element } from '@polymer/polymer/polymer-element';
 import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event-listeners';
 import { customElements } from 'global/window';
-import './index.html';
+import css from './style.scss';
+import template from './template.html';
+import 'side-bar';
+import 'ffc-logo';
 
 class Component extends GestureEventListeners(Element) {
   static get is () { return 'page-home'; }
+
+  static get template () {
+    return `
+      <style>
+        ${css}
+      </style>
+      ${template}
+    `;
+  }
 }
 
 !customElements.get(Component.is)

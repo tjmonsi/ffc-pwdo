@@ -3,9 +3,10 @@ import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event
 import { customElements } from 'global/window';
 import css from './style.scss';
 import template from './template.html';
+import 'nav-list';
 
 class Component extends GestureEventListeners(Element) {
-  static get is () { return 'page-not-authorized'; }
+  static get is () { return 'side-bar'; }
 
   static get template () {
     return `

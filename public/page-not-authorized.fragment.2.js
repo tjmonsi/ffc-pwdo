@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 88:
+/***/ 87:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14,7 +14,15 @@ var _gestureEventListeners = __webpack_require__(85);
 
 var _window = __webpack_require__(7);
 
-__webpack_require__(91);
+var _style = __webpack_require__(95);
+
+var _style2 = _interopRequireDefault(_style);
+
+var _template = __webpack_require__(97);
+
+var _template2 = _interopRequireDefault(_template);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -34,7 +42,12 @@ var Component = function (_GestureEventListener) {
   _createClass(Component, null, [{
     key: 'is',
     get: function get() {
-      return 'page-home';
+      return 'page-not-authorized';
+    }
+  }, {
+    key: 'template',
+    get: function get() {
+      return '\n      <style>\n        ' + _style2.default + '\n      </style>\n      ' + _template2.default + '\n    ';
     }
   }]);
 
@@ -45,23 +58,11 @@ var Component = function (_GestureEventListener) {
 
 /***/ }),
 
-/***/ 91:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var RegisterHtmlTemplate = __webpack_require__(86);
-
-RegisterHtmlTemplate.register("<dom-module id=page-home> <template> <style>" + __webpack_require__(92) + "</style> Example Page </template> </dom-module>");
-
-/***/ }),
-
-/***/ 92:
+/***/ 95:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(93);
+        var result = __webpack_require__(96);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -72,10 +73,10 @@ RegisterHtmlTemplate.register("<dom-module id=page-home> <template> <style>" + _
 
 /***/ }),
 
-/***/ 93:
+/***/ 96:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(87)(undefined);
+exports = module.exports = __webpack_require__(91)(undefined);
 // imports
 
 
@@ -85,7 +86,14 @@ exports.push([module.i, "", ""]);
 // exports
 
 
+/***/ }),
+
+/***/ 97:
+/***/ (function(module, exports) {
+
+module.exports = "Not Authorized Page\n"
+
 /***/ })
 
 });
-//# sourceMappingURL=page-home.fragment.2.js.map
+//# sourceMappingURL=page-not-authorized.fragment.2.js.map

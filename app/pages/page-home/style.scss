@@ -1,0 +1,40 @@
+@import '../../styles/components/_anchor.scss';
+@import '../../styles/components/_button.scss';
+
+:host {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "main main main sidebar";
+  min-height: 100vh;
+  background: #3a3a3a;
+  font-family: 'Inovato', sans-serif;
+  color: #efefef;
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+
+  .container {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+side-bar {
+  grid-area: sidebar;
+  min-height: 100vh;
+}
+
+ffc-logo {
+  margin-bottom: 3rem;
+}
+
+.info {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
