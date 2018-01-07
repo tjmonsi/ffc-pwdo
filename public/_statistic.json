@@ -2,8 +2,8 @@
   "errors": [],
   "warnings": [],
   "version": "3.10.0",
-  "hash": "2f7270d6c19a4148f5b4",
-  "time": 261,
+  "hash": "b0f9e3776069eb29c1f3",
+  "time": 223,
   "publicPath": "",
   "assetsByChunkName": {
     "page-home": [
@@ -53,14 +53,14 @@
     },
     {
       "name": "page-home.fragment.0.js",
-      "size": 81033,
+      "size": 81300,
       "chunks": [
         0
       ],
       "chunkNames": [
         "page-home"
       ],
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "page-not-authorized.fragment.2.js",
@@ -130,26 +130,26 @@
       "emitted": false
     },
     {
-      "name": "page-not-found.fragment.1.js.map",
-      "size": 2471,
+      "name": "page-home.fragment.0.js.map",
+      "size": 90741,
       "chunks": [
-        1
+        0
       ],
       "chunkNames": [
-        "page-not-found"
+        "page-home"
       ],
       "emitted": false
     },
     {
       "name": "page-not-found.fragment.1.js",
-      "size": 3499,
+      "size": 3494,
       "chunks": [
         1
       ],
       "chunkNames": [
         "page-not-found"
       ],
-      "emitted": false
+      "emitted": true
     },
     {
       "name": "main.js.map",
@@ -207,13 +207,13 @@
       "emitted": false
     },
     {
-      "name": "page-home.fragment.0.js.map",
-      "size": 90344,
+      "name": "page-not-found.fragment.1.js.map",
+      "size": 2466,
       "chunks": [
-        0
+        1
       ],
       "chunkNames": [
-        "page-home"
+        "page-not-found"
       ],
       "emitted": true
     },
@@ -291,11 +291,11 @@
   "chunks": [
     {
       "id": 0,
-      "rendered": true,
+      "rendered": false,
       "initial": false,
       "entry": false,
       "extraAsync": false,
-      "size": 80283,
+      "size": 80550,
       "names": [
         "page-home"
       ],
@@ -303,7 +303,7 @@
         "page-home.fragment.0.js",
         "page-home.fragment.0.js.map"
       ],
-      "hash": "1254ada5dbe440faabe3",
+      "hash": "8222c6692ed0a7158d21",
       "parents": [
         3
       ],
@@ -427,7 +427,7 @@
           "index2": 22,
           "size": 427,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -730,7 +730,7 @@
           "name": "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./app/dependencies/nav-list/style.scss",
           "index": 33,
           "index2": 26,
-          "size": 169,
+          "size": 416,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -767,7 +767,7 @@
           "name": "./app/dependencies/nav-list/template.html",
           "index": 34,
           "index2": 28,
-          "size": 292,
+          "size": 312,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -1073,11 +1073,11 @@
     },
     {
       "id": 1,
-      "rendered": false,
+      "rendered": true,
       "initial": false,
       "entry": false,
       "extraAsync": false,
-      "size": 3314,
+      "size": 3309,
       "names": [
         "page-not-found"
       ],
@@ -1085,7 +1085,7 @@
         "page-not-found.fragment.1.js",
         "page-not-found.fragment.1.js.map"
       ],
-      "hash": "ea2ff9d262ceed12835e",
+      "hash": "7688114f6586135d61de",
       "parents": [
         3
       ],
@@ -1207,9 +1207,9 @@
           "name": "./app/pages/page-not-found/template.html",
           "index": 50,
           "index2": 46,
-          "size": 40,
+          "size": 35,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -10286,7 +10286,7 @@
       "index2": 22,
       "size": 427,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -10506,9 +10506,9 @@
       "name": "./app/pages/page-not-found/template.html",
       "index": 50,
       "index2": 46,
-      "size": 40,
+      "size": 35,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -10811,7 +10811,7 @@
       "name": "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./app/dependencies/nav-list/style.scss",
       "index": 33,
       "index2": 26,
-      "size": 169,
+      "size": 416,
       "cacheable": true,
       "built": false,
       "optional": false,
@@ -10848,7 +10848,7 @@
       "name": "./app/dependencies/nav-list/template.html",
       "index": 34,
       "index2": 28,
-      "size": 292,
+      "size": 312,
       "cacheable": true,
       "built": false,
       "optional": false,
@@ -11151,7 +11151,7 @@
           "name": "index.html",
           "size": 16867,
           "chunks": [
-            0
+            1
           ],
           "chunkNames": []
         }
@@ -11160,7 +11160,7 @@
       "entrypoints": {
         "undefined": {
           "chunks": [
-            0
+            1
           ],
           "assets": [
             "index.html"
@@ -11169,7 +11169,7 @@
       },
       "chunks": [
         {
-          "id": 0,
+          "id": 1,
           "rendered": false,
           "initial": true,
           "entry": true,
@@ -11179,7 +11179,7 @@
           "files": [
             "index.html"
           ],
-          "hash": "9d370adc55677234e1d1",
+          "hash": "2b799f3c2e97237b7895",
           "parents": [],
           "modules": [
             {
@@ -11194,7 +11194,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "assets": [],
               "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/system/core/partials/router.ejs",
@@ -11240,7 +11240,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "assets": [],
               "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/system/core/partials/router.ejs",
@@ -11286,7 +11286,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "assets": [],
               "issuer": null,
@@ -11313,7 +11313,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "assets": [],
               "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/html-webpack-plugin/lib/loader.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/shell/index.ejs",
@@ -11350,7 +11350,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "assets": [],
               "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/html-webpack-plugin/lib/loader.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/shell/index.ejs",
@@ -11387,7 +11387,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "assets": [],
               "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/system/core/partials/routes.ejs",
@@ -11424,7 +11424,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "assets": [],
               "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/html-webpack-plugin/lib/loader.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/shell/index.ejs",
@@ -11476,7 +11476,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "assets": [],
           "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/system/core/partials/router.ejs",
@@ -11522,7 +11522,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "assets": [],
           "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/system/core/partials/router.ejs",
@@ -11568,7 +11568,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "assets": [],
           "issuer": null,
@@ -11595,7 +11595,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "assets": [],
           "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/html-webpack-plugin/lib/loader.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/shell/index.ejs",
@@ -11632,7 +11632,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "assets": [],
           "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/html-webpack-plugin/lib/loader.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/shell/index.ejs",
@@ -11669,7 +11669,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "assets": [],
           "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/system/core/partials/routes.ejs",
@@ -11706,7 +11706,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "assets": [],
           "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/html-webpack-plugin/lib/loader.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/shell/index.ejs",
@@ -11746,7 +11746,7 @@
           "name": "404.html",
           "size": 16867,
           "chunks": [
-            0
+            1
           ],
           "chunkNames": []
         }
@@ -11755,7 +11755,7 @@
       "entrypoints": {
         "undefined": {
           "chunks": [
-            0
+            1
           ],
           "assets": [
             "404.html"
@@ -11764,7 +11764,7 @@
       },
       "chunks": [
         {
-          "id": 0,
+          "id": 1,
           "rendered": false,
           "initial": true,
           "entry": true,
@@ -11774,7 +11774,7 @@
           "files": [
             "404.html"
           ],
-          "hash": "d9d18892812a4eec5cfe",
+          "hash": "60807ca7233ffbd60ac0",
           "parents": [],
           "modules": [
             {
@@ -11789,7 +11789,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "assets": [],
               "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/system/core/partials/router.ejs",
@@ -11835,7 +11835,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "assets": [],
               "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/system/core/partials/router.ejs",
@@ -11881,7 +11881,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "assets": [],
               "issuer": null,
@@ -11908,7 +11908,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "assets": [],
               "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/html-webpack-plugin/lib/loader.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/shell/index.ejs",
@@ -11945,7 +11945,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "assets": [],
               "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/html-webpack-plugin/lib/loader.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/shell/index.ejs",
@@ -11982,7 +11982,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "assets": [],
               "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/system/core/partials/routes.ejs",
@@ -12019,7 +12019,7 @@
               "optional": false,
               "prefetched": false,
               "chunks": [
-                0
+                1
               ],
               "assets": [],
               "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/html-webpack-plugin/lib/loader.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/shell/index.ejs",
@@ -12071,7 +12071,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "assets": [],
           "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/system/core/partials/router.ejs",
@@ -12117,7 +12117,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "assets": [],
           "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/system/core/partials/router.ejs",
@@ -12163,7 +12163,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "assets": [],
           "issuer": null,
@@ -12190,7 +12190,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "assets": [],
           "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/html-webpack-plugin/lib/loader.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/shell/index.ejs",
@@ -12227,7 +12227,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "assets": [],
           "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/html-webpack-plugin/lib/loader.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/shell/index.ejs",
@@ -12264,7 +12264,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "assets": [],
           "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/system/core/partials/routes.ejs",
@@ -12301,7 +12301,7 @@
           "optional": false,
           "prefetched": false,
           "chunks": [
-            0
+            1
           ],
           "assets": [],
           "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/html-webpack-plugin/lib/loader.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/ejs-loader/index.js!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/shell/index.ejs",

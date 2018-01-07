@@ -1,10 +1,20 @@
-// @import '../../styles/mixins/_flex.scss';
-// @import '../../styles/mixins/_ripple.scss';
+@import '../../styles/components/_anchor.scss';
 
-// * {
-//   box-sizing: border-box;
-// }
+:host {
+  display: block;
+}
 
-// :host {
-//   display: block;
-// }
+nav {}
+
+.nav-list {
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav-item {
+  margin: 1rem auto;
+}
+
+.nav-anchor {
+  border: none;
+}

@@ -3,7 +3,7 @@ webpackJsonp([1],{
 /***/ 100:
 /***/ (function(module, exports) {
 
-module.exports = "Not Authorized Page\n"
+module.exports = "Not Found Page\n"
 
 /***/ }),
 

@@ -374,7 +374,7 @@ exports = module.exports = __webpack_require__(91)(undefined);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "a {\n  color: #fff;\n  text-decoration: none;\n  border-bottom: 1px solid #fff; }\n\n:host {\n  display: block; }\n\n.nav-list {\n  margin: 0;\n  list-style-type: none; }\n\n.nav-item {\n  margin: 1rem auto; }\n\n.nav-anchor {\n  border: none; }\n", ""]);
 
 // exports
 
@@ -384,7 +384,7 @@ exports.push([module.i, "", ""]);
 /***/ 109:
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"nav\">\n  <ul class=\"nav-list\">\n    <template is=\"dom-repeat\" items=\"[[nav]]\">\n      <li class=\"nav-item\">\n        <a class=\"nav-anchor\" href=\"[[item.href]]\">\n          [[item.label]]\n        </a>\n      </li>\n    </template>\n  </ul>\n</nav>"
+module.exports = "<nav class=\"nav\" role=\"navigation\">\n  <ul class=\"nav-list\">\n    <template is=\"dom-repeat\" items=\"[[nav]]\">\n      <li class=\"nav-item\">\n        <a class=\"nav-anchor\" href=\"[[item.href]]\">\n          [[item.label]]\n        </a>\n      </li>\n    </template>\n  </ul>\n</nav>"
 
 /***/ }),
 
