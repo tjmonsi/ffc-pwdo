@@ -689,6 +689,21 @@ var Component = function (_GestureEventListener) {
         this.speaker = {};
       }
     }
+  }, {
+    key: '_fetchSession',
+    value: function _fetchSession(sessionId) {
+      var _this3 = this;
+
+      if (sessionId) {
+        (0, _window.fetch)('https://raw.githubusercontent.com/tjmonsi/ffc-pwdo/master/data/sessions/' + sessionId + '.json').then(function (result) {
+          return result.json();
+        }).then(function (session) {
+          return _this3.session = Object.assign({}, _this3.session, session);
+        });
+      } else {
+        this.session = {};
+      }
+    }
   }], [{
     key: 'is',
     get: function get() {
@@ -702,6 +717,10 @@ var Component = function (_GestureEventListener) {
           type: Object,
           value: {}
         },
+        session: {
+          type: Object,
+          value: {}
+        },
         speakerId: {
           type: String,
           observer: '_fetchSpeaker'
@@ -712,6 +731,11 @@ var Component = function (_GestureEventListener) {
     key: 'template',
     get: function get() {
       return '\n      <style>\n        ' + _style2.default + '\n      </style>\n      ' + _template2.default + '\n    ';
+    }
+  }, {
+    key: 'observers',
+    get: function get() {
+      return ['_fetchSession(speaker.sessionId)'];
     }
   }]);
 

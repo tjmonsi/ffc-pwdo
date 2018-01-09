@@ -3,23 +3,20 @@ import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event
 import { customElements, fetch } from 'global/window';
 import css from './style.scss';
 import template from './template.html';
+import '@polymer/polymer/lib/elements/dom-repeat';
 
 class Component extends GestureEventListeners(Element) {
-  static get is () { return 'speaker-item'; }
+  static get is () { return 'small-session-item'; }
 
   static get properties () {
     return {
-      speaker: {
-        type: Object,
-        value: {}
-      },
       session: {
         type: Object,
         value: {}
       },
-      speakerId: {
+      sessionId: {
         type: String,
-        observer: '_fetchSpeaker'
+        observer: '_fetchSession'
       }
     };
   }
@@ -35,8 +32,18 @@ class Component extends GestureEventListeners(Element) {
 
   static get observers () {
     return [
-      '_fetchSession(speaker.sessionId)'
+      '_fetchSpeaker(session.speakerId)'
     ];
+  }
+
+  _fetchSchedule (sessionId) {
+    if (sessionId) {
+      fetch(`https://raw.githubusercontent.com/tjmonsi/ffc-pwdo/master/data/sessions/${sessionId}.json`)
+        .then(result => result.json())
+        .then(session => (this.schedule = Object.assign({}, this.session, session)));
+    } else {
+      this.speaker = {};
+    }
   }
 
   _fetchSpeaker (speakerId) {
@@ -44,22 +51,8 @@ class Component extends GestureEventListeners(Element) {
       fetch(`https://raw.githubusercontent.com/tjmonsi/ffc-pwdo/master/data/speakers/${speakerId}.json`)
         .then(result => result.json())
         .then(speaker => (this.speaker = Object.assign({}, this.speaker, speaker)));
-
-      fetch(`https://raw.githubusercontent.com/tjmonsi/ffc-pwdo/master/data/speakers/${speakerId}.md`)
-        .then(result => result.text())
-        .then(bio => (this.speaker = Object.assign({}, this.speaker, { bio })));
     } else {
       this.speaker = {};
-    }
-  }
-
-  _fetchSession (sessionId) {
-    if (sessionId) {
-      fetch(`https://raw.githubusercontent.com/tjmonsi/ffc-pwdo/master/data/sessions/${sessionId}.json`)
-        .then(result => result.json())
-        .then(session => (this.session = Object.assign({}, this.session, session)));
-    } else {
-      this.session = {};
     }
   }
 }

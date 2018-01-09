@@ -3,12 +3,19 @@ import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event
 import { customElements } from 'global/window';
 import css from './style.scss';
 import template from './template.html';
-import 'side-bar';
-import 'schedule-list';
+import 'speaker-item';
 import '@polymer/polymer/lib/elements/dom-repeat';
 
 class Component extends GestureEventListeners(Element) {
-  static get is () { return 'page-schedule'; }
+  static get is () { return 'schedule-list'; }
+
+  static get properties () {
+    return {
+      schedule: {
+        type: Object
+      }
+    };
+  }
 
   static get template () {
     return `
