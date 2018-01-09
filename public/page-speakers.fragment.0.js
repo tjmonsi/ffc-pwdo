@@ -755,7 +755,7 @@ exports.push([module.i, "* {\n  font-family: 'Inovato', sans-serif; }\n\n:host {
 /***/ 121:
 /***/ (function(module, exports) {
 
-module.exports = "<img class=\"avatar\" src=\"[[speaker.image]]\">\n\n<section class=\"speaker\">\n  <h3 class=\"speaker-name\">\n    [[speaker.name]]\n  </h3>\n  <p class=\"speaker-position\">\n    [[speaker.position]]\n  </p>\n  <p class=\"speaker-bio\">\n    [[speaker.bio]]\n  </p>\n  <p class=\"speaker-talk\">\n    [[speaker.talk]]\n  </p>\n</section>"
+module.exports = "<img class=\"avatar\" src=\"https://raw.githubusercontent.com/tjmonsi/ffc-pwdo/master/data/speakers/[[speakerId]].jpg\">\n\n<section class=\"speaker\">\n  <h3 class=\"speaker-name\">\n    [[speaker.name]]\n  </h3>\n  <p class=\"speaker-position\">\n    [[speaker.position]]\n  </p>\n  <p class=\"speaker-bio\">\n    [[speaker.bio]]\n  </p>\n  <p class=\"speaker-talk\">\n    [[speaker.talk]]\n  </p>\n</section>"
 
 /***/ }),
 
