@@ -1,0 +1,21 @@
+@import '../../styles/global/_typography.scss';
+
+:host {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  background: #3a3a3a;
+  color: #efefef;
+  grid-template-areas:
+    "avatar main main main";
+}
+
+.speaker {
+  grid-area: main;
+  display: block;
+  padding: 0 20px;
+}
+
+.avatar {
+  grid-area: avatar;
+}

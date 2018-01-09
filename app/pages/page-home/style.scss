@@ -1,23 +1,16 @@
+@import '../../styles/global/_typography.scss';
+@import '../../styles/global/_pages.scss';
 @import '../../styles/components/_anchor.scss';
 @import '../../styles/components/_button.scss';
 
 :host {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
   grid-template-areas:
     "main main main sidebar";
-  min-height: 100vh;
-  background: #3a3a3a;
-  font-family: 'Inovato', sans-serif;
-  color: #efefef;
 }
 
 .main {
-  grid-area: main;
   display: flex;
   align-items: center;
-  min-height: 100vh;
 
   .container {
     text-align: center;
@@ -25,13 +18,9 @@
   }
 }
 
-side-bar {
-  grid-area: sidebar;
-  min-height: 100vh;
-}
-
 ffc-logo {
   margin-bottom: 3rem;
+  width: 400px;
 }
 
 .info {

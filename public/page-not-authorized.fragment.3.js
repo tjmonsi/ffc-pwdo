@@ -1,6 +1,43 @@
-webpackJsonp([2],{
+webpackJsonp([3],{
 
-/***/ 87:
+/***/ 122:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(123);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+
+/***/ 123:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(86)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 124:
+/***/ (function(module, exports) {
+
+module.exports = "Not Authorized Page\n"
+
+/***/ }),
+
+/***/ 89:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14,11 +51,11 @@ var _gestureEventListeners = __webpack_require__(85);
 
 var _window = __webpack_require__(7);
 
-var _style = __webpack_require__(95);
+var _style = __webpack_require__(122);
 
 var _style2 = _interopRequireDefault(_style);
 
-var _template = __webpack_require__(97);
+var _template = __webpack_require__(124);
 
 var _template2 = _interopRequireDefault(_template);
 
@@ -56,44 +93,7 @@ var Component = function (_GestureEventListener) {
 
 !_window.customElements.get(Component.is) ? _window.customElements.define(Component.is, Component) : console.warn(Component.is + ' is already defined');
 
-/***/ }),
-
-/***/ 95:
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(96);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ 96:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(91)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 97:
-/***/ (function(module, exports) {
-
-module.exports = "Not Authorized Page\n"
-
 /***/ })
 
 });
-//# sourceMappingURL=page-not-authorized.fragment.2.js.map
+//# sourceMappingURL=page-not-authorized.fragment.3.js.map

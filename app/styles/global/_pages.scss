@@ -1,0 +1,22 @@
+:host {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  min-height: 100vh;
+  background: #3a3a3a;
+  color: #efefef;
+  grid-template-areas:
+    "sidebar main main main";
+}
+
+.main {
+  grid-area: main;
+  display: block;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+side-bar {
+  grid-area: sidebar;
+  min-height: 100vh;
+}

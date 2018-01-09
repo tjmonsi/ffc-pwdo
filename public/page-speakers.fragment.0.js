@@ -1,166 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 101:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.OptionalMutableData = exports.MutableData = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _mixin = __webpack_require__(4);
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-// Common implementation for mixin & behavior
-function mutablePropertyChange(inst, property, value, old, mutableData) {
-  var isObject = void 0;
-  if (mutableData) {
-    isObject = (typeof value === 'undefined' ? 'undefined' : _typeof(value)) === 'object' && value !== null;
-    // Pull `old` for Objects from temp cache, but treat `null` as a primitive
-    if (isObject) {
-      old = inst.__dataTemp[property];
-    }
-  }
-  // Strict equality check, but return false for NaN===NaN
-  var shouldChange = old !== value && (old === old || value === value);
-  // Objects are stored in temporary cache (cleared at end of
-  // turn), which is used for dirty-checking
-  if (isObject && shouldChange) {
-    inst.__dataTemp[property] = value;
-  }
-  return shouldChange;
-}
-
-var MutableData = exports.MutableData = (0, _mixin.dedupingMixin)(function (superClass) {
-
-  /**
-   * @polymer
-   * @mixinClass
-   * @implements {Polymer_MutableData}
-   */
-  var MutableData = function (_superClass) {
-    _inherits(MutableData, _superClass);
-
-    function MutableData() {
-      _classCallCheck(this, MutableData);
-
-      return _possibleConstructorReturn(this, (MutableData.__proto__ || Object.getPrototypeOf(MutableData)).apply(this, arguments));
-    }
-
-    _createClass(MutableData, [{
-      key: '_shouldPropertyChange',
-
-      /**
-       * Overrides `Polymer.PropertyEffects` to provide option for skipping
-       * strict equality checking for Objects and Arrays.
-       *
-       * This method pulls the value to dirty check against from the `__dataTemp`
-       * cache (rather than the normal `__data` cache) for Objects.  Since the temp
-       * cache is cleared at the end of a turn, this implementation allows
-       * side-effects of deep object changes to be processed by re-setting the
-       * same object (using the temp cache as an in-turn backstop to prevent
-       * cycles due to 2-way notification).
-       *
-       * @param {string} property Property name
-       * @param {*} value New property value
-       * @param {*} old Previous property value
-       * @return {boolean} Whether the property should be considered a change
-       * @protected
-       */
-      value: function _shouldPropertyChange(property, value, old) {
-        return mutablePropertyChange(this, property, value, old, true);
-      }
-    }]);
-
-    return MutableData;
-  }(superClass);
-  /** @type {boolean} */
-
-
-  MutableData.prototype.mutableData = false;
-
-  return MutableData;
-});
-
-var OptionalMutableData = exports.OptionalMutableData = (0, _mixin.dedupingMixin)(function (superClass) {
-
-  /**
-   * @mixinClass
-   * @polymer
-   * @implements {Polymer_OptionalMutableData}
-   */
-  var OptionalMutableData = function (_superClass2) {
-    _inherits(OptionalMutableData, _superClass2);
-
-    function OptionalMutableData() {
-      _classCallCheck(this, OptionalMutableData);
-
-      return _possibleConstructorReturn(this, (OptionalMutableData.__proto__ || Object.getPrototypeOf(OptionalMutableData)).apply(this, arguments));
-    }
-
-    _createClass(OptionalMutableData, [{
-      key: '_shouldPropertyChange',
-
-
-      /**
-       * Overrides `Polymer.PropertyEffects` to provide option for skipping
-       * strict equality checking for Objects and Arrays.
-       *
-       * When `this.mutableData` is true on this instance, this method
-       * pulls the value to dirty check against from the `__dataTemp` cache
-       * (rather than the normal `__data` cache) for Objects.  Since the temp
-       * cache is cleared at the end of a turn, this implementation allows
-       * side-effects of deep object changes to be processed by re-setting the
-       * same object (using the temp cache as an in-turn backstop to prevent
-       * cycles due to 2-way notification).
-       *
-       * @param {string} property Property name
-       * @param {*} value New property value
-       * @param {*} old Previous property value
-       * @return {boolean} Whether the property should be considered a change
-       * @protected
-       */
-      value: function _shouldPropertyChange(property, value, old) {
-        return mutablePropertyChange(this, property, value, old, this.mutableData);
-      }
-    }], [{
-      key: 'properties',
-      get: function get() {
-        return {
-          /**
-           * Instance-level flag for configuring the dirty-checking strategy
-           * for this element.  When true, Objects and Arrays will skip dirty
-           * checking, otherwise strict equality checking will be used.
-           */
-          mutableData: Boolean
-        };
-      }
-    }]);
-
-    return OptionalMutableData;
-  }(superClass);
-
-  return OptionalMutableData;
-});
-
-// Export for use by legacy behavior
-MutableData._mutablePropertyChange = mutablePropertyChange;
-
-/***/ }),
-
-/***/ 102:
+/***/ 100:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -174,112 +14,15 @@ var _gestureEventListeners = __webpack_require__(85);
 
 var _window = __webpack_require__(7);
 
-var _style = __webpack_require__(103);
+var _style = __webpack_require__(101);
 
 var _style2 = _interopRequireDefault(_style);
 
-var _template = __webpack_require__(105);
+var _template = __webpack_require__(103);
 
 var _template2 = _interopRequireDefault(_template);
 
-__webpack_require__(106);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Component = function (_GestureEventListener) {
-  _inherits(Component, _GestureEventListener);
-
-  function Component() {
-    _classCallCheck(this, Component);
-
-    return _possibleConstructorReturn(this, (Component.__proto__ || Object.getPrototypeOf(Component)).apply(this, arguments));
-  }
-
-  _createClass(Component, null, [{
-    key: 'is',
-    get: function get() {
-      return 'side-bar';
-    }
-  }, {
-    key: 'template',
-    get: function get() {
-      return '\n      <style>\n        ' + _style2.default + '\n      </style>\n      ' + _template2.default + '\n    ';
-    }
-  }]);
-
-  return Component;
-}((0, _gestureEventListeners.GestureEventListeners)(_polymerElement.Element));
-
-!_window.customElements.get(Component.is) ? _window.customElements.define(Component.is, Component) : console.warn(Component.is + ' is already defined');
-
-/***/ }),
-
-/***/ 103:
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(104);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ 104:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(91)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ":host {\n  display: flex;\n  align-items: center;\n  min-height: 100vh; }\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 105:
-/***/ (function(module, exports) {
-
-module.exports = "<nav-list></nav-list>\n"
-
-/***/ }),
-
-/***/ 106:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _polymerElement = __webpack_require__(15);
-
-var _gestureEventListeners = __webpack_require__(85);
-
-var _window = __webpack_require__(7);
-
-var _style = __webpack_require__(107);
-
-var _style2 = _interopRequireDefault(_style);
-
-var _template = __webpack_require__(109);
-
-var _template2 = _interopRequireDefault(_template);
-
-__webpack_require__(110);
+__webpack_require__(91);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -351,11 +94,11 @@ var Component = function (_GestureEventListener) {
 
 /***/ }),
 
-/***/ 107:
+/***/ 101:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(108);
+        var result = __webpack_require__(102);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -366,10 +109,10 @@ var Component = function (_GestureEventListener) {
 
 /***/ }),
 
-/***/ 108:
+/***/ 102:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(91)(undefined);
+exports = module.exports = __webpack_require__(86)(undefined);
 // imports
 
 
@@ -381,14 +124,708 @@ exports.push([module.i, "a {\n  color: #fff;\n  text-decoration: none;\n  border
 
 /***/ }),
 
-/***/ 109:
+/***/ 103:
 /***/ (function(module, exports) {
 
 module.exports = "<nav class=\"nav\" role=\"navigation\">\n  <ul class=\"nav-list\">\n    <template is=\"dom-repeat\" items=\"[[nav]]\">\n      <li class=\"nav-item\">\n        <a class=\"nav-anchor\" href=\"[[item.href]]\">\n          [[item.label]]\n        </a>\n      </li>\n    </template>\n  </ul>\n</nav>"
 
 /***/ }),
 
-/***/ 110:
+/***/ 104:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(105);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+
+/***/ 105:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(86)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ":host {\n  display: inline-block; }\n\nsvg {\n  width: 100%; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 106:
+/***/ (function(module, exports) {
+
+module.exports = "<svg class=\"logo\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 505.039 237.126\">\n  <g fill=\"#EFEFEF\">\n    <path d=\"M198.318 11.002v12.571h20.685V34.54h-20.685v23.983H186.46V.036h38.605v10.966h-26.747zM227.654 35.342c0-18.723 7.399-24.162 19.971-24.162 12.66 0 20.061 5.438 20.061 24.162 0 18.812-7.4 23.805-20.061 23.805-12.571 0-19.971-4.993-19.971-23.805zm28.263 0c0-10.075-3.655-13.552-8.292-13.552-4.636 0-8.202 3.478-8.202 13.552 0 9.807 3.566 13.195 8.202 13.195 4.637 0 8.292-3.388 8.292-13.195zM306.205 12.25l-3.389 11.501h-5.527l-8.916 3.388v31.383h-11.769V12.161h10.075l1.604 5.706 4.279-2.764c3.299-2.14 7.044-3.299 10.343-3.299 1.16.001 2.765.179 3.3.446zM370.668 29.19v29.333h-11.769V29.19c0-3.566-1.783-6.509-6.509-6.509h-5.26v35.841h-11.769V29.19c0-3.566-1.783-6.509-6.509-6.509h-5.261v35.841h-11.769V12.161h10.967l.445 1.605 8.916-1.961c4.102 0 8.916.802 11.59 2.585l11.947-2.585c10.434 0 14.981 5.26 14.981 17.385zM198.318 100.17v12.571h20.685v10.966h-20.685v23.983H186.46V89.203h38.605v10.967h-26.747zM266.438 101.329v46.362h-10.967l-.445-1.693-9.361 2.05c-11.323 0-15.691-7.043-15.691-17.385V101.33h11.769v29.333c0 4.457 1.961 6.508 5.171 6.508l7.757-.802v-35.04h11.767zM313.249 118.358v29.333h-11.77v-29.333c0-4.458-1.961-6.509-5.171-6.509l-7.757.803v35.039h-11.769v-46.362h10.967l.445 1.694 9.361-2.051c11.325 0 15.694 7.044 15.694 17.386zM340.712 100.972h5.082l8.915 2.051v9.629l-10.163-1.07h-3.834c-5.617 0-7.489 4.012-7.489 13.017 0 9.184 1.872 12.75 7.489 12.75h3.834l10.163-1.07v9.629l-8.915 2.051h-5.082c-13.552 0-19.258-6.062-19.258-23.359 0-17.298 5.706-23.628 19.258-23.628zM390.287 137.17v8.203l-11.77 2.585c-7.935 0-12.036-5.438-12.036-15.514v-20.238h-5.616v-10.877h5.795V90.273l11.59-1.605v12.66h11.502v10.877H378.25v15.067c0 8.024 1.694 9.896 6.598 9.896h5.439zM410.617 80.823v14.176H397.6V83.586l13.017-2.763zm-.625 20.506v46.362h-11.769v-46.362h11.769zM419.623 124.51c0-18.723 7.399-24.162 19.971-24.162 12.66 0 20.061 5.438 20.061 24.162 0 18.812-7.4 23.805-20.061 23.805-12.572-.001-19.971-4.993-19.971-23.805zm28.263 0c0-10.075-3.655-13.552-8.292-13.552-4.636 0-8.202 3.478-8.202 13.552 0 9.808 3.566 13.195 8.202 13.195s8.292-3.388 8.292-13.195zM505.039 118.358v29.333h-11.77v-29.333c0-4.458-1.961-6.509-5.171-6.509l-7.757.803v35.039h-11.769v-46.362h10.967l.445 1.694 9.361-2.051c11.325 0 15.694 7.044 15.694 17.386zM229.523 212.696h-3.656v22.735l-6.687 1.427h-15.959c-13.374 0-18.812-4.19-18.812-16.673 0-6.241 1.962-10.521 5.35-13.284-2.051-2.496-3.21-6.151-3.21-11.323 0-11.857 5.35-17.118 14.89-17.118h9.094l6.509 1.338v9.45h-14.265c-2.942 0-4.369 2.586-4.369 6.241 0 4.102 1.783 6.419 3.923 6.419h3.478v10.788h-4.28c-3.031 0-5.26 3.389-5.26 6.776 0 4.102 2.496 6.598 6.954 6.598h11.056v-13.374h-3.655v-10.788h18.901v10.788zM277.405 178.192h11.947l8.916 2.051v10.075l-10.164-1.338h-6.687c-7.133 0-10.075 4.993-10.075 18.724 0 13.819 2.942 18.634 10.075 18.634h6.687l10.164-1.07v9.808l-8.916 2.051h-11.947c-11.145 0-17.92-8.381-17.92-29.422s6.776-29.513 17.92-29.513zM307.454 236.858v-64.461l11.769-2.407v66.868h-11.769zM364.783 205.742v31.116h-22.557c-9.985 0-14.8-4.904-14.8-13.998 0-9.272 4.814-14.443 14.8-14.443h5.617l5.171 1.07v-3.478c0-2.675-1.783-4.903-5.528-4.903h-5.171l-10.966 1.069v-9.629l10.342-2.229h9.272c7.223.001 13.82 7.044 13.82 15.425zm-22.468 20.328h10.699v-6.865h-10.699c-1.783 0-3.12 1.961-3.12 3.655 0 1.605 1.516 3.21 3.12 3.21zM394.653 200.66h-5.082c-4.102 0-5.527 1.338-5.527 3.21 0 2.407.892 3.21 5.527 3.655 14.265 1.516 18.277 4.726 18.277 15.781 0 10.698-3.745 13.819-18.188 13.819h-7.578l-8.916-2.051v-9.629l10.164 1.069h6.241c5.706 0 6.954-.98 6.954-3.031 0-2.229-1.516-3.388-6.954-4.101-12.66-1.516-16.851-5.261-16.851-14.979 0-10.164 4.992-14.354 16.851-14.354h6.419l9.629 2.14v9.54l-10.966-1.069zM436.828 200.66h-5.082c-4.102 0-5.527 1.338-5.527 3.21 0 2.407.892 3.21 5.527 3.655 14.265 1.516 18.277 4.726 18.277 15.781 0 10.698-3.745 13.819-18.188 13.819h-7.578l-8.916-2.051v-9.629l10.164 1.069h6.241c5.706 0 6.954-.98 6.954-3.031 0-2.229-1.516-3.388-6.954-4.101-12.66-1.516-16.851-5.261-16.851-14.979 0-10.164 4.993-14.354 16.851-14.354h6.419l9.629 2.14v9.54l-10.966-1.069z\"></path>\n    <g>\n        <path d=\"M0 0h13.429v147.72H0z\"></path>\n        <path d=\"M0 0h147.72v13.429H0zM0 40.287h147.72v13.429H0zM26.858 107.433h13.43v40.287h-13.43z\"></path>\n        <path d=\"M26.858 107.433h53.717v13.43H26.858zM94.004 67.146h13.429v80.574H94.004z\"></path>\n        <path d=\"M94.004 67.146h53.716v13.429H94.004zM94.004 134.291h53.716v13.429H94.004zM26.858 67.146h13.43v26.858h-13.43z\"></path>\n        <path d=\"M26.858 67.146h53.717v13.429H26.858z\"></path>\n    </g>\n  </g>\n</svg>"
+
+/***/ }),
+
+/***/ 107:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.DomIf = undefined;
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _polymerElement = __webpack_require__(15);
+
+var _templatize = __webpack_require__(92);
+
+var _debounce = __webpack_require__(17);
+
+var _flush = __webpack_require__(94);
+
+var _async = __webpack_require__(8);
+
+var _path = __webpack_require__(16);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+ * The `<dom-if>` element will stamp a light-dom `<template>` child when
+ * the `if` property becomes truthy, and the template can use Polymer
+ * data-binding and declarative event features when used in the context of
+ * a Polymer element's template.
+ *
+ * When `if` becomes falsey, the stamped content is hidden but not
+ * removed from dom. When `if` subsequently becomes truthy again, the content
+ * is simply re-shown. This approach is used due to its favorable performance
+ * characteristics: the expense of creating template content is paid only
+ * once and lazily.
+ *
+ * Set the `restamp` property to true to force the stamped content to be
+ * created / destroyed when the `if` condition changes.
+ *
+ * @customElement
+ * @polymer
+ * @extends Polymer.Element
+ * @memberof Polymer
+ * @summary Custom element that conditionally stamps and hides or removes
+ *   template content based on a boolean flag.
+ */
+var DomIf = function (_Element) {
+  _inherits(DomIf, _Element);
+
+  _createClass(DomIf, null, [{
+    key: 'is',
+
+
+    // Not needed to find template; can be removed once the analyzer
+    // can find the tag name from customElements.define call
+    get: function get() {
+      return 'dom-if';
+    }
+  }, {
+    key: 'template',
+    get: function get() {
+      return null;
+    }
+  }, {
+    key: 'properties',
+    get: function get() {
+
+      return {
+
+        /**
+         * Fired whenever DOM is added or removed/hidden by this template (by
+         * default, rendering occurs lazily).  To force immediate rendering, call
+         * `render`.
+         *
+         * @event dom-change
+         */
+
+        /**
+         * A boolean indicating whether this template should stamp.
+         */
+        if: {
+          type: Boolean,
+          observer: '__debounceRender'
+        },
+
+        /**
+         * When true, elements will be removed from DOM and discarded when `if`
+         * becomes false and re-created and added back to the DOM when `if`
+         * becomes true.  By default, stamped elements will be hidden but left
+         * in the DOM when `if` becomes false, which is generally results
+         * in better performance.
+         */
+        restamp: {
+          type: Boolean,
+          observer: '__debounceRender'
+        }
+
+      };
+    }
+  }]);
+
+  function DomIf() {
+    _classCallCheck(this, DomIf);
+
+    var _this = _possibleConstructorReturn(this, (DomIf.__proto__ || Object.getPrototypeOf(DomIf)).call(this));
+
+    _this.__renderDebouncer = null;
+    _this.__invalidProps = null;
+    _this.__instance = null;
+    _this._lastIf = false;
+    _this.__ctor = null;
+    return _this;
+  }
+
+  _createClass(DomIf, [{
+    key: '__debounceRender',
+    value: function __debounceRender() {
+      var _this2 = this;
+
+      // Render is async for 2 reasons:
+      // 1. To eliminate dom creation trashing if user code thrashes `if` in the
+      //    same turn. This was more common in 1.x where a compound computed
+      //    property could result in the result changing multiple times, but is
+      //    mitigated to a large extent by batched property processing in 2.x.
+      // 2. To avoid double object propagation when a bag including values bound
+      //    to the `if` property as well as one or more hostProps could enqueue
+      //    the <dom-if> to flush before the <template>'s host property
+      //    forwarding. In that scenario creating an instance would result in
+      //    the host props being set once, and then the enqueued changes on the
+      //    template would set properties a second time, potentially causing an
+      //    object to be set to an instance more than once.  Creating the
+      //    instance async from flushing data ensures this doesn't happen. If
+      //    we wanted a sync option in the future, simply having <dom-if> flush
+      //    (or clear) its template's pending host properties before creating
+      //    the instance would also avoid the problem.
+      this.__renderDebouncer = _debounce.Debouncer.debounce(this.__renderDebouncer, _async.microTask, function () {
+        return _this2.__render();
+      });
+      (0, _flush.enqueueDebouncer)(this.__renderDebouncer);
+    }
+  }, {
+    key: 'disconnectedCallback',
+    value: function disconnectedCallback() {
+      _get(DomIf.prototype.__proto__ || Object.getPrototypeOf(DomIf.prototype), 'disconnectedCallback', this).call(this);
+      if (!this.parentNode || this.parentNode.nodeType == Node.DOCUMENT_FRAGMENT_NODE && !this.parentNode.host) {
+        this.__teardownInstance();
+      }
+    }
+  }, {
+    key: 'connectedCallback',
+    value: function connectedCallback() {
+      _get(DomIf.prototype.__proto__ || Object.getPrototypeOf(DomIf.prototype), 'connectedCallback', this).call(this);
+      if (this.if) {
+        this.__debounceRender();
+      }
+    }
+
+    /**
+     * Forces the element to render its content. Normally rendering is
+     * asynchronous to a provoking change. This is done for efficiency so
+     * that multiple changes trigger only a single render. The render method
+     * should be called if, for example, template rendering is required to
+     * validate application state.
+     */
+
+  }, {
+    key: 'render',
+    value: function render() {
+      (0, _flush.flush)();
+    }
+  }, {
+    key: '__render',
+    value: function __render() {
+      if (this.if) {
+        if (!this.__ensureInstance()) {
+          // No template found yet
+          return;
+        }
+        this._showHideChildren();
+      } else if (this.restamp) {
+        this.__teardownInstance();
+      }
+      if (!this.restamp && this.__instance) {
+        this._showHideChildren();
+      }
+      if (this.if != this._lastIf) {
+        this.dispatchEvent(new CustomEvent('dom-change', {
+          bubbles: true,
+          composed: true
+        }));
+        this._lastIf = this.if;
+      }
+    }
+  }, {
+    key: '__ensureInstance',
+    value: function __ensureInstance() {
+      var _this3 = this;
+
+      var parentNode = this.parentNode;
+      // Guard against element being detached while render was queued
+      if (parentNode) {
+        if (!this.__ctor) {
+          var template = this.querySelector('template');
+          if (!template) {
+            // Wait until childList changes and template should be there by then
+            var observer = new MutationObserver(function () {
+              if (_this3.querySelector('template')) {
+                observer.disconnect();
+                _this3.__render();
+              } else {
+                throw new Error('dom-if requires a <template> child');
+              }
+            });
+            observer.observe(this, { childList: true });
+            return false;
+          }
+          this.__ctor = _templatize.Templatize.templatize(template, this, {
+            // dom-if templatizer instances require `mutable: true`, as
+            // `__syncHostProperties` relies on that behavior to sync objects
+            mutableData: true,
+            /**
+             * @param {string} prop Property to forward
+             * @param {*} value Value of property
+             * @this {this}
+             */
+            forwardHostProp: function forwardHostProp(prop, value) {
+              if (this.__instance) {
+                if (this.if) {
+                  this.__instance.forwardHostProp(prop, value);
+                } else {
+                  // If we have an instance but are squelching host property
+                  // forwarding due to if being false, note the invalidated
+                  // properties so `__syncHostProperties` can sync them the next
+                  // time `if` becomes true
+                  this.__invalidProps = this.__invalidProps || Object.create(null);
+                  this.__invalidProps[(0, _path.root)(prop)] = true;
+                }
+              }
+            }
+          });
+        }
+        if (!this.__instance) {
+          this.__instance = new this.__ctor();
+          parentNode.insertBefore(this.__instance.root, this);
+        } else {
+          this.__syncHostProperties();
+          var c$ = this.__instance.children;
+          if (c$ && c$.length) {
+            // Detect case where dom-if was re-attached in new position
+            var lastChild = this.previousSibling;
+            if (lastChild !== c$[c$.length - 1]) {
+              for (var i = 0, n; i < c$.length && (n = c$[i]); i++) {
+                parentNode.insertBefore(n, this);
+              }
+            }
+          }
+        }
+      }
+      return true;
+    }
+  }, {
+    key: '__syncHostProperties',
+    value: function __syncHostProperties() {
+      var props = this.__invalidProps;
+      if (props) {
+        for (var prop in props) {
+          this.__instance._setPendingProperty(prop, this.__dataHost[prop]);
+        }
+        this.__invalidProps = null;
+        this.__instance._flushProperties();
+      }
+    }
+  }, {
+    key: '__teardownInstance',
+    value: function __teardownInstance() {
+      if (this.__instance) {
+        var c$ = this.__instance.children;
+        if (c$ && c$.length) {
+          // use first child parent, for case when dom-if may have been detached
+          var parent = c$[0].parentNode;
+          for (var i = 0, n; i < c$.length && (n = c$[i]); i++) {
+            parent.removeChild(n);
+          }
+        }
+        this.__instance = null;
+        this.__invalidProps = null;
+      }
+    }
+  }, {
+    key: '_showHideChildren',
+    value: function _showHideChildren() {
+      var hidden = this.__hideTemplateChildren__ || !this.if;
+      if (this.__instance) {
+        this.__instance._showHideChildren(hidden);
+      }
+    }
+  }]);
+
+  return DomIf;
+}(_polymerElement.Element);
+
+customElements.define(DomIf.is, DomIf);
+
+exports.DomIf = DomIf;
+
+/***/ }),
+
+/***/ 111:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(112);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+
+/***/ 112:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(86)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "* {\n  font-family: 'Inovato', sans-serif; }\n\n:host {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  grid-template-rows: auto;\n  min-height: 100vh;\n  background: #3a3a3a;\n  color: #efefef;\n  grid-template-areas: \"sidebar main main main\"; }\n\n.main {\n  grid-area: main;\n  display: block;\n  min-height: 100vh;\n  padding: 20px; }\n\nside-bar {\n  grid-area: sidebar;\n  min-height: 100vh; }\n\na {\n  color: #fff;\n  text-decoration: none;\n  border-bottom: 1px solid #fff; }\n\n.button {\n  display: inline-block;\n  margin: 1rem auto;\n  padding: 1rem 1.5rem;\n  border: 1px solid #fff; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 113:
+/***/ (function(module, exports) {
+
+module.exports = "<side-bar with-logo></side-bar>\n\n<section class=\"main\">\n\n  <header class=\"header\">\n    <h1>\n      Speakers\n    </h1>\n  </header>\n\n  <template is=\"dom-repeat\" items=\"[[speakersList]]\">\n    <speaker-list speakers=\"[[item]]\"></speaker-list>\n  </template>\n\n</section>\n\n\n"
+
+/***/ }),
+
+/***/ 114:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _polymerElement = __webpack_require__(15);
+
+var _gestureEventListeners = __webpack_require__(85);
+
+var _window = __webpack_require__(7);
+
+var _style = __webpack_require__(115);
+
+var _style2 = _interopRequireDefault(_style);
+
+var _template = __webpack_require__(117);
+
+var _template2 = _interopRequireDefault(_template);
+
+__webpack_require__(118);
+
+__webpack_require__(91);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Component = function (_GestureEventListener) {
+  _inherits(Component, _GestureEventListener);
+
+  function Component() {
+    _classCallCheck(this, Component);
+
+    return _possibleConstructorReturn(this, (Component.__proto__ || Object.getPrototypeOf(Component)).apply(this, arguments));
+  }
+
+  _createClass(Component, null, [{
+    key: 'is',
+    get: function get() {
+      return 'speaker-list';
+    }
+  }, {
+    key: 'properties',
+    get: function get() {
+      return {
+        speakers: {
+          type: Object
+        }
+      };
+    }
+  }, {
+    key: 'template',
+    get: function get() {
+      return '\n      <style>\n        ' + _style2.default + '\n      </style>\n      ' + _template2.default + '\n    ';
+    }
+  }]);
+
+  return Component;
+}((0, _gestureEventListeners.GestureEventListeners)(_polymerElement.Element));
+
+!_window.customElements.get(Component.is) ? _window.customElements.define(Component.is, Component) : console.warn(Component.is + ' is already defined');
+
+/***/ }),
+
+/***/ 115:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(116);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+
+/***/ 116:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(86)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "* {\n  font-family: 'Inovato', sans-serif; }\n\n:host {\n  display: block; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 117:
+/***/ (function(module, exports) {
+
+module.exports = "<h2>\n  [[speakers.title]]\n</h2>\n\n<template is=\"dom-repeat\" items=\"[[speakers.list]]\">\n  <speaker-item speaker=\"[[item]]\"></speaker-item>\n</template>"
+
+/***/ }),
+
+/***/ 118:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _polymerElement = __webpack_require__(15);
+
+var _gestureEventListeners = __webpack_require__(85);
+
+var _window = __webpack_require__(7);
+
+var _style = __webpack_require__(119);
+
+var _style2 = _interopRequireDefault(_style);
+
+var _template = __webpack_require__(121);
+
+var _template2 = _interopRequireDefault(_template);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Component = function (_GestureEventListener) {
+  _inherits(Component, _GestureEventListener);
+
+  function Component() {
+    _classCallCheck(this, Component);
+
+    return _possibleConstructorReturn(this, (Component.__proto__ || Object.getPrototypeOf(Component)).apply(this, arguments));
+  }
+
+  _createClass(Component, null, [{
+    key: 'is',
+    get: function get() {
+      return 'speaker-item';
+    }
+  }, {
+    key: 'properties',
+    get: function get() {
+      return {
+        speaker: {
+          type: Object
+        }
+      };
+    }
+  }, {
+    key: 'template',
+    get: function get() {
+      return '\n      <style>\n        ' + _style2.default + '\n      </style>\n      ' + _template2.default + '\n    ';
+    }
+  }]);
+
+  return Component;
+}((0, _gestureEventListeners.GestureEventListeners)(_polymerElement.Element));
+
+!_window.customElements.get(Component.is) ? _window.customElements.define(Component.is, Component) : console.warn(Component.is + ' is already defined');
+
+/***/ }),
+
+/***/ 119:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(120);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+
+/***/ 120:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(86)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "* {\n  font-family: 'Inovato', sans-serif; }\n\n:host {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  grid-template-rows: auto;\n  background: #3a3a3a;\n  color: #efefef;\n  grid-template-areas: \"avatar main main main\"; }\n\n.speaker {\n  grid-area: main;\n  display: block;\n  padding: 0 20px; }\n\n.avatar {\n  grid-area: avatar; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 121:
+/***/ (function(module, exports) {
+
+module.exports = "<img class=\"avatar\" src=\"[[speaker.image]]\">\n\n<section class=\"speaker\">\n  <h3 class=\"speaker-name\">\n    [[speaker.name]]\n  </h3>\n  <p class=\"speaker-position\">\n    [[speaker.position]]\n  </p>\n  <p class=\"speaker-bio\">\n    [[speaker.bio]]\n  </p>\n  <p class=\"speaker-talk\">\n    [[speaker.talk]]\n  </p>\n</section>"
+
+/***/ }),
+
+/***/ 88:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _polymerElement = __webpack_require__(15);
+
+var _gestureEventListeners = __webpack_require__(85);
+
+var _window = __webpack_require__(7);
+
+var _style = __webpack_require__(111);
+
+var _style2 = _interopRequireDefault(_style);
+
+var _template = __webpack_require__(113);
+
+var _template2 = _interopRequireDefault(_template);
+
+__webpack_require__(96);
+
+__webpack_require__(114);
+
+__webpack_require__(91);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Component = function (_GestureEventListener) {
+  _inherits(Component, _GestureEventListener);
+
+  function Component() {
+    _classCallCheck(this, Component);
+
+    return _possibleConstructorReturn(this, (Component.__proto__ || Object.getPrototypeOf(Component)).apply(this, arguments));
+  }
+
+  _createClass(Component, null, [{
+    key: 'is',
+    get: function get() {
+      return 'page-speakers';
+    }
+  }, {
+    key: 'properties',
+    get: function get() {
+      return {
+        speakersList: {
+          type: Array,
+          value: [{
+            title: 'Talks',
+            list: [{
+              name: 'Russell Vergara',
+              image: 'http://2017.formfunctionclass.com/img/speakers/russellv.png',
+              position: 'Founder, Vgrafiks',
+              bio: 'He sold his first PUTO when he was six. He worked as a waiter for Burgoo, and as an In-room dining assistant at Sheraton Park Hotel. In London. He’s an only child, so he’s kinda spoiled. He was 80 pounds lighter, nung hindi pa uso ang extra rice. He studied 7 courses 7 different schools. But he never graduated. He’s not very bright kasi. But he’s very madiskarte. He’s Russell. The Big Daddy of Vigi.',
+              talk: 'Branding and Design Systems'
+            }]
+          }, {
+            title: 'Workshops',
+            list: [{
+              name: 'Russell Vergara',
+              image: 'http://2017.formfunctionclass.com/img/speakers/russellv.png',
+              position: 'Founder, Vgrafiks',
+              bio: 'He sold his first PUTO when he was six. He worked as a waiter for Burgoo, and as an In-room dining assistant at Sheraton Park Hotel. In London. He’s an only child, so he’s kinda spoiled. He was 80 pounds lighter, nung hindi pa uso ang extra rice. He studied 7 courses 7 different schools. But he never graduated. He’s not very bright kasi. But he’s very madiskarte. He’s Russell. The Big Daddy of Vigi.',
+              talk: 'Branding and Design Systems'
+            }]
+          }]
+        }
+      };
+    }
+  }, {
+    key: 'template',
+    get: function get() {
+      return '\n      <style>\n        ' + _style2.default + '\n      </style>\n      ' + _template2.default + '\n    ';
+    }
+  }]);
+
+  return Component;
+}((0, _gestureEventListeners.GestureEventListeners)(_polymerElement.Element));
+
+!_window.customElements.get(Component.is) ? _window.customElements.define(Component.is, Component) : console.warn(Component.is + ' is already defined');
+
+/***/ }),
+
+/***/ 91:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -405,17 +842,17 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _polymerElement = __webpack_require__(15);
 
-var _templatize = __webpack_require__(111);
+var _templatize = __webpack_require__(92);
 
-var _debounce = __webpack_require__(18);
+var _debounce = __webpack_require__(17);
 
-var _flush = __webpack_require__(112);
+var _flush = __webpack_require__(94);
 
-var _mutableData = __webpack_require__(101);
+var _mutableData = __webpack_require__(93);
 
-var _path = __webpack_require__(17);
+var _path = __webpack_require__(16);
 
-var _async = __webpack_require__(9);
+var _async = __webpack_require__(8);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -1176,7 +1613,7 @@ exports.DomRepeat = DomRepeat;
 
 /***/ }),
 
-/***/ 111:
+/***/ 92:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1193,9 +1630,9 @@ var _get = function get(object, property, receiver) { if (object === null) objec
 
 __webpack_require__(0);
 
-var _propertyEffects = __webpack_require__(37);
+var _propertyEffects = __webpack_require__(31);
 
-var _mutableData = __webpack_require__(101);
+var _mutableData = __webpack_require__(93);
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
@@ -1768,7 +2205,167 @@ exports.TemplateInstanceBase = TemplateInstanceBase;
 
 /***/ }),
 
-/***/ 112:
+/***/ 93:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.OptionalMutableData = exports.MutableData = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _mixin = __webpack_require__(4);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// Common implementation for mixin & behavior
+function mutablePropertyChange(inst, property, value, old, mutableData) {
+  var isObject = void 0;
+  if (mutableData) {
+    isObject = (typeof value === 'undefined' ? 'undefined' : _typeof(value)) === 'object' && value !== null;
+    // Pull `old` for Objects from temp cache, but treat `null` as a primitive
+    if (isObject) {
+      old = inst.__dataTemp[property];
+    }
+  }
+  // Strict equality check, but return false for NaN===NaN
+  var shouldChange = old !== value && (old === old || value === value);
+  // Objects are stored in temporary cache (cleared at end of
+  // turn), which is used for dirty-checking
+  if (isObject && shouldChange) {
+    inst.__dataTemp[property] = value;
+  }
+  return shouldChange;
+}
+
+var MutableData = exports.MutableData = (0, _mixin.dedupingMixin)(function (superClass) {
+
+  /**
+   * @polymer
+   * @mixinClass
+   * @implements {Polymer_MutableData}
+   */
+  var MutableData = function (_superClass) {
+    _inherits(MutableData, _superClass);
+
+    function MutableData() {
+      _classCallCheck(this, MutableData);
+
+      return _possibleConstructorReturn(this, (MutableData.__proto__ || Object.getPrototypeOf(MutableData)).apply(this, arguments));
+    }
+
+    _createClass(MutableData, [{
+      key: '_shouldPropertyChange',
+
+      /**
+       * Overrides `Polymer.PropertyEffects` to provide option for skipping
+       * strict equality checking for Objects and Arrays.
+       *
+       * This method pulls the value to dirty check against from the `__dataTemp`
+       * cache (rather than the normal `__data` cache) for Objects.  Since the temp
+       * cache is cleared at the end of a turn, this implementation allows
+       * side-effects of deep object changes to be processed by re-setting the
+       * same object (using the temp cache as an in-turn backstop to prevent
+       * cycles due to 2-way notification).
+       *
+       * @param {string} property Property name
+       * @param {*} value New property value
+       * @param {*} old Previous property value
+       * @return {boolean} Whether the property should be considered a change
+       * @protected
+       */
+      value: function _shouldPropertyChange(property, value, old) {
+        return mutablePropertyChange(this, property, value, old, true);
+      }
+    }]);
+
+    return MutableData;
+  }(superClass);
+  /** @type {boolean} */
+
+
+  MutableData.prototype.mutableData = false;
+
+  return MutableData;
+});
+
+var OptionalMutableData = exports.OptionalMutableData = (0, _mixin.dedupingMixin)(function (superClass) {
+
+  /**
+   * @mixinClass
+   * @polymer
+   * @implements {Polymer_OptionalMutableData}
+   */
+  var OptionalMutableData = function (_superClass2) {
+    _inherits(OptionalMutableData, _superClass2);
+
+    function OptionalMutableData() {
+      _classCallCheck(this, OptionalMutableData);
+
+      return _possibleConstructorReturn(this, (OptionalMutableData.__proto__ || Object.getPrototypeOf(OptionalMutableData)).apply(this, arguments));
+    }
+
+    _createClass(OptionalMutableData, [{
+      key: '_shouldPropertyChange',
+
+
+      /**
+       * Overrides `Polymer.PropertyEffects` to provide option for skipping
+       * strict equality checking for Objects and Arrays.
+       *
+       * When `this.mutableData` is true on this instance, this method
+       * pulls the value to dirty check against from the `__dataTemp` cache
+       * (rather than the normal `__data` cache) for Objects.  Since the temp
+       * cache is cleared at the end of a turn, this implementation allows
+       * side-effects of deep object changes to be processed by re-setting the
+       * same object (using the temp cache as an in-turn backstop to prevent
+       * cycles due to 2-way notification).
+       *
+       * @param {string} property Property name
+       * @param {*} value New property value
+       * @param {*} old Previous property value
+       * @return {boolean} Whether the property should be considered a change
+       * @protected
+       */
+      value: function _shouldPropertyChange(property, value, old) {
+        return mutablePropertyChange(this, property, value, old, this.mutableData);
+      }
+    }], [{
+      key: 'properties',
+      get: function get() {
+        return {
+          /**
+           * Instance-level flag for configuring the dirty-checking strategy
+           * for this element.  When true, Objects and Arrays will skip dirty
+           * checking, otherwise strict equality checking will be used.
+           */
+          mutableData: Boolean
+        };
+      }
+    }]);
+
+    return OptionalMutableData;
+  }(superClass);
+
+  return OptionalMutableData;
+});
+
+// Export for use by legacy behavior
+MutableData._mutablePropertyChange = mutablePropertyChange;
+
+/***/ }),
+
+/***/ 94:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1815,7 +2412,7 @@ var flush = exports.flush = function flush() {
 
 /***/ }),
 
-/***/ 113:
+/***/ 95:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1829,11 +2426,11 @@ var _gestureEventListeners = __webpack_require__(85);
 
 var _window = __webpack_require__(7);
 
-var _style = __webpack_require__(114);
+var _style = __webpack_require__(104);
 
 var _style2 = _interopRequireDefault(_style);
 
-var _template = __webpack_require__(116);
+var _template = __webpack_require__(106);
 
 var _template2 = _interopRequireDefault(_template);
 
@@ -1873,44 +2470,7 @@ var Component = function (_GestureEventListener) {
 
 /***/ }),
 
-/***/ 114:
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(115);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ 115:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(91)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ":host {\n  display: inline; }\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 116:
-/***/ (function(module, exports) {
-
-module.exports = "<svg class=\"logo\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 505.039 237.126\" width=\"400\">\n  <g fill=\"#EFEFEF\">\n    <path d=\"M198.318 11.002v12.571h20.685V34.54h-20.685v23.983H186.46V.036h38.605v10.966h-26.747zM227.654 35.342c0-18.723 7.399-24.162 19.971-24.162 12.66 0 20.061 5.438 20.061 24.162 0 18.812-7.4 23.805-20.061 23.805-12.571 0-19.971-4.993-19.971-23.805zm28.263 0c0-10.075-3.655-13.552-8.292-13.552-4.636 0-8.202 3.478-8.202 13.552 0 9.807 3.566 13.195 8.202 13.195 4.637 0 8.292-3.388 8.292-13.195zM306.205 12.25l-3.389 11.501h-5.527l-8.916 3.388v31.383h-11.769V12.161h10.075l1.604 5.706 4.279-2.764c3.299-2.14 7.044-3.299 10.343-3.299 1.16.001 2.765.179 3.3.446zM370.668 29.19v29.333h-11.769V29.19c0-3.566-1.783-6.509-6.509-6.509h-5.26v35.841h-11.769V29.19c0-3.566-1.783-6.509-6.509-6.509h-5.261v35.841h-11.769V12.161h10.967l.445 1.605 8.916-1.961c4.102 0 8.916.802 11.59 2.585l11.947-2.585c10.434 0 14.981 5.26 14.981 17.385zM198.318 100.17v12.571h20.685v10.966h-20.685v23.983H186.46V89.203h38.605v10.967h-26.747zM266.438 101.329v46.362h-10.967l-.445-1.693-9.361 2.05c-11.323 0-15.691-7.043-15.691-17.385V101.33h11.769v29.333c0 4.457 1.961 6.508 5.171 6.508l7.757-.802v-35.04h11.767zM313.249 118.358v29.333h-11.77v-29.333c0-4.458-1.961-6.509-5.171-6.509l-7.757.803v35.039h-11.769v-46.362h10.967l.445 1.694 9.361-2.051c11.325 0 15.694 7.044 15.694 17.386zM340.712 100.972h5.082l8.915 2.051v9.629l-10.163-1.07h-3.834c-5.617 0-7.489 4.012-7.489 13.017 0 9.184 1.872 12.75 7.489 12.75h3.834l10.163-1.07v9.629l-8.915 2.051h-5.082c-13.552 0-19.258-6.062-19.258-23.359 0-17.298 5.706-23.628 19.258-23.628zM390.287 137.17v8.203l-11.77 2.585c-7.935 0-12.036-5.438-12.036-15.514v-20.238h-5.616v-10.877h5.795V90.273l11.59-1.605v12.66h11.502v10.877H378.25v15.067c0 8.024 1.694 9.896 6.598 9.896h5.439zM410.617 80.823v14.176H397.6V83.586l13.017-2.763zm-.625 20.506v46.362h-11.769v-46.362h11.769zM419.623 124.51c0-18.723 7.399-24.162 19.971-24.162 12.66 0 20.061 5.438 20.061 24.162 0 18.812-7.4 23.805-20.061 23.805-12.572-.001-19.971-4.993-19.971-23.805zm28.263 0c0-10.075-3.655-13.552-8.292-13.552-4.636 0-8.202 3.478-8.202 13.552 0 9.808 3.566 13.195 8.202 13.195s8.292-3.388 8.292-13.195zM505.039 118.358v29.333h-11.77v-29.333c0-4.458-1.961-6.509-5.171-6.509l-7.757.803v35.039h-11.769v-46.362h10.967l.445 1.694 9.361-2.051c11.325 0 15.694 7.044 15.694 17.386zM229.523 212.696h-3.656v22.735l-6.687 1.427h-15.959c-13.374 0-18.812-4.19-18.812-16.673 0-6.241 1.962-10.521 5.35-13.284-2.051-2.496-3.21-6.151-3.21-11.323 0-11.857 5.35-17.118 14.89-17.118h9.094l6.509 1.338v9.45h-14.265c-2.942 0-4.369 2.586-4.369 6.241 0 4.102 1.783 6.419 3.923 6.419h3.478v10.788h-4.28c-3.031 0-5.26 3.389-5.26 6.776 0 4.102 2.496 6.598 6.954 6.598h11.056v-13.374h-3.655v-10.788h18.901v10.788zM277.405 178.192h11.947l8.916 2.051v10.075l-10.164-1.338h-6.687c-7.133 0-10.075 4.993-10.075 18.724 0 13.819 2.942 18.634 10.075 18.634h6.687l10.164-1.07v9.808l-8.916 2.051h-11.947c-11.145 0-17.92-8.381-17.92-29.422s6.776-29.513 17.92-29.513zM307.454 236.858v-64.461l11.769-2.407v66.868h-11.769zM364.783 205.742v31.116h-22.557c-9.985 0-14.8-4.904-14.8-13.998 0-9.272 4.814-14.443 14.8-14.443h5.617l5.171 1.07v-3.478c0-2.675-1.783-4.903-5.528-4.903h-5.171l-10.966 1.069v-9.629l10.342-2.229h9.272c7.223.001 13.82 7.044 13.82 15.425zm-22.468 20.328h10.699v-6.865h-10.699c-1.783 0-3.12 1.961-3.12 3.655 0 1.605 1.516 3.21 3.12 3.21zM394.653 200.66h-5.082c-4.102 0-5.527 1.338-5.527 3.21 0 2.407.892 3.21 5.527 3.655 14.265 1.516 18.277 4.726 18.277 15.781 0 10.698-3.745 13.819-18.188 13.819h-7.578l-8.916-2.051v-9.629l10.164 1.069h6.241c5.706 0 6.954-.98 6.954-3.031 0-2.229-1.516-3.388-6.954-4.101-12.66-1.516-16.851-5.261-16.851-14.979 0-10.164 4.992-14.354 16.851-14.354h6.419l9.629 2.14v9.54l-10.966-1.069zM436.828 200.66h-5.082c-4.102 0-5.527 1.338-5.527 3.21 0 2.407.892 3.21 5.527 3.655 14.265 1.516 18.277 4.726 18.277 15.781 0 10.698-3.745 13.819-18.188 13.819h-7.578l-8.916-2.051v-9.629l10.164 1.069h6.241c5.706 0 6.954-.98 6.954-3.031 0-2.229-1.516-3.388-6.954-4.101-12.66-1.516-16.851-5.261-16.851-14.979 0-10.164 4.993-14.354 16.851-14.354h6.419l9.629 2.14v9.54l-10.966-1.069z\"></path>\n    <g>\n        <path d=\"M0 0h13.429v147.72H0z\"></path>\n        <path d=\"M0 0h147.72v13.429H0zM0 40.287h147.72v13.429H0zM26.858 107.433h13.43v40.287h-13.43z\"></path>\n        <path d=\"M26.858 107.433h53.717v13.43H26.858zM94.004 67.146h13.429v80.574H94.004z\"></path>\n        <path d=\"M94.004 67.146h53.716v13.429H94.004zM94.004 134.291h53.716v13.429H94.004zM26.858 67.146h13.43v26.858h-13.43z\"></path>\n        <path d=\"M26.858 67.146h53.717v13.429H26.858z\"></path>\n    </g>\n  </g>\n</svg>"
-
-/***/ }),
-
-/***/ 86:
+/***/ 96:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1924,17 +2484,19 @@ var _gestureEventListeners = __webpack_require__(85);
 
 var _window = __webpack_require__(7);
 
-var _style = __webpack_require__(89);
+var _style = __webpack_require__(97);
 
 var _style2 = _interopRequireDefault(_style);
 
-var _template = __webpack_require__(92);
+var _template = __webpack_require__(99);
 
 var _template2 = _interopRequireDefault(_template);
 
-__webpack_require__(102);
+__webpack_require__(100);
 
-__webpack_require__(113);
+__webpack_require__(95);
+
+__webpack_require__(107);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1956,7 +2518,17 @@ var Component = function (_GestureEventListener) {
   _createClass(Component, null, [{
     key: 'is',
     get: function get() {
-      return 'page-home';
+      return 'side-bar';
+    }
+  }, {
+    key: 'properties',
+    get: function get() {
+      return {
+        withLogo: {
+          type: Boolean,
+          value: false
+        }
+      };
     }
   }, {
     key: 'template',
@@ -1972,11 +2544,11 @@ var Component = function (_GestureEventListener) {
 
 /***/ }),
 
-/***/ 89:
+/***/ 97:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(90);
+        var result = __webpack_require__(98);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -1987,27 +2559,27 @@ var Component = function (_GestureEventListener) {
 
 /***/ }),
 
-/***/ 90:
+/***/ 98:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(91)(undefined);
+exports = module.exports = __webpack_require__(86)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "a {\n  color: #fff;\n  text-decoration: none;\n  border-bottom: 1px solid #fff; }\n\n.button {\n  display: inline-block;\n  margin: 1rem auto;\n  padding: 1rem 1.5rem;\n  border: 1px solid #fff; }\n\n:host {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  grid-template-rows: auto;\n  grid-template-areas: \"main main main sidebar\";\n  min-height: 100vh;\n  background: #3a3a3a;\n  font-family: 'Inovato', sans-serif;\n  color: #efefef; }\n\n.main {\n  grid-area: main;\n  display: flex;\n  align-items: center;\n  min-height: 100vh; }\n  .main .container {\n    text-align: center;\n    width: 100%; }\n\nside-bar {\n  grid-area: sidebar;\n  min-height: 100vh; }\n\nffc-logo {\n  margin-bottom: 3rem; }\n\n.info {\n  font-size: 1.5rem;\n  margin-bottom: 0; }\n", ""]);
+exports.push([module.i, ":host {\n  display: flex;\n  align-items: center;\n  min-height: 100vh; }\n\nffc-logo {\n  width: 200px;\n  margin: 20px; }\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 92:
+/***/ 99:
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"main\">\n  <div class=\"container\">\n    <ffc-logo></ffc-logo>\n\n    <p class=\"info\">\n      Masterclass on <time class=\"date\" itemprop=\"startDate\" datetime=\"2017-08-18\">18&nbsp;August 2018</time><br>\n      <a class=\"button\" href=\"https://formfunctionclass9.eventbrite.com/#tickets\" target=\"_blank\">Register Now</a>\n    </p>\n  </div>\n</section>\n\n<side-bar></side-bar>\n"
+module.exports = "<div>\n  <template is=\"dom-if\" if=\"[[withLogo]]\">\n    <ffc-logo></ffc-logo>\n  </template>\n\n  <nav-list></nav-list>\n</div>\n\n"
 
 /***/ })
 
 });
-//# sourceMappingURL=page-home.fragment.0.js.map
+//# sourceMappingURL=page-speakers.fragment.0.js.map

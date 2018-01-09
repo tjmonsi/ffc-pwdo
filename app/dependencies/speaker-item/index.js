@@ -3,18 +3,14 @@ import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event
 import { customElements } from 'global/window';
 import css from './style.scss';
 import template from './template.html';
-import 'nav-list';
-import 'ffc-logo';
-import '@polymer/polymer/lib/elements/dom-if';
 
 class Component extends GestureEventListeners(Element) {
-  static get is () { return 'side-bar'; }
+  static get is () { return 'speaker-item'; }
 
   static get properties () {
     return {
-      withLogo: {
-        type: Boolean,
-        value: false
+      speaker: {
+        type: Object
       }
     };
   }

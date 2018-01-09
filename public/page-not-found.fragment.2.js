@@ -1,13 +1,43 @@
-webpackJsonp([1],{
+webpackJsonp([2],{
 
-/***/ 100:
+/***/ 125:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(126);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+
+/***/ 126:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(86)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 127:
 /***/ (function(module, exports) {
 
 module.exports = "Not Found Page\n"
 
 /***/ }),
 
-/***/ 88:
+/***/ 90:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21,11 +51,11 @@ var _gestureEventListeners = __webpack_require__(85);
 
 var _window = __webpack_require__(7);
 
-var _style = __webpack_require__(98);
+var _style = __webpack_require__(125);
 
 var _style2 = _interopRequireDefault(_style);
 
-var _template = __webpack_require__(100);
+var _template = __webpack_require__(127);
 
 var _template2 = _interopRequireDefault(_template);
 
@@ -63,37 +93,7 @@ var Component = function (_GestureEventListener) {
 
 !_window.customElements.get(Component.is) ? _window.customElements.define(Component.is, Component) : console.warn(Component.is + ' is already defined');
 
-/***/ }),
-
-/***/ 98:
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(99);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-
-/***/ 99:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(91)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
 /***/ })
 
 });
-//# sourceMappingURL=page-not-found.fragment.1.js.map
+//# sourceMappingURL=page-not-found.fragment.2.js.map

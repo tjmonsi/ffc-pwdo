@@ -22,6 +22,7 @@
   },
   "fragments": {
     "page-home": "page-home",
+    "page-speakers": "page-speakers",
     "page-not-authorized": "page-not-authorized",
     "page-not-found": "page-not-found"
   },
@@ -31,6 +32,9 @@
     "routing": {
       "/": {
         "page": "page-home"
+      },
+      "/speakers": {
+        "page": "page-speakers"
       }
     }
   },

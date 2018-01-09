@@ -29,7 +29,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		3: 0
+/******/ 		4: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -86,7 +86,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"page-home","1":"page-not-found","2":"page-not-authorized"}[chunkId]||chunkId) + ".fragment." + chunkId + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"page-speakers","1":"page-home","2":"page-not-found","3":"page-not-authorized"}[chunkId]||chunkId) + ".fragment." + chunkId + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -142,7 +142,7 @@
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 31);
+/******/ 	return __webpack_require__(__webpack_require__.s = 32);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -315,97 +315,6 @@ module.exports = win;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.pathFromUrl = exports.resolveUrl = exports.resolveCss = undefined;
-
-__webpack_require__(0);
-
-var CSS_URL_RX = /(url\()([^)]*)(\))/g;
-var ABS_URL = /(^\/)|(^#)|(^[\w-\d]*:)/;
-var workingURL = void 0;
-var resolveDoc = void 0;
-/**
- * Resolves the given URL against the provided `baseUri'.
- *
- * @memberof Polymer.ResolveUrl
- * @param {string} url Input URL to resolve
- * @param {?string=} baseURI Base URI to resolve the URL against
- * @return {string} resolved URL
- */
-function resolveUrl(url, baseURI) {
-  if (url && ABS_URL.test(url)) {
-    return url;
-  }
-  // Lazy feature detection.
-  if (workingURL === undefined) {
-    workingURL = false;
-    try {
-      var u = new URL('b', 'http://a');
-      u.pathname = 'c%20d';
-      workingURL = u.href === 'http://a/c%20d';
-    } catch (e) {
-      // silently fail
-    }
-  }
-  if (!baseURI) {
-    baseURI = document.baseURI || window.location.href;
-  }
-  if (workingURL) {
-    return new URL(url, baseURI).href;
-  }
-  // Fallback to creating an anchor into a disconnected document.
-  if (!resolveDoc) {
-    resolveDoc = document.implementation.createHTMLDocument('temp');
-    resolveDoc.base = resolveDoc.createElement('base');
-    resolveDoc.head.appendChild(resolveDoc.base);
-    resolveDoc.anchor = resolveDoc.createElement('a');
-    resolveDoc.body.appendChild(resolveDoc.anchor);
-  }
-  resolveDoc.base.href = baseURI;
-  resolveDoc.anchor.href = url;
-  return resolveDoc.anchor.href || url;
-}
-
-/**
- * Resolves any relative URL's in the given CSS text against the provided
- * `ownerDocument`'s `baseURI`.
- *
- * @memberof Polymer.ResolveUrl
- * @param {string} cssText CSS text to process
- * @param {string} baseURI Base URI to resolve the URL against
- * @return {string} Processed CSS text with resolved URL's
- */
-function resolveCss(cssText, baseURI) {
-  return cssText.replace(CSS_URL_RX, function (m, pre, url, post) {
-    return pre + '\'' + resolveUrl(url.replace(/["']/g, ''), baseURI) + '\'' + post;
-  });
-}
-
-/**
- * Returns a path from a given `url`. The path includes the trailing
- * `/` from the url.
- *
- * @memberof Polymer.ResolveUrl
- * @param {string} url Input URL to transform
- * @return {string} resolved path
- */
-function pathFromUrl(url) {
-  return url.substring(0, url.lastIndexOf('/') + 1);
-}
-
-exports.resolveCss = resolveCss;
-exports.resolveUrl = resolveUrl;
-exports.pathFromUrl = pathFromUrl;
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
 exports.microTask = exports.idlePeriod = exports.animationFrame = exports.timeOut = undefined;
 
 __webpack_require__(0);
@@ -550,6 +459,97 @@ var microTask = exports.microTask = {
 };
 
 /***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.pathFromUrl = exports.resolveUrl = exports.resolveCss = undefined;
+
+__webpack_require__(0);
+
+var CSS_URL_RX = /(url\()([^)]*)(\))/g;
+var ABS_URL = /(^\/)|(^#)|(^[\w-\d]*:)/;
+var workingURL = void 0;
+var resolveDoc = void 0;
+/**
+ * Resolves the given URL against the provided `baseUri'.
+ *
+ * @memberof Polymer.ResolveUrl
+ * @param {string} url Input URL to resolve
+ * @param {?string=} baseURI Base URI to resolve the URL against
+ * @return {string} resolved URL
+ */
+function resolveUrl(url, baseURI) {
+  if (url && ABS_URL.test(url)) {
+    return url;
+  }
+  // Lazy feature detection.
+  if (workingURL === undefined) {
+    workingURL = false;
+    try {
+      var u = new URL('b', 'http://a');
+      u.pathname = 'c%20d';
+      workingURL = u.href === 'http://a/c%20d';
+    } catch (e) {
+      // silently fail
+    }
+  }
+  if (!baseURI) {
+    baseURI = document.baseURI || window.location.href;
+  }
+  if (workingURL) {
+    return new URL(url, baseURI).href;
+  }
+  // Fallback to creating an anchor into a disconnected document.
+  if (!resolveDoc) {
+    resolveDoc = document.implementation.createHTMLDocument('temp');
+    resolveDoc.base = resolveDoc.createElement('base');
+    resolveDoc.head.appendChild(resolveDoc.base);
+    resolveDoc.anchor = resolveDoc.createElement('a');
+    resolveDoc.body.appendChild(resolveDoc.anchor);
+  }
+  resolveDoc.base.href = baseURI;
+  resolveDoc.anchor.href = url;
+  return resolveDoc.anchor.href || url;
+}
+
+/**
+ * Resolves any relative URL's in the given CSS text against the provided
+ * `ownerDocument`'s `baseURI`.
+ *
+ * @memberof Polymer.ResolveUrl
+ * @param {string} cssText CSS text to process
+ * @param {string} baseURI Base URI to resolve the URL against
+ * @return {string} Processed CSS text with resolved URL's
+ */
+function resolveCss(cssText, baseURI) {
+  return cssText.replace(CSS_URL_RX, function (m, pre, url, post) {
+    return pre + '\'' + resolveUrl(url.replace(/["']/g, ''), baseURI) + '\'' + post;
+  });
+}
+
+/**
+ * Returns a path from a given `url`. The path includes the trailing
+ * `/` from the url.
+ *
+ * @memberof Polymer.ResolveUrl
+ * @param {string} url Input URL to transform
+ * @return {string} resolved path
+ */
+function pathFromUrl(url) {
+  return url.substring(0, url.lastIndexOf('/') + 1);
+}
+
+exports.resolveCss = resolveCss;
+exports.resolveUrl = resolveUrl;
+exports.pathFromUrl = pathFromUrl;
+
+/***/ }),
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -647,7 +647,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Element = undefined;
 
-var _elementMixin = __webpack_require__(34);
+var _elementMixin = __webpack_require__(35);
 
 /**
  * Base class that provides the core API for Polymer's meta-programming
@@ -670,75 +670,6 @@ exports.Element = Element;
 
 /***/ }),
 /* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.setSanitizeDOMValue = exports.sanitizeDOMValue = exports.setRootPath = exports.rootPath = exports.Settings = exports.useNativeCustomElements = exports.useNativeCSSProperties = exports.useShadow = undefined;
-
-__webpack_require__(0);
-
-var _resolveUrl = __webpack_require__(8);
-
-/**
- * Legacy settings.
- * @namespace
- * @memberof Polymer
- */
-var settings = undefined || {};
-var useShadow = exports.useShadow = !window.ShadyDOM;
-var useNativeCSSProperties = exports.useNativeCSSProperties = Boolean(!window.ShadyCSS || window.ShadyCSS.nativeCss);
-var useNativeCustomElements = exports.useNativeCustomElements = !window.customElements.polyfillWrapFlushCallback;
-exports.Settings = settings;
-
-/**
- * Globally settable property that is automatically assigned to
- * `Polymer.ElementMixin` instances, useful for binding in templates to
- * make URL's relative to an application's root.  Defaults to the main
- * document URL, but can be overridden by users.  It may be useful to set
- * `Polymer.rootPath` to provide a stable application mount path when
- * using client side routing.
- *
- * @memberof Polymer
- */
-
-var rootPath = undefined || (0, _resolveUrl.pathFromUrl)(document.baseURI || window.location.href);
-
-exports.rootPath = rootPath;
-var setRootPath = exports.setRootPath = function setRootPath(path) {
-  exports.rootPath = rootPath = path;
-};
-
-/**
- * A global callback used to sanitize any value before inserting it into the DOM. The callback signature is:
- *
- *     Polymer = {
- *       sanitizeDOMValue: function(value, name, type, node) { ... }
- *     }
- *
- * Where:
- *
- * `value` is the value to sanitize.
- * `name` is the name of an attribute or property (for example, href).
- * `type` indicates where the value is being inserted: one of property, attribute, or text.
- * `node` is the node where the value is being inserted.
- *
- * @type {(function(*,string,string,Node):*)|undefined}
- * @memberof Polymer
- */
-var sanitizeDOMValue = undefined;
-
-exports.sanitizeDOMValue = sanitizeDOMValue;
-var setSanitizeDOMValue = exports.setSanitizeDOMValue = function setSanitizeDOMValue(newSanitizeDOMValue) {
-  exports.sanitizeDOMValue = sanitizeDOMValue = newSanitizeDOMValue;
-};
-
-/***/ }),
-/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -855,7 +786,7 @@ function set(root, path, value) {
 var isDeep = exports.isDeep = isPath;
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -872,7 +803,7 @@ __webpack_require__(0);
 
 __webpack_require__(4);
 
-__webpack_require__(9);
+__webpack_require__(8);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -997,6 +928,75 @@ var Debouncer = function () {
 }();
 
 exports.Debouncer = Debouncer;
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.setSanitizeDOMValue = exports.sanitizeDOMValue = exports.setRootPath = exports.rootPath = exports.Settings = exports.useNativeCustomElements = exports.useNativeCSSProperties = exports.useShadow = undefined;
+
+__webpack_require__(0);
+
+var _resolveUrl = __webpack_require__(9);
+
+/**
+ * Legacy settings.
+ * @namespace
+ * @memberof Polymer
+ */
+var settings = undefined || {};
+var useShadow = exports.useShadow = !window.ShadyDOM;
+var useNativeCSSProperties = exports.useNativeCSSProperties = Boolean(!window.ShadyCSS || window.ShadyCSS.nativeCss);
+var useNativeCustomElements = exports.useNativeCustomElements = !window.customElements.polyfillWrapFlushCallback;
+exports.Settings = settings;
+
+/**
+ * Globally settable property that is automatically assigned to
+ * `Polymer.ElementMixin` instances, useful for binding in templates to
+ * make URL's relative to an application's root.  Defaults to the main
+ * document URL, but can be overridden by users.  It may be useful to set
+ * `Polymer.rootPath` to provide a stable application mount path when
+ * using client side routing.
+ *
+ * @memberof Polymer
+ */
+
+var rootPath = undefined || (0, _resolveUrl.pathFromUrl)(document.baseURI || window.location.href);
+
+exports.rootPath = rootPath;
+var setRootPath = exports.setRootPath = function setRootPath(path) {
+  exports.rootPath = rootPath = path;
+};
+
+/**
+ * A global callback used to sanitize any value before inserting it into the DOM. The callback signature is:
+ *
+ *     Polymer = {
+ *       sanitizeDOMValue: function(value, name, type, node) { ... }
+ *     }
+ *
+ * Where:
+ *
+ * `value` is the value to sanitize.
+ * `name` is the name of an attribute or property (for example, href).
+ * `type` indicates where the value is being inserted: one of property, attribute, or text.
+ * `node` is the node where the value is being inserted.
+ *
+ * @type {(function(*,string,string,Node):*)|undefined}
+ * @memberof Polymer
+ */
+var sanitizeDOMValue = undefined;
+
+exports.sanitizeDOMValue = sanitizeDOMValue;
+var setSanitizeDOMValue = exports.setSanitizeDOMValue = function setSanitizeDOMValue(newSanitizeDOMValue) {
+  exports.sanitizeDOMValue = sanitizeDOMValue = newSanitizeDOMValue;
+};
 
 /***/ }),
 /* 19 */
@@ -2341,1150 +2341,6 @@ exports.default = function (superClass) {
 "use strict";
 
 
-__webpack_require__(32);
-
-__webpack_require__(1);
-
-__webpack_require__(57);
-
-/***/ }),
-/* 32 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _fragments = __webpack_require__(33);
-
-var _fragments2 = _interopRequireDefault(_fragments);
-
-var _window = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var LazyLoader = function (_HTMLElement) {
-  _inherits(LazyLoader, _HTMLElement);
-
-  function LazyLoader() {
-    _classCallCheck(this, LazyLoader);
-
-    return _possibleConstructorReturn(this, (LazyLoader.__proto__ || Object.getPrototypeOf(LazyLoader)).apply(this, arguments));
-  }
-
-  _createClass(LazyLoader, [{
-    key: 'import',
-    value: function _import(name) {
-      return _fragments2.default[name] && typeof _fragments2.default[name] === 'function' ? _fragments2.default[name]() : Promise.reject(new Error('No fragment found'));
-    }
-  }], [{
-    key: 'is',
-    get: function get() {
-      return 'lazy-loader';
-    }
-  }]);
-
-  return LazyLoader;
-}(_window.HTMLElement);
-
-!_window.customElements.get(LazyLoader.is) ? _window.customElements.define(LazyLoader.is, LazyLoader) : console.warn(LazyLoader.is + ' is already defined');
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
-  'page-home': function pageHome() {
-    return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 86));
-  },
-  'page-not-authorized': function pageNotAuthorized() {
-    return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 87));
-  },
-  'page-not-found': function pageNotFound() {
-    return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 88));
-  }
-};
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.updateStyles = exports.registrations = exports.instanceCount = exports.ElementMixin = undefined;
-
-var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-exports._regLog = _regLog;
-exports.register = register;
-exports.dumpRegistrations = dumpRegistrations;
-
-__webpack_require__(0);
-
-var _settings = __webpack_require__(16);
-
-var _mixin = __webpack_require__(4);
-
-var _caseMap = __webpack_require__(11);
-
-var caseMap$0 = _interopRequireWildcard(_caseMap);
-
-var _styleGather = __webpack_require__(35);
-
-var _resolveUrl = __webpack_require__(8);
-
-var _domModule = __webpack_require__(36);
-
-var _propertyEffects = __webpack_require__(37);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ElementMixin = exports.ElementMixin = (0, _mixin.dedupingMixin)(function (base) {
-
-  /**
-   * @constructor
-   * @extends {base}
-   * @implements {Polymer_PropertyEffects}
-   */
-  var polymerElementBase = (0, _propertyEffects.PropertyEffects)(base);
-
-  var caseMap = caseMap$0;
-
-  /**
-   * Returns the `properties` object specifically on `klass`. Use for:
-   * (1) super chain mixes togther to make `propertiesForClass` which is
-   * then used to make `observedAttributes`.
-   * (2) properties effects and observers are created from it at `finalize` time.
-   *
-   * @param {HTMLElement} klass Element class
-   * @return {Object} Object containing own properties for this class
-   * @private
-   */
-  function ownPropertiesForClass(klass) {
-    if (!klass.hasOwnProperty(JSCompiler_renameProperty('__ownProperties', klass))) {
-      klass.__ownProperties = klass.hasOwnProperty(JSCompiler_renameProperty('properties', klass)) ?
-      /** @type PolymerElementConstructor */klass.properties : {};
-    }
-    return klass.__ownProperties;
-  }
-
-  /**
-   * Returns the `observers` array specifically on `klass`. Use for
-   * setting up observers.
-   *
-   * @param {HTMLElement} klass Element class
-   * @return {Array} Array containing own observers for this class
-   * @private
-   */
-  function ownObserversForClass(klass) {
-    if (!klass.hasOwnProperty(JSCompiler_renameProperty('__ownObservers', klass))) {
-      klass.__ownObservers = klass.hasOwnProperty(JSCompiler_renameProperty('observers', klass)) ?
-      /** @type PolymerElementConstructor */klass.observers : [];
-    }
-    return klass.__ownObservers;
-  }
-
-  /**
-   * Mixes `props` into `flattenedProps` but upgrades shorthand type
-   * syntax to { type: Type}.
-   *
-   * @param {Object} flattenedProps Bag to collect flattened properties into
-   * @param {Object} props Bag of properties to add to `flattenedProps`
-   * @return {Object} The input `flattenedProps` bag
-   * @private
-   */
-  function flattenProperties(flattenedProps, props) {
-    for (var p in props) {
-      var o = props[p];
-      if (typeof o == 'function') {
-        o = { type: o };
-      }
-      flattenedProps[p] = o;
-    }
-    return flattenedProps;
-  }
-
-  /**
-   * Returns a flattened list of properties mixed together from the chain of all
-   * constructor's `config.properties`. This list is used to create
-   * (1) observedAttributes,
-   * (2) class property default values
-   *
-   * @param {PolymerElementConstructor} klass Element class
-   * @return {PolymerElementProperties} Flattened properties for this class
-   * @suppress {missingProperties} class.prototype is not a property for some reason?
-   * @private
-   */
-  function propertiesForClass(klass) {
-    if (!klass.hasOwnProperty(JSCompiler_renameProperty('__classProperties', klass))) {
-      klass.__classProperties = flattenProperties({}, ownPropertiesForClass(klass));
-      var superCtor = Object.getPrototypeOf(klass.prototype).constructor;
-      if (superCtor.prototype instanceof PolymerElement) {
-        klass.__classProperties = Object.assign(Object.create(propertiesForClass( /** @type PolymerElementConstructor */superCtor)), klass.__classProperties);
-      }
-    }
-    return klass.__classProperties;
-  }
-
-  /**
-   * Returns a list of properties with default values.
-   * This list is created as an optimization since it is a subset of
-   * the list returned from `propertiesForClass`.
-   * This list is used in `_initializeProperties` to set property defaults.
-   *
-   * @param {PolymerElementConstructor} klass Element class
-   * @return {PolymerElementProperties} Flattened properties for this class
-   *   that have default values
-   * @private
-   */
-  function propertyDefaultsForClass(klass) {
-    if (!klass.hasOwnProperty(JSCompiler_renameProperty('__classPropertyDefaults', klass))) {
-      klass.__classPropertyDefaults = null;
-      var props = propertiesForClass(klass);
-      for (var p in props) {
-        var info = props[p];
-        if ('value' in info) {
-          klass.__classPropertyDefaults = klass.__classPropertyDefaults || {};
-          klass.__classPropertyDefaults[p] = info;
-        }
-      }
-    }
-    return klass.__classPropertyDefaults;
-  }
-
-  /**
-   * Returns true if a `klass` has finalized. Called in `ElementClass.finalize()`
-   * @param {PolymerElementConstructor} klass Element class
-   * @return {boolean} True if all metaprogramming for this class has been
-   *   completed
-   * @private
-   */
-  function hasClassFinalized(klass) {
-    return klass.hasOwnProperty(JSCompiler_renameProperty('__finalized', klass));
-  }
-
-  /**
-   * Called by `ElementClass.finalize()`. Ensures this `klass` and
-   * *all superclasses* are finalized by traversing the prototype chain
-   * and calling `klass.finalize()`.
-   *
-   * @param {PolymerElementConstructor} klass Element class
-   * @private
-   */
-  function finalizeClassAndSuper(klass) {
-    var proto = /** @type PolymerElementConstructor */klass.prototype;
-    var superCtor = Object.getPrototypeOf(proto).constructor;
-    if (superCtor.prototype instanceof PolymerElement) {
-      superCtor.finalize();
-    }
-    finalizeClass(klass);
-  }
-
-  /**
-   * Configures a `klass` based on a staic `klass.config` object and
-   * a `template`. This includes creating accessors and effects
-   * for properties in `config` and the `template` as well as preparing the
-   * `template` for stamping.
-   *
-   * @param {PolymerElementConstructor} klass Element class
-   * @private
-   */
-  function finalizeClass(klass) {
-    klass.__finalized = true;
-    var proto = /** @type PolymerElementConstructor */klass.prototype;
-    if (klass.hasOwnProperty(JSCompiler_renameProperty('is', klass)) && klass.is) {
-      register(proto);
-    }
-    var props = ownPropertiesForClass(klass);
-    if (props) {
-      finalizeProperties(proto, props);
-    }
-    var observers = ownObserversForClass(klass);
-    if (observers) {
-      finalizeObservers(proto, observers, props);
-    }
-    // note: create "working" template that is finalized at instance time
-    var template = /** @type PolymerElementConstructor */klass.template;
-    if (template) {
-      if (typeof template === 'string') {
-        var t = document.createElement('template');
-        t.innerHTML = template;
-        template = t;
-      } else {
-        template = template.cloneNode(true);
-      }
-      proto._template = template;
-    }
-  }
-
-  /**
-   * Configures a `proto` based on a `properties` object.
-   * Leverages `PropertyEffects` to create property accessors and effects
-   * supporting, observers, reflecting to attributes, change notification,
-   * computed properties, and read only properties.
-   * @param {PolymerElement} proto Element class prototype to add accessors
-   *    and effects to
-   * @param {Object} properties Flattened bag of property descriptors for
-   *    this class
-   * @private
-   */
-  function finalizeProperties(proto, properties) {
-    for (var p in properties) {
-      createPropertyFromConfig(proto, p, properties[p], properties);
-    }
-  }
-
-  /**
-   * Configures a `proto` based on a `observers` array.
-   * Leverages `PropertyEffects` to create observers.
-   * @param {PolymerElement} proto Element class prototype to add accessors
-   *   and effects to
-   * @param {Object} observers Flattened array of observer descriptors for
-   *   this class
-   * @param {Object} dynamicFns Object containing keys for any properties
-   *   that are functions and should trigger the effect when the function
-   *   reference is changed
-   * @private
-   */
-  function finalizeObservers(proto, observers, dynamicFns) {
-    for (var i = 0; i < observers.length; i++) {
-      proto._createMethodObserver(observers[i], dynamicFns);
-    }
-  }
-
-  /**
-   * Creates effects for a property.
-   *
-   * Note, once a property has been set to
-   * `readOnly`, `computed`, `reflectToAttribute`, or `notify`
-   * these values may not be changed. For example, a subclass cannot
-   * alter these settings. However, additional `observers` may be added
-   * by subclasses.
-   *
-   * The info object should may contain property metadata as follows:
-   *
-   * * `type`: {function} type to which an attribute matching the property
-   * is deserialized. Note the property is camel-cased from a dash-cased
-   * attribute. For example, 'foo-bar' attribute is dersialized to a
-   * property named 'fooBar'.
-   *
-   * * `readOnly`: {boolean} creates a readOnly property and
-   * makes a private setter for the private of the form '_setFoo' for a
-   * property 'foo',
-   *
-   * * `computed`: {string} creates a computed property. A computed property
-   * also automatically is set to `readOnly: true`. The value is calculated
-   * by running a method and arguments parsed from the given string. For
-   * example 'compute(foo)' will compute a given property when the
-   * 'foo' property changes by executing the 'compute' method. This method
-   * must return the computed value.
-   *
-   * * `reflectToAttriute`: {boolean} If true, the property value is reflected
-   * to an attribute of the same name. Note, the attribute is dash-cased
-   * so a property named 'fooBar' is reflected as 'foo-bar'.
-   *
-   * * `notify`: {boolean} sends a non-bubbling notification event when
-   * the property changes. For example, a property named 'foo' sends an
-   * event named 'foo-changed' with `event.detail` set to the value of
-   * the property.
-   *
-   * * observer: {string} name of a method that runs when the property
-   * changes. The arguments of the method are (value, previousValue).
-   *
-   * Note: Users may want control over modifying property
-   * effects via subclassing. For example, a user might want to make a
-   * reflectToAttribute property not do so in a subclass. We've chosen to
-   * disable this because it leads to additional complication.
-   * For example, a readOnly effect generates a special setter. If a subclass
-   * disables the effect, the setter would fail unexpectedly.
-   * Based on feedback, we may want to try to make effects more malleable
-   * and/or provide an advanced api for manipulating them.
-   * Also consider adding warnings when an effect cannot be changed.
-   *
-   * @param {PolymerElement} proto Element class prototype to add accessors
-   *   and effects to
-   * @param {string} name Name of the property.
-   * @param {Object} info Info object from which to create property effects.
-   * Supported keys:
-   * @param {Object} allProps Flattened map of all properties defined in this
-   *   element (including inherited properties)
-   * @private
-   */
-  function createPropertyFromConfig(proto, name, info, allProps) {
-    // computed forces readOnly...
-    if (info.computed) {
-      info.readOnly = true;
-    }
-    // Note, since all computed properties are readOnly, this prevents
-    // adding additional computed property effects (which leads to a confusing
-    // setup where multiple triggers for setting a property)
-    // While we do have `hasComputedEffect` this is set on the property's
-    // dependencies rather than itself.
-    if (info.computed && !proto._hasReadOnlyEffect(name)) {
-      proto._createComputedProperty(name, info.computed, allProps);
-    }
-    if (info.readOnly && !proto._hasReadOnlyEffect(name)) {
-      proto._createReadOnlyProperty(name, !info.computed);
-    }
-    if (info.reflectToAttribute && !proto._hasReflectEffect(name)) {
-      proto._createReflectedProperty(name);
-    }
-    if (info.notify && !proto._hasNotifyEffect(name)) {
-      proto._createNotifyingProperty(name);
-    }
-    // always add observer
-    if (info.observer) {
-      proto._createPropertyObserver(name, info.observer, allProps[info.observer]);
-    }
-  }
-
-  /**
-   * Configures an element `proto` to function with a given `template`.
-   * The element name `is` and extends `ext` must be specified for ShadyCSS
-   * style scoping.
-   *
-   * @param {PolymerElement} proto Element class prototype to add accessors
-   *   and effects to
-   * @param {!HTMLTemplateElement} template Template to process and bind
-   * @param {string} baseURI URL against which to resolve urls in
-   *   style element cssText
-   * @param {string} is Tag name (or type extension name) for this element
-   * @param {string=} ext For type extensions, the tag name that was extended
-   * @private
-   */
-  function finalizeTemplate(proto, template, baseURI, is, ext) {
-    // support `include="module-name"`
-    var cssText = (0, _styleGather.cssFromModuleImports)(is) + (0, _styleGather.cssFromTemplate)(template, baseURI);
-    if (cssText) {
-      var style = document.createElement('style');
-      style.textContent = cssText;
-      template.content.insertBefore(style, template.content.firstChild);
-    }
-    if (window.ShadyCSS) {
-      window.ShadyCSS.prepareTemplate(template, is, ext);
-    }
-    proto._bindTemplate(template);
-  }
-
-  /**
-   * @polymer
-   * @mixinClass
-   * @unrestricted
-   * @implements {Polymer_ElementMixin}
-   */
-
-  var PolymerElement = function (_polymerElementBase) {
-    _inherits(PolymerElement, _polymerElementBase);
-
-    _createClass(PolymerElement, null, [{
-      key: 'finalize',
-
-
-      /**
-       * Called automatically when the first element instance is created to
-       * ensure that class finalization work has been completed.
-       * May be called by users to eagerly perform class finalization work
-       * prior to the creation of the first element instance.
-       *
-       * Class finalization work generally includes meta-programming such as
-       * creating property accessors and any property effect metadata needed for
-       * the features used.
-       *
-       * @public
-       */
-      value: function finalize() {
-        if (!hasClassFinalized(this)) {
-          finalizeClassAndSuper(this);
-        }
-      }
-
-      /**
-       * Returns the template that will be stamped into this element's shadow root.
-       *
-       * If a `static get is()` getter is defined, the default implementation
-       * will return the first `<template>` in a `dom-module` whose `id`
-       * matches this element's `is`.
-       *
-       * Users may override this getter to return an arbitrary template
-       * (in which case the `is` getter is unnecessary). The template returned
-       * may be either an `HTMLTemplateElement` or a string that will be
-       * automatically parsed into a template.
-       *
-       * Note that when subclassing, if the super class overrode the default
-       * implementation and the subclass would like to provide an alternate
-       * template via a `dom-module`, it should override this getter and
-       * return `Polymer.DomModule.import(this.is, 'template')`.
-       *
-       * If a subclass would like to modify the super class template, it should
-       * clone it rather than modify it in place.  If the getter does expensive
-       * work such as cloning/modifying a template, it should memoize the
-       * template for maximum performance:
-       *
-       *   let memoizedTemplate;
-       *   class MySubClass extends MySuperClass {
-       *     static get template() {
-       *       if (!memoizedTemplate) {
-       *         memoizedTemplate = super.template.cloneNode(true);
-       *         let subContent = document.createElement('div');
-       *         subContent.textContent = 'This came from MySubClass';
-       *         memoizedTemplate.content.appendChild(subContent);
-       *       }
-       *       return memoizedTemplate;
-       *     }
-       *   }
-       *
-       * @return {HTMLTemplateElement|string} Template to be stamped
-       */
-
-    }, {
-      key: 'observedAttributes',
-
-
-      /**
-       * Standard Custom Elements V1 API.  The default implementation returns
-       * a list of dash-cased attributes based on a flattening of all properties
-       * declared in `static get properties()` for this element and any
-       * superclasses.
-       *
-       * @return {Array} Observed attribute list
-       */
-      get: function get() {
-        if (!this.hasOwnProperty(JSCompiler_renameProperty('__observedAttributes', this))) {
-          var list = [];
-          var properties = propertiesForClass(this);
-          for (var prop in properties) {
-            list.push((0, _caseMap.camelToDashCase)(prop));
-          }
-          this.__observedAttributes = list;
-        }
-        return this.__observedAttributes;
-      }
-    }, {
-      key: 'template',
-      get: function get() {
-        if (!this.hasOwnProperty(JSCompiler_renameProperty('_template', this))) {
-          this._template = _domModule.DomModule && _domModule.DomModule.import(
-          /** @type PolymerElementConstructor*/this.is, 'template') ||
-          // note: implemented so a subclass can retrieve the super
-          // template; call the super impl this way so that `this` points
-          // to the superclass.
-          Object.getPrototypeOf( /** @type PolymerElementConstructor*/this.prototype).constructor.template;
-        }
-        return this._template;
-      }
-
-      /**
-       * Path matching the url from which the element was imported.
-       * This path is used to resolve url's in template style cssText.
-       * The `importPath` property is also set on element instances and can be
-       * used to create bindings relative to the import path.
-       * Defaults to the path matching the url containing a `dom-module` element
-       * matching this element's static `is` property.
-       * Note, this path should contain a trailing `/`.
-       *
-       * @return {string} The import path for this element class
-       */
-
-    }, {
-      key: 'importPath',
-      get: function get() {
-        if (!this.hasOwnProperty(JSCompiler_renameProperty('_importPath', this))) {
-          var module = _domModule.DomModule && _domModule.DomModule.import( /** @type PolymerElementConstructor */this.is);
-          this._importPath = module ? module.assetpath : '' || Object.getPrototypeOf( /** @type PolymerElementConstructor*/this.prototype).constructor.importPath;
-        }
-        return this._importPath;
-      }
-    }]);
-
-    function PolymerElement() {
-      _classCallCheck(this, PolymerElement);
-
-      /** @type {HTMLTemplateElement} */
-      var _this = _possibleConstructorReturn(this, (PolymerElement.__proto__ || Object.getPrototypeOf(PolymerElement)).call(this));
-
-      _this._template;
-      /** @type {string} */
-      _this._importPath;
-      /** @type {string} */
-      _this.rootPath;
-      /** @type {string} */
-      _this.importPath;
-      /** @type {StampedTemplate | HTMLElement | ShadowRoot} */
-      _this.root;
-      /** @type {!Object<string, !Node>} */
-      _this.$;
-      return _this;
-    }
-
-    /**
-     * Overrides the default `Polymer.PropertyAccessors` to ensure class
-     * metaprogramming related to property accessors and effects has
-     * completed (calls `finalize`).
-     *
-     * It also initializes any property defaults provided via `value` in
-     * `properties` metadata.
-     *
-     * @override
-     * @suppress {invalidCasts}
-     */
-
-
-    _createClass(PolymerElement, [{
-      key: '_initializeProperties',
-      value: function _initializeProperties() {
-        exports.instanceCount = instanceCount += 1;
-        this.constructor.finalize();
-        var importPath = this.constructor.importPath;
-        // note: finalize template when we have access to `localName` to
-        // avoid dependence on `is` for polyfilling styling.
-        if (this._template && !this._template.__polymerFinalized) {
-          this._template.__polymerFinalized = true;
-          var baseURI = importPath ? (0, _resolveUrl.resolveUrl)(importPath) : '';
-          finalizeTemplate( /** @type {!PolymerElement} */this.__proto__, this._template, baseURI,
-          /**@type {!HTMLElement}*/this.localName);
-        }
-        _get(PolymerElement.prototype.__proto__ || Object.getPrototypeOf(PolymerElement.prototype), '_initializeProperties', this).call(this);
-        // set path defaults
-        this.rootPath = _settings.rootPath;
-        this.importPath = importPath;
-        // apply property defaults...
-        var p$ = propertyDefaultsForClass(this.constructor);
-        if (!p$) {
-          return;
-        }
-        for (var p in p$) {
-          var info = p$[p];
-          // Don't set default value if there is already an own property, which
-          // happens when a `properties` property with default but no effects had
-          // a property set (e.g. bound) by its host before upgrade
-          if (!this.hasOwnProperty(p)) {
-            var value = typeof info.value == 'function' ? info.value.call(this) : info.value;
-            // Set via `_setProperty` if there is an accessor, to enable
-            // initializing readOnly property defaults
-            if (this._hasAccessor(p)) {
-              this._setPendingProperty(p, value, true);
-            } else {
-              this[p] = value;
-            }
-          }
-        }
-      }
-
-      /**
-       * Provides a default implementation of the standard Custom Elements
-       * `connectedCallback`.
-       *
-       * The default implementation enables the property effects system and
-       * flushes any pending properties, and updates shimmed CSS properties
-       * when using the ShadyCSS scoping/custom properties polyfill.
-       *
-       * @suppress {invalidCasts}
-       */
-
-    }, {
-      key: 'connectedCallback',
-      value: function connectedCallback() {
-        if (window.ShadyCSS && this._template) {
-          window.ShadyCSS.styleElement( /** @type {!HTMLElement} */this);
-        }
-        this._enableProperties();
-      }
-
-      /**
-       * Provides a default implementation of the standard Custom Elements
-       * `disconnectedCallback`.
-       */
-
-    }, {
-      key: 'disconnectedCallback',
-      value: function disconnectedCallback() {}
-
-      /**
-       * Stamps the element template.
-       *
-       * @override
-       */
-
-    }, {
-      key: 'ready',
-      value: function ready() {
-        if (this._template) {
-          this.root = this._stampTemplate(this._template);
-          this.$ = this.root.$;
-        }
-        _get(PolymerElement.prototype.__proto__ || Object.getPrototypeOf(PolymerElement.prototype), 'ready', this).call(this);
-      }
-
-      /**
-       * Implements `PropertyEffects`'s `_readyClients` call. Attaches
-       * element dom by calling `_attachDom` with the dom stamped from the
-       * element's template via `_stampTemplate`. Note that this allows
-       * client dom to be attached to the element prior to any observers
-       * running.
-       *
-       * @override
-       */
-
-    }, {
-      key: '_readyClients',
-      value: function _readyClients() {
-        if (this._template) {
-          this.root = this._attachDom( /** @type {StampedTemplate} */this.root);
-        }
-        // The super._readyClients here sets the clients initialized flag.
-        // We must wait to do this until after client dom is created/attached
-        // so that this flag can be checked to prevent notifications fired
-        // during this process from being handled before clients are ready.
-        _get(PolymerElement.prototype.__proto__ || Object.getPrototypeOf(PolymerElement.prototype), '_readyClients', this).call(this);
-      }
-
-      /**
-       * Attaches an element's stamped dom to itself. By default,
-       * this method creates a `shadowRoot` and adds the dom to it.
-       * However, this method may be overridden to allow an element
-       * to put its dom in another location.
-       *
-       * @throws {Error}
-       * @suppress {missingReturn}
-       * @param {StampedTemplate} dom to attach to the element.
-       * @return {ShadowRoot} node to which the dom has been attached.
-       */
-
-    }, {
-      key: '_attachDom',
-      value: function _attachDom(dom) {
-        if (this.attachShadow) {
-          if (dom) {
-            if (!this.shadowRoot) {
-              this.attachShadow({ mode: 'open' });
-            }
-            this.shadowRoot.appendChild(dom);
-            return this.shadowRoot;
-          }
-          return null;
-        } else {
-          throw new Error('ShadowDOM not available. ' +
-          // TODO(sorvell): move to compile-time conditional when supported
-          'Polymer.Element can create dom as children instead of in ' + 'ShadowDOM by setting `this.root = this;\` before \`ready\`.');
-        }
-      }
-
-      /**
-       * Provides a default implementation of the standard Custom Elements
-       * `attributeChangedCallback`.
-       *
-       * By default, attributes declared in `properties` metadata are
-       * deserialized using their `type` information to properties of the
-       * same name.  "Dash-cased" attributes are deserialzed to "camelCase"
-       * properties.
-       *
-       * @param {string} name Name of attribute.
-       * @param {?string} old Old value of attribute.
-       * @param {?string} value Current value of attribute.
-       * @override
-       */
-
-    }, {
-      key: 'attributeChangedCallback',
-      value: function attributeChangedCallback(name, old, value) {
-        if (old !== value) {
-          var property = caseMap.dashToCamelCase(name);
-          var type = propertiesForClass(this.constructor)[property].type;
-          if (!this._hasReadOnlyEffect(property)) {
-            this._attributeToProperty(name, value, type);
-          }
-        }
-      }
-
-      /**
-       * When using the ShadyCSS scoping and custom property shim, causes all
-       * shimmed styles in this element (and its subtree) to be updated
-       * based on current custom property values.
-       *
-       * The optional parameter overrides inline custom property styles with an
-       * object of properties where the keys are CSS properties, and the values
-       * are strings.
-       *
-       * Example: `this.updateStyles({'--color': 'blue'})`
-       *
-       * These properties are retained unless a value of `null` is set.
-       *
-       * @param {Object=} properties Bag of custom property key/values to
-       *   apply to this element.
-       * @suppress {invalidCasts}
-       */
-
-    }, {
-      key: 'updateStyles',
-      value: function updateStyles(properties) {
-        if (window.ShadyCSS) {
-          window.ShadyCSS.styleSubtree( /** @type {!HTMLElement} */this, properties);
-        }
-      }
-
-      /**
-       * Rewrites a given URL relative to a base URL. The base URL defaults to
-       * the original location of the document containing the `dom-module` for
-       * this element. This method will return the same URL before and after
-       * bundling.
-       *
-       * @param {string} url URL to resolve.
-       * @param {string=} base Optional base URL to resolve against, defaults
-       * to the element's `importPath`
-       * @return {string} Rewritten URL relative to base
-       */
-
-    }, {
-      key: 'resolveUrl',
-      value: function resolveUrl(url, base) {
-        if (!base && this.importPath) {
-          base = (0, _resolveUrl.resolveUrl)(this.importPath);
-        }
-        return (0, _resolveUrl.resolveUrl)(url, base);
-      }
-
-      /**
-       * Overrides `PropertyAccessors` to add map of dynamic functions on
-       * template info, for consumption by `PropertyEffects` template binding
-       * code. This map determines which method templates should have accessors
-       * created for them.
-       *
-       * @override
-       * @suppress {missingProperties} Interfaces in closure do not inherit statics, but classes do
-       */
-
-    }], [{
-      key: '_parseTemplateContent',
-      value: function _parseTemplateContent(template, templateInfo, nodeInfo) {
-        templateInfo.dynamicFns = templateInfo.dynamicFns || propertiesForClass(this);
-        return _get(PolymerElement.__proto__ || Object.getPrototypeOf(PolymerElement), '_parseTemplateContent', this).call(this, template, templateInfo, nodeInfo);
-      }
-    }]);
-
-    return PolymerElement;
-  }(polymerElementBase);
-
-  return PolymerElement;
-});
-
-var instanceCount = exports.instanceCount = 0;
-var registrations = exports.registrations = [];
-
-function _regLog(prototype) {
-  console.log('[' + prototype.is + ']: registered');
-}
-
-function register(prototype) {
-  registrations.push(prototype);
-  undefined && _regLog(prototype);
-}
-
-function dumpRegistrations() {
-  registrations.forEach(_regLog);
-}
-
-var updateStyles = exports.updateStyles = function updateStyles(props) {
-  if (window.ShadyCSS) {
-    window.ShadyCSS.styleDocument(props);
-  }
-};
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.cssFromModules = cssFromModules;
-exports.cssFromModule = cssFromModule;
-exports.cssFromTemplate = cssFromTemplate;
-exports.cssFromModuleImports = cssFromModuleImports;
-exports._cssFromModuleImports = _cssFromModuleImports;
-
-var _resolveUrl = __webpack_require__(8);
-
-var MODULE_STYLE_LINK_SELECTOR = 'link[rel=import][type~=css]';
-var INCLUDE_ATTR = 'include';
-
-function importModule(moduleId) {
-  var /** Polymer.DomModule */PolymerDomModule = customElements.get('dom-module');
-  if (!PolymerDomModule) {
-    return null;
-  }
-  return PolymerDomModule.import(moduleId);
-}
-
-/** @typedef {{assetpath: string}} */
-var templateWithAssetPath = void 0; // eslint-disable-line no-unused-vars
-
-function cssFromModules(moduleIds) {
-  var modules = moduleIds.trim().split(/\s+/);
-  var cssText = '';
-  for (var i = 0; i < modules.length; i++) {
-    cssText += cssFromModule(modules[i]);
-  }
-  return cssText;
-}
-
-function cssFromModule(moduleId) {
-  var m = importModule(moduleId);
-  if (m && m._cssText === undefined) {
-    // module imports: <link rel="import" type="css">
-    var cssText = _cssFromModuleImports(m);
-    // include css from the first template in the module
-    var t = m.querySelector('template');
-    if (t) {
-      cssText += cssFromTemplate(t, /** @type {templateWithAssetPath} */m.assetpath);
-    }
-    m._cssText = cssText || null;
-  }
-  if (!m) {
-    console.warn('Could not find style data in module named', moduleId);
-  }
-  return m && m._cssText || '';
-}
-
-function cssFromTemplate(template, baseURI) {
-  var cssText = '';
-  // if element is a template, get content from its .content
-  var e$ = template.content.querySelectorAll('style');
-  for (var i = 0; i < e$.length; i++) {
-    var e = e$[i];
-    // support style sharing by allowing styles to "include"
-    // other dom-modules that contain styling
-    var include = e.getAttribute(INCLUDE_ATTR);
-    if (include) {
-      cssText += cssFromModules(include);
-    }
-    e.parentNode.removeChild(e);
-    cssText += baseURI ? (0, _resolveUrl.resolveCss)(e.textContent, baseURI) : e.textContent;
-  }
-  return cssText;
-}
-
-function cssFromModuleImports(moduleId) {
-  var m = importModule(moduleId);
-  return m ? _cssFromModuleImports(m) : '';
-}
-
-function _cssFromModuleImports(module) {
-  var cssText = '';
-  var p$ = module.querySelectorAll(MODULE_STYLE_LINK_SELECTOR);
-  for (var i = 0; i < p$.length; i++) {
-    var p = p$[i];
-    if (p.import) {
-      var importDoc = p.import;
-      // NOTE: polyfill affordance.
-      // under the HTMLImports polyfill, there will be no 'body',
-      // but the import pseudo-doc can be used directly.
-      var container = importDoc.body ? importDoc.body : importDoc;
-      cssText += (0, _resolveUrl.resolveCss)(container.textContent, importDoc.baseURI);
-    }
-  }
-  return cssText;
-}
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.DomModule = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-__webpack_require__(0);
-
-var _resolveUrl = __webpack_require__(8);
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var modules = {};
-var lcModules = {};
-function findModule(id) {
-  return modules[id] || lcModules[id.toLowerCase()];
-}
-
-function styleOutsideTemplateCheck(inst) {
-  if (inst.querySelector('style')) {
-    console.warn('dom-module %s has style outside template', inst.id);
-  }
-}
-
-/**
- * The `dom-module` element registers the dom it contains to the name given
- * by the module's id attribute. It provides a unified database of dom
- * accessible via its static `import` API.
- *
- * A key use case of `dom-module` is for providing custom element `<template>`s
- * via HTML imports that are parsed by the native HTML parser, that can be
- * relocated during a bundling pass and still looked up by `id`.
- *
- * Example:
- *
- *     <dom-module id="foo">
- *       <img src="stuff.png">
- *     </dom-module>
- *
- * Then in code in some other location that cannot access the dom-module above
- *
- *     let img = customElements.get('dom-module').import('foo', 'img');
- *
- * @customElement
- * @extends HTMLElement
- * @memberof Polymer
- * @summary Custom element that provides a registry of relocatable DOM content
- *   by `id` that is agnostic to bundling.
- * @unrestricted
- */
-
-var DomModule = function (_HTMLElement) {
-  _inherits(DomModule, _HTMLElement);
-
-  function DomModule() {
-    _classCallCheck(this, DomModule);
-
-    return _possibleConstructorReturn(this, (DomModule.__proto__ || Object.getPrototypeOf(DomModule)).apply(this, arguments));
-  }
-
-  _createClass(DomModule, [{
-    key: 'attributeChangedCallback',
-    value: function attributeChangedCallback(name, old, value) {
-      if (old !== value) {
-        this.register();
-      }
-    }
-
-    /**
-     * The absolute URL of the original location of this `dom-module`.
-     *
-     * This value will differ from this element's `ownerDocument` in the
-     * following ways:
-     * - Takes into account any `assetpath` attribute added during bundling
-     *   to indicate the original location relative to the bundled location
-     * - Uses the HTMLImports polyfill's `importForElement` API to ensure
-     *   the path is relative to the import document's location since
-     *   `ownerDocument` is not currently polyfilled
-     */
-
-  }, {
-    key: 'register',
-
-
-    /**
-     * Registers the dom-module at a given id. This method should only be called
-     * when a dom-module is imperatively created. For
-     * example, `document.createElement('dom-module').register('foo')`.
-     * @param {string=} id The id at which to register the dom-module.
-     */
-    value: function register(id) {
-      id = id || this.id;
-      if (id) {
-        this.id = id;
-        // store id separate from lowercased id so that
-        // in all cases mixedCase id will stored distinctly
-        // and lowercase version is a fallback
-        modules[id] = this;
-        lcModules[id.toLowerCase()] = this;
-        styleOutsideTemplateCheck(this);
-      }
-    }
-  }, {
-    key: 'assetpath',
-    get: function get() {
-      // Don't override existing assetpath.
-      if (!this.__assetpath) {
-        // note: assetpath set via an attribute must be relative to this
-        // element's location; accomodate polyfilled HTMLImports
-        var owner = window.HTMLImports && HTMLImports.importForElement ? HTMLImports.importForElement(this) || document : this.ownerDocument;
-        var url = (0, _resolveUrl.resolveUrl)(this.getAttribute('assetpath') || '', owner.baseURI);
-        this.__assetpath = (0, _resolveUrl.pathFromUrl)(url);
-      }
-      return this.__assetpath;
-    }
-  }], [{
-    key: 'import',
-
-
-    /**
-     * Retrieves the element specified by the css `selector` in the module
-     * registered by `id`. For example, this.import('foo', 'img');
-     * @param {string} id The id of the dom-module in which to search.
-     * @param {string=} selector The css selector by which to find the element.
-     * @return {Element} Returns the element which matches `selector` in the
-     * module registered at the specified `id`.
-     */
-    value: function _import(id, selector) {
-      if (id) {
-        var m = findModule(id);
-        if (m && selector) {
-          return m.querySelector(selector);
-        }
-        return m;
-      }
-      return null;
-    }
-  }, {
-    key: 'observedAttributes',
-    get: function get() {
-      return ['id'];
-    }
-  }]);
-
-  return DomModule;
-}(HTMLElement);
-
-DomModule.prototype['modules'] = modules;
-
-customElements.define('dom-module', DomModule);
-
-exports.DomModule = DomModule;
-
-/***/ }),
-/* 37 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -3500,7 +2356,7 @@ __webpack_require__(0);
 
 var _mixin = __webpack_require__(4);
 
-var _path = __webpack_require__(17);
+var _path = __webpack_require__(16);
 
 var _caseMap = __webpack_require__(11);
 
@@ -3510,7 +2366,7 @@ var _propertyAccessors = __webpack_require__(38);
 
 var _templateStamp = __webpack_require__(39);
 
-var _settings = __webpack_require__(16);
+var _settings = __webpack_require__(18);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -6333,6 +5189,1153 @@ var hostStack = {
 };
 
 /***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(33);
+
+__webpack_require__(1);
+
+__webpack_require__(57);
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _fragments = __webpack_require__(34);
+
+var _fragments2 = _interopRequireDefault(_fragments);
+
+var _window = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var LazyLoader = function (_HTMLElement) {
+  _inherits(LazyLoader, _HTMLElement);
+
+  function LazyLoader() {
+    _classCallCheck(this, LazyLoader);
+
+    return _possibleConstructorReturn(this, (LazyLoader.__proto__ || Object.getPrototypeOf(LazyLoader)).apply(this, arguments));
+  }
+
+  _createClass(LazyLoader, [{
+    key: 'import',
+    value: function _import(name) {
+      return _fragments2.default[name] && typeof _fragments2.default[name] === 'function' ? _fragments2.default[name]() : Promise.reject(new Error('No fragment found'));
+    }
+  }], [{
+    key: 'is',
+    get: function get() {
+      return 'lazy-loader';
+    }
+  }]);
+
+  return LazyLoader;
+}(_window.HTMLElement);
+
+!_window.customElements.get(LazyLoader.is) ? _window.customElements.define(LazyLoader.is, LazyLoader) : console.warn(LazyLoader.is + ' is already defined');
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
+  'page-home': function pageHome() {
+    return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 87));
+  },
+  'page-speakers': function pageSpeakers() {
+    return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 88));
+  },
+  'page-not-authorized': function pageNotAuthorized() {
+    return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 89));
+  },
+  'page-not-found': function pageNotFound() {
+    return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 90));
+  }
+};
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.updateStyles = exports.registrations = exports.instanceCount = exports.ElementMixin = undefined;
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+exports._regLog = _regLog;
+exports.register = register;
+exports.dumpRegistrations = dumpRegistrations;
+
+__webpack_require__(0);
+
+var _settings = __webpack_require__(18);
+
+var _mixin = __webpack_require__(4);
+
+var _caseMap = __webpack_require__(11);
+
+var caseMap$0 = _interopRequireWildcard(_caseMap);
+
+var _styleGather = __webpack_require__(36);
+
+var _resolveUrl = __webpack_require__(9);
+
+var _domModule = __webpack_require__(37);
+
+var _propertyEffects = __webpack_require__(31);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ElementMixin = exports.ElementMixin = (0, _mixin.dedupingMixin)(function (base) {
+
+  /**
+   * @constructor
+   * @extends {base}
+   * @implements {Polymer_PropertyEffects}
+   */
+  var polymerElementBase = (0, _propertyEffects.PropertyEffects)(base);
+
+  var caseMap = caseMap$0;
+
+  /**
+   * Returns the `properties` object specifically on `klass`. Use for:
+   * (1) super chain mixes togther to make `propertiesForClass` which is
+   * then used to make `observedAttributes`.
+   * (2) properties effects and observers are created from it at `finalize` time.
+   *
+   * @param {HTMLElement} klass Element class
+   * @return {Object} Object containing own properties for this class
+   * @private
+   */
+  function ownPropertiesForClass(klass) {
+    if (!klass.hasOwnProperty(JSCompiler_renameProperty('__ownProperties', klass))) {
+      klass.__ownProperties = klass.hasOwnProperty(JSCompiler_renameProperty('properties', klass)) ?
+      /** @type PolymerElementConstructor */klass.properties : {};
+    }
+    return klass.__ownProperties;
+  }
+
+  /**
+   * Returns the `observers` array specifically on `klass`. Use for
+   * setting up observers.
+   *
+   * @param {HTMLElement} klass Element class
+   * @return {Array} Array containing own observers for this class
+   * @private
+   */
+  function ownObserversForClass(klass) {
+    if (!klass.hasOwnProperty(JSCompiler_renameProperty('__ownObservers', klass))) {
+      klass.__ownObservers = klass.hasOwnProperty(JSCompiler_renameProperty('observers', klass)) ?
+      /** @type PolymerElementConstructor */klass.observers : [];
+    }
+    return klass.__ownObservers;
+  }
+
+  /**
+   * Mixes `props` into `flattenedProps` but upgrades shorthand type
+   * syntax to { type: Type}.
+   *
+   * @param {Object} flattenedProps Bag to collect flattened properties into
+   * @param {Object} props Bag of properties to add to `flattenedProps`
+   * @return {Object} The input `flattenedProps` bag
+   * @private
+   */
+  function flattenProperties(flattenedProps, props) {
+    for (var p in props) {
+      var o = props[p];
+      if (typeof o == 'function') {
+        o = { type: o };
+      }
+      flattenedProps[p] = o;
+    }
+    return flattenedProps;
+  }
+
+  /**
+   * Returns a flattened list of properties mixed together from the chain of all
+   * constructor's `config.properties`. This list is used to create
+   * (1) observedAttributes,
+   * (2) class property default values
+   *
+   * @param {PolymerElementConstructor} klass Element class
+   * @return {PolymerElementProperties} Flattened properties for this class
+   * @suppress {missingProperties} class.prototype is not a property for some reason?
+   * @private
+   */
+  function propertiesForClass(klass) {
+    if (!klass.hasOwnProperty(JSCompiler_renameProperty('__classProperties', klass))) {
+      klass.__classProperties = flattenProperties({}, ownPropertiesForClass(klass));
+      var superCtor = Object.getPrototypeOf(klass.prototype).constructor;
+      if (superCtor.prototype instanceof PolymerElement) {
+        klass.__classProperties = Object.assign(Object.create(propertiesForClass( /** @type PolymerElementConstructor */superCtor)), klass.__classProperties);
+      }
+    }
+    return klass.__classProperties;
+  }
+
+  /**
+   * Returns a list of properties with default values.
+   * This list is created as an optimization since it is a subset of
+   * the list returned from `propertiesForClass`.
+   * This list is used in `_initializeProperties` to set property defaults.
+   *
+   * @param {PolymerElementConstructor} klass Element class
+   * @return {PolymerElementProperties} Flattened properties for this class
+   *   that have default values
+   * @private
+   */
+  function propertyDefaultsForClass(klass) {
+    if (!klass.hasOwnProperty(JSCompiler_renameProperty('__classPropertyDefaults', klass))) {
+      klass.__classPropertyDefaults = null;
+      var props = propertiesForClass(klass);
+      for (var p in props) {
+        var info = props[p];
+        if ('value' in info) {
+          klass.__classPropertyDefaults = klass.__classPropertyDefaults || {};
+          klass.__classPropertyDefaults[p] = info;
+        }
+      }
+    }
+    return klass.__classPropertyDefaults;
+  }
+
+  /**
+   * Returns true if a `klass` has finalized. Called in `ElementClass.finalize()`
+   * @param {PolymerElementConstructor} klass Element class
+   * @return {boolean} True if all metaprogramming for this class has been
+   *   completed
+   * @private
+   */
+  function hasClassFinalized(klass) {
+    return klass.hasOwnProperty(JSCompiler_renameProperty('__finalized', klass));
+  }
+
+  /**
+   * Called by `ElementClass.finalize()`. Ensures this `klass` and
+   * *all superclasses* are finalized by traversing the prototype chain
+   * and calling `klass.finalize()`.
+   *
+   * @param {PolymerElementConstructor} klass Element class
+   * @private
+   */
+  function finalizeClassAndSuper(klass) {
+    var proto = /** @type PolymerElementConstructor */klass.prototype;
+    var superCtor = Object.getPrototypeOf(proto).constructor;
+    if (superCtor.prototype instanceof PolymerElement) {
+      superCtor.finalize();
+    }
+    finalizeClass(klass);
+  }
+
+  /**
+   * Configures a `klass` based on a staic `klass.config` object and
+   * a `template`. This includes creating accessors and effects
+   * for properties in `config` and the `template` as well as preparing the
+   * `template` for stamping.
+   *
+   * @param {PolymerElementConstructor} klass Element class
+   * @private
+   */
+  function finalizeClass(klass) {
+    klass.__finalized = true;
+    var proto = /** @type PolymerElementConstructor */klass.prototype;
+    if (klass.hasOwnProperty(JSCompiler_renameProperty('is', klass)) && klass.is) {
+      register(proto);
+    }
+    var props = ownPropertiesForClass(klass);
+    if (props) {
+      finalizeProperties(proto, props);
+    }
+    var observers = ownObserversForClass(klass);
+    if (observers) {
+      finalizeObservers(proto, observers, props);
+    }
+    // note: create "working" template that is finalized at instance time
+    var template = /** @type PolymerElementConstructor */klass.template;
+    if (template) {
+      if (typeof template === 'string') {
+        var t = document.createElement('template');
+        t.innerHTML = template;
+        template = t;
+      } else {
+        template = template.cloneNode(true);
+      }
+      proto._template = template;
+    }
+  }
+
+  /**
+   * Configures a `proto` based on a `properties` object.
+   * Leverages `PropertyEffects` to create property accessors and effects
+   * supporting, observers, reflecting to attributes, change notification,
+   * computed properties, and read only properties.
+   * @param {PolymerElement} proto Element class prototype to add accessors
+   *    and effects to
+   * @param {Object} properties Flattened bag of property descriptors for
+   *    this class
+   * @private
+   */
+  function finalizeProperties(proto, properties) {
+    for (var p in properties) {
+      createPropertyFromConfig(proto, p, properties[p], properties);
+    }
+  }
+
+  /**
+   * Configures a `proto` based on a `observers` array.
+   * Leverages `PropertyEffects` to create observers.
+   * @param {PolymerElement} proto Element class prototype to add accessors
+   *   and effects to
+   * @param {Object} observers Flattened array of observer descriptors for
+   *   this class
+   * @param {Object} dynamicFns Object containing keys for any properties
+   *   that are functions and should trigger the effect when the function
+   *   reference is changed
+   * @private
+   */
+  function finalizeObservers(proto, observers, dynamicFns) {
+    for (var i = 0; i < observers.length; i++) {
+      proto._createMethodObserver(observers[i], dynamicFns);
+    }
+  }
+
+  /**
+   * Creates effects for a property.
+   *
+   * Note, once a property has been set to
+   * `readOnly`, `computed`, `reflectToAttribute`, or `notify`
+   * these values may not be changed. For example, a subclass cannot
+   * alter these settings. However, additional `observers` may be added
+   * by subclasses.
+   *
+   * The info object should may contain property metadata as follows:
+   *
+   * * `type`: {function} type to which an attribute matching the property
+   * is deserialized. Note the property is camel-cased from a dash-cased
+   * attribute. For example, 'foo-bar' attribute is dersialized to a
+   * property named 'fooBar'.
+   *
+   * * `readOnly`: {boolean} creates a readOnly property and
+   * makes a private setter for the private of the form '_setFoo' for a
+   * property 'foo',
+   *
+   * * `computed`: {string} creates a computed property. A computed property
+   * also automatically is set to `readOnly: true`. The value is calculated
+   * by running a method and arguments parsed from the given string. For
+   * example 'compute(foo)' will compute a given property when the
+   * 'foo' property changes by executing the 'compute' method. This method
+   * must return the computed value.
+   *
+   * * `reflectToAttriute`: {boolean} If true, the property value is reflected
+   * to an attribute of the same name. Note, the attribute is dash-cased
+   * so a property named 'fooBar' is reflected as 'foo-bar'.
+   *
+   * * `notify`: {boolean} sends a non-bubbling notification event when
+   * the property changes. For example, a property named 'foo' sends an
+   * event named 'foo-changed' with `event.detail` set to the value of
+   * the property.
+   *
+   * * observer: {string} name of a method that runs when the property
+   * changes. The arguments of the method are (value, previousValue).
+   *
+   * Note: Users may want control over modifying property
+   * effects via subclassing. For example, a user might want to make a
+   * reflectToAttribute property not do so in a subclass. We've chosen to
+   * disable this because it leads to additional complication.
+   * For example, a readOnly effect generates a special setter. If a subclass
+   * disables the effect, the setter would fail unexpectedly.
+   * Based on feedback, we may want to try to make effects more malleable
+   * and/or provide an advanced api for manipulating them.
+   * Also consider adding warnings when an effect cannot be changed.
+   *
+   * @param {PolymerElement} proto Element class prototype to add accessors
+   *   and effects to
+   * @param {string} name Name of the property.
+   * @param {Object} info Info object from which to create property effects.
+   * Supported keys:
+   * @param {Object} allProps Flattened map of all properties defined in this
+   *   element (including inherited properties)
+   * @private
+   */
+  function createPropertyFromConfig(proto, name, info, allProps) {
+    // computed forces readOnly...
+    if (info.computed) {
+      info.readOnly = true;
+    }
+    // Note, since all computed properties are readOnly, this prevents
+    // adding additional computed property effects (which leads to a confusing
+    // setup where multiple triggers for setting a property)
+    // While we do have `hasComputedEffect` this is set on the property's
+    // dependencies rather than itself.
+    if (info.computed && !proto._hasReadOnlyEffect(name)) {
+      proto._createComputedProperty(name, info.computed, allProps);
+    }
+    if (info.readOnly && !proto._hasReadOnlyEffect(name)) {
+      proto._createReadOnlyProperty(name, !info.computed);
+    }
+    if (info.reflectToAttribute && !proto._hasReflectEffect(name)) {
+      proto._createReflectedProperty(name);
+    }
+    if (info.notify && !proto._hasNotifyEffect(name)) {
+      proto._createNotifyingProperty(name);
+    }
+    // always add observer
+    if (info.observer) {
+      proto._createPropertyObserver(name, info.observer, allProps[info.observer]);
+    }
+  }
+
+  /**
+   * Configures an element `proto` to function with a given `template`.
+   * The element name `is` and extends `ext` must be specified for ShadyCSS
+   * style scoping.
+   *
+   * @param {PolymerElement} proto Element class prototype to add accessors
+   *   and effects to
+   * @param {!HTMLTemplateElement} template Template to process and bind
+   * @param {string} baseURI URL against which to resolve urls in
+   *   style element cssText
+   * @param {string} is Tag name (or type extension name) for this element
+   * @param {string=} ext For type extensions, the tag name that was extended
+   * @private
+   */
+  function finalizeTemplate(proto, template, baseURI, is, ext) {
+    // support `include="module-name"`
+    var cssText = (0, _styleGather.cssFromModuleImports)(is) + (0, _styleGather.cssFromTemplate)(template, baseURI);
+    if (cssText) {
+      var style = document.createElement('style');
+      style.textContent = cssText;
+      template.content.insertBefore(style, template.content.firstChild);
+    }
+    if (window.ShadyCSS) {
+      window.ShadyCSS.prepareTemplate(template, is, ext);
+    }
+    proto._bindTemplate(template);
+  }
+
+  /**
+   * @polymer
+   * @mixinClass
+   * @unrestricted
+   * @implements {Polymer_ElementMixin}
+   */
+
+  var PolymerElement = function (_polymerElementBase) {
+    _inherits(PolymerElement, _polymerElementBase);
+
+    _createClass(PolymerElement, null, [{
+      key: 'finalize',
+
+
+      /**
+       * Called automatically when the first element instance is created to
+       * ensure that class finalization work has been completed.
+       * May be called by users to eagerly perform class finalization work
+       * prior to the creation of the first element instance.
+       *
+       * Class finalization work generally includes meta-programming such as
+       * creating property accessors and any property effect metadata needed for
+       * the features used.
+       *
+       * @public
+       */
+      value: function finalize() {
+        if (!hasClassFinalized(this)) {
+          finalizeClassAndSuper(this);
+        }
+      }
+
+      /**
+       * Returns the template that will be stamped into this element's shadow root.
+       *
+       * If a `static get is()` getter is defined, the default implementation
+       * will return the first `<template>` in a `dom-module` whose `id`
+       * matches this element's `is`.
+       *
+       * Users may override this getter to return an arbitrary template
+       * (in which case the `is` getter is unnecessary). The template returned
+       * may be either an `HTMLTemplateElement` or a string that will be
+       * automatically parsed into a template.
+       *
+       * Note that when subclassing, if the super class overrode the default
+       * implementation and the subclass would like to provide an alternate
+       * template via a `dom-module`, it should override this getter and
+       * return `Polymer.DomModule.import(this.is, 'template')`.
+       *
+       * If a subclass would like to modify the super class template, it should
+       * clone it rather than modify it in place.  If the getter does expensive
+       * work such as cloning/modifying a template, it should memoize the
+       * template for maximum performance:
+       *
+       *   let memoizedTemplate;
+       *   class MySubClass extends MySuperClass {
+       *     static get template() {
+       *       if (!memoizedTemplate) {
+       *         memoizedTemplate = super.template.cloneNode(true);
+       *         let subContent = document.createElement('div');
+       *         subContent.textContent = 'This came from MySubClass';
+       *         memoizedTemplate.content.appendChild(subContent);
+       *       }
+       *       return memoizedTemplate;
+       *     }
+       *   }
+       *
+       * @return {HTMLTemplateElement|string} Template to be stamped
+       */
+
+    }, {
+      key: 'observedAttributes',
+
+
+      /**
+       * Standard Custom Elements V1 API.  The default implementation returns
+       * a list of dash-cased attributes based on a flattening of all properties
+       * declared in `static get properties()` for this element and any
+       * superclasses.
+       *
+       * @return {Array} Observed attribute list
+       */
+      get: function get() {
+        if (!this.hasOwnProperty(JSCompiler_renameProperty('__observedAttributes', this))) {
+          var list = [];
+          var properties = propertiesForClass(this);
+          for (var prop in properties) {
+            list.push((0, _caseMap.camelToDashCase)(prop));
+          }
+          this.__observedAttributes = list;
+        }
+        return this.__observedAttributes;
+      }
+    }, {
+      key: 'template',
+      get: function get() {
+        if (!this.hasOwnProperty(JSCompiler_renameProperty('_template', this))) {
+          this._template = _domModule.DomModule && _domModule.DomModule.import(
+          /** @type PolymerElementConstructor*/this.is, 'template') ||
+          // note: implemented so a subclass can retrieve the super
+          // template; call the super impl this way so that `this` points
+          // to the superclass.
+          Object.getPrototypeOf( /** @type PolymerElementConstructor*/this.prototype).constructor.template;
+        }
+        return this._template;
+      }
+
+      /**
+       * Path matching the url from which the element was imported.
+       * This path is used to resolve url's in template style cssText.
+       * The `importPath` property is also set on element instances and can be
+       * used to create bindings relative to the import path.
+       * Defaults to the path matching the url containing a `dom-module` element
+       * matching this element's static `is` property.
+       * Note, this path should contain a trailing `/`.
+       *
+       * @return {string} The import path for this element class
+       */
+
+    }, {
+      key: 'importPath',
+      get: function get() {
+        if (!this.hasOwnProperty(JSCompiler_renameProperty('_importPath', this))) {
+          var module = _domModule.DomModule && _domModule.DomModule.import( /** @type PolymerElementConstructor */this.is);
+          this._importPath = module ? module.assetpath : '' || Object.getPrototypeOf( /** @type PolymerElementConstructor*/this.prototype).constructor.importPath;
+        }
+        return this._importPath;
+      }
+    }]);
+
+    function PolymerElement() {
+      _classCallCheck(this, PolymerElement);
+
+      /** @type {HTMLTemplateElement} */
+      var _this = _possibleConstructorReturn(this, (PolymerElement.__proto__ || Object.getPrototypeOf(PolymerElement)).call(this));
+
+      _this._template;
+      /** @type {string} */
+      _this._importPath;
+      /** @type {string} */
+      _this.rootPath;
+      /** @type {string} */
+      _this.importPath;
+      /** @type {StampedTemplate | HTMLElement | ShadowRoot} */
+      _this.root;
+      /** @type {!Object<string, !Node>} */
+      _this.$;
+      return _this;
+    }
+
+    /**
+     * Overrides the default `Polymer.PropertyAccessors` to ensure class
+     * metaprogramming related to property accessors and effects has
+     * completed (calls `finalize`).
+     *
+     * It also initializes any property defaults provided via `value` in
+     * `properties` metadata.
+     *
+     * @override
+     * @suppress {invalidCasts}
+     */
+
+
+    _createClass(PolymerElement, [{
+      key: '_initializeProperties',
+      value: function _initializeProperties() {
+        exports.instanceCount = instanceCount += 1;
+        this.constructor.finalize();
+        var importPath = this.constructor.importPath;
+        // note: finalize template when we have access to `localName` to
+        // avoid dependence on `is` for polyfilling styling.
+        if (this._template && !this._template.__polymerFinalized) {
+          this._template.__polymerFinalized = true;
+          var baseURI = importPath ? (0, _resolveUrl.resolveUrl)(importPath) : '';
+          finalizeTemplate( /** @type {!PolymerElement} */this.__proto__, this._template, baseURI,
+          /**@type {!HTMLElement}*/this.localName);
+        }
+        _get(PolymerElement.prototype.__proto__ || Object.getPrototypeOf(PolymerElement.prototype), '_initializeProperties', this).call(this);
+        // set path defaults
+        this.rootPath = _settings.rootPath;
+        this.importPath = importPath;
+        // apply property defaults...
+        var p$ = propertyDefaultsForClass(this.constructor);
+        if (!p$) {
+          return;
+        }
+        for (var p in p$) {
+          var info = p$[p];
+          // Don't set default value if there is already an own property, which
+          // happens when a `properties` property with default but no effects had
+          // a property set (e.g. bound) by its host before upgrade
+          if (!this.hasOwnProperty(p)) {
+            var value = typeof info.value == 'function' ? info.value.call(this) : info.value;
+            // Set via `_setProperty` if there is an accessor, to enable
+            // initializing readOnly property defaults
+            if (this._hasAccessor(p)) {
+              this._setPendingProperty(p, value, true);
+            } else {
+              this[p] = value;
+            }
+          }
+        }
+      }
+
+      /**
+       * Provides a default implementation of the standard Custom Elements
+       * `connectedCallback`.
+       *
+       * The default implementation enables the property effects system and
+       * flushes any pending properties, and updates shimmed CSS properties
+       * when using the ShadyCSS scoping/custom properties polyfill.
+       *
+       * @suppress {invalidCasts}
+       */
+
+    }, {
+      key: 'connectedCallback',
+      value: function connectedCallback() {
+        if (window.ShadyCSS && this._template) {
+          window.ShadyCSS.styleElement( /** @type {!HTMLElement} */this);
+        }
+        this._enableProperties();
+      }
+
+      /**
+       * Provides a default implementation of the standard Custom Elements
+       * `disconnectedCallback`.
+       */
+
+    }, {
+      key: 'disconnectedCallback',
+      value: function disconnectedCallback() {}
+
+      /**
+       * Stamps the element template.
+       *
+       * @override
+       */
+
+    }, {
+      key: 'ready',
+      value: function ready() {
+        if (this._template) {
+          this.root = this._stampTemplate(this._template);
+          this.$ = this.root.$;
+        }
+        _get(PolymerElement.prototype.__proto__ || Object.getPrototypeOf(PolymerElement.prototype), 'ready', this).call(this);
+      }
+
+      /**
+       * Implements `PropertyEffects`'s `_readyClients` call. Attaches
+       * element dom by calling `_attachDom` with the dom stamped from the
+       * element's template via `_stampTemplate`. Note that this allows
+       * client dom to be attached to the element prior to any observers
+       * running.
+       *
+       * @override
+       */
+
+    }, {
+      key: '_readyClients',
+      value: function _readyClients() {
+        if (this._template) {
+          this.root = this._attachDom( /** @type {StampedTemplate} */this.root);
+        }
+        // The super._readyClients here sets the clients initialized flag.
+        // We must wait to do this until after client dom is created/attached
+        // so that this flag can be checked to prevent notifications fired
+        // during this process from being handled before clients are ready.
+        _get(PolymerElement.prototype.__proto__ || Object.getPrototypeOf(PolymerElement.prototype), '_readyClients', this).call(this);
+      }
+
+      /**
+       * Attaches an element's stamped dom to itself. By default,
+       * this method creates a `shadowRoot` and adds the dom to it.
+       * However, this method may be overridden to allow an element
+       * to put its dom in another location.
+       *
+       * @throws {Error}
+       * @suppress {missingReturn}
+       * @param {StampedTemplate} dom to attach to the element.
+       * @return {ShadowRoot} node to which the dom has been attached.
+       */
+
+    }, {
+      key: '_attachDom',
+      value: function _attachDom(dom) {
+        if (this.attachShadow) {
+          if (dom) {
+            if (!this.shadowRoot) {
+              this.attachShadow({ mode: 'open' });
+            }
+            this.shadowRoot.appendChild(dom);
+            return this.shadowRoot;
+          }
+          return null;
+        } else {
+          throw new Error('ShadowDOM not available. ' +
+          // TODO(sorvell): move to compile-time conditional when supported
+          'Polymer.Element can create dom as children instead of in ' + 'ShadowDOM by setting `this.root = this;\` before \`ready\`.');
+        }
+      }
+
+      /**
+       * Provides a default implementation of the standard Custom Elements
+       * `attributeChangedCallback`.
+       *
+       * By default, attributes declared in `properties` metadata are
+       * deserialized using their `type` information to properties of the
+       * same name.  "Dash-cased" attributes are deserialzed to "camelCase"
+       * properties.
+       *
+       * @param {string} name Name of attribute.
+       * @param {?string} old Old value of attribute.
+       * @param {?string} value Current value of attribute.
+       * @override
+       */
+
+    }, {
+      key: 'attributeChangedCallback',
+      value: function attributeChangedCallback(name, old, value) {
+        if (old !== value) {
+          var property = caseMap.dashToCamelCase(name);
+          var type = propertiesForClass(this.constructor)[property].type;
+          if (!this._hasReadOnlyEffect(property)) {
+            this._attributeToProperty(name, value, type);
+          }
+        }
+      }
+
+      /**
+       * When using the ShadyCSS scoping and custom property shim, causes all
+       * shimmed styles in this element (and its subtree) to be updated
+       * based on current custom property values.
+       *
+       * The optional parameter overrides inline custom property styles with an
+       * object of properties where the keys are CSS properties, and the values
+       * are strings.
+       *
+       * Example: `this.updateStyles({'--color': 'blue'})`
+       *
+       * These properties are retained unless a value of `null` is set.
+       *
+       * @param {Object=} properties Bag of custom property key/values to
+       *   apply to this element.
+       * @suppress {invalidCasts}
+       */
+
+    }, {
+      key: 'updateStyles',
+      value: function updateStyles(properties) {
+        if (window.ShadyCSS) {
+          window.ShadyCSS.styleSubtree( /** @type {!HTMLElement} */this, properties);
+        }
+      }
+
+      /**
+       * Rewrites a given URL relative to a base URL. The base URL defaults to
+       * the original location of the document containing the `dom-module` for
+       * this element. This method will return the same URL before and after
+       * bundling.
+       *
+       * @param {string} url URL to resolve.
+       * @param {string=} base Optional base URL to resolve against, defaults
+       * to the element's `importPath`
+       * @return {string} Rewritten URL relative to base
+       */
+
+    }, {
+      key: 'resolveUrl',
+      value: function resolveUrl(url, base) {
+        if (!base && this.importPath) {
+          base = (0, _resolveUrl.resolveUrl)(this.importPath);
+        }
+        return (0, _resolveUrl.resolveUrl)(url, base);
+      }
+
+      /**
+       * Overrides `PropertyAccessors` to add map of dynamic functions on
+       * template info, for consumption by `PropertyEffects` template binding
+       * code. This map determines which method templates should have accessors
+       * created for them.
+       *
+       * @override
+       * @suppress {missingProperties} Interfaces in closure do not inherit statics, but classes do
+       */
+
+    }], [{
+      key: '_parseTemplateContent',
+      value: function _parseTemplateContent(template, templateInfo, nodeInfo) {
+        templateInfo.dynamicFns = templateInfo.dynamicFns || propertiesForClass(this);
+        return _get(PolymerElement.__proto__ || Object.getPrototypeOf(PolymerElement), '_parseTemplateContent', this).call(this, template, templateInfo, nodeInfo);
+      }
+    }]);
+
+    return PolymerElement;
+  }(polymerElementBase);
+
+  return PolymerElement;
+});
+
+var instanceCount = exports.instanceCount = 0;
+var registrations = exports.registrations = [];
+
+function _regLog(prototype) {
+  console.log('[' + prototype.is + ']: registered');
+}
+
+function register(prototype) {
+  registrations.push(prototype);
+  undefined && _regLog(prototype);
+}
+
+function dumpRegistrations() {
+  registrations.forEach(_regLog);
+}
+
+var updateStyles = exports.updateStyles = function updateStyles(props) {
+  if (window.ShadyCSS) {
+    window.ShadyCSS.styleDocument(props);
+  }
+};
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.cssFromModules = cssFromModules;
+exports.cssFromModule = cssFromModule;
+exports.cssFromTemplate = cssFromTemplate;
+exports.cssFromModuleImports = cssFromModuleImports;
+exports._cssFromModuleImports = _cssFromModuleImports;
+
+var _resolveUrl = __webpack_require__(9);
+
+var MODULE_STYLE_LINK_SELECTOR = 'link[rel=import][type~=css]';
+var INCLUDE_ATTR = 'include';
+
+function importModule(moduleId) {
+  var /** Polymer.DomModule */PolymerDomModule = customElements.get('dom-module');
+  if (!PolymerDomModule) {
+    return null;
+  }
+  return PolymerDomModule.import(moduleId);
+}
+
+/** @typedef {{assetpath: string}} */
+var templateWithAssetPath = void 0; // eslint-disable-line no-unused-vars
+
+function cssFromModules(moduleIds) {
+  var modules = moduleIds.trim().split(/\s+/);
+  var cssText = '';
+  for (var i = 0; i < modules.length; i++) {
+    cssText += cssFromModule(modules[i]);
+  }
+  return cssText;
+}
+
+function cssFromModule(moduleId) {
+  var m = importModule(moduleId);
+  if (m && m._cssText === undefined) {
+    // module imports: <link rel="import" type="css">
+    var cssText = _cssFromModuleImports(m);
+    // include css from the first template in the module
+    var t = m.querySelector('template');
+    if (t) {
+      cssText += cssFromTemplate(t, /** @type {templateWithAssetPath} */m.assetpath);
+    }
+    m._cssText = cssText || null;
+  }
+  if (!m) {
+    console.warn('Could not find style data in module named', moduleId);
+  }
+  return m && m._cssText || '';
+}
+
+function cssFromTemplate(template, baseURI) {
+  var cssText = '';
+  // if element is a template, get content from its .content
+  var e$ = template.content.querySelectorAll('style');
+  for (var i = 0; i < e$.length; i++) {
+    var e = e$[i];
+    // support style sharing by allowing styles to "include"
+    // other dom-modules that contain styling
+    var include = e.getAttribute(INCLUDE_ATTR);
+    if (include) {
+      cssText += cssFromModules(include);
+    }
+    e.parentNode.removeChild(e);
+    cssText += baseURI ? (0, _resolveUrl.resolveCss)(e.textContent, baseURI) : e.textContent;
+  }
+  return cssText;
+}
+
+function cssFromModuleImports(moduleId) {
+  var m = importModule(moduleId);
+  return m ? _cssFromModuleImports(m) : '';
+}
+
+function _cssFromModuleImports(module) {
+  var cssText = '';
+  var p$ = module.querySelectorAll(MODULE_STYLE_LINK_SELECTOR);
+  for (var i = 0; i < p$.length; i++) {
+    var p = p$[i];
+    if (p.import) {
+      var importDoc = p.import;
+      // NOTE: polyfill affordance.
+      // under the HTMLImports polyfill, there will be no 'body',
+      // but the import pseudo-doc can be used directly.
+      var container = importDoc.body ? importDoc.body : importDoc;
+      cssText += (0, _resolveUrl.resolveCss)(container.textContent, importDoc.baseURI);
+    }
+  }
+  return cssText;
+}
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.DomModule = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+__webpack_require__(0);
+
+var _resolveUrl = __webpack_require__(9);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var modules = {};
+var lcModules = {};
+function findModule(id) {
+  return modules[id] || lcModules[id.toLowerCase()];
+}
+
+function styleOutsideTemplateCheck(inst) {
+  if (inst.querySelector('style')) {
+    console.warn('dom-module %s has style outside template', inst.id);
+  }
+}
+
+/**
+ * The `dom-module` element registers the dom it contains to the name given
+ * by the module's id attribute. It provides a unified database of dom
+ * accessible via its static `import` API.
+ *
+ * A key use case of `dom-module` is for providing custom element `<template>`s
+ * via HTML imports that are parsed by the native HTML parser, that can be
+ * relocated during a bundling pass and still looked up by `id`.
+ *
+ * Example:
+ *
+ *     <dom-module id="foo">
+ *       <img src="stuff.png">
+ *     </dom-module>
+ *
+ * Then in code in some other location that cannot access the dom-module above
+ *
+ *     let img = customElements.get('dom-module').import('foo', 'img');
+ *
+ * @customElement
+ * @extends HTMLElement
+ * @memberof Polymer
+ * @summary Custom element that provides a registry of relocatable DOM content
+ *   by `id` that is agnostic to bundling.
+ * @unrestricted
+ */
+
+var DomModule = function (_HTMLElement) {
+  _inherits(DomModule, _HTMLElement);
+
+  function DomModule() {
+    _classCallCheck(this, DomModule);
+
+    return _possibleConstructorReturn(this, (DomModule.__proto__ || Object.getPrototypeOf(DomModule)).apply(this, arguments));
+  }
+
+  _createClass(DomModule, [{
+    key: 'attributeChangedCallback',
+    value: function attributeChangedCallback(name, old, value) {
+      if (old !== value) {
+        this.register();
+      }
+    }
+
+    /**
+     * The absolute URL of the original location of this `dom-module`.
+     *
+     * This value will differ from this element's `ownerDocument` in the
+     * following ways:
+     * - Takes into account any `assetpath` attribute added during bundling
+     *   to indicate the original location relative to the bundled location
+     * - Uses the HTMLImports polyfill's `importForElement` API to ensure
+     *   the path is relative to the import document's location since
+     *   `ownerDocument` is not currently polyfilled
+     */
+
+  }, {
+    key: 'register',
+
+
+    /**
+     * Registers the dom-module at a given id. This method should only be called
+     * when a dom-module is imperatively created. For
+     * example, `document.createElement('dom-module').register('foo')`.
+     * @param {string=} id The id at which to register the dom-module.
+     */
+    value: function register(id) {
+      id = id || this.id;
+      if (id) {
+        this.id = id;
+        // store id separate from lowercased id so that
+        // in all cases mixedCase id will stored distinctly
+        // and lowercase version is a fallback
+        modules[id] = this;
+        lcModules[id.toLowerCase()] = this;
+        styleOutsideTemplateCheck(this);
+      }
+    }
+  }, {
+    key: 'assetpath',
+    get: function get() {
+      // Don't override existing assetpath.
+      if (!this.__assetpath) {
+        // note: assetpath set via an attribute must be relative to this
+        // element's location; accomodate polyfilled HTMLImports
+        var owner = window.HTMLImports && HTMLImports.importForElement ? HTMLImports.importForElement(this) || document : this.ownerDocument;
+        var url = (0, _resolveUrl.resolveUrl)(this.getAttribute('assetpath') || '', owner.baseURI);
+        this.__assetpath = (0, _resolveUrl.pathFromUrl)(url);
+      }
+      return this.__assetpath;
+    }
+  }], [{
+    key: 'import',
+
+
+    /**
+     * Retrieves the element specified by the css `selector` in the module
+     * registered by `id`. For example, this.import('foo', 'img');
+     * @param {string} id The id of the dom-module in which to search.
+     * @param {string=} selector The css selector by which to find the element.
+     * @return {Element} Returns the element which matches `selector` in the
+     * module registered at the specified `id`.
+     */
+    value: function _import(id, selector) {
+      if (id) {
+        var m = findModule(id);
+        if (m && selector) {
+          return m.querySelector(selector);
+        }
+        return m;
+      }
+      return null;
+    }
+  }, {
+    key: 'observedAttributes',
+    get: function get() {
+      return ['id'];
+    }
+  }]);
+
+  return DomModule;
+}(HTMLElement);
+
+DomModule.prototype['modules'] = modules;
+
+customElements.define('dom-module', DomModule);
+
+exports.DomModule = DomModule;
+
+/***/ }),
 /* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6356,7 +6359,7 @@ var _caseMap = __webpack_require__(11);
 
 var caseMap$0 = _interopRequireWildcard(_caseMap);
 
-var _async = __webpack_require__(9);
+var _async = __webpack_require__(8);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -7561,9 +7564,9 @@ exports.resetMouseCanceller = resetMouseCanceller;
 
 __webpack_require__(0);
 
-var _async = __webpack_require__(9);
+var _async = __webpack_require__(8);
 
-var _debounce = __webpack_require__(18);
+var _debounce = __webpack_require__(17);
 
 // detect native touch action support
 var HAS_NATIVE_TA = typeof document.head.style.touchAction === 'string';
@@ -9055,7 +9058,7 @@ var _get = function get(object, property, receiver) { if (object === null) objec
 
 exports.default = PolymerRedux;
 
-var _path = __webpack_require__(17);
+var _path = __webpack_require__(16);
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
@@ -9324,9 +9327,9 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _polymerElement = __webpack_require__(15);
 
-var _debounce = __webpack_require__(18);
+var _debounce = __webpack_require__(17);
 
-var _async = __webpack_require__(9);
+var _async = __webpack_require__(8);
 
 var _stateManager = __webpack_require__(1);
 
@@ -10003,12 +10006,7 @@ var GestureEventListeners = exports.GestureEventListeners = (0, _mixin.dedupingM
 });
 
 /***/ }),
-/* 86 */,
-/* 87 */,
-/* 88 */,
-/* 89 */,
-/* 90 */,
-/* 91 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

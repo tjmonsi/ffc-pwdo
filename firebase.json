@@ -18,6 +18,10 @@
       {
         "source": "/",
         "destination": "/index.html"
+      },
+      {
+        "source": "/speakers",
+        "destination": "/index.html"
       }
     ],
     "headers": [
