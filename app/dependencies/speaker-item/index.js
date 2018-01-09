@@ -1,6 +1,6 @@
 import { Element } from '@polymer/polymer/polymer-element';
 import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event-listeners';
-import { customElements } from 'global/window';
+import { customElements, fetch } from 'global/window';
 import css from './style.scss';
 import template from './template.html';
 
@@ -10,7 +10,12 @@ class Component extends GestureEventListeners(Element) {
   static get properties () {
     return {
       speaker: {
-        type: Object
+        type: Object,
+        value: {}
+      },
+      speakerId: {
+        type: String,
+        observer: '_fetchSpeaker'
       }
     };
   }
@@ -22,6 +27,20 @@ class Component extends GestureEventListeners(Element) {
       </style>
       ${template}
     `;
+  }
+
+  _fetchSpeaker (speakerId) {
+    if (speakerId) {
+      fetch(`https://raw.githubusercontent.com/tjmonsi/ffc-pwdo/master/data/speakers/${speakerId}.json`)
+        .then(result => result.json())
+        .then(speaker => (this.speaker = Object.assign({}, this.speaker, speaker)));
+
+      fetch(`https://raw.githubusercontent.com/tjmonsi/ffc-pwdo/master/data/speakers/${speakerId}.md`)
+        .then(result => result.text())
+        .then(bio => (this.speaker = Object.assign({}, this.speaker, { bio })));
+    } else {
+      this.speaker = {};
+    }
   }
 }
 

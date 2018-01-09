@@ -112,7 +112,7 @@ var Component = function (_GestureEventListener) {
 /***/ 102:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(86)(undefined);
+exports = module.exports = __webpack_require__(86)(false);
 // imports
 
 
@@ -149,7 +149,7 @@ module.exports = "<nav class=\"nav\" role=\"navigation\">\n  <ul class=\"nav-lis
 /***/ 105:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(86)(undefined);
+exports = module.exports = __webpack_require__(86)(false);
 // imports
 
 
@@ -502,7 +502,7 @@ exports.DomIf = DomIf;
 /***/ 112:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(86)(undefined);
+exports = module.exports = __webpack_require__(86)(false);
 // imports
 
 
@@ -610,7 +610,7 @@ var Component = function (_GestureEventListener) {
 /***/ 116:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(86)(undefined);
+exports = module.exports = __webpack_require__(86)(false);
 // imports
 
 
@@ -625,7 +625,7 @@ exports.push([module.i, "* {\n  font-family: 'Inovato', sans-serif; }\n\n:host {
 /***/ 117:
 /***/ (function(module, exports) {
 
-module.exports = "<h2>\n  [[speakers.title]]\n</h2>\n\n<template is=\"dom-repeat\" items=\"[[speakers.list]]\">\n  <speaker-item speaker=\"[[item]]\"></speaker-item>\n</template>"
+module.exports = "<h2>\n  [[speakers.title]]\n</h2>\n\n<template is=\"dom-repeat\" items=\"[[speakers.list]]\">\n  <speaker-item speaker-id=\"[[item]]\"></speaker-item>\n</template>"
 
 /***/ }),
 
@@ -668,7 +668,28 @@ var Component = function (_GestureEventListener) {
     return _possibleConstructorReturn(this, (Component.__proto__ || Object.getPrototypeOf(Component)).apply(this, arguments));
   }
 
-  _createClass(Component, null, [{
+  _createClass(Component, [{
+    key: '_fetchSpeaker',
+    value: function _fetchSpeaker(speakerId) {
+      var _this2 = this;
+
+      if (speakerId) {
+        (0, _window.fetch)('https://raw.githubusercontent.com/tjmonsi/ffc-pwdo/master/data/speakers/' + speakerId + '.json').then(function (result) {
+          return result.json();
+        }).then(function (speaker) {
+          return _this2.speaker = Object.assign({}, _this2.speaker, speaker);
+        });
+
+        (0, _window.fetch)('https://raw.githubusercontent.com/tjmonsi/ffc-pwdo/master/data/speakers/' + speakerId + '.md').then(function (result) {
+          return result.text();
+        }).then(function (bio) {
+          return _this2.speaker = Object.assign({}, _this2.speaker, { bio: bio });
+        });
+      } else {
+        this.speaker = {};
+      }
+    }
+  }], [{
     key: 'is',
     get: function get() {
       return 'speaker-item';
@@ -678,7 +699,12 @@ var Component = function (_GestureEventListener) {
     get: function get() {
       return {
         speaker: {
-          type: Object
+          type: Object,
+          value: {}
+        },
+        speakerId: {
+          type: String,
+          observer: '_fetchSpeaker'
         }
       };
     }
@@ -714,7 +740,7 @@ var Component = function (_GestureEventListener) {
 /***/ 120:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(86)(undefined);
+exports = module.exports = __webpack_require__(86)(false);
 // imports
 
 
@@ -772,12 +798,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Component = function (_GestureEventListener) {
   _inherits(Component, _GestureEventListener);
 
-  function Component() {
-    _classCallCheck(this, Component);
-
-    return _possibleConstructorReturn(this, (Component.__proto__ || Object.getPrototypeOf(Component)).apply(this, arguments));
-  }
-
   _createClass(Component, null, [{
     key: 'is',
     get: function get() {
@@ -788,26 +808,7 @@ var Component = function (_GestureEventListener) {
     get: function get() {
       return {
         speakersList: {
-          type: Array,
-          value: [{
-            title: 'Talks',
-            list: [{
-              name: 'Russell Vergara',
-              image: 'http://2017.formfunctionclass.com/img/speakers/russellv.png',
-              position: 'Founder, Vgrafiks',
-              bio: 'He sold his first PUTO when he was six. He worked as a waiter for Burgoo, and as an In-room dining assistant at Sheraton Park Hotel. In London. He’s an only child, so he’s kinda spoiled. He was 80 pounds lighter, nung hindi pa uso ang extra rice. He studied 7 courses 7 different schools. But he never graduated. He’s not very bright kasi. But he’s very madiskarte. He’s Russell. The Big Daddy of Vigi.',
-              talk: 'Branding and Design Systems'
-            }]
-          }, {
-            title: 'Workshops',
-            list: [{
-              name: 'Russell Vergara',
-              image: 'http://2017.formfunctionclass.com/img/speakers/russellv.png',
-              position: 'Founder, Vgrafiks',
-              bio: 'He sold his first PUTO when he was six. He worked as a waiter for Burgoo, and as an In-room dining assistant at Sheraton Park Hotel. In London. He’s an only child, so he’s kinda spoiled. He was 80 pounds lighter, nung hindi pa uso ang extra rice. He studied 7 courses 7 different schools. But he never graduated. He’s not very bright kasi. But he’s very madiskarte. He’s Russell. The Big Daddy of Vigi.',
-              talk: 'Branding and Design Systems'
-            }]
-          }]
+          type: Array
         }
       };
     }
@@ -817,6 +818,19 @@ var Component = function (_GestureEventListener) {
       return '\n      <style>\n        ' + _style2.default + '\n      </style>\n      ' + _template2.default + '\n    ';
     }
   }]);
+
+  function Component() {
+    _classCallCheck(this, Component);
+
+    var _this = _possibleConstructorReturn(this, (Component.__proto__ || Object.getPrototypeOf(Component)).call(this));
+
+    (0, _window.fetch)('https://raw.githubusercontent.com/tjmonsi/ffc-pwdo/master/data/speakers.json').then(function (result) {
+      return result.json();
+    }).then(function (json) {
+      return _this.speakersList = json;
+    });
+    return _this;
+  }
 
   return Component;
 }((0, _gestureEventListeners.GestureEventListeners)(_polymerElement.Element));
@@ -2562,7 +2576,7 @@ var Component = function (_GestureEventListener) {
 /***/ 98:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(86)(undefined);
+exports = module.exports = __webpack_require__(86)(false);
 // imports
 
 
