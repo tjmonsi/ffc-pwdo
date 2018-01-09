@@ -1,0 +1,15 @@
+<side-bar with-logo></side-bar>
+
+<section class="main">
+
+  <header class="header">
+    <h1>
+      Schedule
+    </h1>
+  </header>
+
+  <template is="dom-repeat" items="[[speakersList]]">
+    <speaker-list speakers="[[item]]"></speaker-list>
+  </template>
+
+</section>
