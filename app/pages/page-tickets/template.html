@@ -12,7 +12,81 @@
     </a>
   </header>
 
+  <p>
+    [[ticketsObject.description]]
+  </p>
 
+  <template is="dom-repeat" items="[[ticketsObject.list]]" as="section">
+    <section class="section">
+      <h2 class="title">
+        [[section.title]]
+      </h2>
+
+      <p>
+        [[section.description]]
+      </p>
+
+      <div class$="grid [[section.class]]">
+        <template is="dom-repeat" items="[[section.list]]" as="ticket">
+          <div class="box">
+            <h3 class="title">
+              [[ticket.title]]
+            </h3>
+
+            <h3 class="price">
+              [[ticket.price]]
+            </h3>
+
+            <template is="dom-if" if="[[ticket.description]]">
+              <marked-element marked="[[ticket.description]]"></marked-element>
+            </template>
+
+            <template is="dom-if" if="[[ticket.list.length]]">
+              <ul class="list">
+                <template is="dom-repeat" items="[[ticket.list]]">
+                  <li class="item">
+                    [[item]]
+                  </li>
+                </template>
+              </ul>
+            </template>
+
+            <template is="dom-if" if="[[ticket.note]]">
+              <marked-element marked="\* [[ticket.note]]"></marked-element>
+            </template>
+          </div>
+        </template>
+      </div>
+
+      <template is="dom-if" if="[[section.note]]">
+        <marked-element marked="Note: [[section.note]]"></marked-element>
+      </template>
+    </section>
+  </template>
+
+  <section class="section">
+    <h2 class="title">
+      How to Pay
+    </h2>
+
+    <div class="grid how-to-pay">
+      <div class="box">
+        <h3 class="title">
+          Online
+        </h3>
+
+        <marked-element marked="[[online]]"></marked-element>
+      </div>
+
+      <div class="box">
+        <h3 class="title">
+          Offline
+        </h3>
+
+        <marked-element marked="[[offline]]"></marked-element>
+      </div>
+    </div>
+  </section>
 
 </section>
 

@@ -30,6 +30,10 @@
       {
         "source": "/session/**",
         "destination": "/index.html"
+      },
+      {
+        "source": "/tickets",
+        "destination": "/index.html"
       }
     ],
     "headers": [

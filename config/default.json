@@ -25,6 +25,7 @@
     "page-speakers": "page-speakers",
     "page-schedule": "page-schedule",
     "page-sessions": "page-sessions",
+    "page-tickets": "page-tickets",
     "page-not-authorized": "page-not-authorized",
     "page-not-found": "page-not-found"
   },
@@ -43,6 +44,9 @@
       },
       "/session/:id": {
         "page": "page-sessions"
+      },
+      "/tickets": {
+        "page": "page-tickets"
       }
     }
   },

@@ -30,6 +30,7 @@
       "title": "Special Discounts",
       "class": "special-discounts",
       "description": "Avail special rates & perks with these discounted tickets:",
+      "note": "if you avail of the Student or VisMin discount online and fail to present the necessary verification at conference check-in, you may not enter the conference.",
       "list": [
         {
           "title": "Company Ticket",
@@ -42,7 +43,8 @@
             "Acknowledgment during FFC",
             "Logo on website"
           ],
-          "note": "Must send company logo & proof ticketholders are from company"
+          "note": "Must send company logo & proof ticketholders are from company",
+          "how-to-pay": true
         },
         {
           "title": "Student Discount",
@@ -52,16 +54,98 @@
             "Online payment: please present valid ID or other proof of enrollment during conference check-in.",
             "Offline payment: please include proof of enrollment in your email."
           ],
-          "note": "Must present proof you are currently enrolled as a student"
+          "note": "Must present proof you are currently enrolled as a student",
+          "how-to-pay": true
         },
         {
-          "title": "Night Owl",
-          "price": "₱ 4,000",
-          "description": "July 17 - September 8",
-          "button": {
-            "url": "",
-            "label": "SOLD OUT"
-          }
+          "title": "Loyalty Discount",
+          "price": "10-20% off",
+          "description": "July 1 - July 31",
+          "list": [
+            "Offline payment only",
+            "Attended FFC 2017: 10% off!",
+            "Attended 2 FFCs: 15% off!",
+            "Attended 3+ FFCs: 20% off!"
+          ],
+          "note": "Email info@pwdo.org with proof of past attendance, then we'll let you know how much you need to pay."
+        },
+        {
+          "title": "VisMin Discount",
+          "price": "15% off for Visayas & Mindanao attendees",
+          "description": "June 1 – September 8",
+          "list": [
+            "Applicable to Early Bird & Night Owl",
+            "Can be combined with Group Discount when Night Owl goes on sale"
+          ],
+          "note": "Must present proof you currently reside in Visayas or Mindanao",
+          "how-to-pay": true
+        },
+        {
+          "title": "Group Discount",
+          "price": "Buy 3, get 1 FREE!",
+          "description": "July 17 – September 8\n\nPurchase 4 tickets for the price of 3! Assemble your squad to avail a great deal on FFC tickets"
+        },
+        {
+          "title": "Community Discount",
+          "price": "15% discount!",
+          "description": "June 1 – September 1",
+          "list": [
+            "Gather 5 friends from the same design or tech community",
+            "Contact your community lead for the discount code",
+            "Online payment only"
+          ]
+        },
+        {
+          "title": "Scholarship Ticket",
+          "price": "Apply to attend for FREE",
+          "description": "July 13 - August 31",
+          "list": [
+            "Scholarship applicants: fill out scholarship.formfunctionclass.com",
+            "Want to sponsor a scholarship ticket? Send an email to info@pwdo.org"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Each ticket gives you:",
+      "class": "each-ticket-gives-you",
+      "list": [
+        {
+          "title": "FFC Shirt",
+          "description": "A specially-designed, limited-edition shirt for this year's conference"
+        },
+        {
+          "title": "Conference kit",
+          "description": "Badge, stickers, and other gear for a more enjoyable conference"
+        },
+        {
+          "title": "Food & Drink",
+          "list": [
+            "Morning snack",
+            "Lunch",
+            "Afternoon snack",
+            "Free-flowing coffee"
+          ]
+        },
+        {
+          "title": "Videos",
+          "description": "First access to videos of the talks after the conference"
+        },
+        {
+          "title": "Certificate",
+          "description": "Option to download a digital certificate after the conference"
+        },
+        {
+          "title": "Networking",
+          "description": "Mingle with colleagues and pick the brains of our speakers"
+        },
+        {
+          "title": "Opportunities",
+          "description": "Meet new friends to network / collaborate with / get hired"
+        },
+        {
+          "title": "Prizes",
+          "description": "Take home cool swag & raffle items!"
         }
       ]
     }

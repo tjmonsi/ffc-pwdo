@@ -2,3 +2,31 @@
 @import '../../styles/global/_pages.scss';
 @import '../../styles/components/_anchor.scss';
 @import '../../styles/components/_button.scss';
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+  &.ticket-schedule {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+.box {
+  border: 1px solid #fff;
+  padding: 40px 20px 20px;
+  position: relative;
+  margin-top: 40px;
+
+  > .title {
+    position: absolute;
+    top: -50px;
+    border: 1px solid #fff;
+    background: #3a3a3a;
+    padding: 20px;
+    display: inline-block;
+  }
+}
