@@ -1,6 +1,6 @@
 import { Element } from '@polymer/polymer/polymer-element';
 import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event-listeners';
-import { customElements } from 'global/window';
+import { customElements, CustomEvent } from 'global/window';
 import css from './style.scss';
 import template from './template.html';
 import 'nav-list';
@@ -26,6 +26,10 @@ class Component extends GestureEventListeners(Element) {
       </style>
       ${template}
     `;
+  }
+
+  closeMenu () {
+    this.dispatchEvent(new CustomEvent('side-bar-close'));
   }
 }
 

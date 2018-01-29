@@ -20,10 +20,14 @@
 
 ffc-logo {
   margin-bottom: 3rem;
-  width: 400px;
+  max-width: 400px;
 }
 
 .info {
   font-size: 1.5rem;
   margin-bottom: 0;
+}
+
+side-bar.open {
+  z-index: 100;
 }

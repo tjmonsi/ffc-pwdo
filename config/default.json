@@ -24,6 +24,7 @@
     "page-home": "page-home",
     "page-speakers": "page-speakers",
     "page-schedule": "page-schedule",
+    "page-sessions": "page-sessions",
     "page-not-authorized": "page-not-authorized",
     "page-not-found": "page-not-found"
   },
@@ -39,6 +40,9 @@
       },
       "/schedule": {
         "page": "page-schedule"
+      },
+      "/session/:id": {
+        "page": "page-sessions"
       }
     }
   },

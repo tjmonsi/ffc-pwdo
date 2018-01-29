@@ -1,3 +1,5 @@
+@import '../components/_menu.scss';
+
 :host {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -7,6 +9,10 @@
   color: #efefef;
   grid-template-areas:
     "sidebar main main main";
+
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
 }
 
 .main {
@@ -14,9 +20,26 @@
   display: block;
   min-height: 100vh;
   padding: 20px;
+
+  &.hidden {
+    display: none;
+  }
 }
 
 side-bar {
   grid-area: sidebar;
-  min-height: 100vh;
+  height: 100vh;
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+
+  &.open {
+    display: block;
+    width: 100%;
+    position: fixed;
+    padding-top: 20px;
+    background: #3a3a3a;
+  }
 }
+

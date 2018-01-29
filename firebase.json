@@ -26,6 +26,10 @@
       {
         "source": "/schedule",
         "destination": "/index.html"
+      },
+      {
+        "source": "/session/**",
+        "destination": "/index.html"
       }
     ],
     "headers": [

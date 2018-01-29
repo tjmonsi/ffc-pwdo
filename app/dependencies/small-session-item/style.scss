@@ -1,5 +1,40 @@
 @import '../../styles/global/_typography.scss';
+@import '../../styles/global/_host-block.scss';
 
-:host {
-  display: block;
+.session-small {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+
+  @media screen and (max-width: 660px) {
+    display: block;
+  }
+
+  .workshop {
+    flex: 1;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .location {
+    flex: 1;
+  }
+
+  .info {
+    flex: 1;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
 }

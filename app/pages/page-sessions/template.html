@@ -1,16 +1,18 @@
-<side-bar with-logo></side-bar>
+<side-bar with-logo on-side-bar-close="closeMenu"></side-bar>
 
 <section class="main">
 
   <header class="header">
     <h1>
-      Speakers
+      Session
     </h1>
+
+    <a class="menu" on-tap="openMenu">
+      Menu
+    </a>
   </header>
 
-  <template is="dom-repeat" items="[[speakersList]]">
-    <speaker-list speakers="[[item]]"></speaker-list>
-  </template>
+  <session-item session-id="[[params.id]]"></session-item>
 
 </section>
 

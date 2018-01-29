@@ -2,6 +2,7 @@ import { Element } from '@polymer/polymer/polymer-element';
 import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event-listeners';
 import { customElements } from 'global/window';
 import { FetchMixin } from 'fetch-mixin';
+import marked from 'marked';
 import css from './style.scss';
 import template from './template.html';
 
@@ -36,7 +37,8 @@ class Component extends FetchMixin(GestureEventListeners(Element)) {
 
   static get observers () {
     return [
-      '_fetchSession(speaker.sessionId)'
+      '_fetchSession(speaker.sessionId)',
+      '_setBio(speaker.bio)'
     ];
   }
 
@@ -59,6 +61,10 @@ class Component extends FetchMixin(GestureEventListeners(Element)) {
     } else {
       this.session = {};
     }
+  }
+
+  _setBio (bio) {
+    if (bio) this.shadowRoot.querySelector('.speaker-bio').innerHTML = marked(bio);
   }
 }
 

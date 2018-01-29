@@ -1,4 +1,8 @@
 <section class="main">
+  <a class="menu" on-tap="openMenu">
+    Menu
+  </a>
+
   <div class="container">
     <ffc-logo></ffc-logo>
 
@@ -9,4 +13,4 @@
   </div>
 </section>
 
-<side-bar></side-bar>
+<side-bar on-side-bar-close="closeMenu"></side-bar>

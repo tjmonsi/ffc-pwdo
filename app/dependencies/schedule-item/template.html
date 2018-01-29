@@ -1,59 +1,46 @@
-<h3 class="schedule-name">
-  [[schedule.title]]
-</h3>
-
 <section class="schedule">
-  <ul class="schedule-list">
-    <template is="dom-repeat" items="[[schedule.items]]">
-      <li class="schedule-item">
-        <div class="time">
-          [[item.time]]
-        </div>
-        <div class="session">
-          <template is="dom-if" if="[[item.title]]">
-            [[item.title]]
-          </template>
-          <template is="dom-if" if="[[session.title]]">
-            [[session.title]]
-          </template>
-
-
-          <template is="dom-if" if="[[item.sessions.length]]">
-            <section class="parallel-sessions">
-              <header class="header session-small">
-                <div class="workshop">
-                  <h4>
-                    Workshop
-                  </h4>
-                </div>
-                <div class="location">
-                  <h4>
-                    Location
-                  </h4>
-                </div>
-                <div class="info">
-                  <h4>
-                    Workshop Info
-                  </h4>
-                </div>
-              </header>
-
-              <template is="dom-repeat" items="[[item.sessions]]" as="session">
-                <small-session-item session-id="[[session]]"></small-session-item>
-              </template>
-            </section>
-          </template>
-        </div>
-      </li>
+  <div class="schedule-time">
+    [[schedule.time]]
+  </div>
+  <div class="schedule-name">
+    <h2 class="schedule-name-title">
+      <template is="dom-if" if="[[schedule.title]]">
+        [[schedule.title]]
+      </template>
+      <template is="dom-if" if="[[session.title]]">
+        <a href="/session/[[schedule.session]]">[[session.title]]</a>
+      </template>
+    </h2>
+    <template is="dom-if" if="[[schedule.description]]">
+      <p class="schedule-description">
+        [[schedule.description]]
+      </p>
     </template>
-  </ul>
+    <template is="dom-if" if="[[schedule.sessions.length]]">
+      <section class="parallel-sessions">
+        <header class="header session-small">
+          <div class="workshop">
+            <h4>
+              Workshop
+            </h4>
+          </div>
+          <div class="location">
+            <h4>
+              Location
+            </h4>
+          </div>
+          <div class="info">
+            <h4>
+              Workshop Info
+            </h4>
+          </div>
+        </header>
+
+        <template is="dom-repeat" items="[[schedule.sessions]]" as="sessionItem">
+          <small-session-item session-id="[[sessionItem]]"></small-session-item>
+        </template>
+      </section>
+    </template>
+  </div>
 </section>
-<p class="speaker-position">
-  [[speaker.position]]
-</p>
-<p class="speaker-bio">
-  [[speaker.bio]]
-</p>
-<p class="speaker-talk">
-  [[speaker.talk]]
-</p>
+

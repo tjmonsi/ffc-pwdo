@@ -1,20 +1,24 @@
 import { Element } from '@polymer/polymer/polymer-element';
 import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event-listeners';
 import { customElements } from 'global/window';
-import { FetchMixin } from 'fetch-mixin';
+import { ReduxMixin } from '@littleq/state-manager';
+import { PageMixin } from 'page-mixin';
 import css from './style.scss';
 import template from './template.html';
 import 'side-bar';
-import 'speaker-list';
-import '@polymer/polymer/lib/elements/dom-repeat';
+import 'session-item';
 
-class Component extends FetchMixin(GestureEventListeners(Element)) {
+class Component extends ReduxMixin(PageMixin(GestureEventListeners(Element))) {
   static get is () { return 'page-sessions'; }
 
   static get properties () {
     return {
-      speakersList: {
-        type: Array
+      session: {
+        type: Object
+      },
+      params: {
+        type: String,
+        statePath: 'router.params'
       }
     };
   }
@@ -27,12 +31,6 @@ class Component extends FetchMixin(GestureEventListeners(Element)) {
       ${template}
     `;
   }
-
-  // connectedCallback () {
-  //   super.connectedCallback();
-  //   this.fetch('/data/speakers.json')
-  //     .then(json => (this.speakersList = json));
-  // }
 }
 
 !customElements.get(Component.is)

@@ -11,21 +11,24 @@
     "avatar main main main";
 }
 
-.speaker {
+.session {
   grid-area: main;
   display: block;
   padding: 0 20px;
 }
 
+.speaker-name {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
 .avatar {
   grid-area: avatar;
   max-width: 100%;
-}
-
-.speaker-talk {
-  text-decoration: none;
-  color: inherit;
-  &:hover {
-    text-decoration: underline;
-  }
 }
