@@ -1,0 +1,30 @@
+[
+  {
+    "position": "Conference Chair",
+    "name": "Sophia Lucero",
+    "description": "Co-founder, external affairs, web director, copywriter"
+  },
+  {
+    "position": "Conference Chair",
+    "name": "Kit Valmadrid",
+    "description": "HR Head, community manager, production manager"
+  },
+  {
+    "position": "Art Director",
+    "name": "Rock Gonzales",
+    "description": "Brand and Design Direction"
+  },
+  {
+    "position": "Asst. Web Director",
+    "name": "TJ Monserrat",
+    "description": "Website development"
+  },
+  {
+    "position": "Board Advisor",
+    "name": "Mae de Leon"
+  },
+  {
+    "position": "Conference Chair",
+    "name": "Sarah Cada"
+  }
+]

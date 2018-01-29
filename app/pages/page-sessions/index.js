@@ -13,9 +13,6 @@ class Component extends ReduxMixin(PageMixin(GestureEventListeners(Element))) {
 
   static get properties () {
     return {
-      session: {
-        type: Object
-      },
       params: {
         type: String,
         statePath: 'router.params'

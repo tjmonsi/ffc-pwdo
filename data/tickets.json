@@ -1,0 +1,69 @@
+{
+  "description": "Tickets are sold out",
+  "list": [
+    {
+      "title": "Ticket Schedule",
+      "class": "ticket-schedule",
+      "list": [
+        {
+          "title": "Blind Bird",
+          "price": "₱ 2,600",
+          "description": "Fridays, Saturdays, & Sundays"
+        },
+        {
+          "title": "Early Bird",
+          "price": "₱ 3,300",
+          "description": "June 1 - July 16"
+        },
+        {
+          "title": "Night Owl",
+          "price": "₱ 4,000",
+          "description": "July 17 - September 8",
+          "button": {
+            "url": "",
+            "label": "SOLD OUT"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Special Discounts",
+      "class": "special-discounts",
+      "description": "Avail special rates & perks with these discounted tickets:",
+      "list": [
+        {
+          "title": "Company Ticket",
+          "price": "₱ 4,000 per person",
+          "description": "May 1 - September 1",
+          "list": [
+            "Minimum of 5 persons from the same company",
+            "Special check-in lane",
+            "Seat reservation",
+            "Acknowledgment during FFC",
+            "Logo on website"
+          ],
+          "note": "Must send company logo & proof ticketholders are from company"
+        },
+        {
+          "title": "Student Discount",
+          "price": "₱ 2,600",
+          "description": "June 1 - September 1",
+          "list": [
+            "Online payment: please present valid ID or other proof of enrollment during conference check-in.",
+            "Offline payment: please include proof of enrollment in your email."
+          ],
+          "note": "Must present proof you are currently enrolled as a student"
+        },
+        {
+          "title": "Night Owl",
+          "price": "₱ 4,000",
+          "description": "July 17 - September 8",
+          "button": {
+            "url": "",
+            "label": "SOLD OUT"
+          }
+        }
+      ]
+    }
+  ]
+}

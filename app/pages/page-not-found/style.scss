@@ -1,10 +1,33 @@
-// @import '../../styles/mixins/_flex.scss';
-// @import '../../styles/mixins/_ripple.scss';
+@import '../../styles/global/_typography.scss';
+@import '../../styles/global/_pages.scss';
+@import '../../styles/components/_anchor.scss';
+@import '../../styles/components/_button.scss';
 
-// * {
-//   box-sizing: border-box;
-// }
+:host {
+  grid-template-areas:
+    "main main main sidebar";
+}
 
-// :host {
-//   display: block;
-// }
+.main {
+  display: flex;
+  align-items: center;
+
+  .container {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+ffc-logo {
+  margin-bottom: 3rem;
+  max-width: 400px;
+}
+
+.info {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+side-bar.open {
+  z-index: 100;
+}
