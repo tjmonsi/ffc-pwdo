@@ -1,5 +1,5 @@
 <h3 class="schedule-name">
-  [[schedule.name]]
+  [[schedule.title]]
 </h3>
 
 <section class="schedule">
@@ -10,9 +10,15 @@
           [[item.time]]
         </div>
         <div class="session">
-          [[item.name]]
+          <template is="dom-if" if="[[item.title]]">
+            [[item.title]]
+          </template>
+          <template is="dom-if" if="[[session.title]]">
+            [[session.title]]
+          </template>
 
-          <template is="dom-if" if="[[item.list.length]]">
+
+          <template is="dom-if" if="[[item.sessions.length]]">
             <section class="parallel-sessions">
               <header class="header session-small">
                 <div class="workshop">
@@ -32,7 +38,7 @@
                 </div>
               </header>
 
-              <template is="dom-repeat" items="[[item.list]]" as="session">
+              <template is="dom-repeat" items="[[item.sessions]]" as="session">
                 <small-session-item session-id="[[session]]"></small-session-item>
               </template>
             </section>

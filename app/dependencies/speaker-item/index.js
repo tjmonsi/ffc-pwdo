@@ -1,10 +1,11 @@
 import { Element } from '@polymer/polymer/polymer-element';
 import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event-listeners';
-import { customElements, fetch } from 'global/window';
+import { customElements } from 'global/window';
+import { FetchMixin } from 'fetch-mixin';
 import css from './style.scss';
 import template from './template.html';
 
-class Component extends GestureEventListeners(Element) {
+class Component extends FetchMixin(GestureEventListeners(Element)) {
   static get is () { return 'speaker-item'; }
 
   static get properties () {
@@ -41,12 +42,10 @@ class Component extends GestureEventListeners(Element) {
 
   _fetchSpeaker (speakerId) {
     if (speakerId) {
-      fetch(`https://raw.githubusercontent.com/tjmonsi/ffc-pwdo/master/data/speakers/${speakerId}.json`)
-        .then(result => result.json())
+      this.fetch(`/data/speakers/${speakerId}.json`)
         .then(speaker => (this.speaker = Object.assign({}, this.speaker, speaker)));
 
-      fetch(`https://raw.githubusercontent.com/tjmonsi/ffc-pwdo/master/data/speakers/${speakerId}.md`)
-        .then(result => result.text())
+      this.fetch(`/data/speakers/${speakerId}.md`)
         .then(bio => (this.speaker = Object.assign({}, this.speaker, { bio })));
     } else {
       this.speaker = {};
@@ -55,8 +54,7 @@ class Component extends GestureEventListeners(Element) {
 
   _fetchSession (sessionId) {
     if (sessionId) {
-      fetch(`https://raw.githubusercontent.com/tjmonsi/ffc-pwdo/master/data/sessions/${sessionId}.json`)
-        .then(result => result.json())
+      this.fetch(`/data/sessions/${sessionId}.json`)
         .then(session => (this.session = Object.assign({}, this.session, session)));
     } else {
       this.session = {};

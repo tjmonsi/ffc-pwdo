@@ -10,7 +10,9 @@ module.exports = {
       "es5": "system/core/polyfills/es5.js",
       "es6": "system/core/polyfills/es6.js",
       "promise": "system/core/polyfills/promise.js",
-      "shady": "system/core/polyfills/shadycss.js"
+      "shady": "system/core/polyfills/shadycss.js",
+      "intersection-observer": "system/core/polyfills/intersection-observer.js",
+      "fetch": "system/core/polyfills/fetch.js"
     }
   }
 }

@@ -9,7 +9,7 @@ import 'speaker-list';
 import '@polymer/polymer/lib/elements/dom-repeat';
 
 class Component extends FetchMixin(GestureEventListeners(Element)) {
-  static get is () { return 'page-speakers'; }
+  static get is () { return 'page-sessions'; }
 
   static get properties () {
     return {
@@ -28,11 +28,11 @@ class Component extends FetchMixin(GestureEventListeners(Element)) {
     `;
   }
 
-  connectedCallback () {
-    super.connectedCallback();
-    this.fetch('/data/speakers.json')
-      .then(json => (this.speakersList = json));
-  }
+  // connectedCallback () {
+  //   super.connectedCallback();
+  //   this.fetch('/data/speakers.json')
+  //     .then(json => (this.speakersList = json));
+  // }
 }
 
 !customElements.get(Component.is)

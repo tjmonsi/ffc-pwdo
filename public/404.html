@@ -65,33 +65,39 @@
       if (!Modernizr.es5array || !Modernizr.es5date || !Modernizr.es5function || !Modernizr.es5object || !Modernizr.es5string) {
         // not supportedm load es5 shim and sham
         var es5 = document.createElement('script')
-        es5.src = '/scripts/es5.js'
+        es5.src = '/es5.js'
         refScript.parentNode.insertBefore(es5, refScript)
       }
 
       if (!Modernizr.es6collections || !Modernizr.es6math || !Modernizr.es6number || !Modernizr.es6object || !Modernizr.es6string) {
         var es6 = document.createElement('script')
-        es6.src = '/scripts/es6.js'
+        es6.src = '/es6.js'
         refScript.parentNode.insertBefore(es6, refScript)
       }
 
       if (!Modernizr.promises) {
         var promise = document.createElement('script')
-        promise.src = '/scripts/promise.js'
+        promise.src = '/promise.js'
         refScript.parentNode.insertBefore(promise, refScript)
       }
 
       if (!window.IntersectionObserver) {
         var io = document.createElement('script')
-        io.src = '/scripts/intersection-observer.js'
+        io.src = '/intersection-observer.js'
         refScript.parentNode.insertBefore(io, refScript)
       }
 
       if (!('attachShadow' in Element.prototype && 'getRootNode' in Element.prototype) ||
         (window.ShadyDOM && window.ShadyDOM.force)) {
         var shady = document.createElement('script')
-        shady.src = '/scripts/shady.js'
+        shady.src = '/shady.js'
         refScript.parentNode.insertBefore(shady, refScript)
+      }
+
+      if (!window.fetch) {
+        var fetchPoly = document.createElement('script')
+        fetchPoly.src = '/fetch.js'
+        refScript.parentNode.insertBefore(fetchPoly, refScript)
       }
 
       window.onerror = function(err, url, line) {
@@ -143,6 +149,11 @@
     </littleq-route>
 
       <littleq-route route="/speakers" page="page-speakers">
+      
+      
+    </littleq-route>
+
+      <littleq-route route="/schedule" page="page-schedule">
       
       
     </littleq-route>

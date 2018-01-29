@@ -29,7 +29,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		4: 0
+/******/ 		5: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -86,7 +86,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"page-speakers","1":"page-home","2":"page-not-found","3":"page-not-authorized"}[chunkId]||chunkId) + ".fragment." + chunkId + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"page-speakers","1":"page-schedule","2":"page-home","3":"page-not-found","4":"page-not-authorized"}[chunkId]||chunkId) + ".fragment." + chunkId + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -5262,16 +5262,19 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
   'page-home': function pageHome() {
-    return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 87));
+    return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 91));
   },
   'page-speakers': function pageSpeakers() {
-    return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 88));
+    return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 92));
+  },
+  'page-schedule': function pageSchedule() {
+    return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 93));
   },
   'page-not-authorized': function pageNotAuthorized() {
-    return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 89));
+    return __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 94));
   },
   'page-not-found': function pageNotFound() {
-    return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 90));
+    return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 95));
   }
 };
 
@@ -9931,7 +9934,11 @@ exports.default = getRoutes;
 /* 82 */,
 /* 83 */,
 /* 84 */,
-/* 85 */
+/* 85 */,
+/* 86 */,
+/* 87 */,
+/* 88 */,
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10006,7 +10013,7 @@ var GestureEventListeners = exports.GestureEventListeners = (0, _mixin.dedupingM
 });
 
 /***/ }),
-/* 86 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

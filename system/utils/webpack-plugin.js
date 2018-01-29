@@ -28,6 +28,10 @@ module.exports = (env) => {
       {
         from: path.resolve(__dirname, '../../app/images'),
         to: 'images'
+      },
+      {
+        from: path.resolve(__dirname, '../../data'),
+        to: 'data'
       }
     ]),
     new GenerateAssetPlugin({

@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Morning Session",
+    "list": [
+      {
+        "time": "07:30",
+        "title": "Regisration"
+      },
+      {
+        "time": "08:30",
+        "title": "Welcome Remarks"
+      },
+      {
+        "time": "09:00",
+        "session": "new-adventures-in-responsive-web-design"
+      },
+      {
+        "time": "09:50",
+        "title": "grid-is-the-new-black"
+      }
+    ]
+  },
+  {
+    "title": "Afternoon Session",
+    "list": [
+      {
+        "time": "01:20",
+        "title": "Workshop",
+        "description": "* Workshop slots are first-come, first-serve. The sooner you register, the sooner you'll be able to pick your workshop of choice.",
+        "sessions": [
+          "new-adventures-in-responsive-web-design",
+          "grid-is-the-new-black"
+        ]
+      },
+      {
+        "time": "04:20",
+        "title": "Afternoon <br/>"
+      },
+      {
+        "time": "04:30",
+        "title": "Raffle"
+      },
+      {
+        "time": "04:45",
+        "title": "Panel Discussion"
+      },
+      {
+        "time": "05:35",
+        "title": "Closing Remarks"
+      },
+      {
+        "time": "05:40",
+        "title": "Grand Raffle"
+      },
+      {
+        "time": "05:50",
+        "title": "Class Photo"
+      },
+      {
+        "time": "06:00",
+        "title": "Networking"
+      }
+    ]
+  }
+
+]

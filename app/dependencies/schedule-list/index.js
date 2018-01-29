@@ -3,7 +3,7 @@ import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event
 import { customElements } from 'global/window';
 import css from './style.scss';
 import template from './template.html';
-import 'speaker-item';
+import 'schedule-item';
 import '@polymer/polymer/lib/elements/dom-repeat';
 
 class Component extends GestureEventListeners(Element) {

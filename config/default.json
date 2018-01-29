@@ -23,6 +23,7 @@
   "fragments": {
     "page-home": "page-home",
     "page-speakers": "page-speakers",
+    "page-schedule": "page-schedule",
     "page-not-authorized": "page-not-authorized",
     "page-not-found": "page-not-found"
   },
@@ -35,6 +36,9 @@
       },
       "/speakers": {
         "page": "page-speakers"
+      },
+      "/schedule": {
+        "page": "page-schedule"
       }
     }
   },

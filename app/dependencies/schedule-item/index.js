@@ -1,11 +1,12 @@
 import { Element } from '@polymer/polymer/polymer-element';
 import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event-listeners';
-import { customElements, fetch } from 'global/window';
+import { customElements } from 'global/window';
+import { FetchMixin } from 'fetch-mixin';
 import css from './style.scss';
 import template from './template.html';
 import '@polymer/polymer/lib/elements/dom-repeat';
 
-class Component extends GestureEventListeners(Element) {
+class Component extends FetchMixin(GestureEventListeners(Element)) {
   static get is () { return 'schedule-item'; }
 
   static get properties () {
@@ -32,11 +33,10 @@ class Component extends GestureEventListeners(Element) {
 
   _fetchSchedule (scheduleId) {
     if (scheduleId) {
-      fetch(`https://raw.githubusercontent.com/tjmonsi/ffc-pwdo/master/data/schedule/${scheduleId}.json`)
-        .then(result => result.json())
+      this.fetch(`/data/schedule/${scheduleId}.json`)
         .then(schedule => (this.schedule = Object.assign({}, this.schedule, schedule)));
     } else {
-      this.speaker = {};
+      this.schedule = {};
     }
   }
 }

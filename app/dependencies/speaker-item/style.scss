@@ -2,6 +2,7 @@
 
 :host {
   display: grid;
+  padding: 20px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   background: #3a3a3a;
@@ -18,4 +19,5 @@
 
 .avatar {
   grid-area: avatar;
+  max-width: 100%;
 }
