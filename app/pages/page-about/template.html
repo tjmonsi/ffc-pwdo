@@ -4,7 +4,7 @@
 
   <header class="header">
     <h1>
-      Tickets
+      About
     </h1>
 
     <a class="menu" on-tap="openMenu">
@@ -12,8 +12,118 @@
     </a>
   </header>
 
+  <section>
+    <marked-element marked="[[ffc]]"></marked-element>
+  </section>
 
+  <section>
+    <marked-element marked="[[venue]]"></marked-element>
+  </section>
 
+  <section class="grid">
+    <div class="box">
+      <h3 class="title">
+        How to get there
+      </h3>
+
+      <marked-element marked="[[howToGetThere]]"></marked-element>
+    </div>
+
+    <div class="box">
+      <h3 class="title">
+        Nearby accommodations
+      </h3>
+
+      <marked-element marked="[[nearbyAccommodations]]"></marked-element>
+    </div>
+  </section>
+
+  <section>
+    <marked-element marked="[[codeOfConduct]]"></marked-element>
+  </section>
+
+  <section>
+    <marked-element marked="[[organizer]]"></marked-element>
+  </section>
+
+  <section>
+    <h1 class="title">Masthead</h1>
+    <div class="grid">
+      <template is="dom-repeat" items="[[masthead]]">
+        <div class="box">
+          <h3 class="title">
+            [[item.position]]
+          </h3>
+
+          <marked-element marked="## [[item.name]]"></marked-element>
+          <marked-element marked="[[item.description]]"></marked-element>
+        </div>
+      </template>
+    </div>
+  </section>
+
+  <section>
+    <h1 class="title">
+      Follow Us!
+    </h1>
+
+    <div class="icon-list">
+      <a class="icon-anchor" href="https://www.facebook.com/webdesigners.org.ph" title="Facebook">
+        <svg class="icon">
+          <use xlink:href="/images/icons.svg#icon-facebook2" />
+        </svg>
+      </a>
+      <a class="icon-anchor" href="https://instagram.com/pwdo" title="Instagram">
+        <svg class="icon">
+          <use xlink:href="/images/icons.svg#icon-instagram" />
+        </svg>
+      </a>
+      <a class="icon-anchor" href="https://twitter.com/pwdo" title="Youtube">
+        <svg class="icon">
+          <use xlink:href="/images/icons.svg#icon-twitter" />
+        </svg>
+      </a>
+      <a class="icon-anchor" href="http://blog.pwdo.org/" title="Youtube">
+        <svg class="icon">
+          <use xlink:href="/images/icons.svg#icon-tumblr" />
+        </svg>
+      </a>
+      <a class="icon-anchor" href="https://www.youtube.com/user/formfunctionclass" title="Youtube">
+        <svg class="icon">
+          <use xlink:href="/images/icons.svg#icon-youtube" />
+        </svg>
+      </a>
+      <a class="icon-anchor" href="https://plus.google.com/b/115421497645829988721/115421497645829988721/posts" title="Youtube">
+        <svg class="icon">
+          <use xlink:href="/images/icons.svg#icon-google-plus" />
+        </svg>
+      </a>
+      <a class="icon-anchor" href="https://github.com/pwdo" title="Youtube">
+        <svg class="icon">
+          <use xlink:href="/images/icons.svg#icon-github" />
+        </svg>
+      </a>
+      <a class="icon-anchor" href="https://www.flickr.com/groups/pwdo/" title="Youtube">
+        <svg class="icon">
+          <use xlink:href="/images/icons.svg#icon-flickr" />
+        </svg>
+      </a>
+
+      <a class="icon-anchor" href="https://open.spotify.com/user/formfunctionclass" title="Youtube">
+        <svg class="icon">
+          <use xlink:href="/images/icons.svg#icon-spotify" />
+        </svg>
+      </a>
+
+      <a class="icon-anchor" href="https://medium.com/@pwdo" title="Youtube">
+        <svg class="icon">
+          <use xlink:href="/images/icons.svg#icon-medium" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- <marked-element marked="[[nearbyAccommodations]]"></marked-element> -->
 </section>
 
 

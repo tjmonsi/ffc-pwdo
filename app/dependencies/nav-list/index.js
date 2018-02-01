@@ -29,10 +29,10 @@ class Component extends GestureEventListeners(Element) {
             href: '/tickets',
             label: 'Tickets'
           },
-          {
-            href: '/sponsors',
-            label: 'Sponsors'
-          },
+          // {
+          //   href: '/sponsors',
+          //   label: 'Sponsors'
+          // },
           {
             href: '/about',
             label: 'About'

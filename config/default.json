@@ -26,6 +26,7 @@
     "page-schedule": "page-schedule",
     "page-sessions": "page-sessions",
     "page-tickets": "page-tickets",
+    "page-about": "page-about",
     "page-not-authorized": "page-not-authorized",
     "page-not-found": "page-not-found"
   },
@@ -47,6 +48,9 @@
       },
       "/tickets": {
         "page": "page-tickets"
+      },
+      "/about": {
+        "page": "page-about"
       }
     }
   },

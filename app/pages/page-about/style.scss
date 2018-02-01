@@ -2,3 +2,34 @@
 @import '../../styles/global/_pages.scss';
 @import '../../styles/components/_anchor.scss';
 @import '../../styles/components/_button.scss';
+@import '../../styles/components/_grid.scss';
+
+section {
+  padding: 10px 0;
+
+  h1.title {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+  }
+
+}
+
+.icon-list {
+  .icon-anchor {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: none;
+    margin: 0 10px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    fill: #8d8d8d;
+  }
+}
