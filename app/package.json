@@ -15,6 +15,7 @@
     "@polymer/polymer": "^3.0.0-pre.1",
     "@webcomponents/shadycss": "^1.0.6",
     "@webcomponents/webcomponentsjs": "^1.0.17",
+    "camelcase": "^4.1.0",
     "es5-shim": "^4.5.9",
     "es6-promise": "^4.1.1",
     "es6-shim": "^0.35.3",

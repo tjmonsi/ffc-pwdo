@@ -1,0 +1,38 @@
+@import '../../styles/global/_typography.scss';
+@import '../../styles/global/_pages.scss';
+@import '../../styles/components/_anchor.scss';
+@import '../../styles/components/_button.scss';
+@import '../../styles/components/_grid.scss';
+
+section {
+  padding: 10px 0;
+
+  h1.title {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+  }
+
+}
+
+.grid {
+  @media screen and (max-width: 1000px) {
+    display: block;
+  }
+  grid-column-gap: 20px;
+  grid-template-areas:
+    "first first"
+    "none none";
+
+  & .box:first-of-type {
+    grid-area: first;
+  }
+
+  .box {
+    margin-bottom: 20px;
+  }
+}

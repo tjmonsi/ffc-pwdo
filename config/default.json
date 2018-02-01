@@ -27,6 +27,7 @@
     "page-sessions": "page-sessions",
     "page-tickets": "page-tickets",
     "page-about": "page-about",
+    "page-faq": "page-faq",
     "page-not-authorized": "page-not-authorized",
     "page-not-found": "page-not-found"
   },
@@ -51,6 +52,9 @@
       },
       "/about": {
         "page": "page-about"
+      },
+      "/faq": {
+        "page": "page-faq"
       }
     }
   },

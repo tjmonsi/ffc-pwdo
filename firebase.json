@@ -38,6 +38,10 @@
       {
         "source": "/about",
         "destination": "/index.html"
+      },
+      {
+        "source": "/faq",
+        "destination": "/index.html"
       }
     ],
     "headers": [

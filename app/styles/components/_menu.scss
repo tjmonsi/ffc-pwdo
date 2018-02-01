@@ -6,6 +6,8 @@
   padding: 20px;
   text-decoration: none;
   border: 1px solid white;
+  background: #3a3a3a;
+  z-index: 1000;
   cursor: pointer;
 
   @media screen and (max-width: 800px) {

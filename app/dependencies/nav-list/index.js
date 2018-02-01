@@ -41,10 +41,10 @@ class Component extends GestureEventListeners(Element) {
             href: '/faq',
             label: 'FAQ'
           },
-          {
-            href: '/scrapbook',
-            label: 'Scrapbook'
-          }
+          // {
+          //   href: '/scrapbook',
+          //   label: 'Scrapbook'
+          // }
         ]
       }
     };
