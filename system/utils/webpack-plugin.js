@@ -30,6 +30,10 @@ module.exports = (env) => {
         to: 'images'
       },
       {
+        from: path.resolve(__dirname, '../../app/fonts'),
+        to: 'fonts'
+      },
+      {
         from: path.resolve(__dirname, '../../data'),
         to: 'data'
       }

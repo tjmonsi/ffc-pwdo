@@ -13,9 +13,31 @@
     <%= head %>
 
     <style>
+
+      @font-face {
+        font-family: 'Inovato';
+        src: url('/fonts/Inovato-Regular.eot');
+        src: url('/fonts/Inovato-Regular.eot?#iefix') format('embedded-opentype'),
+          url('/fonts/Inovato-Regular.woff2') format('woff2'),
+          url('/fonts/Inovato-Regular.woff') format('woff'),
+          url('/fonts/Inovato-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Inovato';
+        src: url('/fonts/Inovato-Bold.eot');
+        src: url('/fonts/Inovato-Bold.eot?#iefix') format('embedded-opentype'),
+          url('/fonts/Inovato-Bold.woff2') format('woff2'),
+          url('/fonts/Inovato-Bold.woff') format('woff'),
+          url('/fonts/Inovato-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+      }
       * {
         color: #8d8d8d;
-        font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-family: "Inovato", "Helvetica Neue", Helvetica, Arial, sans-serif;;
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         font-weight: 400;
