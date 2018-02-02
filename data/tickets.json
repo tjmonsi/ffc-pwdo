@@ -6,18 +6,13 @@
       "class": "ticket-schedule",
       "list": [
         {
-          "title": "Blind Bird",
-          "price": "₱ 2,600",
-          "description": "Fridays, Saturdays, & Sundays"
-        },
-        {
           "title": "Early Bird",
-          "price": "₱ 3,300",
+          "price": "₱ 5,000",
           "description": "June 1 - July 16"
         },
         {
           "title": "Night Owl",
-          "price": "₱ 4,000",
+          "price": "₱ 7,000",
           "description": "July 17 - September 8",
           "button": {
             "url": "",
@@ -34,7 +29,7 @@
       "list": [
         {
           "title": "Company Ticket",
-          "price": "₱ 4,000 per person",
+          "price": "₱ 7,000 per person",
           "description": "May 1 - September 1",
           "list": [
             "Minimum of 5 persons from the same company",
