@@ -32,28 +32,41 @@
     "title": "Afternoon Session",
     "list": [
       {
-        "time": "01:00",
-        "title": "Masterclass"
+        "time": "01:20",
+        "title": "Workshop",
+        "description": "* Workshop slots are first-come, first-serve. The sooner you register, the sooner you'll be able to pick your workshop of choice.",
+        "sessions": [
+          "new-adventures-in-responsive-web-design",
+          "grid-is-the-new-black"
+        ]
       },
       {
-        "time": "03:00",
+        "time": "04:20",
         "title": "Afternoon <br/>"
       },
       {
-        "time": "03:30",
-        "title": "Masterclass"
-      },
-      {
-        "time": "05:00",
-        "title": "Resume at the main hall for panel discussion"
-      },
-      {
-        "time": "05:30",
+        "time": "04:30",
         "title": "Raffle"
       },
       {
-        "time": "05:45",
-        "title": "Class photo & Closing"
+        "time": "04:45",
+        "title": "Panel Discussion"
+      },
+      {
+        "time": "05:35",
+        "title": "Closing Remarks"
+      },
+      {
+        "time": "05:40",
+        "title": "Grand Raffle"
+      },
+      {
+        "time": "05:50",
+        "title": "Class Photo"
+      },
+      {
+        "time": "06:00",
+        "title": "Networking"
       }
     ]
   }

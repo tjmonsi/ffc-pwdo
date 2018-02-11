@@ -6,18 +6,19 @@
       "class": "ticket-schedule",
       "list": [
         {
+          "title": "Bline Bird",
+          "price": "₱ 4,800",
+          "description": "Fridays to Sundays of September 2017 to February 2018."
+        },
+        {
           "title": "Early Bird",
           "price": "₱ 5,000",
-          "description": "June 1 - July 16"
+          "description": "March 2018 to April 2018"
         },
         {
           "title": "Night Owl",
           "price": "₱ 7,000",
-          "description": "July 17 - September 8",
-          "button": {
-            "url": "",
-            "label": "SOLD OUT"
-          }
+          "description": "May 2018 to August 2, 2018"
         }
       ]
     },
@@ -28,13 +29,23 @@
       "note": "if you avail of the Student or VisMin discount online and fail to present the necessary verification at conference check-in, you may not enter the conference.",
       "list": [
         {
+          "title": "Early Bird Group 3 + 1",
+          "price": "₱ 15,000 for 4 people",
+          "description": "March 2018 to April 2018"
+        },
+        {
+          "title": "Night Owl Group 3 + 1",
+          "price": "₱ 21,000 for 4 people",
+          "description": "May 2018 to August 2, 2018"
+        },
+        {
           "title": "Company Ticket",
           "price": "₱ 7,000 per person",
-          "description": "May 1 - September 1",
+          "description": "January to July 2018",
           "list": [
             "Minimum of 5 persons from the same company",
             "Special check-in lane",
-            "Seat reservation",
+            "Guaranteed Seat Allocation",
             "Acknowledgment during FFC",
             "Logo on website"
           ],
@@ -43,8 +54,8 @@
         },
         {
           "title": "Student Discount",
-          "price": "₱ 2,600",
-          "description": "June 1 - September 1",
+          "price": "₱ 4,000",
+          "description": "January to July 2018",
           "list": [
             "Online payment: please present valid ID or other proof of enrollment during conference check-in.",
             "Offline payment: please include proof of enrollment in your email."
@@ -55,48 +66,119 @@
         {
           "title": "Loyalty Discount",
           "price": "10-20% off",
-          "description": "July 1 - July 31",
+          "description": "January to April 2018",
           "list": [
             "Offline payment only",
             "Attended FFC 2017: 10% off!",
-            "Attended 2 FFCs: 15% off!",
-            "Attended 3+ FFCs: 20% off!"
+            "Attended 2 FFCs: 20% off!",
+            "Attended 3+ FFCs: 30% off!"
           ],
           "note": "Email info@pwdo.org with proof of past attendance, then we'll let you know how much you need to pay."
         },
         {
-          "title": "VisMin Discount",
-          "price": "15% off for Visayas & Mindanao attendees",
-          "description": "June 1 – September 8",
+          "title": "Tech Community Discount",
+          "price": "15% off",
+          "description": "March to August 2, 2018",
           "list": [
-            "Applicable to Early Bird & Night Owl",
-            "Can be combined with Group Discount when Night Owl goes on sale"
-          ],
-          "note": "Must present proof you currently reside in Visayas or Mindanao",
-          "how-to-pay": true
-        },
-        {
-          "title": "Group Discount",
-          "price": "Buy 3, get 1 FREE!",
-          "description": "July 17 – September 8\n\nPurchase 4 tickets for the price of 3! Assemble your squad to avail a great deal on FFC tickets"
-        },
-        {
-          "title": "Community Discount",
-          "price": "15% discount!",
-          "description": "June 1 – September 1",
-          "list": [
-            "Gather 5 friends from the same design or tech community",
-            "Contact your community lead for the discount code",
-            "Online payment only"
+            "Unlock 15% discount with a minimum of 3 ticket buyers ",
+            "Gather your squad",
+            "Settle your payment offline",
+            "Discount applies to Early Bird, Night Owl, VisMin, and Student tickets",
+            "Logo in the website as community partner"
           ]
         },
         {
-          "title": "Scholarship Ticket",
-          "price": "Apply to attend for FREE",
-          "description": "July 13 - August 31",
+          "title": "Valentine's day Sale",
+          "price": "₱ 9,000 for 2",
+          "description": "Feburary 14, 15",
           "list": [
-            "Scholarship applicants: fill out scholarship.formfunctionclass.com",
-            "Want to sponsor a scholarship ticket? Send an email to info@pwdo.org"
+            "Buy two tickets for 9k only"
+          ]
+        },
+        {
+          "title": "Day of Valor Sale",
+          "price": "₱ 4,800",
+          "description": "April 9",
+          "list": [
+            "Get Blind Bird rates"
+          ]
+        },
+        {
+          "title": "Labor Day Sale",
+          "price": "₱ 5,000",
+          "description": "May 1",
+          "list": [
+            "Less 1k of Night Owl Rate"
+          ]
+        },
+        {
+          "title": "Independence Day Sale",
+          "price": "₱ 5,000",
+          "description": "June 11, 12",
+          "list": [
+            "Less 2k of Night Owl Rate"
+          ]
+        },
+        {
+          "title": "VisMin Student Discount",
+          "price": "₱ 3,400 for Visayas & Mindanao attendees",
+          "description": "January to July 2018",
+          "list": [
+            "Must present Student ID/reg form with address"
+          ]
+        },
+        {
+          "title": "Early Bird for VisMin Discount",
+          "price": "₱ 4,250 for Visayas & Mindanao attendees",
+          "description": "March 2018 to April 2018",
+          "list": [
+            "15% discount on Early bird rate",
+            "Group discount does not apply"
+          ]
+        },
+        {
+          "title": "Night Owl for VisMin Discount",
+          "price": "₱ 5,950 for Visayas & Mindanao attendees",
+          "description": "January to July 2018",
+          "list": [
+            "15% discount on Night Owl rate",
+            "Group discount does not apply"
+          ]
+        },
+        {
+          "title": "Student Ticket Giveaway",
+          "price": "FREE",
+          "description": "March to May, 2018",
+          "list": [
+            "Need to promote FFC via social media",
+            "Tag PWDO/FFCPH",
+            "Include caption on why you want to attend FFC",
+            "Submit entry via GFORM",
+            "Announce Winner on July 15"
+          ]
+        },
+        {
+          "title": "Early Bird ticket Giveaway",
+          "price": "FREE",
+          "description": "July 15 to April 27, 2018",
+          "list": [
+            "Need to promote FFC via social media",
+            "Tag PWDO/FFCPH",
+            "Include caption on why you want to attend FFC",
+            "Submit entry via GFORM",
+            "Announce Winner on April 28"
+          ]
+        },
+        {
+          "title": "Night Owl Ticket Giveaway",
+          "price": "FREE",
+          "description": "April 28 to July 29, 2018",
+          "list": [
+            "Need to promote FFC via social media",
+            "Tag PWDO/FFCPH",
+            "Include caption on why you want to attend FFC",
+            "Submit entry via GFORM",
+            "Announce Winner on July 30"
           ]
         }
       ]
