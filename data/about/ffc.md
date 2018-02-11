@@ -1,4 +1,4 @@
-# Form Function & Class returns September 16!
+# Form Function & Class returns August 18!
 
 Get ready for another jam-packed day of learning the latest, most important ideas in digital design & front-end, delivered to you by industry leaders in the Philippines, Asia, and the rest of the world.
 

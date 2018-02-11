@@ -10,8 +10,9 @@ Learn more →
 Please take note of the Payment Reference ID for proof of payment. Additional fees may apply.
 
 # Step 2: Send proof of payment
-Email payment@pwdo.org with the subject “FFC 2017 Offline Payment” and indicate the following details for EACH PARTICIPANT:
+Email payment@pwdo.org with the subject “FFC 2018 Offline Payment” and indicate the following details for EACH PARTICIPANT:
 
+- Masterclass with [include track here]:
 - Name:
 - E-mail Address:
 - Mobile Number:
