@@ -1,4 +1,6 @@
-<img class="avatar" src="[[getHost()]]/data/speakers/[[session.speakerId]].jpg">
+<template is="dom-if" if="[[session.speakerId]]">
+  <img class="avatar" src="[[getHost()]]/data/speakers/[[session.speakerId]].jpg">
+</template>
 
 <section class="session">
   <h3 class="session-name">

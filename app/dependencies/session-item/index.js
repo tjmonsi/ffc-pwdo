@@ -2,6 +2,7 @@ import { Element } from '@polymer/polymer/polymer-element';
 import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event-listeners';
 import { customElements } from 'global/window';
 import { FetchMixin } from 'fetch-mixin';
+import '@polymer/polymer/lib/elements/dom-if';
 import marked from 'marked';
 import css from './style.scss';
 import template from './template.html';

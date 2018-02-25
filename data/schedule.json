@@ -20,7 +20,12 @@
       },
       {
         "time": "09:30",
-        "title": "Start of Masterclass"
+        "title": "Start of Masterclass",
+        "sessions": [
+          "new-adventures-in-responsive-web-design",
+          "grid-is-the-new-black",
+          "solid-strategies-to-build-for-a-better-web"
+        ]
       },
       {
         "time": "12:00",
@@ -33,7 +38,12 @@
     "list": [
       {
         "time": "01:00",
-        "title": "Masterclass"
+        "title": "Masterclass",
+        "sessions": [
+          "new-adventures-in-responsive-web-design",
+          "grid-is-the-new-black",
+          "solid-strategies-to-build-for-a-better-web"
+        ]
       },
       {
         "time": "03:00",
@@ -41,7 +51,12 @@
       },
       {
         "time": "03:30",
-        "title": "Masterclass"
+        "title": "Masterclass",
+        "sessions": [
+          "new-adventures-in-responsive-web-design",
+          "grid-is-the-new-black",
+          "solid-strategies-to-build-for-a-better-web"
+        ]
       },
       {
         "time": "05:00",
