@@ -1,5 +1,5 @@
 .menu {
-  display: none;
+  // display: none;
   position: fixed;
   top: 20px;
   right: 20px;
@@ -10,9 +10,9 @@
   z-index: 1000;
   cursor: pointer;
 
-  @media screen and (max-width: 800px) {
-    display: block;
-  }
+  // @media screen and (max-width: 800px) {
+  //   display: block;
+  // }
 
   &:hover {
     background: rgba(255, 255, 255, 0.2)

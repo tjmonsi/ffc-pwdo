@@ -6,9 +6,9 @@
   grid-template-rows: auto;
   min-height: 100vh;
   background: #3a3a3a;
-  color: #efefef;
+  // color: #efefef;
   grid-template-areas:
-    "sidebar main main main";
+    "main main main main";
 
   @media screen and (max-width: 800px) {
     display: block;
@@ -29,17 +29,20 @@
 side-bar {
   grid-area: sidebar;
   height: 100vh;
+  display: none;
 
-  @media screen and (max-width: 800px) {
-    display: none;
-  }
+
 
   &.open {
     display: block;
-    width: 100%;
+    min-width: 300px;
     position: fixed;
     padding-top: 20px;
     background: #3a3a3a;
+
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
   }
 }
 
