@@ -1,6 +1,6 @@
 ## Outline
 
-Accessibility
+### Accessibility
 - Introduction to Accessibility
 - Why, what and how?
 - Accessibility and the benefits of clean markup
@@ -12,8 +12,8 @@ Accessibility
 - Good plugins - bad plugins
 - Testing tools
 
-UX & Design
+### UX & Design
 - Color Contrast
 
-Performance
+### Performance
 - Benefits of the above in regards to performance
