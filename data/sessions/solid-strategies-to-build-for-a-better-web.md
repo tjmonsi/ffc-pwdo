@@ -6,7 +6,7 @@
   - Benefits of good semantics
   - Convenience of accessibility and advantages for everyone
   - Screenreader demo, voice over
-  - Arial-roles
+  - ARIA-roles
   - Importance of Focus status
   - Good plugins - bad plugins
   - Testing tools

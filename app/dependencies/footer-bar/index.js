@@ -1,27 +1,11 @@
 import { Element } from '@polymer/polymer/polymer-element';
 import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event-listeners';
 import { customElements } from 'global/window';
-import { ReduxMixin } from '@littleq/state-manager';
-import { PageMixin } from 'page-mixin';
 import css from './style.scss';
 import template from './template.html';
-import 'side-bar';
-import 'session-item';
-import 'header-bar';
-import 'footer-bar';
 
-class Component extends ReduxMixin(PageMixin(GestureEventListeners(Element))) {
-  static get is () { return 'page-sessions'; }
-
-  static get properties () {
-    return {
-      params: {
-        type: String,
-        statePath: 'router.params'
-      }
-    };
-  }
-
+class Component extends GestureEventListeners(Element) {
+  static get is () { return 'footer-bar'; }
   static get template () {
     return `
       <style>

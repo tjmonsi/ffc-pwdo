@@ -8,28 +8,21 @@
       },
       {
         "time": "08:30",
-        "title": "Welcome Remarks"
-      },
-      {
-        "time": "08:40",
-        "title": "Keynote by PWDO President"
+        "title": "Welcome",
+        "location": "main hall"
       },
       {
         "time": "09:00",
-        "title": "Light snack and start of break out sessions"
+        "title": "Morning <br>"
       },
       {
         "time": "09:30",
-        "title": "Start of Masterclass",
-        "sessions": [
-          "new-adventures-in-responsive-web-design",
-          "grid-is-the-new-black",
-          "solid-strategies-to-build-for-a-better-web"
-        ]
+        "title": "Masterclass",
+        "location": "breakout rooms"
       },
       {
         "time": "12:00",
-        "title": "Lunch Break"
+        "title": "Lunch <br>"
       }
     ]
   },
@@ -38,12 +31,8 @@
     "list": [
       {
         "time": "01:00",
-        "title": "Masterclass",
-        "sessions": [
-          "new-adventures-in-responsive-web-design",
-          "grid-is-the-new-black",
-          "solid-strategies-to-build-for-a-better-web"
-        ]
+        "title": "Masterclass resumes",
+        "location": "breakout rooms"
       },
       {
         "time": "03:00",
@@ -51,16 +40,13 @@
       },
       {
         "time": "03:30",
-        "title": "Masterclass",
-        "sessions": [
-          "new-adventures-in-responsive-web-design",
-          "grid-is-the-new-black",
-          "solid-strategies-to-build-for-a-better-web"
-        ]
+        "title": "Masterclass resumes",
+        "location": "breakout rooms"
       },
       {
         "time": "05:00",
-        "title": "Resume at the main hall for panel discussion"
+        "title": "Panel Discussion",
+        "location": "main hall"
       },
       {
         "time": "05:30",

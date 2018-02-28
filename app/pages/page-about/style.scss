@@ -3,20 +3,42 @@
 @import '../../styles/components/_anchor.scss';
 @import '../../styles/components/_button.scss';
 @import '../../styles/components/_grid.scss';
+@import '../../styles/global/_variables.scss';
 
-section {
-  padding: 10px 0;
+.team {
+  list-style-type: none;
+  margin-left: 30px;
 
-  h1.title {
-    display: block;
-    font-size: 2em;
-    -webkit-margin-before: 0.67em;
-    -webkit-margin-after: 0.67em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    font-weight: bold;
+  .member {
+    display: flex;
+    margin-bottom: 20px;
+    max-width: 500px;
+
+    .name {
+      text-align: right;
+      font-weight: 700;
+      margin-right: 20px;
+      display: block;
+      width: 100px;
+    }
+
+    .position {
+      display: block;
+      flex: 1;
+    }
   }
+}
 
+.member {
+  &:nth-child(3n + 0) .name {
+    color: $red
+  }
+  &:nth-child(3n + 1) .name {
+    color: $green
+  }
+  &:nth-child(3n + 2) .name {
+    color: $blue
+  }
 }
 
 .icon-list {

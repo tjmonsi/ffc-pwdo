@@ -1,13 +1,10 @@
-# Form Function & Class returns August 18!
+As the <a href="https://pwdo.org" target="_blank" rel="noopener">Philippine Web Designers Organization</a> commemorates its 10th anniversary this 2018, &lt;form&gt; function() & .class celebrates its 9th year!
 
-Get ready for another jam-packed day of learning the latest, most important ideas in digital design & front-end, delivered to you by industry leaders in the Philippines, Asia, and the rest of the world.
+What you might not know is: we formed the organization because we wanted to hold a web design conference in the Philippines.
 
-The name of our conference alludes to the 3 elements of a website: `<form>` from HTML, `function()` from JavaScript, `.class` from CSS. It also refers to 3 concepts central to the craft: form, function, and continuous learning.
+We knew that putting the event together would take a while, so we began with a MiniFFC meetup on October 30, 2008 at the G2VC TechBar in Exist, Pasig. Over 50 people listed to 6 wonderful talks — a mini conference, indeed. Then on July 10, 2009 we launched the first FFC at the Asian Institute of Management Makati.
+Over the years we’ve introduced workshops and masterclasses to FFC, and this year we’re doing something different once again: an all-masterclass format.
 
-As previous FFC speaker Brad Frost wrote: “The bidirectional & interactive nature of the web adds many more dimensions to what constitutes good design. Speed, screen size, environment, technological capabilities, form-factor, ergonomics, usability, accessibility, context, and user preferences must be considered if we want to create great work for this brave new digital world.”
+Our events may shift in form, buzzwords might come and go—much like the dynamic nature of this industry—but our goals remain: to unite professionals & enthusiasts who create human interfaces for the Web, to champion the use of standards, accessibility, & usability, and to uplift the state of web design in the country.
 
-So at Form Function & Class, we aim to equip you with knowledge & techniques so you can create good design in all these different dimensions.
-
-One participant described FFC as “the meatiest design-related conference” they’ve attended. It has also featured the likes of Rachel Nabors, Rico Sta. Cruz, Jina Bolton, Dan Matutina, John Allsopp, Sacha Greif.
-
-<!-- See what happened last year! -->
+Why is it called FFC? The 3 words allude to the 3 elements of a website (&lt;form&gt; from HTML, function() from JavaScript, .class from CSS) and to 3 concepts central to the craft—form, function, & continuous learning.

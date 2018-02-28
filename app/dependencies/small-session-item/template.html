@@ -1,11 +1,15 @@
 <section class="session-small">
-  <div class="workshop">
-    [[session.title]]<br>by <a href="/speakers">[[speaker.name]]</a>
-  </div>
   <div class="location">
-    [[session.location]]
+    <h4 class$="[[session.className]]">
+      [[session.location]]
+    </h4>
   </div>
-  <div class="info">
-    <a href="/session/[[sessionId]]">Click Here</a>
+
+  <div class="speaker">
+    <a href="/speakers">[[speaker.name]]</a>
+  </div>
+
+  <div class="workshop">
+    <a href="/session/[[sessionId]]">[[session.title]]</a>
   </div>
 </section>

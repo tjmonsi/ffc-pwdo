@@ -2,3 +2,66 @@
 @import '../../styles/global/_pages.scss';
 @import '../../styles/components/_anchor.scss';
 @import '../../styles/components/_button.scss';
+
+.desktop {
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}
+
+.phone {
+  display: none;
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
+}
+
+table {
+  // width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-spacing: 0;
+}
+
+tr {
+  margin: 0;
+  padding: 0;
+}
+
+td {
+  margin: 0;
+  padding: 0 20px 0 0px;
+  vertical-align: top;
+  padding-bottom: 20px;
+}
+
+.time {
+  width: 80px;
+}
+
+.location {
+  color: #949494;
+}
+
+ul {
+  display: flex;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media screen and (max-width: 750px) {
+    display: block;
+  }
+
+  li {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+
+    small-session-item {
+      flex: 1;
+    }
+  }
+}

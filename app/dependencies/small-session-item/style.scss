@@ -1,40 +1,61 @@
 @import '../../styles/global/_typography.scss';
 @import '../../styles/global/_host-block.scss';
+@import '../../styles/global/_variables.scss';
+
+:host {
+  display: flex;
+  align-items: stretch;
+}
 
 .session-small {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  text-align: center;
+  flex: 1;
+  position: relative;
   padding: 20px;
+  margin: 20px;
+  background: $grey;
+  color: $light;
+  text-align: right;
 
-  @media screen and (max-width: 660px) {
-    display: block;
+  .location {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+  }
+
+  .speaker {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
   }
 
   .workshop {
-    flex: 1;
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+    font-size: 1.25rem;
   }
 
-  .location {
-    flex: 1;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+h4 {
+  font-size: 1.75em;
+  margin: 0px;
+  text-align: left;
+
+  &.red {
+    color: $red;
   }
 
-  .info {
-    flex: 1;
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+  &.green {
+    color: $green;
+  }
+
+  &.blue {
+    color: $blue;
   }
 }

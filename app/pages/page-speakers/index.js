@@ -8,6 +8,7 @@ import template from './template.html';
 import 'side-bar';
 import 'header-bar';
 import 'speaker-list';
+import 'footer-bar';
 import '@polymer/polymer/lib/elements/dom-repeat';
 
 class Component extends PageMixin(FetchMixin(GestureEventListeners(Element))) {

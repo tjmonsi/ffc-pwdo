@@ -1,22 +1,16 @@
-<side-bar with-logo on-side-bar-close="closeMenu"></side-bar>
+<side-bar on-side-bar-close="closeMenu"></side-bar>
+<header-bar on-side-bar-open="openMenu"></header-bar>
 
 <section class="main">
+  <h1 class="with-text">
+    About
+  </h1>
 
-  <header class="header">
-    <h1>
-      About
-    </h1>
-
-    <a class="menu" on-tap="openMenu">
-      Menu
-    </a>
-  </header>
-
-  <section>
+  <section class="with-text">
     <marked-element marked="[[ffc]]"></marked-element>
   </section>
 
-  <section>
+  <!-- <section>
     <marked-element marked="[[venue]]"></marked-element>
   </section>
 
@@ -36,33 +30,32 @@
 
       <marked-element marked="[[nearbyAccommodations]]"></marked-element>
     </div>
-  </section>
+  </section> -->
 
-  <section>
+  <h2 class="with-text">
+    Code of Conduct
+  </h2>
+
+  <section class="with-text">
     <marked-element marked="[[codeOfConduct]]"></marked-element>
   </section>
 
-  <section>
+  <!-- <section>
     <marked-element marked="[[organizer]]"></marked-element>
-  </section>
+  </section> -->
 
-  <section>
-    <h1 class="title">Masthead</h1>
-    <div class="grid">
-      <template is="dom-repeat" items="[[masthead]]">
-        <div class="box">
-          <h3 class="title">
-            [[item.position]]
-          </h3>
+  <h2 class="with-text">Team</h2>
 
-          <marked-element marked="## [[item.name]]"></marked-element>
-          <marked-element marked="[[item.description]]"></marked-element>
-        </div>
-      </template>
-    </div>
-  </section>
+  <ul class="team">
+    <template is="dom-repeat" items="[[masthead]]">
+      <li class="member">
+        <span class="name">[[item.name]]</span>
+        <span class="position">[[item.position]]</span>
+      </li>
+    </template>
+  </ul>
 
-  <section>
+  <!-- <section>
     <h1 class="title">
       Follow Us!
     </h1>
@@ -121,9 +114,9 @@
         </svg>
       </a>
     </div>
-  </section>
+  </section> -->
 
   <!-- <marked-element marked="[[nearbyAccommodations]]"></marked-element> -->
 </section>
-
+<footer-bar></footer-bar>
 

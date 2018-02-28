@@ -1,19 +1,70 @@
-<side-bar with-logo on-side-bar-close="closeMenu"></side-bar>
+<side-bar on-side-bar-close="closeMenu"></side-bar>
+<header-bar on-side-bar-open="openMenu"></header-bar>
 
 <section class="main">
+  <h1 class="with-text">
+    Schedule
+  </h1>
 
-  <header class="header">
-    <h1>
-      Schedule
-    </h1>
+  <table class="with-text desktop">
+    <tr>
+      <template is="dom-repeat" items="[[scheduleList]]" as="part">
+        <td>
+          <table>
+            <template is="dom-repeat" items="[[part.list]]" as="schedule">
+              <tr>
+                <td class="time">
+                  [[schedule.time]]
+                </td>
+                <td class="session">
+                  [[schedule.title]]
+                  <template is="dom-if" if="[[schedule.location]]">
+                    <span class="location">@ [[schedule.location]]</span>
+                  </template>
+                </td>
+              </tr>
+            </template>
+          </table>
+        </td>
+      </template>
+    </tr>
+  </table>
 
-    <a class="menu" on-tap="openMenu">
-      Menu
-    </a>
-  </header>
+  <table class="with-text phone">
+    <template is="dom-repeat" items="[[scheduleList]]" as="part">
+      <tr>
+        <td>
+          <table>
+            <template is="dom-repeat" items="[[part.list]]" as="schedule">
+              <tr>
+                <td class="time">
+                  [[schedule.time]]
+                </td>
+                <td class="session">
+                  [[schedule.title]]
+                  <template is="dom-if" if="[[schedule.location]]">
+                    <span class="location">@ [[schedule.location]]</span>
+                  </template>
+                </td>
+              </tr>
+            </template>
+          </table>
+        </td>
+      </tr>
+    </template>
+  </table>
 
-  <template is="dom-repeat" items="[[scheduleList]]">
-    <schedule-list schedule="[[item]]"></schedule-list>
-  </template>
+  <h1 class="with-text">
+    Rooms
+  </h1>
+
+  <ul class="with-text">
+    <template is="dom-repeat" items="[[roomsList]]">
+      <li>
+        <small-session-item session-id="[[item]]"></small-session-item>
+      </li>
+    </template>
+  </ul>
 
 </section>
+<footer-bar></footer-bar>

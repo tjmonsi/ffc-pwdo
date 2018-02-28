@@ -7,6 +7,8 @@ import css from './style.scss';
 import template from './template.html';
 import 'side-bar';
 import 'marked-element';
+import 'footer-bar';
+import 'header-bar';
 
 class Component extends PageMixin(FetchMixin(GestureEventListeners(Element))) {
   static get is () { return 'page-about'; }

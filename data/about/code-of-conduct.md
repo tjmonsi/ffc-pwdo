@@ -1,3 +1,1 @@
-# Code of Conduct
-
-It is important for our event to have a professional, enjoyable, harassment-free atmosphere, so all participants (whether they are organizers, speakers, sponsors, crew, or delegates) are expected to abide by our Code of Conduct.
+It is important for our event to have a professional, enjoyable, harassment-free atmosphere, so all participants (whether they are organizers, speakers, sponsors, crew, or delegates) are expected to abide by our <a href="https://medium.com/@PWDO/pwdo-code-of-conduct-16ab6ffb5f15" target="_blank" rel="noopener">Code of Conduct</a>.

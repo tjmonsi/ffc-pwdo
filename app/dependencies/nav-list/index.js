@@ -25,10 +25,10 @@ class Component extends GestureEventListeners(Element) {
             href: '/schedule',
             label: 'Schedule'
           },
-          {
-            href: '/tickets',
-            label: 'Tickets'
-          },
+          // {
+          //   href: '/tickets',
+          //   label: 'Tickets'
+          // },
           // {
           //   href: '/sponsors',
           //   label: 'Sponsors'
@@ -36,15 +36,15 @@ class Component extends GestureEventListeners(Element) {
           {
             href: '/about',
             label: 'About'
-          },
-          {
-            href: '/faq',
-            label: 'FAQ'
-          },
-          {
-            href: '/sponsors',
-            label: 'Sponsors'
           }
+          // {
+          //   href: '/faq',
+          //   label: 'FAQ'
+          // },
+          // {
+          //   href: '/sponsors',
+          //   label: 'Sponsors'
+          // }
           // {
           //   href: '/scrapbook',
           //   label: 'Scrapbook'

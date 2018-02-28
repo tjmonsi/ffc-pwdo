@@ -6,6 +6,7 @@
   min-height: 100vh;
   width: 100%;
   background: $grey;
+  margin-top: -50px;
 }
 
 section {
@@ -23,6 +24,10 @@ section {
 ffc-logo {
   max-width: 400px;
   margin: 30px;
+
+  @media screen and (max-height: 600px) {
+    max-width: 170px;
+  }
 }
 
 .menu {
