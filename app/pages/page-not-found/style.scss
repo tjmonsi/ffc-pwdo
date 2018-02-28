@@ -4,8 +4,7 @@
 @import '../../styles/components/_button.scss';
 
 :host {
-  grid-template-areas:
-    "main main main sidebar";
+  display: block;
 }
 
 .main {
@@ -30,4 +29,14 @@ ffc-logo {
 
 side-bar.open {
   z-index: 100;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+p {
+  max-width: none;
 }
