@@ -18,16 +18,6 @@ class Component extends PageMixin(GestureEventListeners(Element)) {
       ${template}
     `;
   }
-
-  openMenu () {
-    super.openMenu();
-    this.shadowRoot.querySelector('side-bar').withLogo = true;
-  }
-
-  closeMenu () {
-    super.closeMenu();
-    this.shadowRoot.querySelector('side-bar').withLogo = false;
-  }
 }
 
 !customElements.get(Component.is)

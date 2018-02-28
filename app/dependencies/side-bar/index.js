@@ -5,7 +5,6 @@ import css from './style.scss';
 import template from './template.html';
 import 'nav-list';
 import 'ffc-logo';
-import '@polymer/polymer/lib/elements/dom-if';
 
 class Component extends GestureEventListeners(Element) {
   static get is () { return 'side-bar'; }

@@ -1,18 +1,14 @@
+@import '../global/_variables.scss';
+
 .menu {
-  // display: none;
-  position: fixed;
-  top: 20px;
-  right: 20px;
+
   padding: 20px;
   text-decoration: none;
-  border: 1px solid white;
-  background: #3a3a3a;
+  background: $grey;
+  color: $light;
   z-index: 1000;
   cursor: pointer;
-
-  // @media screen and (max-width: 800px) {
-  //   display: block;
-  // }
+  border: 0;
 
   &:hover {
     background: rgba(255, 255, 255, 0.2)

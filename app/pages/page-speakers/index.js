@@ -6,6 +6,7 @@ import { PageMixin } from 'page-mixin';
 import css from './style.scss';
 import template from './template.html';
 import 'side-bar';
+import 'header-bar';
 import 'speaker-list';
 import '@polymer/polymer/lib/elements/dom-repeat';
 

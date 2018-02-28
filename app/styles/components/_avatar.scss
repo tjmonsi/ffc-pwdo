@@ -1,0 +1,51 @@
+@import '../global/_variables.scss';
+@import '../mixins/_avatar-borders.scss';
+
+.avatar-container {
+  width: 240px;
+  height: 240px;
+  margin: 20px;
+  padding-left: 20px;
+  position: relative;
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    left: 0px;
+    top: 20px;
+    z-index: 1;
+  }
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    left: 40px;
+    top: -20px;
+    z-index: 1;
+  }
+
+  &:hover > .avatar {
+    filter: none;
+  }
+}
+
+.red {
+  @include avatarBorder($red);
+}
+
+.green {
+  @include avatarBorder($green);
+}
+
+.blue {
+  @include avatarBorder($blue);
+}
+
+.avatar {
+  width: 240px;
+  filter: grayscale(100%);
+}

@@ -1,14 +1,10 @@
-<template is="dom-if" if="[[session.speakerId]]">
-  <img class="avatar" src="[[getHost()]]/data/speakers/[[session.speakerId]].jpg">
-</template>
-
 <section class="session">
-  <h3 class="session-name">
+  <h1 class="session-name with-text">
     [[session.title]]
-  </h3>
-  <p class="speaker-name">
+  </h1>
+  <h2 class$="speaker-name [[speaker.className]]-name with-text">
     by: <a href="/speakers">[[speaker.name]]</a>
-  </p>
-  <div class="session-description">
+  </h2>
+  <div class="session-description with-text-block">
   </div>
 </section>

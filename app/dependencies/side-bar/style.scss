@@ -1,12 +1,68 @@
 @import '../../styles/components/_menu.scss';
+@import '../../styles/global/_variables.scss';
 
 :host {
+  flex-direction: horizontal;
+  min-height: 100vh;
+  width: 100%;
+  background: $grey;
+}
+
+section {
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
+  text-align: center;
+  background: $grey;
+
+  div {
+    flex: 1;
+  }
 }
 
 ffc-logo {
-  width: 200px;
-  margin: 20px;
+  max-width: 400px;
+  margin: 30px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.register {
+  right: 0;
+  left: auto;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  fill: $light;
+}
+
+.icon-anchor {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: none;
+  // margin: 0 10px;
+}
+
+.icon-left, .icon-right {
+  top: auto;
+  bottom: 20px;
+
+  @media screen and (max-width: 600px) {
+    bottom: 10px;
+  }
+}
+
+.icon-left {
+  left: 20px;
+}
+
+.icon-right {
+  left: auto;
+  right: 20px;
 }

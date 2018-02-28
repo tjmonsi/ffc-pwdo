@@ -1,15 +1,20 @@
-<img class="avatar" src="[[getHost()]]/data/speakers/[[speakerId]].jpg">
+<div class$="avatar-container [[speaker.className]]">
+  <img class="avatar" src="[[getHost()]]/data/speakers/[[speakerId]].jpg">
+</div>
 
 <section class="speaker">
-  <h3 class="speaker-name">
+  <h3 class$="speaker-name [[speaker.className]]-name">
     [[speaker.name]]
   </h3>
   <p class="speaker-position">
     [[speaker.position]]
   </p>
-  <div class="speaker-bio">
+  <div class$="speaker-bio [[speaker.className]]-bio">
   </div>
-  <a class="speaker-talk" href="/session/[[speaker.sessionId]]">
-    [[session.title]]
-  </a>
+  <p class$="[[speaker.className]]-bio">
+    [[speaker.name]]'s masterclass is <a class="speaker-talk" href="/session/[[speaker.sessionId]]">
+      [[session.title]]
+    </a>
+  </p>
+
 </section>

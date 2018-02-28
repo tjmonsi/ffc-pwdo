@@ -1,21 +1,14 @@
-<side-bar with-logo on-side-bar-close="closeMenu"></side-bar>
+<side-bar on-side-bar-close="closeMenu"></side-bar>
+<header-bar on-side-bar-open="openMenu"></header-bar>
 
 <section class="main">
-
-  <header class="header">
-    <h1>
-      Speakers
-    </h1>
-
-    <a class="menu" on-tap="openMenu">
-      Menu
-    </a>
-  </header>
+  <h1 class="with-text">
+    Speakers
+  </h1>
 
   <template is="dom-repeat" items="[[speakersList]]">
     <speaker-list speakers="[[item]]"></speaker-list>
   </template>
-
 </section>
 
 

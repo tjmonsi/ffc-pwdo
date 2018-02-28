@@ -13,10 +13,10 @@ class Component extends GestureEventListeners(Element) {
       nav: {
         type: Array,
         value: [
-          {
-            href: '/',
-            label: 'Home'
-          },
+          // {
+          //   href: '/',
+          //   label: 'Home'
+          // },
           {
             href: '/speakers',
             label: 'Speakers'
@@ -41,6 +41,10 @@ class Component extends GestureEventListeners(Element) {
             href: '/faq',
             label: 'FAQ'
           },
+          {
+            href: '/sponsors',
+            label: 'Sponsors'
+          }
           // {
           //   href: '/scrapbook',
           //   label: 'Scrapbook'

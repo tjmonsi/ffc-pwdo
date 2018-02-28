@@ -1,4 +1,92 @@
+@import './_variables.scss';
+@import '../mixins/_with-text.scss';
+
 * {
   font-family: 'Inovato', sans-serif;
-  color: white;
+  color: $light;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.with-text {
+  padding-left: 45px;
+  position: relative;
+  &::before {
+    @include withText;
+  }
+}
+
+h1.with-text {
+  &::before {
+    content: 'h1';
+    padding-top: 34px;
+  }
+}
+
+h2.with-text {
+  &::before {
+    content: 'h2';
+    padding-top: 24px;
+  }
+}
+
+ul.with-text {
+  &::before {
+    content: 'ul';
+  }
+}
+
+.with-text-block {
+  > * {
+    padding-left: 45px;
+    position: relative;
+  }
+
+  h1::before {
+    content: 'h1';
+    @include withText;
+    padding-top: 34px;
+  }
+
+  h2::before {
+    content: 'h2';
+    @include withText;
+    padding-top: 24px;
+  }
+
+  h3::before {
+    content: 'h3';
+    @include withText;
+    padding-top: 18px;
+  }
+
+  h4::before {
+    content: 'h4';
+    @include withText;
+  }
+
+  h5::before {
+    content: 'h5';
+    @include withText;
+  }
+
+  p::before {
+    content: 'p';
+    @include withText;
+  }
+
+  ul::before {
+    content: 'ul';
+    @include withText;
+  }
 }

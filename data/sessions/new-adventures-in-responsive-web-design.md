@@ -2,7 +2,7 @@ Description: With HTTP/2, Service Workers, Progressive Web Apps, Responsive Imag
 
 Expectation: In this workshop, Vitaly Friedman, editor-in-chief of Smashing Magazine, will be looking into a strategy for crafting fast, resilient and flexible responsive design systems by utilizing all of those wonderful shiny web technologies we have available today. We'll also talk about dealing with legacy browsers and will cover a few dirty little techniques that might ensure that your responsive websites will stay relevant, flexible and accessible in the years to come. Beware: you won’t be able to unlearn the things that you’ll learn in the workshop!
 
-Outline:
+# Outline:
 - architecting and building pattern libraries and design systems
 - content choreography, internationalization and localization issues
 - layout techniques (Flexbox and CSS Grid)

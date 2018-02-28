@@ -1,0 +1,11 @@
+@mixin withText {
+  position: absolute;
+  top: 0;
+  left: -45px;
+  width: 50px;
+  font-size: 0.85rem;
+  opacity: 0.6;
+  text-align: right;
+  display: block;
+}
+

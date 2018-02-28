@@ -1,22 +1,13 @@
 @import '../components/_menu.scss';
+@import '../global/_variables.scss';
 
 :host {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  min-height: 100vh;
-  background: #3a3a3a;
-  // color: #efefef;
-  grid-template-areas:
-    "main main main main";
-
-  @media screen and (max-width: 800px) {
-    display: block;
-  }
+  display: block;
+  background: $dark;
+  padding-top: 50px;
 }
 
 .main {
-  grid-area: main;
   display: block;
   min-height: 100vh;
   padding: 20px;
@@ -27,22 +18,19 @@
 }
 
 side-bar {
-  grid-area: sidebar;
   height: 100vh;
   display: none;
 
-
-
   &.open {
     display: block;
-    min-width: 300px;
+    width: 100%;
     position: fixed;
-    padding-top: 20px;
-    background: #3a3a3a;
+  }
+}
 
-    @media screen and (max-width: 800px) {
-      width: 100%;
-    }
+header-bar {
+  &.hidden {
+    display: none;
   }
 }
 

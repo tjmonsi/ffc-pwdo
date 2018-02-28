@@ -4,8 +4,7 @@
 @import '../../styles/components/_button.scss';
 
 :host {
-  grid-template-areas:
-    "main main main main";
+  display: block;
 }
 
 .main {

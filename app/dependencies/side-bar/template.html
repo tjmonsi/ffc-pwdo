@@ -1,12 +1,27 @@
-<div>
-  <a class="menu" on-tap="closeMenu">
-    Close
-  </a>
+<a class="menu" on-tap="closeMenu">
+  Close
+</a>
 
-  <template is="dom-if" if="[[withLogo]]">
-    <ffc-logo></ffc-logo>
-  </template>
+<a class="register menu" href="/" target="_blank" rel="noopener">
+  Register Now
+</a>
 
-  <nav-list></nav-list>
-</div>
+<a class="menu icon-left icon-anchor" href="https://www.facebook.com/webdesigners.org.ph" title="Facebook" target="_blank" rel="noopener">
+  <svg class="icon">
+    <use xlink:href="/images/icons.svg#icon-facebook2" />
+  </svg>
+</a>
+
+<a class="menu icon-right icon-anchor" href="https://twitter.com/pwdo" title="Twitter" target="_blank" rel="noopener">
+  <svg class="icon">
+    <use xlink:href="/images/icons.svg#icon-twitter" />
+  </svg>
+</a>
+
+<section>
+  <div>
+    <a href="/"><ffc-logo></ffc-logo></a>
+    <nav-list></nav-list>
+  </div>
+</section>
 

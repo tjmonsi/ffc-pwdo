@@ -1,7 +1,7 @@
-<h2>
-  [[speakers.title]]
-</h2>
-
-<template is="dom-repeat" items="[[speakers.list]]">
-  <speaker-item speaker-id="[[item]]"></speaker-item>
-</template>
+<ul class="with-text">
+  <template is="dom-repeat" items="[[speakers.list]]">
+    <li>
+      <speaker-item speaker-id="[[item]]"></speaker-item>
+    </li>
+  </template>
+</ul>

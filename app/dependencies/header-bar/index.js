@@ -1,22 +1,20 @@
 import { Element } from '@polymer/polymer/polymer-element';
 import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event-listeners';
-import { customElements } from 'global/window';
-import { ReduxMixin } from '@littleq/state-manager';
-import { PageMixin } from 'page-mixin';
+import { customElements, CustomEvent } from 'global/window';
 import css from './style.scss';
 import template from './template.html';
-import 'side-bar';
-import 'session-item';
-import 'header-bar';
+import 'nav-list';
+import 'ffc-logo';
+import '@polymer/polymer/lib/elements/dom-if';
 
-class Component extends ReduxMixin(PageMixin(GestureEventListeners(Element))) {
-  static get is () { return 'page-sessions'; }
+class Component extends GestureEventListeners(Element) {
+  static get is () { return 'header-bar'; }
 
   static get properties () {
     return {
-      params: {
-        type: String,
-        statePath: 'router.params'
+      withLogo: {
+        type: Boolean,
+        value: false
       }
     };
   }
@@ -28,6 +26,10 @@ class Component extends ReduxMixin(PageMixin(GestureEventListeners(Element))) {
       </style>
       ${template}
     `;
+  }
+
+  openMenu () {
+    this.dispatchEvent(new CustomEvent('side-bar-open'));
   }
 }
 

@@ -1,14 +1,14 @@
-Outline
+# Outline
 - Introduction to web layouts
 - CSS grid
 - Flexbox
 - Additional properties for layout, like transforms, writing-mode etc.
 - Feature queries and fallbacks
 
-Who should attend this Masterclass?
+# Who should attend this Masterclass?
 - Designers and developers who already have a good working knowledge of HTML and CSS.
 
-Requirement
+# Requirement
 - Skills of the attendees and tools required
   - Good working knowledge of HTML and CSS
   - Reasonable understanding of how the browser renders elements
