@@ -1,0 +1,1 @@
+Paying online is fast and easy. Both credit cards & PayPal are accepted.

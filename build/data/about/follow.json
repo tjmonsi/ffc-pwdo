@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Facebook",
+    "icon": "/images/icons.svg#icon-facebook2",
+    "url": "https://www.facebook.com/webdesigners.org.ph"
+  },
+  {
+    "title": "Instagram",
+    "icon": "/images/icons.svg#icon-instagram",
+    "url": "https://instagram.com/pwdo"
+  },
+  {
+    "title": "Twitter",
+    "icon": "/images/icons.svg#icon-twitter",
+    "url": "https://twitter.com/pwdo"
+  },
+  {
+    "title": "Tumblr",
+    "icon": "/images/icons.svg#icon-tumblr",
+    "url": "http://blog.pwdo.org/"
+  },
+  {
+    "title": "Youtube",
+    "icon": "/images/icons.svg#icon-youtube",
+    "url": "https://www.youtube.com/user/formfunctionclass"
+  },
+  {
+    "title": "Google+",
+    "icon": "/images/icons.svg#icon-google-plus",
+    "url": "https://plus.google.com/b/115421497645829988721/115421497645829988721/posts"
+  },
+  {
+    "title": "Github",
+    "icon": "/images/icons.svg#icon-github",
+    "url": "https://github.com/pwdo"
+  },
+  {
+    "title": "Flickr",
+    "icon": "/images/icons.svg#icon-flickr",
+    "url": "https://www.flickr.com/groups/pwdo/"
+  },
+  {
+    "title": "Spotify",
+    "icon": "/images/icons.svg#icon-spotify",
+    "url": "https://open.spotify.com/user/formfunctionclass"
+  },
+  {
+    "title": "Medium",
+    "icon": "/images/icons.svg#icon-medium",
+    "url": "https://medium.com/@pwdo"
+  }
+]

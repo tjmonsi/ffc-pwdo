@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Morning Session",
+    "list": [
+      {
+        "time": "07:30",
+        "title": "Regisration"
+      },
+      {
+        "time": "08:30",
+        "title": "Welcome Remarks"
+      },
+      {
+        "time": "08:40",
+        "title": "Keynote by PWDO President"
+      },
+      {
+        "time": "09:00",
+        "title": "Light snack and start of break out sessions"
+      },
+      {
+        "time": "09:30",
+        "title": "Start of Masterclass"
+      },
+      {
+        "time": "12:00",
+        "title": "Lunch Break"
+      }
+    ]
+  },
+  {
+    "title": "Afternoon Session",
+    "list": [
+      {
+        "time": "01:20",
+        "title": "Workshop",
+        "description": "* Workshop slots are first-come, first-serve. The sooner you register, the sooner you'll be able to pick your workshop of choice.",
+        "sessions": [
+          "new-adventures-in-responsive-web-design",
+          "grid-is-the-new-black"
+        ]
+      },
+      {
+        "time": "04:20",
+        "title": "Afternoon <br/>"
+      },
+      {
+        "time": "04:30",
+        "title": "Raffle"
+      },
+      {
+        "time": "04:45",
+        "title": "Panel Discussion"
+      },
+      {
+        "time": "05:35",
+        "title": "Closing Remarks"
+      },
+      {
+        "time": "05:40",
+        "title": "Grand Raffle"
+      },
+      {
+        "time": "05:50",
+        "title": "Class Photo"
+      },
+      {
+        "time": "06:00",
+        "title": "Networking"
+      }
+    ]
+  }
+
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Morning Session",
+    "list": [
+      {
+        "time": "07:30",
+        "title": "Regisration"
+      },
+      {
+        "time": "08:30",
+        "title": "Welcome",
+        "location": "main hall"
+      },
+      {
+        "time": "09:00",
+        "title": "Morning <br>"
+      },
+      {
+        "time": "09:30",
+        "title": "Masterclass",
+        "location": "breakout rooms"
+      },
+      {
+        "time": "12:00",
+        "title": "Lunch <br>"
+      }
+    ]
+  },
+  {
+    "title": "Afternoon Session",
+    "list": [
+      {
+        "time": "01:00",
+        "title": "Masterclass resumes",
+        "location": "breakout rooms"
+      },
+      {
+        "time": "03:00",
+        "title": "Afternoon <br/>"
+      },
+      {
+        "time": "03:30",
+        "title": "Masterclass resumes",
+        "location": "breakout rooms"
+      },
+      {
+        "time": "05:00",
+        "title": "Panel Discussion",
+        "location": "main hall"
+      },
+      {
+        "time": "05:30",
+        "title": "Raffle"
+      },
+      {
+        "time": "05:45",
+        "title": "Class photo & Closing"
+      }
+    ]
+  }
+
+]
