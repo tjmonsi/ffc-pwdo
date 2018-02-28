@@ -57,6 +57,12 @@ h2.with-text {
   }
 }
 
+p.with-text {
+  &::before {
+    content: 'p';
+  }
+}
+
 ul.with-text {
   &::before {
     content: 'ul';
