@@ -8,6 +8,11 @@
   padding-left: 20px;
   position: relative;
 
+  @media screen and (max-width: 420px) {
+    width: 200px;
+    height: 200px;
+  }
+
   &::before {
     content: ' ';
     position: absolute;
@@ -16,6 +21,11 @@
     left: 0px;
     top: 20px;
     z-index: 1;
+
+    @media screen and (max-width: 420px) {
+      width: 200px;
+      height: 200px;
+    }
   }
 
   &::after {
@@ -26,6 +36,11 @@
     left: 40px;
     top: -20px;
     z-index: 1;
+
+    @media screen and (max-width: 420px) {
+      width: 200px;
+      height: 200px;
+    }
   }
 
   &:hover > .avatar {
@@ -48,4 +63,8 @@
 .avatar {
   width: 240px;
   filter: grayscale(100%);
+
+  @media screen and (max-width: 420px) {
+    width: 200px;
+  }
 }

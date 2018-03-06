@@ -5,6 +5,7 @@
 
 :host {
   display: block;
+  position: relative;
 }
 
 .main {
@@ -39,4 +40,31 @@ side-bar.open {
 
 p {
   max-width: none;
+}
+
+.image-lower-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  width: 50%;
+  max-width: 400px;
+}
+
+.image-lower-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -10;
+  width: 50%;
+  max-width: 400px;
+}
+
+.image-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -10;
+  width: 50%;
+  max-width: 400px;
 }

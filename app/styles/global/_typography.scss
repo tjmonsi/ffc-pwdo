@@ -2,13 +2,14 @@
 @import '../mixins/_with-text.scss';
 
 * {
-  font-family: 'Inovato', sans-serif;
   color: $light;
   line-height: 1.4;
 }
 
 h1, h2, h3, h4, h5 {
   line-height: 1.2;
+  font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
 }
 
 h1 {
@@ -41,12 +42,24 @@ p {
   &::before {
     @include withText;
   }
+
+  @media screen and (max-width: 420px) {
+    margin-left: 0;
+
+    &::before {
+      content: ''
+    }
+  }
 }
 
 h1.with-text {
   &::before {
     content: 'h1';
     padding-top: 34px;
+
+    @media screen and (max-width: 420px) {
+      content: ''
+    }
   }
 }
 
@@ -54,36 +67,60 @@ h2.with-text {
   &::before {
     content: 'h2';
     padding-top: 24px;
+
+    @media screen and (max-width: 420px) {
+      content: ''
+    }
   }
 }
 
 p.with-text {
   &::before {
     content: 'p';
+
+    @media screen and (max-width: 420px) {
+      content: ''
+    }
   }
 }
 
 ul.with-text {
   &::before {
     content: 'ul';
+
+    @media screen and (max-width: 420px) {
+      content: ''
+    }
   }
 }
 
 table.with-text {
   &::before {
     content: 'table';
+
+    @media screen and (max-width: 420px) {
+      content: ''
+    }
   }
 }
 
 section.with-text {
   &::before {
-    content: 'section';
+    content: '§';
+
+    @media screen and (max-width: 420px) {
+      content: ''
+    }
   }
 }
 
 .img.with-text {
   &::before {
-    content: 'img'
+    content: 'img';
+
+    @media screen and (max-width: 420px) {
+      content: ''
+    }
   }
 }
 
@@ -91,43 +128,75 @@ section.with-text {
   > * {
     margin-left: 45px;
     position: relative;
+
+    @media screen and (max-width: 420px) {
+      margin-left: 0;
+    }
   }
 
   h1::before {
     content: 'h1';
     @include withText;
     padding-top: 34px;
+
+    @media screen and (max-width: 420px) {
+      content: ''
+    }
   }
 
   h2::before {
     content: 'h2';
     @include withText;
     padding-top: 24px;
+
+    @media screen and (max-width: 420px) {
+      content: ''
+    }
   }
 
   h3::before {
     content: 'h3';
     @include withText;
     padding-top: 18px;
+
+    @media screen and (max-width: 420px) {
+      content: ''
+    }
   }
 
   h4::before {
     content: 'h4';
     @include withText;
+
+    @media screen and (max-width: 420px) {
+      content: ''
+    }
   }
 
   h5::before {
     content: 'h5';
     @include withText;
+
+    @media screen and (max-width: 420px) {
+      content: ''
+    }
   }
 
   p::before {
     content: 'p';
     @include withText;
+
+    @media screen and (max-width: 420px) {
+      content: ''
+    }
   }
 
   ul::before {
     content: 'ul';
     @include withText;
+
+    @media screen and (max-width: 420px) {
+      content: ''
+    }
   }
 }
