@@ -1,10 +1,10 @@
 ## How can I promote FFC?
 
-You’re awesome! You can follow us on Facebook, Twitter, Google+, Instagram, Tumblr and share our posts there 😘
+You’re awesome! You can follow us on Facebook, Twitter, Google+, Instagram, Tumblr and share our posts there.
 
 ## How do I contact you?
 
-Send us an email at info@pwdo.org and we'll get back to you as soon as we can.
+Send us an email at <a href="mailto:info@pwdo.org">info@pwdo.org</a> and we'll get back to you as soon as we can.
 
 ## Are you a legitimate organization?
 

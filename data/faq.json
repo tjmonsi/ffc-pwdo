@@ -1,24 +1,24 @@
 {
-  "description": "Got a 🔥burning🔥 question about the Form Function & Class 9 conference? We’re here to answer them!",
+  "description": " ",
   "list": [
     {
-      "title": "Why Attend?",
+      "title": "First things first",
       "id": "why-attend"
     },
     {
-      "title": "Before you Buy",
+      "title": "Before you buy",
       "id": "before-you-buy"
     },
     {
-      "title": "Conference Prep",
+      "title": "Before FFC",
       "id": "conference-prep"
     },
     {
-      "title": "After the Conference",
+      "title": "After FFC",
       "id": "after-the-conference"
     },
     {
-      "title": "Anything Else?",
+      "title": "Anything else?",
       "id": "anything-else"
     }
   ]
