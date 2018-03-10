@@ -3,36 +3,39 @@
 @import '../../styles/components/_anchor.scss';
 @import '../../styles/components/_button.scss';
 @import '../../styles/components/_grid.scss';
+@import '../../styles/global/_variables.scss';
+@import '../../styles/components/_small-container.scss';
 
 section {
   padding: 10px 0;
-
-  h1.title {
-    display: block;
-    font-size: 2em;
-    -webkit-margin-before: 0.67em;
-    -webkit-margin-after: 0.67em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    font-weight: bold;
-  }
-
 }
 
-.grid {
-  @media screen and (max-width: 1000px) {
-    display: block;
-  }
-  grid-column-gap: 20px;
-  grid-template-areas:
-    "first first"
-    "none none";
+.flex-grid-2 {
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-  & .box:first-of-type {
-    grid-area: first;
+  li:first-child {
+    grid-column: 1/3;
   }
+}
 
-  .box {
-    margin-bottom: 20px;
+.reset-ul {
+  list-style-type: none;
+  padding: 0;
+
+  reset-li {
+    list-style-type: none;
   }
+}
+
+.smaller-container {
+  h1, h2, h3, h4, h5 {
+    margin: 10px 0;
+  }
+}
+
+.anchor {
+  border-bottom: none;
+  text-decoration: underline;
 }

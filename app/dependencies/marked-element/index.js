@@ -28,7 +28,7 @@ class Component extends GestureEventListeners(Element) {
   }
 
   _checkMarked (string) {
-    this.shadowRoot.querySelector('[container]').innerHTML = marked(string);
+    this.innerHTML = marked(string);
   }
 }
 

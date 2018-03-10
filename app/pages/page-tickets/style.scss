@@ -3,3 +3,93 @@
 @import '../../styles/components/_anchor.scss';
 @import '../../styles/components/_button.scss';
 @import '../../styles/components/_grid.scss';
+@import '../../styles/global/_variables.scss';
+@import '../../styles/components/_small-container.scss';
+
+.flex-grid-3 {
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 700px) {
+    display: block;
+  }
+}
+
+.flex-grid-2 {
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.reset-ul {
+  list-style-type: none;
+  padding: 0;
+
+  reset-li {
+    list-style-type: none;
+  }
+}
+
+.disable {
+  opacity: 0.5;
+}
+
+.date-price {
+  padding-top: 20px;
+
+  .date,.price {
+    font-size: 24px;
+    margin: 10px;
+  }
+}
+
+.ticket-button {
+  color: inherit;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  border: 1px solid $light;
+  flex: 1;
+}
+
+.button-container {
+  padding: 20px 0;
+  display: flex;
+}
+
+.grid.perks {
+  list-style-type: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 500px) {
+    display: block;
+  }
+
+  .grid-item {
+    list-style-type: none;
+    text-align: center;
+  }
+}
+
+.with-text-block {
+  max-width: 720px;
+}
+
+.anchor {
+  border-bottom: none;
+  text-decoration: underline;
+}

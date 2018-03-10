@@ -3,23 +3,28 @@
   "list": [
     {
       "title": "First things first",
-      "id": "why-attend"
+      "id": "why-attend",
+      "color": "red"
     },
     {
       "title": "Before you buy",
-      "id": "before-you-buy"
+      "id": "before-you-buy",
+      "color": "green"
     },
     {
       "title": "Before FFC",
-      "id": "conference-prep"
+      "id": "conference-prep",
+      "color": "blue"
     },
     {
       "title": "After FFC",
-      "id": "after-the-conference"
+      "id": "after-the-conference",
+      "color": "red"
     },
     {
       "title": "Anything else?",
-      "id": "anything-else"
+      "id": "anything-else",
+      "color": "green"
     }
   ]
 }

@@ -1,26 +1,17 @@
 @import '../../styles/global/_typography.scss';
 @import '../../styles/global/_host-block.scss';
 @import '../../styles/global/_variables.scss';
+@import '../../styles/components/_small-container.scss';
 
 :host {
   display: flex;
   align-items: stretch;
 }
 
-.session-small {
-  flex: 1;
-  position: relative;
-  padding: 20px;
-  margin: 20px;
-  background: $grey;
-  color: $light;
+.container-small {
   text-align: right;
-
-  .location {
-    position: absolute;
-    top: -20px;
-    left: -20px;
-  }
+  width: 100%;
+  margin: 0 20px;
 
   .speaker {
     padding-top: 50px;
@@ -42,20 +33,12 @@
   }
 }
 
-h4 {
-  font-size: 1.75em;
+.title {
   margin: 0px;
   text-align: left;
+}
 
-  &.red {
-    color: $red;
-  }
-
-  &.green {
-    color: $green;
-  }
-
-  &.blue {
-    color: $blue;
-  }
+h5 {
+  margin: 0px;
+  text-align: left;
 }

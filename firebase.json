@@ -42,6 +42,10 @@
       {
         "source": "/faq",
         "destination": "/index.html"
+      },
+      {
+        "source": "/sponsors",
+        "destination": "/index.html"
       }
     ],
     "headers": [

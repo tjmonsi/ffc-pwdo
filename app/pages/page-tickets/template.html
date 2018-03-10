@@ -1,93 +1,143 @@
-<side-bar with-logo on-side-bar-close="closeMenu"></side-bar>
+<side-bar on-side-bar-close="closeMenu"></side-bar>
+<header-bar on-side-bar-open="openMenu"></header-bar>
 
 <section class="main">
 
-  <header class="header">
-    <h1>
-      Tickets
-    </h1>
+  <h1 class="with-text">
+    Tickets
+  </h1>
 
-    <a class="menu" on-tap="openMenu">
-      Menu
-    </a>
-  </header>
+  <ul class="with-text flex-grid-3 reset-ul">
+    <template is="dom-repeat" items="[[ticketsObject.tickets.list]]">
+      <li class$="small-container reset-li [[_disable(item.disable)]]">
+        <div class="title-container">
+          <h2 class$="[[item.color]] title">
+            [[item.title]]
+          </h2>
+        </div>
 
-  <p>
-    [[ticketsObject.description]]
-  </p>
+        <div class="date-price">
+          <h3 class="date">
+            [[item.date]]
+          </h3>
+          <h3 class="price">
+            [[item.price]]
+          </h3>
+        </div>
 
-  <template is="dom-repeat" items="[[ticketsObject.list]]" as="section">
-    <section class="section">
-      <h2 class="title">
-        [[section.title]]
-      </h2>
+        <template is="dom-if" if="[[item.link]]">
+          <div class="button-container">
+            <a class="ticket-button" href="[[item.link.href]]" disabled="[[item.disable]]">
+              [[item.link.name]]
+            </a>
+          </div>
+        </template>
+      </li>
+    </template>
+  </ul>
 
-      <p>
-        [[section.description]]
-      </p>
+  <marked-element class="with-text-block" marked="[[ticketsObject.tickets.note]]"></marked-element>
 
-      <div class$="grid [[section.class]]">
-        <template is="dom-repeat" items="[[section.list]]" as="ticket">
-          <div class="box">
-            <h3 class="title">
-              [[ticket.title]]
-            </h3>
+  <marked-element class="with-text-block" marked="[[whyAttend]]"></marked-element>
 
-            <h3 class="price">
-              [[ticket.price]]
-            </h3>
+  <h2 class="with-text">
+    [[ticketsObject.perks.title]]
+  </h2>
 
-            <template is="dom-if" if="[[ticket.description]]">
-              <marked-element marked="[[ticket.description]]"></marked-element>
+  <ul class="with-text grid perks">
+    <template is="dom-repeat" items="[[ticketsObject.perks.list]]">
+      <li class="grid-item">
+        <template is="dom-repeat" items="[[item.icons]]" as="icon">
+          <img src="/images/[[icon]]" class="icon">
+        </template>
+        <h3 class="blue perk">[[item.title]]</h3>
+      </li>
+    </template>
+  </ul>
+
+  <marked-element class="with-text-block" marked="[[wantToWin]]"></marked-element>
+
+  <marked-element class="with-text-block" marked="[[scholarship]]"></marked-element>
+
+  <h2 class="with-text">
+    [[ticketsObject.specialDiscounts.title]]
+  </h2>
+
+  <ul class="with-text flex-grid-2 reset-ul">
+    <template is="dom-repeat" items="[[ticketsObject.specialDiscounts.list]]">
+      <li class$="small-container reset-li [[_disable(item.disable)]]">
+        <div class="title-container">
+          <h2 class$="[[item.color]] title">
+            [[item.title]]
+          </h2>
+        </div>
+
+        <div class="date-price">
+          <h3 class="date">
+            [[item.date]]
+          </h3>
+          <h3 class="price">
+            [[item.price]]
+          </h3>
+        </div>
+
+        <marked-element marked="[[item.description]]"></marked-element>
+
+        <ul>
+          <template is="dom-repeat" items="[[item.list]]" as="listItem">
+            <li>
+              <marked-element marked="[[listItem]]"></marked-element>
+            </li>
+          </template>
+        </ul>
+
+        <marked-element marked="[[item.note]]"></marked-element>
+
+        <template is="dom-if" if="[[item.link]]">
+          <div class="button-container">
+            <template is="dom-if" if="[[!item.disable]]">
+              <a class="ticket-button" target="_blank" rel="noopener" href="[[item.link.href]]">
+                [[item.link.name]]
+              </a>
             </template>
 
-            <template is="dom-if" if="[[ticket.list.length]]">
-              <ul class="list">
-                <template is="dom-repeat" items="[[ticket.list]]">
-                  <li class="item">
-                    [[item]]
-                  </li>
-                </template>
-              </ul>
-            </template>
-
-            <template is="dom-if" if="[[ticket.note]]">
-              <marked-element marked="\* [[ticket.note]]"></marked-element>
+            <template is="dom-if" if="[[item.disable]]">
+              <a class="ticket-button">
+                [[item.link.name]]
+              </a>
             </template>
           </div>
         </template>
-      </div>
+      </li>
+    </template>
+  </ul>
 
-      <template is="dom-if" if="[[section.note]]">
-        <marked-element marked="Note: [[section.note]]"></marked-element>
-      </template>
-    </section>
-  </template>
 
-  <section class="section">
-    <h2 class="title">
-      How to Pay
-    </h2>
+  <h2 class="with-text" id="how-to-pay">
+    How to Pay
+  </h2>
 
-    <div class="grid how-to-pay">
-      <div class="box">
-        <h3 class="title">
+  <ul class="with-text flex-grid-2 reset-ul">
+    <li class="small-container reset-li">
+      <div class="title-container">
+        <h3 class="title blue">
           Online
         </h3>
-
-        <marked-element marked="[[online]]"></marked-element>
       </div>
 
-      <div class="box">
-        <h3 class="title">
+      <marked-element marked="[[online]]"></marked-element>
+    </li>
+
+    <li class="small-container reset-li">
+      <div class="title-container">
+        <h3 class="title blue">
           Offline
         </h3>
-
-        <marked-element marked="[[offline]]"></marked-element>
       </div>
-    </div>
-  </section>
 
+      <marked-element marked="[[offline]]"></marked-element>
+    </li>
+  </ul>
 </section>
 
-
+<footer-bar></footer-bar>
