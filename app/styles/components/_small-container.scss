@@ -4,16 +4,13 @@
   flex: 1;
   position: relative;
   padding: 20px;
-  margin: 20px;
+  margin: 0 30px 60px;
   background: $grey;
   color: $light;
 
   .title-container {
-    position: absolute;
-    top: -20px;
-    left: -20px;
-
-
+    margin-top: -40px;
+    margin-left: -40px;
   }
 }
 

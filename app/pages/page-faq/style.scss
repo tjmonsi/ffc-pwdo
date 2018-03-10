@@ -15,6 +15,10 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  @media screen and (max-width: 1100px) {
+    display: block;
+  }
+
   li:first-child {
     grid-column: 1/3;
   }
