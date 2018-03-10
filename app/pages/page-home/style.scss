@@ -15,12 +15,17 @@
   .container {
     text-align: center;
     width: 100%;
+    z-index: 1;
   }
 }
 
 ffc-logo {
   margin-bottom: 3rem;
   max-width: 400px;
+
+  @media screen and (max-width: 400px) {
+    margin-bottom: 1rem;
+  }
 }
 
 .info {
@@ -46,7 +51,6 @@ p {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: -10;
   width: 50%;
   max-width: 400px;
 }
@@ -55,7 +59,6 @@ p {
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: -10;
   width: 50%;
   max-width: 400px;
 }
@@ -64,7 +67,6 @@ p {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -10;
   width: 50%;
   max-width: 400px;
 }

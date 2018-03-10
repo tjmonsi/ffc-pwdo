@@ -25,6 +25,7 @@
     "page-speakers": "page-speakers",
     "page-schedule": "page-schedule",
     "page-sessions": "page-sessions",
+    "page-sponsor": "page-sponsor",
     "page-tickets": "page-tickets",
     "page-about": "page-about",
     "page-faq": "page-faq",
@@ -55,6 +56,9 @@
       },
       "/faq": {
         "page": "page-faq"
+      },
+      "/sponsors": {
+        "page": "page-sponsor"
       }
     }
   },

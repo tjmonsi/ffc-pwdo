@@ -1,16 +1,14 @@
-# Step 1: Choose payment method
+#### Step 1: Choose payment method
 - BDO: 0280892586 <br>
 Philippine Web Designers Organization, Inc.<br>
 Find a branch near you →
 
-- Globe GCash: 09175885017 <br>
-Available via: your GCASH account, Cebuana Lhuillier, LBC, M. Lhuillier, Banco de Oro, BDO Financial (BDO On-site), SM Forex (Shoemart), One Network Bank. <br><br>
-Learn more →
+- GCash: 09175885017
 
-Please take note of the Payment Reference ID for proof of payment. Additional fees may apply.
+Please include payment reference ID for proof of payment. Additional fees may apply.
 
-# Step 2: Send proof of payment
-Email payment@pwdo.org with the subject “FFC 2018 Offline Payment” and indicate the following details for EACH PARTICIPANT:
+#### Step 2: Send proof of payment
+Email <a href="mailto:payment@pwdo.org" class="anchor blue">payment@pwdo.org</a> with the subject “FFC 2018 Offline Payment” and indicate the following details for EACH PARTICIPANT:
 
 - Masterclass with [include track here]:
 - Name:
@@ -22,6 +20,6 @@ Email payment@pwdo.org with the subject “FFC 2018 Offline Payment” and indic
 - Question/s for the speakers:
 - City:
 
-If you are purchasing a special ticket that needs additional documents for verification, don’t forget to include them.
+Note: If you are purchasing a special ticket that needs additional documents for verification, don’t forget to include them.
 
 Please allow for at least 24 hours processing time.

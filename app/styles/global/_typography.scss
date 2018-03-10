@@ -94,6 +94,16 @@ ul.with-text {
   }
 }
 
+ol.with-text {
+  &::before {
+    content: 'ol';
+
+    @media screen and (max-width: 420px) {
+      content: ''
+    }
+  }
+}
+
 table.with-text {
   &::before {
     content: 'table';
@@ -134,7 +144,7 @@ section.with-text {
     }
   }
 
-  h1::before {
+  > h1::before {
     content: 'h1';
     @include withText;
     padding-top: 34px;
@@ -144,7 +154,7 @@ section.with-text {
     }
   }
 
-  h2::before {
+  > h2::before {
     content: 'h2';
     @include withText;
     padding-top: 24px;
@@ -154,7 +164,7 @@ section.with-text {
     }
   }
 
-  h3::before {
+  > h3::before {
     content: 'h3';
     @include withText;
     padding-top: 18px;
@@ -164,7 +174,7 @@ section.with-text {
     }
   }
 
-  h4::before {
+  > h4::before {
     content: 'h4';
     @include withText;
 
@@ -173,7 +183,7 @@ section.with-text {
     }
   }
 
-  h5::before {
+  > h5::before {
     content: 'h5';
     @include withText;
 
@@ -182,7 +192,7 @@ section.with-text {
     }
   }
 
-  p::before {
+  > p::before {
     content: 'p';
     @include withText;
 
@@ -191,7 +201,7 @@ section.with-text {
     }
   }
 
-  ul::before {
+  > ul::before {
     content: 'ul';
     @include withText;
 
@@ -199,4 +209,25 @@ section.with-text {
       content: ''
     }
   }
+
+  > ol::before {
+    content: 'ol';
+    @include withText;
+
+    @media screen and (max-width: 420px) {
+      content: ''
+    }
+  }
+}
+
+.red {
+  color: $red;
+}
+
+.green {
+  color: $green;
+}
+
+.blue {
+  color: $blue;
 }

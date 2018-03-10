@@ -18,41 +18,41 @@
     font-size: 1rem;
   }
 
-  &:nth-child(1) {
-    background: $blue;
-  }
-
-  &:nth-child(2) {
-    background: $green;
-  }
-
-  &:nth-child(3) {
-    background: $red;
-  }
-
-  // &:nth-child(1), &:nth-child(2) {
+  // &:nth-child(1) {
   //   background: $blue;
   // }
 
   // &:nth-child(2) {
-  //   opacity: 0.85;
-  // }
-
-  // &:nth-child(3), &:nth-child(4) {
   //   background: $green;
   // }
 
-  // &:nth-child(4) {
-  //   opacity: 0.85;
-  // }
-
-  // &:nth-child(5), &:nth-child(6)  {
+  // &:nth-child(3) {
   //   background: $red;
   // }
 
-  // &:nth-child(6) {
-  //   opacity: 0.85;
-  // }
+  &:nth-child(1), &:nth-child(2) {
+    background: $blue;
+  }
+
+  &:nth-child(2) {
+    opacity: 0.85;
+  }
+
+  &:nth-child(3), &:nth-child(4) {
+    background: $green;
+  }
+
+  &:nth-child(4) {
+    opacity: 0.85;
+  }
+
+  &:nth-child(5), &:nth-child(6)  {
+    background: $red;
+  }
+
+  &:nth-child(6) {
+    opacity: 0.85;
+  }
 
   &:hover {
     color: $light;
