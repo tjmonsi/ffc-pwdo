@@ -10,15 +10,15 @@
     "page-schedule.fragment.6.js from UglifyJs\nSide effects in initialization of unused variable OptionalMutableData [./app/node_modules/@polymer/polymer/lib/mixins/mutable-data.js:60,13]\nSide effects in initialization of unused variable enqueueDebouncer [./app/node_modules/@polymer/polymer/lib/utils/flush.js:5,13]\nSide effects in initialization of unused variable flush [./app/node_modules/@polymer/polymer/lib/utils/flush.js:23,13]\nSide effects in initialization of unused variable TemplateInstanceBase [./app/node_modules/@polymer/polymer/lib/elements/dom-repeat.js:9,4]\nSide effects in initialization of unused variable PageMixin [./app/dependencies/page-mixin/index.js:1,13]\nSide effects in initialization of unused variable FetchMixin [./app/dependencies/fetch-mixin/index.js:4,13]",
     "page-not-found.fragment.7.js from UglifyJs\nSide effects in initialization of unused variable OptionalMutableData [./app/node_modules/@polymer/polymer/lib/mixins/mutable-data.js:60,13]\nSide effects in initialization of unused variable enqueueDebouncer [./app/node_modules/@polymer/polymer/lib/utils/flush.js:5,13]\nSide effects in initialization of unused variable flush [./app/node_modules/@polymer/polymer/lib/utils/flush.js:23,13]\nSide effects in initialization of unused variable TemplateInstanceBase [./app/node_modules/@polymer/polymer/lib/elements/dom-repeat.js:9,4]\nSide effects in initialization of unused variable PageMixin [./app/dependencies/page-mixin/index.js:1,13]",
     "page-home.fragment.8.js from UglifyJs\nSide effects in initialization of unused variable OptionalMutableData [./app/node_modules/@polymer/polymer/lib/mixins/mutable-data.js:60,13]\nSide effects in initialization of unused variable enqueueDebouncer [./app/node_modules/@polymer/polymer/lib/utils/flush.js:5,13]\nSide effects in initialization of unused variable flush [./app/node_modules/@polymer/polymer/lib/utils/flush.js:23,13]\nSide effects in initialization of unused variable TemplateInstanceBase [./app/node_modules/@polymer/polymer/lib/elements/dom-repeat.js:9,4]\nSide effects in initialization of unused variable PageMixin [./app/dependencies/page-mixin/index.js:1,13]",
-    "main.js from UglifyJs\nDropping unused variable result [webpack/bootstrap a111dd67f1c17d386cfc:6,0]\nDropping unused variable Polymer [./app/node_modules/@polymer/polymer/lib/utils/boot.js:4,4]\nSide effects in initialization of unused variable action [./app/node_modules/@littleq/state-manager/index.js:6,44]\nSide effects in initialization of unused variable dedupingMixin [./app/node_modules/@polymer/polymer/lib/utils/mixin.js:16,13]\nDropping unused variable AsyncInterface [./app/node_modules/@polymer/polymer/lib/utils/async.js:4,4]\nSide effects in initialization of unused variable timeOut [./app/node_modules/@polymer/polymer/lib/utils/async.js:30,13]\nSide effects in initialization of unused variable animationFrame [./app/node_modules/@polymer/polymer/lib/utils/async.js:62,13]\nSide effects in initialization of unused variable idlePeriod [./app/node_modules/@polymer/polymer/lib/utils/async.js:80,13]\nSide effects in initialization of unused variable microTask [./app/node_modules/@polymer/polymer/lib/utils/async.js:106,13]\nCondition always false [./app/node_modules/redux/es/index.js:14,4]\nDropping unreachable code [./app/node_modules/redux/es/index.js:15,2]\nDropping unused function isCrushed [./app/node_modules/redux/es/index.js:12,9]\nSide effects in initialization of unused variable isDeep [./app/node_modules/@polymer/polymer/lib/utils/path.js:96,13]\nDropping unused variable AsyncModule [./app/node_modules/@polymer/polymer/lib/utils/debounce.js:6,4]\nCondition left of || always false [./app/node_modules/@polymer/polymer/lib/utils/settings.js:9,17]\nCondition left of || always false [./app/node_modules/@polymer/polymer/lib/utils/settings.js:25,15]\nSide effects in initialization of unused variable useShadow [./app/node_modules/@polymer/polymer/lib/utils/settings.js:10,13]\nSide effects in initialization of unused variable useNativeCSSProperties [./app/node_modules/@polymer/polymer/lib/utils/settings.js:11,13]\nSide effects in initialization of unused variable useNativeCustomElements [./app/node_modules/@polymer/polymer/lib/utils/settings.js:12,13]\nSide effects in initialization of unused variable setRootPath [./app/node_modules/@polymer/polymer/lib/utils/settings.js:30,13]\nSide effects in initialization of unused variable setSanitizeDOMValue [./app/node_modules/@polymer/polymer/lib/utils/settings.js:55,13]\nDropping unused variable DataTrigger [./app/node_modules/@polymer/polymer/lib/mixins/property-effects.js:37,4]\nDropping unused variable DataEffect [./app/node_modules/@polymer/polymer/lib/mixins/property-effects.js:46,4]\nSide effects in initialization of unused variable PropertyEffects [./app/node_modules/@polymer/polymer/lib/mixins/property-effects.js:1040,13]\nCondition left of && always false [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:713,2]\nDropping side-effect-free statement [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:713,2]\nCondition left of || always false [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:459,57]\nSide effects in initialization of unused variable ElementMixin [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:11,13]\nSide effects in initialization of unused variable updateStyles [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:720,13]\nDropping unused variable templateWithAssetPath [./app/node_modules/@polymer/polymer/lib/utils/style-gather.js:15,4]\nSide effects in initialization of unused variable PropertyAccessors [./app/node_modules/@polymer/polymer/lib/mixins/property-accessors.js:58,13]\nSide effects in initialization of unused variable TemplateStamp [./app/node_modules/@polymer/polymer/lib/mixins/template-stamp.js:85,13]\nSide effects in initialization of unused variable findOriginalTarget [./app/node_modules/@polymer/polymer/lib/utils/gestures.js:797,13]\nSide effects in initialization of unused variable add [./app/node_modules/@polymer/polymer/lib/utils/gestures.js:798,13]\nSide effects in initialization of unused variable remove [./app/node_modules/@polymer/polymer/lib/utils/gestures.js:799,13]\nCondition always true [./app/node_modules/symbol-observable/lib/index.js:22,11]\nDropping unreachable code [./app/node_modules/symbol-observable/lib/index.js:25,2]\nCondition always false [./app/node_modules/redux/es/combineReducers.js:75,8]\nDropping unreachable code [./app/node_modules/redux/es/combineReducers.js:76,6]\nCondition always false [./app/node_modules/redux/es/combineReducers.js:88,6]\nDropping unreachable code [./app/node_modules/redux/es/combineReducers.js:89,4]\nCondition always false [./app/node_modules/redux/es/combineReducers.js:107,8]\nDropping unreachable code [./app/node_modules/redux/es/combineReducers.js:107,47]\nDeclarations in unreachable code! [./app/node_modules/redux/es/combineReducers.js:108,6]\nSide effects in initialization of unused variable GestureEventListeners [./app/node_modules/@polymer/polymer/lib/mixins/gesture-event-listeners.js:10,13]",
+    "main.js from UglifyJs\nDropping unused variable result [webpack/bootstrap 470e3671c935c96928d9:6,0]\nDropping unused variable Polymer [./app/node_modules/@polymer/polymer/lib/utils/boot.js:4,4]\nSide effects in initialization of unused variable action [./app/node_modules/@littleq/state-manager/index.js:6,44]\nSide effects in initialization of unused variable dedupingMixin [./app/node_modules/@polymer/polymer/lib/utils/mixin.js:16,13]\nDropping unused variable AsyncInterface [./app/node_modules/@polymer/polymer/lib/utils/async.js:4,4]\nSide effects in initialization of unused variable timeOut [./app/node_modules/@polymer/polymer/lib/utils/async.js:30,13]\nSide effects in initialization of unused variable animationFrame [./app/node_modules/@polymer/polymer/lib/utils/async.js:62,13]\nSide effects in initialization of unused variable idlePeriod [./app/node_modules/@polymer/polymer/lib/utils/async.js:80,13]\nSide effects in initialization of unused variable microTask [./app/node_modules/@polymer/polymer/lib/utils/async.js:106,13]\nCondition always false [./app/node_modules/redux/es/index.js:14,4]\nDropping unreachable code [./app/node_modules/redux/es/index.js:15,2]\nDropping unused function isCrushed [./app/node_modules/redux/es/index.js:12,9]\nSide effects in initialization of unused variable isDeep [./app/node_modules/@polymer/polymer/lib/utils/path.js:96,13]\nDropping unused variable AsyncModule [./app/node_modules/@polymer/polymer/lib/utils/debounce.js:6,4]\nCondition left of || always false [./app/node_modules/@polymer/polymer/lib/utils/settings.js:9,17]\nCondition left of || always false [./app/node_modules/@polymer/polymer/lib/utils/settings.js:25,15]\nSide effects in initialization of unused variable useShadow [./app/node_modules/@polymer/polymer/lib/utils/settings.js:10,13]\nSide effects in initialization of unused variable useNativeCSSProperties [./app/node_modules/@polymer/polymer/lib/utils/settings.js:11,13]\nSide effects in initialization of unused variable useNativeCustomElements [./app/node_modules/@polymer/polymer/lib/utils/settings.js:12,13]\nSide effects in initialization of unused variable setRootPath [./app/node_modules/@polymer/polymer/lib/utils/settings.js:30,13]\nSide effects in initialization of unused variable setSanitizeDOMValue [./app/node_modules/@polymer/polymer/lib/utils/settings.js:55,13]\nDropping unused variable DataTrigger [./app/node_modules/@polymer/polymer/lib/mixins/property-effects.js:37,4]\nDropping unused variable DataEffect [./app/node_modules/@polymer/polymer/lib/mixins/property-effects.js:46,4]\nSide effects in initialization of unused variable PropertyEffects [./app/node_modules/@polymer/polymer/lib/mixins/property-effects.js:1040,13]\nCondition left of && always false [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:713,2]\nDropping side-effect-free statement [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:713,2]\nCondition left of || always false [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:459,57]\nSide effects in initialization of unused variable ElementMixin [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:11,13]\nSide effects in initialization of unused variable updateStyles [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:720,13]\nDropping unused variable templateWithAssetPath [./app/node_modules/@polymer/polymer/lib/utils/style-gather.js:15,4]\nSide effects in initialization of unused variable PropertyAccessors [./app/node_modules/@polymer/polymer/lib/mixins/property-accessors.js:58,13]\nSide effects in initialization of unused variable TemplateStamp [./app/node_modules/@polymer/polymer/lib/mixins/template-stamp.js:85,13]\nSide effects in initialization of unused variable findOriginalTarget [./app/node_modules/@polymer/polymer/lib/utils/gestures.js:797,13]\nSide effects in initialization of unused variable add [./app/node_modules/@polymer/polymer/lib/utils/gestures.js:798,13]\nSide effects in initialization of unused variable remove [./app/node_modules/@polymer/polymer/lib/utils/gestures.js:799,13]\nCondition always true [./app/node_modules/symbol-observable/lib/index.js:22,11]\nDropping unreachable code [./app/node_modules/symbol-observable/lib/index.js:25,2]\nCondition always false [./app/node_modules/redux/es/combineReducers.js:75,8]\nDropping unreachable code [./app/node_modules/redux/es/combineReducers.js:76,6]\nCondition always false [./app/node_modules/redux/es/combineReducers.js:88,6]\nDropping unreachable code [./app/node_modules/redux/es/combineReducers.js:89,4]\nCondition always false [./app/node_modules/redux/es/combineReducers.js:107,8]\nDropping unreachable code [./app/node_modules/redux/es/combineReducers.js:107,47]\nDeclarations in unreachable code! [./app/node_modules/redux/es/combineReducers.js:108,6]\nSide effects in initialization of unused variable GestureEventListeners [./app/node_modules/@polymer/polymer/lib/mixins/gesture-event-listeners.js:10,13]",
     "shady.js from UglifyJs\nSide effects in initialization of unused variable _cssParse [./app/node_modules/@webcomponents/shadycss/src/style-transformer.js:13,0]\nSide effects in initialization of unused variable VAR_ASSIGN [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:11,13]\nSide effects in initialization of unused variable MIXIN_MATCH [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:12,13]\nSide effects in initialization of unused variable VAR_CONSUMED [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:13,13]\nSide effects in initialization of unused variable ANIMATION_MATCH [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:14,13]\nSide effects in initialization of unused variable MEDIA_MATCH [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:15,13]\nSide effects in initialization of unused variable IS_VAR [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:16,13]\nSide effects in initialization of unused variable BRACKETED [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:17,13]\nSide effects in initialization of unused variable HOST_PREFIX [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:18,13]\nSide effects in initialization of unused variable HOST_SUFFIX [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:19,13]\nSide effects in initialization of unused variable _cssParse [./app/node_modules/@webcomponents/shadycss/src/style-info.js:13,0]\nSide effects in initialization of unused variable _customStyleInterface [./app/node_modules/@webcomponents/shadycss/src/scoping-shim.js:26,0]\nSide effects in initialization of unused variable flush [./app/node_modules/@webcomponents/shadycss/src/document-watcher.js:17,11]\nSide effects in initialization of unused variable _cssParse [./app/node_modules/@webcomponents/shadycss/src/apply-shim-utils.js:13,0]\nSide effects in initialization of unused variable CustomStyleProvider [./app/node_modules/@webcomponents/shadycss/src/custom-style-interface.js:18,11]\nSide effects in initialization of unused variable CustomStyleInterfaceInterface [./app/node_modules/@webcomponents/shadycss/src/custom-style-interface.js:156,11]",
     "promise.js from UglifyJs\nCondition always false [./app/node_modules/es6-promise/dist/es6-promise.js:10,1]\nCondition always true [./app/node_modules/es6-promise/dist/es6-promise.js:11,1]\nDropping unused variable r [./app/node_modules/es6-promise/dist/es6-promise.js:137,8]\nDropping side-effect-free && in boolean context [./app/node_modules/es6-promise/dist/es6-promise.js:154,11]",
     "es6.js from UglifyJs\nCondition always true [./app/node_modules/es6-shim/es6-shim.js:15,6]\nDropping unreachable code [./app/node_modules/es6-shim/es6-shim.js:18,9]\nCondition always false [./app/node_modules/es6-shim/es6-shim.js:95,19]\nCondition always true [./app/node_modules/es6-shim/es6-sham.js:15,6]\nDropping unreachable code [./app/node_modules/es6-shim/es6-sham.js:18,9]",
     "es5.js from UglifyJs\nCondition always true [./app/node_modules/es5-shim/es5-shim.js:18,8]\nDropping unreachable code [./app/node_modules/es5-shim/es5-shim.js:21,11]\nCondition always true [./app/node_modules/es5-shim/es5-sham.js:18,8]\nDropping unreachable code [./app/node_modules/es5-shim/es5-sham.js:21,11]"
   ],
   "version": "3.10.0",
-  "hash": "a111dd67f1c17d386cfc",
-  "time": 24398,
+  "hash": "470e3671c935c96928d9",
+  "time": 21020,
   "publicPath": "",
   "assetsByChunkName": {
     "page-speakers": [
@@ -111,7 +111,7 @@
     },
     {
       "name": "page-tickets.fragment.2.js",
-      "size": 88089,
+      "size": 88099,
       "chunks": [
         2
       ],
@@ -155,7 +155,7 @@
     },
     {
       "name": "page-schedule.fragment.6.js",
-      "size": 67102,
+      "size": 67098,
       "chunks": [
         6
       ],
@@ -287,7 +287,7 @@
     },
     {
       "name": "page-faq.fragment.1.js.map",
-      "size": 367766,
+      "size": 367942,
       "chunks": [
         1
       ],
@@ -298,7 +298,7 @@
     },
     {
       "name": "page-tickets.fragment.2.js.map",
-      "size": 379852,
+      "size": 379882,
       "chunks": [
         2
       ],
@@ -342,7 +342,7 @@
     },
     {
       "name": "page-schedule.fragment.6.js.map",
-      "size": 284040,
+      "size": 284030,
       "chunks": [
         6
       ],
@@ -525,22 +525,15 @@
       "emitted": true
     },
     {
-      "name": "webcomponentsjs/webcomponents-hi-ce.js.map",
-      "size": 47101,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "webcomponentsjs/webcomponents-hi.js.map",
-      "size": 15523,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "webcomponentsjs/webcomponents-sd-ce.js",
       "size": 66394,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "webcomponentsjs/webcomponents-hi-ce.js.map",
+      "size": 47101,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -553,15 +546,22 @@
       "emitted": true
     },
     {
-      "name": "webcomponentsjs/webcomponents-sd-ce.js.map",
-      "size": 149685,
+      "name": "webcomponentsjs/webcomponents-lite.js.map",
+      "size": 189251,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
-      "name": "webcomponentsjs/webcomponents-lite.js.map",
-      "size": 189251,
+      "name": "webcomponentsjs/webcomponents-hi.js.map",
+      "size": 15523,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "webcomponentsjs/webcomponents-sd-ce.js.map",
+      "size": 149685,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -581,29 +581,8 @@
       "emitted": true
     },
     {
-      "name": "fonts/Inovato-Bold.woff",
-      "size": 25484,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "fonts/Inovato-Regular.eot",
       "size": 26832,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "fonts/Inovato-Regular.woff2",
-      "size": 23868,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "fonts/Inovato-Regular.ttf",
-      "size": 59456,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -616,8 +595,29 @@
       "emitted": true
     },
     {
+      "name": "fonts/Inovato-Bold.woff",
+      "size": 25484,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "fonts/Inovato-Regular.ttf",
+      "size": 59456,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
       "name": "fonts/Inovato-Regular.woff",
       "size": 26612,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "fonts/Inovato-Regular.woff2",
+      "size": 23868,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -630,15 +630,16 @@
       "emitted": true
     },
     {
-      "name": "images/camera.png",
-      "size": 4081,
+      "name": "images/about.png",
+      "size": 1272661,
       "chunks": [],
       "chunkNames": [],
-      "emitted": true
+      "emitted": true,
+      "isOverSizeLimit": true
     },
     {
-      "name": "images/box.png",
-      "size": 8449,
+      "name": "images/camera.png",
+      "size": 4081,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -651,16 +652,15 @@
       "emitted": true
     },
     {
-      "name": "images/CHI 2018 Interactive Program_files/bundle.js",
-      "size": 454442,
+      "name": "images/box.png",
+      "size": 8449,
       "chunks": [],
       "chunkNames": [],
-      "emitted": true,
-      "isOverSizeLimit": true
+      "emitted": true
     },
     {
       "name": "page-faq.fragment.1.js",
-      "size": 82952,
+      "size": 83038,
       "chunks": [
         1
       ],
@@ -677,19 +677,19 @@
       "emitted": true
     },
     {
+      "name": "images/CHI 2018 Interactive Program_files/bundle.js",
+      "size": 454442,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true,
+      "isOverSizeLimit": true
+    },
+    {
       "name": "images/CHI 2018 Interactive Program_files/custom-elements-es5-adapter.js",
       "size": 1621,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
-    },
-    {
-      "name": "images/about.png",
-      "size": 1272661,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true,
-      "isOverSizeLimit": true
     },
     {
       "name": "images/CHI 2018 Interactive Program.html",
@@ -701,13 +701,6 @@
     {
       "name": "images/cup.png",
       "size": 4306,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "images/food.png",
-      "size": 5336,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -727,6 +720,13 @@
       "emitted": true
     },
     {
+      "name": "images/lower-right.svg",
+      "size": 2048,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
       "name": "images/lower-left.svg",
       "size": 3660,
       "chunks": [],
@@ -734,8 +734,8 @@
       "emitted": true
     },
     {
-      "name": "images/lower-right.svg",
-      "size": 2048,
+      "name": "images/networking.png",
+      "size": 5048,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -748,8 +748,15 @@
       "emitted": true
     },
     {
-      "name": "images/networking.png",
-      "size": 5048,
+      "name": "images/food.png",
+      "size": 5336,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "images/shirt.png",
+      "size": 4676,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -769,8 +776,8 @@
       "emitted": true
     },
     {
-      "name": "data/about/ffc.md",
-      "size": 1359,
+      "name": "images/trophy.png",
+      "size": 5520,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -778,6 +785,13 @@
     {
       "name": "data/about/code-of-conduct.md",
       "size": 332,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "data/about/ffc.md",
+      "size": 1359,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -825,12 +839,11 @@
       "emitted": true
     },
     {
-      "name": "images/CHI 2018 Interactive Program_files/module.bundle.js",
-      "size": 1495498,
+      "name": "data/faq/after-the-conference.md",
+      "size": 740,
       "chunks": [],
       "chunkNames": [],
-      "emitted": true,
-      "isOverSizeLimit": true
+      "emitted": true
     },
     {
       "name": "data/faq.json",
@@ -847,18 +860,19 @@
       "emitted": true
     },
     {
-      "name": "data/faq/after-the-conference.md",
-      "size": 740,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "data/faq/before-you-buy.md",
       "size": 1252,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
+    },
+    {
+      "name": "images/CHI 2018 Interactive Program_files/module.bundle.js",
+      "size": 1495498,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true,
+      "isOverSizeLimit": true
     },
     {
       "name": "data/faq/conference-prep.md",
@@ -952,22 +966,15 @@
       "emitted": true
     },
     {
-      "name": "data/speakers/holger-bartel.jpg",
-      "size": 40876,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "data/speakers/holger-bartel.json",
-      "size": 131,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "data/speakers/holger-bartel.md",
       "size": 444,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "data/speakers/holger-bartel.jpg",
+      "size": 40876,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -987,6 +994,13 @@
       "emitted": true
     },
     {
+      "name": "data/speakers/holger-bartel.json",
+      "size": 131,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
       "name": "data/speakers/hui-jing-chen.md",
       "size": 261,
       "chunks": [],
@@ -1001,8 +1015,8 @@
       "emitted": true
     },
     {
-      "name": "data/speakers/vitaly-friedman.jpg",
-      "size": 44283,
+      "name": "data/speakers/vitaly-friedman.md",
+      "size": 691,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1015,8 +1029,8 @@
       "emitted": true
     },
     {
-      "name": "data/speakers/vitaly-friedman.md",
-      "size": 691,
+      "name": "data/speakers/vitaly-friedman.jpg",
+      "size": 44283,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1037,7 +1051,7 @@
     },
     {
       "name": "data/tickets.json",
-      "size": 5318,
+      "size": 5321,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1073,20 +1087,6 @@
     {
       "name": "data/tickets/why-attend.md",
       "size": 352,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "images/shirt.png",
-      "size": 4676,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "images/trophy.png",
-      "size": 5520,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -3372,7 +3372,7 @@
       "initial": false,
       "entry": false,
       "extraAsync": false,
-      "size": 161043,
+      "size": 161129,
       "names": [
         "page-faq"
       ],
@@ -3380,7 +3380,7 @@
         "page-faq.fragment.1.js",
         "page-faq.fragment.1.js.map"
       ],
-      "hash": "7ac2465d2a0ccf213aef",
+      "hash": "674364f5f94220ba5d23",
       "parents": [
         10
       ],
@@ -5163,9 +5163,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
-          "issuerId": 95,
-          "issuerName": "./app/pages/page-sponsor/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
+          "issuerId": 96,
+          "issuerName": "./app/pages/page-tickets/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5412,7 +5412,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-faq/style.scss",
           "index": 126,
           "index2": 121,
-          "size": 7168,
+          "size": 7254,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -5500,7 +5500,7 @@
       "initial": false,
       "entry": false,
       "extraAsync": false,
-      "size": 166715,
+      "size": 166727,
       "names": [
         "page-tickets"
       ],
@@ -5508,7 +5508,7 @@
         "page-tickets.fragment.2.js",
         "page-tickets.fragment.2.js.map"
       ],
-      "hash": "21a89ea63c1b2e43bae5",
+      "hash": "6de8dfbaf19be727929f",
       "parents": [
         10
       ],
@@ -7291,9 +7291,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
-          "issuerId": 95,
-          "issuerName": "./app/pages/page-sponsor/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
+          "issuerId": 96,
+          "issuerName": "./app/pages/page-tickets/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -7540,7 +7540,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-tickets/style.scss",
           "index": 117,
           "index2": 112,
-          "size": 8287,
+          "size": 8275,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -7577,7 +7577,7 @@
           "name": "./app/pages/page-tickets/template.html",
           "index": 118,
           "index2": 114,
-          "size": 4265,
+          "size": 4289,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -11471,9 +11471,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
-          "issuerId": 95,
-          "issuerName": "./app/pages/page-sponsor/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
+          "issuerId": 96,
+          "issuerName": "./app/pages/page-tickets/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -13562,9 +13562,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
-          "issuerId": 95,
-          "issuerName": "./app/pages/page-sponsor/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
+          "issuerId": 96,
+          "issuerName": "./app/pages/page-tickets/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -13862,7 +13862,7 @@
       "initial": false,
       "entry": false,
       "extraAsync": false,
-      "size": 130629,
+      "size": 130625,
       "names": [
         "page-schedule"
       ],
@@ -13870,7 +13870,7 @@
         "page-schedule.fragment.6.js",
         "page-schedule.fragment.6.js.map"
       ],
-      "hash": "5ab3adad4786a5797ed2",
+      "hash": "383d2c8f96485e420700",
       "parents": [
         10
       ],
@@ -15766,7 +15766,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/small-session-item/style.scss",
           "index": 73,
           "index2": 67,
-          "size": 5969,
+          "size": 5965,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -18475,9 +18475,9 @@
             10
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@polymer/polymer/lib/utils/async.js",
-          "issuerId": 8,
-          "issuerName": "./app/node_modules/@polymer/polymer/lib/utils/async.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@polymer/polymer/lib/utils/debounce.js",
+          "issuerId": 17,
+          "issuerName": "./app/node_modules/@polymer/polymer/lib/utils/debounce.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -19931,9 +19931,9 @@
             10
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/redux/es/createStore.js",
-          "issuerId": 19,
-          "issuerName": "./app/node_modules/redux/es/createStore.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/redux/es/combineReducers.js",
+          "issuerId": 53,
+          "issuerName": "./app/node_modules/redux/es/combineReducers.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -23758,9 +23758,9 @@
         10
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@polymer/polymer/lib/utils/async.js",
-      "issuerId": 8,
-      "issuerName": "./app/node_modules/@polymer/polymer/lib/utils/async.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@polymer/polymer/lib/utils/debounce.js",
+      "issuerId": 17,
+      "issuerName": "./app/node_modules/@polymer/polymer/lib/utils/debounce.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -25617,9 +25617,9 @@
         10
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/redux/es/createStore.js",
-      "issuerId": 19,
-      "issuerName": "./app/node_modules/redux/es/createStore.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/redux/es/combineReducers.js",
+      "issuerId": 53,
+      "issuerName": "./app/node_modules/redux/es/combineReducers.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -30720,9 +30720,9 @@
         5
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
-      "issuerId": 95,
-      "issuerName": "./app/pages/page-sponsor/index.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
+      "issuerId": 96,
+      "issuerName": "./app/pages/page-tickets/index.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -31598,7 +31598,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/small-session-item/style.scss",
       "index": 73,
       "index2": 67,
-      "size": 5969,
+      "size": 5965,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -32116,7 +32116,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-tickets/style.scss",
       "index": 117,
       "index2": 112,
-      "size": 8287,
+      "size": 8275,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -32153,7 +32153,7 @@
       "name": "./app/pages/page-tickets/template.html",
       "index": 118,
       "index2": 114,
-      "size": 4265,
+      "size": 4289,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -32375,7 +32375,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-faq/style.scss",
       "index": 126,
       "index2": 121,
-      "size": 7168,
+      "size": 7254,
       "cacheable": true,
       "built": true,
       "optional": false,
