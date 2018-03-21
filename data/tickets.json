@@ -3,7 +3,7 @@
   "tickets": {
     "title": "Ticket Schedule",
     "class": "ticket-schedule",
-    "note": "Online & Offline payment options are available. <a href=\"/tickets?id=how-to-pay\" class=\"anchor green\"> More details here >",
+    "note": "All tickets are non-transferrable, but we will accept refunds until end of July 2018. Online & Offline payment options are available. <a href=\"/tickets?id=how-to-pay\" class=\"anchor green\"> More details here >",
     "list": [
       {
         "title": "Blind Bird",
@@ -68,7 +68,7 @@
         "price": "15% or more",
         "list": [
           "Attendees from Visayas or Mindano enjoy a 15% rate on standard ticket rates of the month.",
-          "Student ticket is only ₱ 3,4000 (see also Student Ticket rules above)",
+          "Student ticket is only ₱ 3,400 (see also Student Ticket rules above)",
           "Email <a href=\"mailto:info@pwdo.org\" class=\"anchor red\">info@pwdo.org</a> proof of current residence"
         ],
         "color": "red"
