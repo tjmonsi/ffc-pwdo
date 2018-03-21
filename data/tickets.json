@@ -51,7 +51,7 @@
         "price": "₱ 4,000",
         "date": "January 1 to July 31",
         "list": [
-          "Online payment: Enter FFC9STUDENTDISCOUNT in the promo code on Eventbrite. Remember to present valid ID or other proof of enrollment during conference check-in.",
+          "Online payment: Enter <a href=\"https://formfunctionclass9.eventbrite.com?discount=ffc9studentdiscount\" class=\"anchor green\">FFC9STUDENTDISCOUNT</a> in the promo code on Eventbrite. Remember to present valid ID or other proof of enrollment during conference check-in.",
           "Offline payment: please include proof of enrollment in your email.",
           "Visayas & Mindanao students get additional off!"
         ],
@@ -96,12 +96,12 @@
         ]
       },
       {
-        "title": "April Fools' sale",
+        "title": "April Fools' Sale",
         "price": "Blind Bird rate",
         "date": "April 1",
         "link": {
           "name": "Purchase Online",
-          "href": "https://formfunctionclass9.eventbrite.com/#tickets"
+          "href": "https://formfunctionclass9.eventbrite.com?discount=ffc9prilfools"
         },
         "disable": true
       },
@@ -111,7 +111,7 @@
         "date": "April 9",
         "link": {
           "name": "Purchase Online",
-          "href": "https://formfunctionclass9.eventbrite.com/#tickets"
+          "href": "https://formfunctionclass9.eventbrite.com?discount=ffc9arawngkagitingan"
         },
         "disable": true
       },
