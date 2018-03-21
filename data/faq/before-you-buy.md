@@ -8,7 +8,7 @@ Yes, please check our <a href="https://2018.formfunctionclass.com/tickets" class
 
 ##### I live outside Luzon. Can I get a discount?
 
-Yes, we have a special discount for <a href="https://2018.formfunctionclass.com/tickets">Visayas & Mindanao</a> residents starting March 2018. Email us at <a href="mailto:info@pwdo.org" class="anchor green">info@pwdo.org</a> to learn how.
+Yes, we have a special discount for <a href="https://2018.formfunctionclass.com/tickets" class="anchor green">Visayas & Mindanao</a> residents starting March 2018. Email us at <a href="mailto:info@pwdo.org" class="anchor green">info@pwdo.org</a> to learn how.
 
 ##### Can I get a group discount?
 
