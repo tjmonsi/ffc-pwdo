@@ -10,15 +10,15 @@
     "page-schedule.fragment.6.js from UglifyJs\nSide effects in initialization of unused variable OptionalMutableData [./app/node_modules/@polymer/polymer/lib/mixins/mutable-data.js:60,13]\nSide effects in initialization of unused variable enqueueDebouncer [./app/node_modules/@polymer/polymer/lib/utils/flush.js:5,13]\nSide effects in initialization of unused variable flush [./app/node_modules/@polymer/polymer/lib/utils/flush.js:23,13]\nSide effects in initialization of unused variable TemplateInstanceBase [./app/node_modules/@polymer/polymer/lib/elements/dom-repeat.js:9,4]\nSide effects in initialization of unused variable PageMixin [./app/dependencies/page-mixin/index.js:1,13]\nSide effects in initialization of unused variable FetchMixin [./app/dependencies/fetch-mixin/index.js:4,13]",
     "page-not-found.fragment.7.js from UglifyJs\nSide effects in initialization of unused variable OptionalMutableData [./app/node_modules/@polymer/polymer/lib/mixins/mutable-data.js:60,13]\nSide effects in initialization of unused variable enqueueDebouncer [./app/node_modules/@polymer/polymer/lib/utils/flush.js:5,13]\nSide effects in initialization of unused variable flush [./app/node_modules/@polymer/polymer/lib/utils/flush.js:23,13]\nSide effects in initialization of unused variable TemplateInstanceBase [./app/node_modules/@polymer/polymer/lib/elements/dom-repeat.js:9,4]\nSide effects in initialization of unused variable PageMixin [./app/dependencies/page-mixin/index.js:1,13]",
     "page-home.fragment.8.js from UglifyJs\nSide effects in initialization of unused variable OptionalMutableData [./app/node_modules/@polymer/polymer/lib/mixins/mutable-data.js:60,13]\nSide effects in initialization of unused variable enqueueDebouncer [./app/node_modules/@polymer/polymer/lib/utils/flush.js:5,13]\nSide effects in initialization of unused variable flush [./app/node_modules/@polymer/polymer/lib/utils/flush.js:23,13]\nSide effects in initialization of unused variable TemplateInstanceBase [./app/node_modules/@polymer/polymer/lib/elements/dom-repeat.js:9,4]\nSide effects in initialization of unused variable PageMixin [./app/dependencies/page-mixin/index.js:1,13]",
-    "main.js from UglifyJs\nDropping unused variable result [webpack/bootstrap 470e3671c935c96928d9:6,0]\nDropping unused variable Polymer [./app/node_modules/@polymer/polymer/lib/utils/boot.js:4,4]\nSide effects in initialization of unused variable action [./app/node_modules/@littleq/state-manager/index.js:6,44]\nSide effects in initialization of unused variable dedupingMixin [./app/node_modules/@polymer/polymer/lib/utils/mixin.js:16,13]\nDropping unused variable AsyncInterface [./app/node_modules/@polymer/polymer/lib/utils/async.js:4,4]\nSide effects in initialization of unused variable timeOut [./app/node_modules/@polymer/polymer/lib/utils/async.js:30,13]\nSide effects in initialization of unused variable animationFrame [./app/node_modules/@polymer/polymer/lib/utils/async.js:62,13]\nSide effects in initialization of unused variable idlePeriod [./app/node_modules/@polymer/polymer/lib/utils/async.js:80,13]\nSide effects in initialization of unused variable microTask [./app/node_modules/@polymer/polymer/lib/utils/async.js:106,13]\nCondition always false [./app/node_modules/redux/es/index.js:14,4]\nDropping unreachable code [./app/node_modules/redux/es/index.js:15,2]\nDropping unused function isCrushed [./app/node_modules/redux/es/index.js:12,9]\nSide effects in initialization of unused variable isDeep [./app/node_modules/@polymer/polymer/lib/utils/path.js:96,13]\nDropping unused variable AsyncModule [./app/node_modules/@polymer/polymer/lib/utils/debounce.js:6,4]\nCondition left of || always false [./app/node_modules/@polymer/polymer/lib/utils/settings.js:9,17]\nCondition left of || always false [./app/node_modules/@polymer/polymer/lib/utils/settings.js:25,15]\nSide effects in initialization of unused variable useShadow [./app/node_modules/@polymer/polymer/lib/utils/settings.js:10,13]\nSide effects in initialization of unused variable useNativeCSSProperties [./app/node_modules/@polymer/polymer/lib/utils/settings.js:11,13]\nSide effects in initialization of unused variable useNativeCustomElements [./app/node_modules/@polymer/polymer/lib/utils/settings.js:12,13]\nSide effects in initialization of unused variable setRootPath [./app/node_modules/@polymer/polymer/lib/utils/settings.js:30,13]\nSide effects in initialization of unused variable setSanitizeDOMValue [./app/node_modules/@polymer/polymer/lib/utils/settings.js:55,13]\nDropping unused variable DataTrigger [./app/node_modules/@polymer/polymer/lib/mixins/property-effects.js:37,4]\nDropping unused variable DataEffect [./app/node_modules/@polymer/polymer/lib/mixins/property-effects.js:46,4]\nSide effects in initialization of unused variable PropertyEffects [./app/node_modules/@polymer/polymer/lib/mixins/property-effects.js:1040,13]\nCondition left of && always false [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:713,2]\nDropping side-effect-free statement [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:713,2]\nCondition left of || always false [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:459,57]\nSide effects in initialization of unused variable ElementMixin [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:11,13]\nSide effects in initialization of unused variable updateStyles [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:720,13]\nDropping unused variable templateWithAssetPath [./app/node_modules/@polymer/polymer/lib/utils/style-gather.js:15,4]\nSide effects in initialization of unused variable PropertyAccessors [./app/node_modules/@polymer/polymer/lib/mixins/property-accessors.js:58,13]\nSide effects in initialization of unused variable TemplateStamp [./app/node_modules/@polymer/polymer/lib/mixins/template-stamp.js:85,13]\nSide effects in initialization of unused variable findOriginalTarget [./app/node_modules/@polymer/polymer/lib/utils/gestures.js:797,13]\nSide effects in initialization of unused variable add [./app/node_modules/@polymer/polymer/lib/utils/gestures.js:798,13]\nSide effects in initialization of unused variable remove [./app/node_modules/@polymer/polymer/lib/utils/gestures.js:799,13]\nCondition always true [./app/node_modules/symbol-observable/lib/index.js:22,11]\nDropping unreachable code [./app/node_modules/symbol-observable/lib/index.js:25,2]\nCondition always false [./app/node_modules/redux/es/combineReducers.js:75,8]\nDropping unreachable code [./app/node_modules/redux/es/combineReducers.js:76,6]\nCondition always false [./app/node_modules/redux/es/combineReducers.js:88,6]\nDropping unreachable code [./app/node_modules/redux/es/combineReducers.js:89,4]\nCondition always false [./app/node_modules/redux/es/combineReducers.js:107,8]\nDropping unreachable code [./app/node_modules/redux/es/combineReducers.js:107,47]\nDeclarations in unreachable code! [./app/node_modules/redux/es/combineReducers.js:108,6]\nSide effects in initialization of unused variable GestureEventListeners [./app/node_modules/@polymer/polymer/lib/mixins/gesture-event-listeners.js:10,13]",
+    "main.js from UglifyJs\nDropping unused variable result [webpack/bootstrap d438a977f193f4d27dbf:6,0]\nDropping unused variable Polymer [./app/node_modules/@polymer/polymer/lib/utils/boot.js:4,4]\nSide effects in initialization of unused variable action [./app/node_modules/@littleq/state-manager/index.js:6,44]\nSide effects in initialization of unused variable dedupingMixin [./app/node_modules/@polymer/polymer/lib/utils/mixin.js:16,13]\nDropping unused variable AsyncInterface [./app/node_modules/@polymer/polymer/lib/utils/async.js:4,4]\nSide effects in initialization of unused variable timeOut [./app/node_modules/@polymer/polymer/lib/utils/async.js:30,13]\nSide effects in initialization of unused variable animationFrame [./app/node_modules/@polymer/polymer/lib/utils/async.js:62,13]\nSide effects in initialization of unused variable idlePeriod [./app/node_modules/@polymer/polymer/lib/utils/async.js:80,13]\nSide effects in initialization of unused variable microTask [./app/node_modules/@polymer/polymer/lib/utils/async.js:106,13]\nCondition always false [./app/node_modules/redux/es/index.js:14,4]\nDropping unreachable code [./app/node_modules/redux/es/index.js:15,2]\nDropping unused function isCrushed [./app/node_modules/redux/es/index.js:12,9]\nSide effects in initialization of unused variable isDeep [./app/node_modules/@polymer/polymer/lib/utils/path.js:96,13]\nDropping unused variable AsyncModule [./app/node_modules/@polymer/polymer/lib/utils/debounce.js:6,4]\nCondition left of || always false [./app/node_modules/@polymer/polymer/lib/utils/settings.js:9,17]\nCondition left of || always false [./app/node_modules/@polymer/polymer/lib/utils/settings.js:25,15]\nSide effects in initialization of unused variable useShadow [./app/node_modules/@polymer/polymer/lib/utils/settings.js:10,13]\nSide effects in initialization of unused variable useNativeCSSProperties [./app/node_modules/@polymer/polymer/lib/utils/settings.js:11,13]\nSide effects in initialization of unused variable useNativeCustomElements [./app/node_modules/@polymer/polymer/lib/utils/settings.js:12,13]\nSide effects in initialization of unused variable setRootPath [./app/node_modules/@polymer/polymer/lib/utils/settings.js:30,13]\nSide effects in initialization of unused variable setSanitizeDOMValue [./app/node_modules/@polymer/polymer/lib/utils/settings.js:55,13]\nDropping unused variable DataTrigger [./app/node_modules/@polymer/polymer/lib/mixins/property-effects.js:37,4]\nDropping unused variable DataEffect [./app/node_modules/@polymer/polymer/lib/mixins/property-effects.js:46,4]\nSide effects in initialization of unused variable PropertyEffects [./app/node_modules/@polymer/polymer/lib/mixins/property-effects.js:1040,13]\nCondition left of && always false [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:713,2]\nDropping side-effect-free statement [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:713,2]\nCondition left of || always false [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:459,57]\nSide effects in initialization of unused variable ElementMixin [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:11,13]\nSide effects in initialization of unused variable updateStyles [./app/node_modules/@polymer/polymer/lib/mixins/element-mixin.js:720,13]\nDropping unused variable templateWithAssetPath [./app/node_modules/@polymer/polymer/lib/utils/style-gather.js:15,4]\nSide effects in initialization of unused variable PropertyAccessors [./app/node_modules/@polymer/polymer/lib/mixins/property-accessors.js:58,13]\nSide effects in initialization of unused variable TemplateStamp [./app/node_modules/@polymer/polymer/lib/mixins/template-stamp.js:85,13]\nSide effects in initialization of unused variable findOriginalTarget [./app/node_modules/@polymer/polymer/lib/utils/gestures.js:797,13]\nSide effects in initialization of unused variable add [./app/node_modules/@polymer/polymer/lib/utils/gestures.js:798,13]\nSide effects in initialization of unused variable remove [./app/node_modules/@polymer/polymer/lib/utils/gestures.js:799,13]\nCondition always true [./app/node_modules/symbol-observable/lib/index.js:22,11]\nDropping unreachable code [./app/node_modules/symbol-observable/lib/index.js:25,2]\nCondition always false [./app/node_modules/redux/es/combineReducers.js:75,8]\nDropping unreachable code [./app/node_modules/redux/es/combineReducers.js:76,6]\nCondition always false [./app/node_modules/redux/es/combineReducers.js:88,6]\nDropping unreachable code [./app/node_modules/redux/es/combineReducers.js:89,4]\nCondition always false [./app/node_modules/redux/es/combineReducers.js:107,8]\nDropping unreachable code [./app/node_modules/redux/es/combineReducers.js:107,47]\nDeclarations in unreachable code! [./app/node_modules/redux/es/combineReducers.js:108,6]\nSide effects in initialization of unused variable GestureEventListeners [./app/node_modules/@polymer/polymer/lib/mixins/gesture-event-listeners.js:10,13]",
     "shady.js from UglifyJs\nSide effects in initialization of unused variable _cssParse [./app/node_modules/@webcomponents/shadycss/src/style-transformer.js:13,0]\nSide effects in initialization of unused variable VAR_ASSIGN [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:11,13]\nSide effects in initialization of unused variable MIXIN_MATCH [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:12,13]\nSide effects in initialization of unused variable VAR_CONSUMED [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:13,13]\nSide effects in initialization of unused variable ANIMATION_MATCH [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:14,13]\nSide effects in initialization of unused variable MEDIA_MATCH [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:15,13]\nSide effects in initialization of unused variable IS_VAR [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:16,13]\nSide effects in initialization of unused variable BRACKETED [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:17,13]\nSide effects in initialization of unused variable HOST_PREFIX [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:18,13]\nSide effects in initialization of unused variable HOST_SUFFIX [./app/node_modules/@webcomponents/shadycss/src/common-regex.js:19,13]\nSide effects in initialization of unused variable _cssParse [./app/node_modules/@webcomponents/shadycss/src/style-info.js:13,0]\nSide effects in initialization of unused variable _customStyleInterface [./app/node_modules/@webcomponents/shadycss/src/scoping-shim.js:26,0]\nSide effects in initialization of unused variable flush [./app/node_modules/@webcomponents/shadycss/src/document-watcher.js:17,11]\nSide effects in initialization of unused variable _cssParse [./app/node_modules/@webcomponents/shadycss/src/apply-shim-utils.js:13,0]\nSide effects in initialization of unused variable CustomStyleProvider [./app/node_modules/@webcomponents/shadycss/src/custom-style-interface.js:18,11]\nSide effects in initialization of unused variable CustomStyleInterfaceInterface [./app/node_modules/@webcomponents/shadycss/src/custom-style-interface.js:156,11]",
     "promise.js from UglifyJs\nCondition always false [./app/node_modules/es6-promise/dist/es6-promise.js:10,1]\nCondition always true [./app/node_modules/es6-promise/dist/es6-promise.js:11,1]\nDropping unused variable r [./app/node_modules/es6-promise/dist/es6-promise.js:137,8]\nDropping side-effect-free && in boolean context [./app/node_modules/es6-promise/dist/es6-promise.js:154,11]",
     "es6.js from UglifyJs\nCondition always true [./app/node_modules/es6-shim/es6-shim.js:15,6]\nDropping unreachable code [./app/node_modules/es6-shim/es6-shim.js:18,9]\nCondition always false [./app/node_modules/es6-shim/es6-shim.js:95,19]\nCondition always true [./app/node_modules/es6-shim/es6-sham.js:15,6]\nDropping unreachable code [./app/node_modules/es6-shim/es6-sham.js:18,9]",
     "es5.js from UglifyJs\nCondition always true [./app/node_modules/es5-shim/es5-shim.js:18,8]\nDropping unreachable code [./app/node_modules/es5-shim/es5-shim.js:21,11]\nCondition always true [./app/node_modules/es5-shim/es5-sham.js:18,8]\nDropping unreachable code [./app/node_modules/es5-shim/es5-sham.js:21,11]"
   ],
   "version": "3.10.0",
-  "hash": "470e3671c935c96928d9",
-  "time": 21020,
+  "hash": "d438a977f193f4d27dbf",
+  "time": 20705,
   "publicPath": "",
   "assetsByChunkName": {
     "page-speakers": [
@@ -92,15 +92,15 @@
   },
   "assets": [
     {
-      "name": "images/CHI 2018 Interactive Program_files/core.js",
-      "size": 10356,
+      "name": "images/CHI 2018 Interactive Program_files/css",
+      "size": 5010,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
       "name": "page-speakers.fragment.0.js",
-      "size": 90160,
+      "size": 90518,
       "chunks": [
         0
       ],
@@ -111,7 +111,7 @@
     },
     {
       "name": "page-tickets.fragment.2.js",
-      "size": 88099,
+      "size": 88410,
       "chunks": [
         2
       ],
@@ -122,7 +122,7 @@
     },
     {
       "name": "page-sessions.fragment.3.js",
-      "size": 80640,
+      "size": 80951,
       "chunks": [
         3
       ],
@@ -133,7 +133,7 @@
     },
     {
       "name": "page-sponsor.fragment.4.js",
-      "size": 81538,
+      "size": 81849,
       "chunks": [
         4
       ],
@@ -144,7 +144,7 @@
     },
     {
       "name": "page-about.fragment.5.js",
-      "size": 85610,
+      "size": 85920,
       "chunks": [
         5
       ],
@@ -155,7 +155,7 @@
     },
     {
       "name": "page-schedule.fragment.6.js",
-      "size": 67098,
+      "size": 67449,
       "chunks": [
         6
       ],
@@ -166,7 +166,7 @@
     },
     {
       "name": "page-not-found.fragment.7.js",
-      "size": 43778,
+      "size": 43825,
       "chunks": [
         7
       ],
@@ -177,7 +177,7 @@
     },
     {
       "name": "page-home.fragment.8.js",
-      "size": 44209,
+      "size": 44256,
       "chunks": [
         8
       ],
@@ -276,7 +276,7 @@
     },
     {
       "name": "page-speakers.fragment.0.js.map",
-      "size": 384108,
+      "size": 384892,
       "chunks": [
         0
       ],
@@ -287,7 +287,7 @@
     },
     {
       "name": "page-faq.fragment.1.js.map",
-      "size": 367942,
+      "size": 368626,
       "chunks": [
         1
       ],
@@ -298,7 +298,7 @@
     },
     {
       "name": "page-tickets.fragment.2.js.map",
-      "size": 379882,
+      "size": 380566,
       "chunks": [
         2
       ],
@@ -309,7 +309,7 @@
     },
     {
       "name": "page-sessions.fragment.3.js.map",
-      "size": 360085,
+      "size": 360769,
       "chunks": [
         3
       ],
@@ -320,7 +320,7 @@
     },
     {
       "name": "page-sponsor.fragment.4.js.map",
-      "size": 360713,
+      "size": 361397,
       "chunks": [
         4
       ],
@@ -331,7 +331,7 @@
     },
     {
       "name": "page-about.fragment.5.js.map",
-      "size": 371683,
+      "size": 372377,
       "chunks": [
         5
       ],
@@ -342,7 +342,7 @@
     },
     {
       "name": "page-schedule.fragment.6.js.map",
-      "size": 284030,
+      "size": 284796,
       "chunks": [
         6
       ],
@@ -353,7 +353,7 @@
     },
     {
       "name": "page-not-found.fragment.7.js.map",
-      "size": 202947,
+      "size": 203047,
       "chunks": [
         7
       ],
@@ -364,7 +364,7 @@
     },
     {
       "name": "page-home.fragment.8.js.map",
-      "size": 203929,
+      "size": 204029,
       "chunks": [
         8
       ],
@@ -490,6 +490,13 @@
       "emitted": true
     },
     {
+      "name": "webcomponentsjs/webcomponents-hi-sd-ce.js",
+      "size": 74717,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
       "name": "webcomponentsjs/webcomponents-hi-ce.js",
       "size": 24119,
       "chunks": [],
@@ -504,29 +511,8 @@
       "emitted": true
     },
     {
-      "name": "webcomponentsjs/webcomponents-hi-sd-ce.js",
-      "size": 74717,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "webcomponentsjs/webcomponents-loader.js",
       "size": 3154,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "webcomponentsjs/webcomponents-lite.js",
-      "size": 85708,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "webcomponentsjs/webcomponents-sd-ce.js",
-      "size": 66394,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -539,15 +525,15 @@
       "emitted": true
     },
     {
-      "name": "webcomponentsjs/webcomponents-hi-sd-ce.js.map",
-      "size": 164622,
+      "name": "webcomponentsjs/webcomponents-sd-ce.js",
+      "size": 66394,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
-      "name": "webcomponentsjs/webcomponents-lite.js.map",
-      "size": 189251,
+      "name": "webcomponentsjs/webcomponents-hi-sd-ce.js.map",
+      "size": 164622,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -567,6 +553,27 @@
       "emitted": true
     },
     {
+      "name": "webcomponentsjs/webcomponents-lite.js.map",
+      "size": 189251,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "webcomponentsjs/webcomponents-lite.js",
+      "size": 85708,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "fonts/Inovato-Bold.eot",
+      "size": 25616,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
       "name": "fonts/Inovato-Bold.ttf",
       "size": 56352,
       "chunks": [],
@@ -581,22 +588,15 @@
       "emitted": true
     },
     {
-      "name": "fonts/Inovato-Regular.eot",
-      "size": 26832,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "fonts/Inovato-Bold.eot",
-      "size": 25616,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "fonts/Inovato-Bold.woff",
       "size": 25484,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "fonts/Inovato-Regular.eot",
+      "size": 26832,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -623,13 +623,6 @@
       "emitted": true
     },
     {
-      "name": "images/afterparty.png",
-      "size": 5945,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "images/about.png",
       "size": 1272661,
       "chunks": [],
@@ -638,8 +631,22 @@
       "isOverSizeLimit": true
     },
     {
+      "name": "images/box.png",
+      "size": 8449,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
       "name": "images/camera.png",
       "size": 4081,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "images/afterparty.png",
+      "size": 5945,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -652,15 +659,8 @@
       "emitted": true
     },
     {
-      "name": "images/box.png",
-      "size": 8449,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "page-faq.fragment.1.js",
-      "size": 83038,
+      "size": 83349,
       "chunks": [
         1
       ],
@@ -670,8 +670,15 @@
       "emitted": true
     },
     {
-      "name": "images/CHI 2018 Interactive Program_files/css",
-      "size": 5010,
+      "name": "images/CHI 2018 Interactive Program_files/custom-elements-es5-adapter.js",
+      "size": 1621,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "images/CHI 2018 Interactive Program_files/core.js",
+      "size": 10356,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -683,13 +690,6 @@
       "chunkNames": [],
       "emitted": true,
       "isOverSizeLimit": true
-    },
-    {
-      "name": "images/CHI 2018 Interactive Program_files/custom-elements-es5-adapter.js",
-      "size": 1621,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
     },
     {
       "name": "images/CHI 2018 Interactive Program.html",
@@ -706,8 +706,8 @@
       "emitted": true
     },
     {
-      "name": "images/ffcicon-light.svg",
-      "size": 27813,
+      "name": "images/food.png",
+      "size": 5336,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -720,6 +720,13 @@
       "emitted": true
     },
     {
+      "name": "images/lower-left.svg",
+      "size": 3660,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
       "name": "images/lower-right.svg",
       "size": 2048,
       "chunks": [],
@@ -727,11 +734,19 @@
       "emitted": true
     },
     {
-      "name": "images/lower-left.svg",
-      "size": 3660,
+      "name": "images/ffcicon-light.svg",
+      "size": 27813,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
+    },
+    {
+      "name": "images/CHI 2018 Interactive Program_files/module.bundle.js",
+      "size": 1495498,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true,
+      "isOverSizeLimit": true
     },
     {
       "name": "images/networking.png",
@@ -748,20 +763,6 @@
       "emitted": true
     },
     {
-      "name": "images/food.png",
-      "size": 5336,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "images/shirt.png",
-      "size": 4676,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "images/pwdo-icon-dark.svg",
       "size": 83721,
       "chunks": [],
@@ -771,6 +772,13 @@
     {
       "name": "images/top-right.svg",
       "size": 2253,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "images/shirt.png",
+      "size": 4676,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -791,7 +799,7 @@
     },
     {
       "name": "data/about/ffc.md",
-      "size": 1359,
+      "size": 1459,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -811,15 +819,15 @@
       "emitted": true
     },
     {
-      "name": "data/about/masthead.json",
-      "size": 670,
+      "name": "data/about/nearby-accommodations.md",
+      "size": 268,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
-      "name": "data/about/nearby-accommodations.md",
-      "size": 268,
+      "name": "data/about/masthead.json",
+      "size": 670,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -839,13 +847,6 @@
       "emitted": true
     },
     {
-      "name": "data/faq/after-the-conference.md",
-      "size": 740,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "data/faq.json",
       "size": 527,
       "chunks": [],
@@ -853,30 +854,29 @@
       "emitted": true
     },
     {
+      "name": "data/faq/after-the-conference.md",
+      "size": 760,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
       "name": "data/faq/anything-else.md",
-      "size": 511,
+      "size": 969,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
       "name": "data/faq/before-you-buy.md",
-      "size": 1252,
+      "size": 1521,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
-      "name": "images/CHI 2018 Interactive Program_files/module.bundle.js",
-      "size": 1495498,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true,
-      "isOverSizeLimit": true
-    },
-    {
       "name": "data/faq/conference-prep.md",
-      "size": 1416,
+      "size": 1415,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -924,13 +924,6 @@
       "emitted": true
     },
     {
-      "name": "data/sessions/grid-is-the-new-black.md",
-      "size": 540,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "data/sessions/new-adventures-in-responsive-web-design.json",
       "size": 137,
       "chunks": [],
@@ -938,8 +931,8 @@
       "emitted": true
     },
     {
-      "name": "data/sessions/new-adventures-in-responsive-web-design.md",
-      "size": 1936,
+      "name": "data/sessions/grid-is-the-new-black.md",
+      "size": 540,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -947,6 +940,13 @@
     {
       "name": "data/sessions/solid-strategies-to-build-for-a-better-web.json",
       "size": 139,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "data/sessions/new-adventures-in-responsive-web-design.md",
+      "size": 1936,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -966,6 +966,13 @@
       "emitted": true
     },
     {
+      "name": "data/speakers/holger-bartel.jpg",
+      "size": 40876,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
       "name": "data/speakers/holger-bartel.md",
       "size": 444,
       "chunks": [],
@@ -973,8 +980,8 @@
       "emitted": true
     },
     {
-      "name": "data/speakers/holger-bartel.jpg",
-      "size": 40876,
+      "name": "data/speakers/holger-bartel.json",
+      "size": 131,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -994,13 +1001,6 @@
       "emitted": true
     },
     {
-      "name": "data/speakers/holger-bartel.json",
-      "size": 131,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "data/speakers/hui-jing-chen.md",
       "size": 261,
       "chunks": [],
@@ -1015,8 +1015,8 @@
       "emitted": true
     },
     {
-      "name": "data/speakers/vitaly-friedman.md",
-      "size": 691,
+      "name": "data/speakers/vitaly-friedman.jpg",
+      "size": 44283,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1029,8 +1029,8 @@
       "emitted": true
     },
     {
-      "name": "data/speakers/vitaly-friedman.jpg",
-      "size": 44283,
+      "name": "data/speakers/vitaly-friedman.md",
+      "size": 691,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1051,7 +1051,7 @@
     },
     {
       "name": "data/tickets.json",
-      "size": 5321,
+      "size": 5616,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1071,8 +1071,15 @@
       "emitted": true
     },
     {
+      "name": "data/tickets/why-attend.md",
+      "size": 465,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
       "name": "data/tickets/scholarship.md",
-      "size": 273,
+      "size": 362,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1080,13 +1087,6 @@
     {
       "name": "data/tickets/want-to-win-a-ticket.md",
       "size": 1043,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "data/tickets/why-attend.md",
-      "size": 352,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1172,7 +1172,7 @@
       "initial": false,
       "entry": false,
       "extraAsync": false,
-      "size": 169531,
+      "size": 169893,
       "names": [
         "page-speakers"
       ],
@@ -1180,7 +1180,7 @@
         "page-speakers.fragment.0.js",
         "page-speakers.fragment.0.js.map"
       ],
-      "hash": "ab66c1db8144c938db7d",
+      "hash": "f177c4f661e5a476f6ae",
       "parents": [
         10
       ],
@@ -2579,7 +2579,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/header-bar/style.scss",
           "index": 51,
           "index2": 45,
-          "size": 807,
+          "size": 922,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -2622,7 +2622,7 @@
           "name": "./app/dependencies/header-bar/template.html",
           "index": 52,
           "index2": 47,
-          "size": 413,
+          "size": 519,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -2905,9 +2905,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/marked-element/index.js",
-          "issuerId": 129,
-          "issuerName": "./app/dependencies/marked-element/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/session-item/index.js",
+          "issuerId": 157,
+          "issuerName": "./app/dependencies/session-item/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2988,7 +2988,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-speakers/style.scss",
           "index": 47,
           "index2": 42,
-          "size": 5778,
+          "size": 5825,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -3136,7 +3136,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/speaker-list/style.scss",
           "index": 56,
           "index2": 50,
-          "size": 5367,
+          "size": 5414,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -3284,7 +3284,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/speaker-item/style.scss",
           "index": 61,
           "index2": 54,
-          "size": 6747,
+          "size": 6794,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -3372,7 +3372,7 @@
       "initial": false,
       "entry": false,
       "extraAsync": false,
-      "size": 161129,
+      "size": 161444,
       "names": [
         "page-faq"
       ],
@@ -3380,7 +3380,7 @@
         "page-faq.fragment.1.js",
         "page-faq.fragment.1.js.map"
       ],
-      "hash": "674364f5f94220ba5d23",
+      "hash": "3d3d67dc9686470cb042",
       "parents": [
         10
       ],
@@ -4779,7 +4779,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/header-bar/style.scss",
           "index": 51,
           "index2": 45,
-          "size": 807,
+          "size": 922,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -4822,7 +4822,7 @@
           "name": "./app/dependencies/header-bar/template.html",
           "index": 52,
           "index2": 47,
-          "size": 413,
+          "size": 519,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -5105,9 +5105,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/marked-element/index.js",
-          "issuerId": 129,
-          "issuerName": "./app/dependencies/marked-element/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/session-item/index.js",
+          "issuerId": 157,
+          "issuerName": "./app/dependencies/session-item/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5163,9 +5163,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-          "issuerId": 96,
-          "issuerName": "./app/pages/page-tickets/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+          "issuerId": 95,
+          "issuerName": "./app/pages/page-sponsor/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5258,7 +5258,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/marked-element/style.scss",
           "index": 112,
           "index2": 106,
-          "size": 5147,
+          "size": 5194,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -5412,7 +5412,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-faq/style.scss",
           "index": 126,
           "index2": 121,
-          "size": 7254,
+          "size": 7301,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -5500,7 +5500,7 @@
       "initial": false,
       "entry": false,
       "extraAsync": false,
-      "size": 166727,
+      "size": 167042,
       "names": [
         "page-tickets"
       ],
@@ -5508,7 +5508,7 @@
         "page-tickets.fragment.2.js",
         "page-tickets.fragment.2.js.map"
       ],
-      "hash": "6de8dfbaf19be727929f",
+      "hash": "a797aa5b3a6401f40fad",
       "parents": [
         10
       ],
@@ -6907,7 +6907,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/header-bar/style.scss",
           "index": 51,
           "index2": 45,
-          "size": 807,
+          "size": 922,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -6950,7 +6950,7 @@
           "name": "./app/dependencies/header-bar/template.html",
           "index": 52,
           "index2": 47,
-          "size": 413,
+          "size": 519,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -7233,9 +7233,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/marked-element/index.js",
-          "issuerId": 129,
-          "issuerName": "./app/dependencies/marked-element/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/session-item/index.js",
+          "issuerId": 157,
+          "issuerName": "./app/dependencies/session-item/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -7291,9 +7291,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-          "issuerId": 96,
-          "issuerName": "./app/pages/page-tickets/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+          "issuerId": 95,
+          "issuerName": "./app/pages/page-sponsor/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -7386,7 +7386,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/marked-element/style.scss",
           "index": 112,
           "index2": 106,
-          "size": 5147,
+          "size": 5194,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -7540,7 +7540,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-tickets/style.scss",
           "index": 117,
           "index2": 112,
-          "size": 8275,
+          "size": 8322,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -7628,7 +7628,7 @@
       "initial": false,
       "entry": false,
       "extraAsync": false,
-      "size": 157956,
+      "size": 158271,
       "names": [
         "page-sessions"
       ],
@@ -7636,7 +7636,7 @@
         "page-sessions.fragment.3.js",
         "page-sessions.fragment.3.js.map"
       ],
-      "hash": "3ee5524c4974fe3955af",
+      "hash": "b9ff32d00ccac3108c55",
       "parents": [
         10
       ],
@@ -9035,7 +9035,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/header-bar/style.scss",
           "index": 51,
           "index2": 45,
-          "size": 807,
+          "size": 922,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -9078,7 +9078,7 @@
           "name": "./app/dependencies/header-bar/template.html",
           "index": 52,
           "index2": 47,
-          "size": 413,
+          "size": 519,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -9361,9 +9361,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/marked-element/index.js",
-          "issuerId": 129,
-          "issuerName": "./app/dependencies/marked-element/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/session-item/index.js",
+          "issuerId": 157,
+          "issuerName": "./app/dependencies/session-item/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -9444,7 +9444,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-sessions/style.scss",
           "index": 100,
           "index2": 95,
-          "size": 5816,
+          "size": 5863,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -9592,7 +9592,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/session-item/style.scss",
           "index": 104,
           "index2": 98,
-          "size": 5259,
+          "size": 5306,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -9680,7 +9680,7 @@
       "initial": false,
       "entry": false,
       "extraAsync": false,
-      "size": 158533,
+      "size": 158848,
       "names": [
         "page-sponsor"
       ],
@@ -9688,7 +9688,7 @@
         "page-sponsor.fragment.4.js",
         "page-sponsor.fragment.4.js.map"
       ],
-      "hash": "b253f52b43ade94a3f02",
+      "hash": "78be6fa5ca36b2a4f0a2",
       "parents": [
         10
       ],
@@ -11087,7 +11087,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/header-bar/style.scss",
           "index": 51,
           "index2": 45,
-          "size": 807,
+          "size": 922,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -11130,7 +11130,7 @@
           "name": "./app/dependencies/header-bar/template.html",
           "index": 52,
           "index2": 47,
-          "size": 413,
+          "size": 519,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -11413,9 +11413,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/marked-element/index.js",
-          "issuerId": 129,
-          "issuerName": "./app/dependencies/marked-element/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/session-item/index.js",
+          "issuerId": 157,
+          "issuerName": "./app/dependencies/session-item/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -11471,9 +11471,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-          "issuerId": 96,
-          "issuerName": "./app/pages/page-tickets/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+          "issuerId": 95,
+          "issuerName": "./app/pages/page-sponsor/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -11566,7 +11566,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/marked-element/style.scss",
           "index": 112,
           "index2": 106,
-          "size": 5147,
+          "size": 5194,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -11683,7 +11683,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-sponsor/style.scss",
           "index": 108,
           "index2": 103,
-          "size": 7251,
+          "size": 7298,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -11771,7 +11771,7 @@
       "initial": false,
       "entry": false,
       "extraAsync": false,
-      "size": 163408,
+      "size": 163728,
       "names": [
         "page-about"
       ],
@@ -11779,7 +11779,7 @@
         "page-about.fragment.5.js",
         "page-about.fragment.5.js.map"
       ],
-      "hash": "3796584eeb15a6afd3ea",
+      "hash": "b2ee643752417d24b2f2",
       "parents": [
         10
       ],
@@ -13178,7 +13178,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/header-bar/style.scss",
           "index": 51,
           "index2": 45,
-          "size": 807,
+          "size": 922,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -13221,7 +13221,7 @@
           "name": "./app/dependencies/header-bar/template.html",
           "index": 52,
           "index2": 47,
-          "size": 413,
+          "size": 519,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -13504,9 +13504,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/marked-element/index.js",
-          "issuerId": 129,
-          "issuerName": "./app/dependencies/marked-element/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/session-item/index.js",
+          "issuerId": 157,
+          "issuerName": "./app/dependencies/session-item/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -13562,9 +13562,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-          "issuerId": 96,
-          "issuerName": "./app/pages/page-tickets/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+          "issuerId": 95,
+          "issuerName": "./app/pages/page-sponsor/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -13657,7 +13657,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/marked-element/style.scss",
           "index": 112,
           "index2": 106,
-          "size": 5147,
+          "size": 5194,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -13774,7 +13774,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-about/style.scss",
           "index": 121,
           "index2": 116,
-          "size": 7251,
+          "size": 7298,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -13811,7 +13811,7 @@
           "name": "./app/pages/page-about/template.html",
           "index": 122,
           "index2": 118,
-          "size": 4327,
+          "size": 4332,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -13862,7 +13862,7 @@
       "initial": false,
       "entry": false,
       "extraAsync": false,
-      "size": 130625,
+      "size": 130980,
       "names": [
         "page-schedule"
       ],
@@ -13870,7 +13870,7 @@
         "page-schedule.fragment.6.js",
         "page-schedule.fragment.6.js.map"
       ],
-      "hash": "383d2c8f96485e420700",
+      "hash": "33429026a23dc8cbd0a4",
       "parents": [
         10
       ],
@@ -15269,7 +15269,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/header-bar/style.scss",
           "index": 51,
           "index2": 45,
-          "size": 807,
+          "size": 922,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -15312,7 +15312,7 @@
           "name": "./app/dependencies/header-bar/template.html",
           "index": 52,
           "index2": 47,
-          "size": 413,
+          "size": 519,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -15618,7 +15618,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-schedule/style.scss",
           "index": 69,
           "index2": 64,
-          "size": 6931,
+          "size": 7003,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -15655,7 +15655,7 @@
           "name": "./app/pages/page-schedule/template.html",
           "index": 70,
           "index2": 66,
-          "size": 2148,
+          "size": 2163,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -15766,7 +15766,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/small-session-item/style.scss",
           "index": 73,
           "index2": 67,
-          "size": 5965,
+          "size": 6012,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -15854,7 +15854,7 @@
       "initial": false,
       "entry": false,
       "extraAsync": false,
-      "size": 92580,
+      "size": 92627,
       "names": [
         "page-not-found"
       ],
@@ -15862,7 +15862,7 @@
         "page-not-found.fragment.7.js",
         "page-not-found.fragment.7.js.map"
       ],
-      "hash": "e7192949b60c10625f15",
+      "hash": "6907e959b05ea220038a",
       "parents": [
         10
       ],
@@ -16973,7 +16973,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-not-found/style.scss",
           "index": 134,
           "index2": 129,
-          "size": 6294,
+          "size": 6341,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -17061,7 +17061,7 @@
       "initial": false,
       "entry": false,
       "extraAsync": false,
-      "size": 93033,
+      "size": 93080,
       "names": [
         "page-home"
       ],
@@ -17069,7 +17069,7 @@
         "page-home.fragment.8.js",
         "page-home.fragment.8.js.map"
       ],
-      "hash": "6e4c7eb087eb9ccdb01a",
+      "hash": "fb635a73550d0781b6fa",
       "parents": [
         10
       ],
@@ -18180,7 +18180,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-home/style.scss",
           "index": 25,
           "index2": 21,
-          "size": 6753,
+          "size": 6800,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -18475,9 +18475,9 @@
             10
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@polymer/polymer/lib/utils/debounce.js",
-          "issuerId": 17,
-          "issuerName": "./app/node_modules/@polymer/polymer/lib/utils/debounce.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@polymer/polymer/lib/utils/async.js",
+          "issuerId": 8,
+          "issuerName": "./app/node_modules/@polymer/polymer/lib/utils/async.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -19467,9 +19467,9 @@
             10
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-          "issuerId": 58,
-          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+          "issuerId": 63,
+          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -20115,9 +20115,9 @@
             10
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-          "issuerId": 58,
-          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+          "issuerId": 63,
+          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -20161,9 +20161,9 @@
             10
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-          "issuerId": 58,
-          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+          "issuerId": 63,
+          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -20207,9 +20207,9 @@
             10
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-          "issuerId": 58,
-          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+          "issuerId": 63,
+          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -20253,9 +20253,9 @@
             10
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-          "issuerId": 58,
-          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+          "issuerId": 63,
+          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -23758,9 +23758,9 @@
         10
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@polymer/polymer/lib/utils/debounce.js",
-      "issuerId": 17,
-      "issuerName": "./app/node_modules/@polymer/polymer/lib/utils/debounce.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@polymer/polymer/lib/utils/async.js",
+      "issuerId": 8,
+      "issuerName": "./app/node_modules/@polymer/polymer/lib/utils/async.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -25153,9 +25153,9 @@
         10
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-      "issuerId": 58,
-      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+      "issuerId": 63,
+      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -25801,9 +25801,9 @@
         10
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-      "issuerId": 58,
-      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+      "issuerId": 63,
+      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -25847,9 +25847,9 @@
         10
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-      "issuerId": 58,
-      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+      "issuerId": 63,
+      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -25893,9 +25893,9 @@
         10
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-      "issuerId": 58,
-      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+      "issuerId": 63,
+      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -25939,9 +25939,9 @@
         10
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-      "issuerId": 58,
-      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+      "issuerId": 63,
+      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -30336,7 +30336,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/header-bar/style.scss",
       "index": 51,
       "index2": 45,
-      "size": 807,
+      "size": 922,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -30379,7 +30379,7 @@
       "name": "./app/dependencies/header-bar/template.html",
       "index": 52,
       "index2": 47,
-      "size": 413,
+      "size": 519,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -30662,9 +30662,9 @@
         5
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/marked-element/index.js",
-      "issuerId": 129,
-      "issuerName": "./app/dependencies/marked-element/index.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/session-item/index.js",
+      "issuerId": 157,
+      "issuerName": "./app/dependencies/session-item/index.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -30720,9 +30720,9 @@
         5
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-      "issuerId": 96,
-      "issuerName": "./app/pages/page-tickets/index.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+      "issuerId": 95,
+      "issuerName": "./app/pages/page-sponsor/index.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -30815,7 +30815,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/marked-element/style.scss",
       "index": 112,
       "index2": 106,
-      "size": 5147,
+      "size": 5194,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -30932,7 +30932,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-home/style.scss",
       "index": 25,
       "index2": 21,
-      "size": 6753,
+      "size": 6800,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -31043,7 +31043,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-speakers/style.scss",
       "index": 47,
       "index2": 42,
-      "size": 5778,
+      "size": 5825,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -31191,7 +31191,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/speaker-list/style.scss",
       "index": 56,
       "index2": 50,
-      "size": 5367,
+      "size": 5414,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -31339,7 +31339,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/speaker-item/style.scss",
       "index": 61,
       "index2": 54,
-      "size": 6747,
+      "size": 6794,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -31450,7 +31450,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-schedule/style.scss",
       "index": 69,
       "index2": 64,
-      "size": 6931,
+      "size": 7003,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -31487,7 +31487,7 @@
       "name": "./app/pages/page-schedule/template.html",
       "index": 70,
       "index2": 66,
-      "size": 2148,
+      "size": 2163,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -31598,7 +31598,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/small-session-item/style.scss",
       "index": 73,
       "index2": 67,
-      "size": 5965,
+      "size": 6012,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -31709,7 +31709,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-sessions/style.scss",
       "index": 100,
       "index2": 95,
-      "size": 5816,
+      "size": 5863,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -31857,7 +31857,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/dependencies/session-item/style.scss",
       "index": 104,
       "index2": 98,
-      "size": 5259,
+      "size": 5306,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -31968,7 +31968,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-sponsor/style.scss",
       "index": 108,
       "index2": 103,
-      "size": 7251,
+      "size": 7298,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -32116,7 +32116,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-tickets/style.scss",
       "index": 117,
       "index2": 112,
-      "size": 8275,
+      "size": 8322,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -32227,7 +32227,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-about/style.scss",
       "index": 121,
       "index2": 116,
-      "size": 7251,
+      "size": 7298,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -32264,7 +32264,7 @@
       "name": "./app/pages/page-about/template.html",
       "index": 122,
       "index2": 118,
-      "size": 4327,
+      "size": 4332,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -32375,7 +32375,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-faq/style.scss",
       "index": 126,
       "index2": 121,
-      "size": 7254,
+      "size": 7301,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -32597,7 +32597,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-not-found/style.scss",
       "index": 134,
       "index2": 129,
-      "size": 6294,
+      "size": 6341,
       "cacheable": true,
       "built": true,
       "optional": false,

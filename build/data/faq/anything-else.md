@@ -1,6 +1,6 @@
 ##### How can I promote FFC?
 
-You’re awesome! You can follow us on Facebook, Twitter, Google+, Instagram, Tumblr and share our posts there.
+You’re awesome! You can follow us on <a href="https://www.facebook.com/formfunctionclass" class="anchor green">Facebook</a>, <a href="https://twitter.com/ffcph" class="anchor green">Twitter</a>, <a href="https://www.instagram.com/pwdo/" class="anchor green">Instagram</a>, <a href="http://blog.pwdo.org/" class="anchor green">Tumblr</a> and share our posts there. You can also update your profile cover with these <a href="https://drive.google.com/drive/folders/1BBBWKrYYFgx7wAAPpqJ7eBsOa-giHJQD?usp=sharing" class="anchor green">headers</a>! Hashtags: #FFCPH #PWDO 
 
 ##### How do I contact you?
 

@@ -3,7 +3,7 @@
   "tickets": {
     "title": "Ticket Schedule",
     "class": "ticket-schedule",
-    "note": "Online & Offline payment options are available. <a href=\"/tickets?id=how-to-pay\" class=\"anchor green\"> More details here >",
+    "note": "All tickets are non-transferrable, but we will accept refunds until end of July 2018. Online & Offline payment options are available. <a href=\"/tickets?id=how-to-pay\" class=\"anchor green\"> More details here >",
     "list": [
       {
         "title": "Blind Bird",
@@ -14,7 +14,7 @@
       {
         "title": "Early Bird",
         "price": "₱ 5,000",
-        "date": "March 1 - April 31",
+        "date": "March 1 - April 30",
         "link": {
           "name": "Register Now",
           "href": "https://formfunctionclass9.eventbrite.com/#tickets"
@@ -51,7 +51,7 @@
         "price": "₱ 4,000",
         "date": "January 1 to July 31",
         "list": [
-          "Online payment: please present valid ID or other proof of enrollment during conference check-in.",
+          "Online payment: Enter <a href=\"https://formfunctionclass9.eventbrite.com?discount=ffc9studentdiscount\" class=\"anchor green\">FFC9STUDENTDISCOUNT</a> in the promo code on Eventbrite. Remember to present valid ID or other proof of enrollment during conference check-in.",
           "Offline payment: please include proof of enrollment in your email.",
           "Visayas & Mindanao students get additional off!"
         ],
@@ -68,7 +68,7 @@
         "price": "15% or more",
         "list": [
           "Attendees from Visayas or Mindano enjoy a 15% rate on standard ticket rates of the month.",
-          "Student ticket is only ₱ 3,4000 (see also Student Ticket rules above)",
+          "Student ticket is only ₱ 3,400 (see also Student Ticket rules above)",
           "Email <a href=\"mailto:info@pwdo.org\" class=\"anchor red\">info@pwdo.org</a> proof of current residence"
         ],
         "color": "red"
@@ -96,12 +96,12 @@
         ]
       },
       {
-        "title": "April Fools' sale",
+        "title": "April Fools' Sale",
         "price": "Blind Bird rate",
         "date": "April 1",
         "link": {
           "name": "Purchase Online",
-          "href": "https://formfunctionclass9.eventbrite.com/#tickets"
+          "href": "https://formfunctionclass9.eventbrite.com?discount=ffc9prilfools"
         },
         "disable": true
       },
@@ -111,7 +111,7 @@
         "date": "April 9",
         "link": {
           "name": "Purchase Online",
-          "href": "https://formfunctionclass9.eventbrite.com/#tickets"
+          "href": "https://formfunctionclass9.eventbrite.com?discount=ffc9arawngkagitingan"
         },
         "disable": true
       },

@@ -8,4 +8,4 @@ Subscribe to our <a href="https://www.youtube.com/user/FormFunctionClass" class=
 
 ##### Where can I find the photos?
 
-Follow us on <a href="https://www.facebook.com/webdesigners.org.ph" target="_blank" rel="noopener" class="anchor red">Facebook</a> and <a href="https://instagram.com/pwdo" target="_blank" rel="noopener">Instagram</a>.
+Follow us on <a href="https://www.facebook.com/webdesigners.org.ph" target="_blank" rel="noopener" class="anchor red">Facebook</a> and <a href="https://instagram.com/pwdo" target="_blank" rel="noopener" class="anchor red">Instagram</a>.
