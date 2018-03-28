@@ -1,9 +1,10 @@
 #### Step 1: Choose payment method
 - BDO: 0280892586 <br>
 Philippine Web Designers Organization, Inc.<br>
-Find a branch near you →
+<a href="https://www.bdo.com.ph/branches-atms-locator" class="anchor blue">Find a branch near you →</a>
 
-- GCash: 09175885017
+- GCash: 09175885017  
+<a href="https://www.globe.com.ph/galaxys24" class="anchor blue">Learn more →</a> 
 
 Please include payment reference ID for proof of payment. Additional fees may apply.
 
