@@ -93,7 +93,8 @@
           "Member of a tech group? Gather your squad for 15% discount for a minimum of 3 ticket buyers.",
           "We'll display your logo on the site as community partner!",
           "Offline payment only."
-        ]
+        ],
+        "color": "blue"
       },
       {
         "title": "April Fools' Sale",
@@ -103,7 +104,8 @@
           "name": "Purchase Online",
           "href": "https://formfunctionclass9.eventbrite.com?discount=ffc9prilfools"
         },
-        "disable": true
+        "disable": true,
+        "color": "red"
       },
       {
         "title": "Day of Valor Sale",
@@ -113,7 +115,8 @@
           "name": "Purchase Online",
           "href": "https://formfunctionclass9.eventbrite.com?discount=ffc9arawngkagitingan"
         },
-        "disable": true
+        "disable": true,
+        "color": "green"
       },
       {
         "title": "Labor Day Sale",
@@ -123,7 +126,8 @@
           "name": "Purchase Online",
           "href": "https://formfunctionclass9.eventbrite.com/#tickets"
         },
-        "disable": true
+        "disable": true,
+        "color": "blue"
       },
       {
         "title": "Independence Day Sale",
@@ -133,7 +137,8 @@
           "name": "Purchase Online",
           "href": "https://formfunctionclass9.eventbrite.com/#tickets"
         },
-        "disable": true
+        "disable": true,
+        "color": "red"
       }
     ]
   },
