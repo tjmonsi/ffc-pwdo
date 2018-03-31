@@ -10,7 +10,7 @@
   "license": "MIT",
   "flat": true,
   "dependencies": {
-    "@littleq/littleq-router": "0.0.2",
+    "@littleq/littleq-router": "0.0.3",
     "@littleq/state-manager": "0.0.2",
     "@polymer/polymer": "^3.0.0-pre.1",
     "@webcomponents/shadycss": "^1.0.6",
