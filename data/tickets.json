@@ -23,7 +23,7 @@
       },
       {
         "title": "Night Owl",
-        "price": "₱ 7,000",
+        "price": "₱ 6,000",
         "date": "May 1 - August 2",
         "disable": true
       }
@@ -60,7 +60,7 @@
       {
         "title": "3+1 Free",
         "date": "March 1 to July 1",
-        "description": "Secure 3 paid attendees and get your ticket to FFC for FREE!",
+        "description": "Secure 3 paid attendees and get your ticket to FFC for FREE! Email <a href=\"mailto:info@pwdo.org\" class=\"anchor blue\">info@pwdo.org</a> for more info.",
         "color": "blue"
       },
       {
