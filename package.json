@@ -61,7 +61,7 @@
     "karma-spec-reporter": "0.0.31",
     "karma-webpack": "2.0.9",
     "mocha": "4.1.0",
-    "node-sass": "4.7.2",
+    "node-sass": "4.9.0",
     "polymer-webpack-loader": "2.0.1",
     "postcss-loader": "2.0.10",
     "run-sequence": "2.2.1",
