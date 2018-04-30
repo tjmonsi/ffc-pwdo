@@ -15,17 +15,17 @@
         "title": "Early Bird",
         "price": "₱ 5,000",
         "date": "March 1 - April 30",
-        "link": {
-          "name": "Register Now",
-          "href": "https://formfunctionclass9.eventbrite.com/#tickets"
-        },
         "color": "green",
         "disable": true
       },
       {
         "title": "Night Owl",
         "price": "₱ 6,000",
-        "date": "May 1 - August 2"
+        "date": "May 1 - August 2",
+        "link": {
+          "name": "Register Now",
+          "href": "https://formfunctionclass9.eventbrite.com/#tickets"
+        }
       }
     ]
   },
