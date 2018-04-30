@@ -19,13 +19,13 @@
           "name": "Register Now",
           "href": "https://formfunctionclass9.eventbrite.com/#tickets"
         },
-        "color": "green"
+        "color": "green",
+        "disable": true
       },
       {
         "title": "Night Owl",
         "price": "₱ 6,000",
-        "date": "May 1 - August 2",
-        "disable": true
+        "date": "May 1 - August 2"
       }
     ]
   },
@@ -83,7 +83,8 @@
           "Attended 3 FFC or more: 30% off!"
         ],
         "note": "Email <a href=\"mailto:info@pwdo.org\" class=\"anchor green\">info@pwdo.org</a> with proof of past attendance, then we'll let you know how much you need to pay.",
-        "color": "green"
+        "color": "green",
+        "disable": true
       },
       {
         "title": "Tech Community",
