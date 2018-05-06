@@ -127,6 +127,7 @@
           "name": "Purchase Online",
           "href": "https://formfunctionclass9.eventbrite.com/?discount=ffclabord9y"
         },
+        "disable": true,             
         "color": "blue"
       },
       {
