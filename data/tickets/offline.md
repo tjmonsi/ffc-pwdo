@@ -18,9 +18,12 @@ Email <a href="mailto:payment@pwdo.org" class="anchor blue">payment@pwdo.org</a>
 - Company / School / Affiliation:
 - Occupation:
 - Gender:
-- Question/s for the speakers:
 - City:
+- Question/s for the speakers:
+- Shirt size:
 
 Note: If you are purchasing a special ticket that needs additional documents for verification, don’t forget to include them.
+
+Shirt sizes are still subject to availability. XS: 17x25"; S: 18x26"; M: 19x27"; L: 20x28"; XL: 21x29"; XXL: 22x30"
 
 Please allow for at least 24 hours processing time.
