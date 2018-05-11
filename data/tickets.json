@@ -51,7 +51,7 @@
         "price": "₱ 4,000",
         "date": "January 1 to July 31",
         "list": [
-          "Online payment: Enter <a href=\"https://formfunctionclass9.eventbrite.com?discount=ffc9studentdiscount\" class=\"anchor green\">FFC9STUDENTDISCOUNT</a> in the promo code on Eventbrite. Remember to present valid ID or other proof of enrollment during conference check-in.",
+          "Online payment: Enter <a href=\"https://formfunctionclass9.eventbrite.com?discount=ffc9studentdiscount#tickets\" class=\"anchor green\">FFC9STUDENTDISCOUNT</a> in the promo code on Eventbrite. Remember to present valid ID or other proof of enrollment during conference check-in.",
           "Offline payment: please include proof of enrollment in your email.",
           "Visayas & Mindanao students get additional off!"
         ],
@@ -89,11 +89,12 @@
       {
         "title": "Tech Community",
         "price": "15% off, minimum of 3 tickets",
-        "description": "March 1 to August 2",
+        "date": "March 1 to August 2",
         "list": [
           "Member of a tech group? Gather your squad for 15% discount for a minimum of 3 ticket buyers.",
           "We'll display your logo on the site as community partner!",
-          "Offline payment only."
+          "Online: use <a href=\"https://formfunctionclass9.eventbrite.com?discount=phtechcommunity#tickets\" class=\"anchor blue\">PHTECHCOMMUNITY</a>",
+          "Offline: email <a href=\"mailto:info@pwdo.org\" class=\"anchor blue\">info@pwdo.org</a> for more details"
         ],
         "color": "blue"
       },
