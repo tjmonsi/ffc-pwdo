@@ -1,0 +1,48 @@
+@import '../../styles/global/_typography.scss';
+@import '../../styles/global/_pages.scss';
+@import '../../styles/components/_anchor.scss';
+@import '../../styles/components/_button.scss';
+@import '../../styles/components/_grid.scss';
+@import '../../styles/global/_variables.scss';
+@import '../../styles/components/_small-container.scss';
+
+.flex-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 700px) {
+    display: block;
+  }
+}
+
+.reset-ul {
+  list-style-type: none;
+  padding: 0;
+
+  reset-li {
+    list-style-type: none;
+  }
+}
+
+.sub-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.convince {
+  margin-top: 40px;
+}
+
+.cost {
+  margin-top: 60px
+}
+
+.template {
+  padding: 20px;
+  background: #4C4C4C;
+  max-width: 720px
+}

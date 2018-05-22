@@ -29,6 +29,7 @@
     "page-tickets": "page-tickets",
     "page-about": "page-about",
     "page-faq": "page-faq",
+    "page-convince": "page-convince",
     "page-not-authorized": "page-not-authorized",
     "page-not-found": "page-not-found"
   },
@@ -59,6 +60,9 @@
       },
       "/sponsors": {
         "page": "page-sponsor"
+      },
+      "/convince": {
+        "page": "page-convince"
       }
     }
   },

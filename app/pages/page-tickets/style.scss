@@ -89,6 +89,11 @@
 
 .with-text-block {
   max-width: 720px;
+  display: block;
+
+  li {
+    margin-bottom: 12px;
+  }
 }
 
 .anchor {

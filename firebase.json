@@ -46,6 +46,10 @@
       {
         "source": "/sponsors",
         "destination": "/index.html"
+      },
+      {
+        "source": "/convince",
+        "destination": "/index.html"
       }
     ],
     "headers": [
@@ -122,6 +126,6 @@
         ]
       }
     ],
-    "public": "build"
+    "public": "public"
   }
 }

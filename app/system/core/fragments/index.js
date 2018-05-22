@@ -8,6 +8,7 @@ export default {
 'page-tickets': () => { return import(/* webpackChunkName: "page-tickets" */ 'page-tickets') }, 
 'page-about': () => { return import(/* webpackChunkName: "page-about" */ 'page-about') }, 
 'page-faq': () => { return import(/* webpackChunkName: "page-faq" */ 'page-faq') }, 
+'page-convince': () => { return import(/* webpackChunkName: "page-convince" */ 'page-convince') }, 
 'page-not-authorized': () => { return import(/* webpackChunkName: "page-not-authorized" */ 'page-not-authorized') }, 
 'page-not-found': () => { return import(/* webpackChunkName: "page-not-found" */ 'page-not-found') }
 }
