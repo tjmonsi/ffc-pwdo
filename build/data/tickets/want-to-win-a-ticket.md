@@ -7,7 +7,9 @@
   - Student Ticket Giveaway - March 10 to May 31
   - Early Bird Ticket Giveaway - March 10 to April 27
   - Night Owl Ticket Giveaway - April 28 to July 29
+  - Share a Learning Giveaway - March 10 to July 31
 5. Winners will be announced on:
   - Student Ticket Giveaway - July 15
   - Early Bird Ticket Giveaway - April 28
   - Night Owl Ticket Giveaway - July 30
+  - Share a Learning Giveaway - August 1

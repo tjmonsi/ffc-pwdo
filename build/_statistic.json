@@ -19,7 +19,7 @@
   ],
   "version": "3.10.0",
   "hash": "561aaffc58d2b18210ec",
-  "time": 18782,
+  "time": 17700,
   "publicPath": "",
   "assetsByChunkName": {
     "page-speakers": [
@@ -97,12 +97,11 @@
   },
   "assets": [
     {
-      "name": "images/CHI 2018 Interactive Program_files/bundle.js",
-      "size": 454442,
+      "name": "images/CHI 2018 Interactive Program_files/custom-elements-es5-adapter.js",
+      "size": 1621,
       "chunks": [],
       "chunkNames": [],
-      "emitted": true,
-      "isOverSizeLimit": true
+      "emitted": true
     },
     {
       "name": "page-speakers.fragment.0.js",
@@ -511,13 +510,6 @@
       "emitted": true
     },
     {
-      "name": "webcomponentsjs/gulpfile.js",
-      "size": 4824,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "webcomponentsjs/webcomponents-hi-ce.js",
       "size": 24119,
       "chunks": [],
@@ -539,8 +531,8 @@
       "emitted": true
     },
     {
-      "name": "webcomponentsjs/webcomponents-lite.js",
-      "size": 85708,
+      "name": "webcomponentsjs/gulpfile.js",
+      "size": 4824,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -553,8 +545,8 @@
       "emitted": true
     },
     {
-      "name": "webcomponentsjs/webcomponents-sd-ce.js",
-      "size": 66394,
+      "name": "webcomponentsjs/webcomponents-lite.js",
+      "size": 85708,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -574,8 +566,8 @@
       "emitted": true
     },
     {
-      "name": "webcomponentsjs/webcomponents-lite.js.map",
-      "size": 189251,
+      "name": "webcomponentsjs/webcomponents-sd-ce.js.map",
+      "size": 149685,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -588,8 +580,15 @@
       "emitted": true
     },
     {
-      "name": "webcomponentsjs/webcomponents-sd-ce.js.map",
-      "size": 149685,
+      "name": "webcomponentsjs/webcomponents-sd-ce.js",
+      "size": 66394,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "webcomponentsjs/webcomponents-lite.js.map",
+      "size": 189251,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -616,8 +615,15 @@
       "emitted": true
     },
     {
-      "name": "fonts/Inovato-Regular.eot",
-      "size": 26832,
+      "name": "fonts/Inovato-Bold.ttf",
+      "size": 56352,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "fonts/Inovato-Regular.ttf",
+      "size": 59456,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -630,15 +636,8 @@
       "emitted": true
     },
     {
-      "name": "fonts/Inovato-Bold.ttf",
-      "size": 56352,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "fonts/Inovato-Regular.ttf",
-      "size": 59456,
+      "name": "fonts/Inovato-Regular.eot",
+      "size": 26832,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -658,22 +657,8 @@
       "emitted": true
     },
     {
-      "name": "images/box.png",
-      "size": 8449,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "images/camera.png",
       "size": 4081,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "images/CHI 2018 Interactive Program_files/core.js",
-      "size": 10356,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -686,8 +671,23 @@
       "emitted": true
     },
     {
-      "name": "images/CHI 2018 Interactive Program_files/custom-elements-es5-adapter.js",
-      "size": 1621,
+      "name": "images/CHI 2018 Interactive Program_files/core.js",
+      "size": 10356,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "images/about.png",
+      "size": 1272661,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true,
+      "isOverSizeLimit": true
+    },
+    {
+      "name": "images/CHI 2018 Interactive Program_files/css",
+      "size": 5010,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -704,14 +704,6 @@
       "emitted": true
     },
     {
-      "name": "images/about.png",
-      "size": 1272661,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true,
-      "isOverSizeLimit": true
-    },
-    {
       "name": "images/CHI 2018 Interactive Program.html",
       "size": 3457,
       "chunks": [],
@@ -719,8 +711,16 @@
       "emitted": true
     },
     {
-      "name": "images/ffcicon-light.svg",
-      "size": 27813,
+      "name": "images/CHI 2018 Interactive Program_files/bundle.js",
+      "size": 454442,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true,
+      "isOverSizeLimit": true
+    },
+    {
+      "name": "images/food.png",
+      "size": 5336,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -733,15 +733,8 @@
       "emitted": true
     },
     {
-      "name": "images/icons.svg",
-      "size": 7905,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "images/food.png",
-      "size": 5336,
+      "name": "images/box.png",
+      "size": 8449,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -749,6 +742,20 @@
     {
       "name": "images/lower-left.svg",
       "size": 3660,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "images/icons.svg",
+      "size": 7905,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "images/ffcicon-light.svg",
+      "size": 27813,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -775,13 +782,6 @@
       "emitted": true
     },
     {
-      "name": "images/pwdo-icon-dark.svg",
-      "size": 83721,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "images/shirt.png",
       "size": 4676,
       "chunks": [],
@@ -803,19 +803,19 @@
       "emitted": true
     },
     {
+      "name": "images/pwdo-icon-dark.svg",
+      "size": 83721,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
       "name": "images/CHI 2018 Interactive Program_files/module.bundle.js",
       "size": 1495498,
       "chunks": [],
       "chunkNames": [],
       "emitted": true,
       "isOverSizeLimit": true
-    },
-    {
-      "name": "images/CHI 2018 Interactive Program_files/css",
-      "size": 5010,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
     },
     {
       "name": "data/about/code-of-conduct.md",
@@ -860,13 +860,6 @@
       "emitted": true
     },
     {
-      "name": "data/about/nearby-accommodations.md",
-      "size": 268,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "data/about/venue.md",
       "size": 115,
       "chunks": [],
@@ -895,8 +888,8 @@
       "emitted": true
     },
     {
-      "name": "data/faq.json",
-      "size": 527,
+      "name": "data/convince/intro.md",
+      "size": 1954,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -909,29 +902,22 @@
       "emitted": true
     },
     {
+      "name": "data/about/nearby-accommodations.md",
+      "size": 268,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "data/faq.json",
+      "size": 527,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
       "name": "data/faq/anything-else.md",
       "size": 969,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "data/faq/before-you-buy.md",
-      "size": 1521,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "data/faq/why-attend.md",
-      "size": 1229,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "data/rooms.json",
-      "size": 122,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -951,8 +937,15 @@
       "emitted": true
     },
     {
-      "name": "data/schedule.json",
-      "size": 1134,
+      "name": "data/faq/before-you-buy.md",
+      "size": 1521,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "data/faq/why-attend.md",
+      "size": 1229,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -960,6 +953,27 @@
     {
       "name": "data/sessions/grid-is-the-new-black.json",
       "size": 119,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "data/rooms.json",
+      "size": 122,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "data/schedule.json",
+      "size": 1134,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "data/scrapbook.json",
+      "size": 1184,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -973,14 +987,14 @@
     },
     {
       "name": "data/sessions/grid-is-the-new-black.md",
-      "size": 540,
+      "size": 457,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
-      "name": "data/sessions/solid-strategies-to-build-for-a-better-web.md",
-      "size": 440,
+      "name": "data/sessions/new-adventures-in-responsive-web-design.md",
+      "size": 1906,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -993,6 +1007,13 @@
       "emitted": true
     },
     {
+      "name": "data/speakers/holger-bartel.json",
+      "size": 131,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
       "name": "data/speakers.json",
       "size": 123,
       "chunks": [],
@@ -1000,15 +1021,8 @@
       "emitted": true
     },
     {
-      "name": "data/speakers/holger-bartel.jpg",
-      "size": 40876,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "data/speakers/holger-bartel.json",
-      "size": 131,
+      "name": "data/sessions/solid-strategies-to-build-for-a-better-web.md",
+      "size": 440,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1021,8 +1035,8 @@
       "emitted": true
     },
     {
-      "name": "data/scrapbook.json",
-      "size": 1184,
+      "name": "data/speakers/hui-jing-chen.md",
+      "size": 261,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1035,8 +1049,8 @@
       "emitted": true
     },
     {
-      "name": "data/speakers/hui-jing-chen.md",
-      "size": 261,
+      "name": "data/speakers/hui-jing-chen.jpg",
+      "size": 90093,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1049,8 +1063,22 @@
       "emitted": true
     },
     {
-      "name": "data/speakers/hui-jing-chen.jpg",
-      "size": 90093,
+      "name": "data/sponsors.json",
+      "size": 233,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "data/speakers/vitaly-friedman.md",
+      "size": 682,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "data/speakers/rsz_blank-avatar-220x220-400x400.jpg",
+      "size": 3679,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1063,29 +1091,15 @@
       "emitted": true
     },
     {
-      "name": "data/sessions/new-adventures-in-responsive-web-design.md",
-      "size": 1936,
+      "name": "data/tickets.json",
+      "size": 6139,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
-      "name": "data/speakers/vitaly-friedman.md",
-      "size": 691,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "data/sponsors.json",
-      "size": 233,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "data/speakers/rsz_blank-avatar-220x220-400x400.jpg",
-      "size": 3679,
+      "name": "data/speakers/holger-bartel.jpg",
+      "size": 40876,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1099,14 +1113,7 @@
     },
     {
       "name": "data/tickets/offline.md",
-      "size": 825,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "data/tickets.json",
-      "size": 5616,
+      "size": 1123,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1120,14 +1127,14 @@
     },
     {
       "name": "data/tickets/scholarship.md",
-      "size": 362,
+      "size": 423,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
       "name": "data/tickets/want-to-win-a-ticket.md",
-      "size": 1043,
+      "size": 1137,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1135,13 +1142,6 @@
     {
       "name": "data/tickets/why-attend.md",
       "size": 465,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "data/convince/intro.md",
-      "size": 1954,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1594,9 +1594,9 @@
             9
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2431,9 +2431,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2556,9 +2556,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-          "issuerId": 94,
-          "issuerName": "./app/pages/page-sessions/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2795,9 +2795,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-          "issuerId": 94,
-          "issuerName": "./app/pages/page-sessions/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3033,9 +3033,9 @@
             6
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/session-item/index.js",
-          "issuerId": 158,
-          "issuerName": "./app/dependencies/session-item/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/marked-element/index.js",
+          "issuerId": 130,
+          "issuerName": "./app/dependencies/marked-element/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3867,9 +3867,9 @@
             9
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -4704,9 +4704,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -4829,9 +4829,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-          "issuerId": 94,
-          "issuerName": "./app/pages/page-sessions/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5068,9 +5068,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-          "issuerId": 94,
-          "issuerName": "./app/pages/page-sessions/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5306,9 +5306,9 @@
             6
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/session-item/index.js",
-          "issuerId": 158,
-          "issuerName": "./app/dependencies/session-item/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/marked-element/index.js",
+          "issuerId": 130,
+          "issuerName": "./app/dependencies/marked-element/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -6081,9 +6081,9 @@
             9
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -6918,9 +6918,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -7043,9 +7043,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-          "issuerId": 94,
-          "issuerName": "./app/pages/page-sessions/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -7282,9 +7282,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-          "issuerId": 94,
-          "issuerName": "./app/pages/page-sessions/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -7520,9 +7520,9 @@
             6
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/session-item/index.js",
-          "issuerId": 158,
-          "issuerName": "./app/dependencies/session-item/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/marked-element/index.js",
+          "issuerId": 130,
+          "issuerName": "./app/dependencies/marked-element/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -8295,9 +8295,9 @@
             9
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -9132,9 +9132,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -9257,9 +9257,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-          "issuerId": 94,
-          "issuerName": "./app/pages/page-sessions/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -9496,9 +9496,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-          "issuerId": 94,
-          "issuerName": "./app/pages/page-sessions/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -9734,9 +9734,9 @@
             6
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/session-item/index.js",
-          "issuerId": 158,
-          "issuerName": "./app/dependencies/session-item/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/marked-element/index.js",
+          "issuerId": 130,
+          "issuerName": "./app/dependencies/marked-element/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -10420,9 +10420,9 @@
             9
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -11257,9 +11257,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -11382,9 +11382,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-          "issuerId": 94,
-          "issuerName": "./app/pages/page-sessions/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -11621,9 +11621,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-          "issuerId": 94,
-          "issuerName": "./app/pages/page-sessions/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -11859,9 +11859,9 @@
             6
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/session-item/index.js",
-          "issuerId": 158,
-          "issuerName": "./app/dependencies/session-item/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/marked-element/index.js",
+          "issuerId": 130,
+          "issuerName": "./app/dependencies/marked-element/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -12597,9 +12597,9 @@
             9
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -13434,9 +13434,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -13559,9 +13559,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-          "issuerId": 94,
-          "issuerName": "./app/pages/page-sessions/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -13798,9 +13798,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-          "issuerId": 94,
-          "issuerName": "./app/pages/page-sessions/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -14036,9 +14036,9 @@
             6
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/session-item/index.js",
-          "issuerId": 158,
-          "issuerName": "./app/dependencies/session-item/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/marked-element/index.js",
+          "issuerId": 130,
+          "issuerName": "./app/dependencies/marked-element/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -14774,9 +14774,9 @@
             9
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -15611,9 +15611,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -15736,9 +15736,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-          "issuerId": 94,
-          "issuerName": "./app/pages/page-sessions/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -15975,9 +15975,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-          "issuerId": 94,
-          "issuerName": "./app/pages/page-sessions/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -16213,9 +16213,9 @@
             6
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/session-item/index.js",
-          "issuerId": 158,
-          "issuerName": "./app/dependencies/session-item/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/marked-element/index.js",
+          "issuerId": 130,
+          "issuerName": "./app/dependencies/marked-element/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -16951,9 +16951,9 @@
             9
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -17788,9 +17788,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -17913,9 +17913,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-          "issuerId": 94,
-          "issuerName": "./app/pages/page-sessions/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -18152,9 +18152,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-          "issuerId": 94,
-          "issuerName": "./app/pages/page-sessions/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -19015,9 +19015,9 @@
             9
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -20257,9 +20257,9 @@
             9
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-          "issuerId": 92,
-          "issuerName": "./app/pages/page-speakers/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+          "issuerId": 93,
+          "issuerName": "./app/pages/page-schedule/index.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -21339,9 +21339,9 @@
             11
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@polymer/polymer/lib/utils/async.js",
-          "issuerId": 8,
-          "issuerName": "./app/node_modules/@polymer/polymer/lib/utils/async.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@polymer/polymer/lib/utils/debounce.js",
+          "issuerId": 17,
+          "issuerName": "./app/node_modules/@polymer/polymer/lib/utils/debounce.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -22340,9 +22340,9 @@
             11
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-          "issuerId": 58,
-          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+          "issuerId": 63,
+          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -22997,9 +22997,9 @@
             11
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-          "issuerId": 58,
-          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+          "issuerId": 63,
+          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -23043,9 +23043,9 @@
             11
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-          "issuerId": 58,
-          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+          "issuerId": 63,
+          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -23089,9 +23089,9 @@
             11
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-          "issuerId": 58,
-          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+          "issuerId": 63,
+          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -23135,9 +23135,9 @@
             11
           ],
           "assets": [],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-          "issuerId": 58,
-          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+          "issuerId": 63,
+          "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -26658,9 +26658,9 @@
         11
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@polymer/polymer/lib/utils/async.js",
-      "issuerId": 8,
-      "issuerName": "./app/node_modules/@polymer/polymer/lib/utils/async.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@polymer/polymer/lib/utils/debounce.js",
+      "issuerId": 17,
+      "issuerName": "./app/node_modules/@polymer/polymer/lib/utils/debounce.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -28062,9 +28062,9 @@
         11
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-      "issuerId": 58,
-      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+      "issuerId": 63,
+      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -28719,9 +28719,9 @@
         11
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-      "issuerId": 58,
-      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+      "issuerId": 63,
+      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -28765,9 +28765,9 @@
         11
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-      "issuerId": 58,
-      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+      "issuerId": 63,
+      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -28811,9 +28811,9 @@
         11
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-      "issuerId": 58,
-      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+      "issuerId": 63,
+      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -28857,9 +28857,9 @@
         11
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-router.js",
-      "issuerId": 58,
-      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-router.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/node_modules/@littleq/littleq-router/littleq-route.js",
+      "issuerId": 63,
+      "issuerName": "./app/node_modules/@littleq/littleq-router/littleq-route.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -32269,9 +32269,9 @@
         9
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-      "issuerId": 92,
-      "issuerName": "./app/pages/page-speakers/index.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+      "issuerId": 93,
+      "issuerName": "./app/pages/page-schedule/index.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -33106,9 +33106,9 @@
         7
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-speakers/index.js",
-      "issuerId": 92,
-      "issuerName": "./app/pages/page-speakers/index.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+      "issuerId": 93,
+      "issuerName": "./app/pages/page-schedule/index.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -33231,9 +33231,9 @@
         7
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-      "issuerId": 94,
-      "issuerName": "./app/pages/page-sessions/index.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+      "issuerId": 93,
+      "issuerName": "./app/pages/page-schedule/index.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -33470,9 +33470,9 @@
         7
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sessions/index.js",
-      "issuerId": 94,
-      "issuerName": "./app/pages/page-sessions/index.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-schedule/index.js",
+      "issuerId": 93,
+      "issuerName": "./app/pages/page-schedule/index.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -33708,9 +33708,9 @@
         6
       ],
       "assets": [],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/session-item/index.js",
-      "issuerId": 158,
-      "issuerName": "./app/dependencies/session-item/index.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--1!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/dependencies/marked-element/index.js",
+      "issuerId": 130,
+      "issuerName": "./app/dependencies/marked-element/index.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
