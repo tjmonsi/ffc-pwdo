@@ -128,7 +128,7 @@
           "name": "Purchase Online",
           "href": "https://formfunctionclass9.eventbrite.com/?discount=ffclabord9y"
         },
-        "disable": true,             
+        "disable": true,
         "color": "blue"
       },
       {
@@ -140,6 +140,17 @@
           "href": "https://formfunctionclass9.eventbrite.com/?discount=ffc_81818"
         },
         "color": "red"
+      },
+      {
+        "title": "End of Ramadan Sale",
+        "price": "Massive price drop",
+        "date": "June 15 to 16",
+        "link": {
+          "name": "Purchase Online",
+          "href": "https://formfunctionclass9.eventbrite.com/?discount=ffc9eidalfitr"
+        },
+        "disable": true,
+        "color": "green"
       }
     ]
   },
