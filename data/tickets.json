@@ -139,6 +139,7 @@
           "name": "Purchase Online",
           "href": "https://formfunctionclass9.eventbrite.com/?discount=ffc_81818"
         },
+        "disable": true,
         "color": "red"
       },
       {
@@ -149,7 +150,6 @@
           "name": "Purchase Online",
           "href": "https://formfunctionclass9.eventbrite.com/?discount=ffc9eidalfitr"
         },
-        "disable": true,
         "color": "green"
       }
     ]
