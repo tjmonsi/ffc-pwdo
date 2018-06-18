@@ -150,6 +150,7 @@
           "name": "Purchase Online",
           "href": "https://formfunctionclass9.eventbrite.com/?discount=ffc9eidalfitr"
         },
+        "disable": true,        
         "color": "green"
       }
     ]
