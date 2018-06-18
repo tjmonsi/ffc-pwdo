@@ -83,8 +83,7 @@
           "Attended 3 FFC or more: 30% off!"
         ],
         "note": "Email <a href=\"mailto:info@pwdo.org\" class=\"anchor green\">info@pwdo.org</a> with proof of past attendance, then we'll let you know how much you need to pay.",
-        "color": "green",
-        "disable": true
+        "color": "green"
       },
       {
         "title": "Tech Community",
