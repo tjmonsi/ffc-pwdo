@@ -14,7 +14,7 @@ In 2015, we had the amazing Rachel Nabors, Holger Bartel, James Cabrera, Angela 
 
 In 2016, we heard excellent talks from Sam Chan, Kendra Schaefer, Lester Cruz, Mika Aldaba, Chris Lienert, and Sacha Greif.
 
-In 2017, we got amazing insight from Russell Vergara, Aceler Chua, Hui Jing Chen, Madhuara Chavan, Angela & B Tuban, John Paul de Guzman, Lindsey & Gab Madrid, and Chris Lienert.
+In 2017, we got awesome insights from Russell Vergara, Aceler Chua, Hui Jing Chen, Madhuara Chavan, Angela & B Tuban, John Paul de Guzman, Lindsey & Gab Madrid, and Chris Lienert.
 
 Although we have limited resources, we work hard so you can learn from the brightest minds in the Philippines, Asia, and the rest of the world, improve your craft, and get ahead in your career.
 

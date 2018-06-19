@@ -26,7 +26,7 @@ Not when you consider the pricing of similar web design and developer conference
       FFC
     </h3>
     <p class="center">
-      less than $100
+      less than $150!!!
     </p>
   </li>
 </ul>
