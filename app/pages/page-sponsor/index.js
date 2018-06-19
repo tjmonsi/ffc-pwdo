@@ -9,6 +9,7 @@ import 'side-bar';
 import 'marked-element';
 import 'footer-bar';
 import 'header-bar';
+import '@polymer/polymer/lib/elements/dom-repeat';
 
 class Component extends PageMixin(FetchMixin(GestureEventListeners(Element))) {
   static get is () { return 'page-sponsor'; }
@@ -16,7 +17,7 @@ class Component extends PageMixin(FetchMixin(GestureEventListeners(Element))) {
   static get properties () {
     return {
       sponsors: String,
-      sponsorObject: Object
+      sponsorGroups: Array
     };
   }
 
@@ -34,6 +35,9 @@ class Component extends PageMixin(FetchMixin(GestureEventListeners(Element))) {
 
     this.fetch('/data/sponsors/description.md')
       .then(md => (this.sponsors = md));
+
+    this.fetch('/data/sponsors/sponsors.json')
+      .then(json => (this.sponsorGroups = json));
   }
 }
 

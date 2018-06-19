@@ -7,6 +7,27 @@
   </h1>
 
   <marked-element class="with-text-block" marked="[[sponsors]]"></marked-element>
+
+  <template is="dom-repeat" items="[[sponsorGroups]]" as="group">
+    <h1 class="with-text">
+      [[group.group]]
+    </h1>
+
+    <div class="sponsors">
+      <template is="dom-repeat" items="[[group.sponsors]]">
+        <template is="dom-if" if="[[item.src]]">
+          <a href="[[item.href]]" title$="[[item.alt]]" class="sponsor-anchor " target="_blank" rel="noopener">
+            <img src="[[getHost()]]/data/sponsors/images/[[item.src]]" class$="sponsor-image [[item.background]]-background" alt="[[item.alt]]">
+          </a>
+        </template>
+        <template is="dom-if" if="[[item.name]]">
+          <a href="[[item.href]]" title$="[[item.alt]]" class="sponsor-anchor as-name" target="_blank" rel="noopener">
+            <span class$="sponsor-name [[item.color]]">[[item.name]]</span>
+          </a>
+        </template>
+      </template>
+    </div>
+  </template>
 </section>
 <footer-bar></footer-bar>
 

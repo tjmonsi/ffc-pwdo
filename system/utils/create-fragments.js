@@ -6,7 +6,7 @@ module.exports = (env) => {
   const routes = [];
 
   for (var name in config.fragments) {
-    routes.push(`'${name}': () => { return import(/* webpackChunkName: "${name}" */ '${config.fragments[name]}') }`);
+    routes.push(`'${name}': () => { return import('${config.fragments[name]}') }`);
   }
 
   return `

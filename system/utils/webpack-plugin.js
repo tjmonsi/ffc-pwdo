@@ -13,9 +13,7 @@ module.exports = (env) => {
   const plugins = [
     new HTMLWebpackPlugin(getHTMLOptions(env, 'index')),
     new HTMLWebpackPlugin(getHTMLOptions(env, '404')),
-    new webpack.optimize.CommonsChunkPlugin({
-      children: true
-    }),
+
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, '../../app/node_modules/@webcomponents/webcomponentsjs/*.js'),
@@ -52,25 +50,25 @@ module.exports = (env) => {
     new webpack.SourceMapDevToolPlugin({
       filename: '[file].map',
       module: true,
-      columns: true,
+      columns: true
       // noSources: true,
-      linToLine: true
+      // linToLine: true
     })
   ];
 
   if (env === 'prod') {
-    plugins.push(new webpack.optimize.UglifyJsPlugin({
-      beautify: false,
-      mangle: {
-        screw_ie8: true,
-        keep_fnames: true
-      },
-      compress: {
-        screw_ie8: true
-      },
-      comments: false,
-      sourceMap: true
-    }));
+    // plugins.push(new webpack.optimize.UglifyJsPlugin({
+    //   beautify: false,
+    //   mangle: {
+    //     screw_ie8: true,
+    //     keep_fnames: true
+    //   },
+    //   compress: {
+    //     screw_ie8: true
+    //   },
+    //   comments: false,
+    //   sourceMap: true
+    // }));
   }
 
   plugins.push(new Visualizer({

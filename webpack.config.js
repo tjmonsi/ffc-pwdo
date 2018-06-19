@@ -14,9 +14,10 @@ module.exports = (env) => {
 
   return {
     entry,
+    mode: env === 'prod' ? 'production' : 'development',
     output: {
       filename: '[name].js',
-      chunkFilename: '[name].fragment.[id].js',
+      chunkFilename: '[id].[hash].fragment.js',
       path: dest
     },
     resolve: {
