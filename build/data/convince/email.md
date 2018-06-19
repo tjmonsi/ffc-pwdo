@@ -24,7 +24,7 @@ Here’s an email template you can send to your boss:
   </p>
 
   <p>
-    Most conferences in other countries cost $500–1000. This event will held here in Manila for less than $100. For the quality of talks & speakers, it’s the best deal we will get in the Asian region!
+    Most conferences in other countries cost $500–1000. This event will held here in Manila for less than $150. For the quality of talks & speakers, it’s the best deal we will get in the Asian region!
   </p>
 
   <p>

@@ -4,7 +4,7 @@
 2. Submit the link to your post (must be public!) at <a href="https://freeticket.formfunctionclass.com" class="anchor green" target="_blank" rel="noopener">freeticket.formfunctionclass.com</a>.
 3. You can post as many times as you want! For additional raffle entries: share a specific thing you learned at a previous FFC and submit at <a href="https://learning.formfunctionclass.com" class="anchor green" target="_blank" rel="noopener">learning.formfunctionclass.com</a>.
 4. Contest schedule:
-  - Student Ticket Giveaway - March 10 to May 31
+  - Student Ticket Giveaway - March 10 to June 30
   - Early Bird Ticket Giveaway - March 10 to April 27
   - Night Owl Ticket Giveaway - April 28 to July 29
   - Share a Learning Giveaway - March 10 to July 31
