@@ -1,0 +1,17 @@
+[
+  {
+    "group": "Current Sponsors",
+    "sponsors": [
+      {
+        "src": "cambridge.png",
+        "alt": "Cambridge",
+        "href": "",
+        "background": "white"
+      },
+      {
+        "name": "Anonymous",
+        "color": "red"
+      }
+    ]
+  }
+]
