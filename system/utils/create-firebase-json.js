@@ -29,16 +29,16 @@ const setRoute = (firebase, routes, parent) => {
 module.exports = (env) => {
   const config = getConfig();
   const firebase = {
-    database: {
-      rules: 'database.rules.json'
-    },
-    firestore: {
-      rules: 'firestore.rules',
-      indexes: 'firestore.indexes.json'
-    },
-    storage: {
-      rules: 'storage.rules'
-    },
+    // database: {
+    //   rules: 'database.rules.json'
+    // },
+    // firestore: {
+    //   rules: 'firestore.rules',
+    //   indexes: 'firestore.indexes.json'
+    // },
+    // storage: {
+    //   rules: 'storage.rules'
+    // },
     hosting: config.hosting
   };
 
