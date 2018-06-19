@@ -126,6 +126,6 @@
         ]
       }
     ],
-    "public": "build"
+    "public": "public"
   }
 }
