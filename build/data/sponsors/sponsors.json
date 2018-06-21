@@ -1,4 +1,14 @@
 [
+  "group": "Bronze Sponsors",
+    "sponsors": [
+      {
+        "src": "balsamiq.svg",
+        "alt": "Balsamiq Mockups",
+        "href": "https://balsamiq.com/"
+      },
+      {
+    ]
+  },
   {
     "group": "Current Sponsors",
     "sponsors": [

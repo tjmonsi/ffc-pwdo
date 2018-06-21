@@ -22,6 +22,8 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 h3 {
@@ -38,6 +40,13 @@ h5 {
 
 p {
   max-width: 720px;
+}
+
+ol, ul {
+  padding-left: 20px;
+}
+li ul li {
+  list-style: square;
 }
 
 .with-text {
@@ -121,6 +130,7 @@ table.with-text {
 section.with-text {
   &::before {
     content: '§';
+    line-height: 4.5em;
 
     @media screen and (max-width: 420px) {
       content: ''
