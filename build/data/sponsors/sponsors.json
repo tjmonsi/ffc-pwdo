@@ -1,26 +1,77 @@
 [
-  "group": "Bronze Sponsors",
+  {
+    "group": "Co-Presenter",
     "sponsors": [
       {
-        "src": "balsamiq.svg",
+        "src": "globelabs.png",
+        "alt": "Globe Labs",
+        "href": "http://www.globelabs.com.ph/"
+      }
+    ]
+  },
+  {
+    "group": "Silver Sponsor",
+    "sponsors": [
+      {
+        "src": "axurerp.png",
+        "alt": "Axure",
+        "href": "http://www.axure.com/"
+      }
+    ]
+  },
+  {
+    "group": "Bronze Sponsors",
+    "sponsors": [
+      {
+        "src": "balsamiq.png",
         "alt": "Balsamiq Mockups",
         "href": "https://balsamiq.com/"
       },
       {
+        "src": "rosenfeld.png",
+        "alt": "Rosenfeld Media",
+        "href": "https://rosenfeldmedia.com/"
+      },
+      {
+        "src": "sketch.png",
+        "alt": "Sketch",
+        "href": "https://sketchapp.com/"
+      },
+      {
+        "src": "offscreen.png",
+        "alt": "Offscreen Magazine",
+        "href": "https://offscreenmag.com/"
+      },
+      {
+        "src": "packtpub.png",
+        "alt": "PacktPub",
+        "href": "https://packtpub.com/"
+      },
+
+      {
+        "src": "protoio.png",
+        "alt": "Proto.io",
+        "href": "https://proto.io/"
+      }
     ]
   },
   {
-    "group": "Current Sponsors",
+    "group": "Company Sponsor",
     "sponsors": [
       {
-        "src": "cambridge.png",
-        "alt": "Cambridge",
-        "href": "",
-        "background": "white"
-      },
+        "src": "cambridgepress.png",
+        "alt": "Cambridge University Press - Manila",
+        "href": "https://cambridge.org"
+      }
+    ]
+  },
+  {
+    "group": "Community Partner",
+    "sponsors": [
       {
-        "name": "Anonymous",
-        "color": "red"
+        "src": "webconfasia.png",
+        "alt": "Webconf.asia",
+        "href": "https://webconf.asia"
       }
     ]
   }
