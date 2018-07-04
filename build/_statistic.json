@@ -4,9 +4,9 @@
     "asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  images/about.png (1.21 MiB)"
   ],
   "version": "4.12.0",
-  "hash": "6c1d85e14851678c2a6d",
-  "time": 14148,
-  "builtAt": 1529568722644,
+  "hash": "4450db51e4d65c998192",
+  "time": 12902,
+  "builtAt": 1530697240360,
   "publicPath": "",
   "outputPath": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/build",
   "assetsByChunkName": {
@@ -41,14 +41,14 @@
   },
   "assets": [
     {
-      "name": "data/about/code-of-conduct.md",
-      "size": 332,
+      "name": "fonts/Inovato-Regular.woff",
+      "size": 26612,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
-      "name": "0.6c1d85e14851678c2a6d.fragment.js",
+      "name": "0.4450db51e4d65c998192.fragment.js",
       "size": 28404,
       "chunks": [
         0
@@ -57,7 +57,7 @@
       "emitted": true
     },
     {
-      "name": "2.6c1d85e14851678c2a6d.fragment.js",
+      "name": "2.4450db51e4d65c998192.fragment.js",
       "size": 20994,
       "chunks": [
         2
@@ -66,8 +66,8 @@
       "emitted": true
     },
     {
-      "name": "3.6c1d85e14851678c2a6d.fragment.js",
-      "size": 24350,
+      "name": "3.4450db51e4d65c998192.fragment.js",
+      "size": 24367,
       "chunks": [
         3
       ],
@@ -75,7 +75,7 @@
       "emitted": true
     },
     {
-      "name": "4.6c1d85e14851678c2a6d.fragment.js",
+      "name": "4.4450db51e4d65c998192.fragment.js",
       "size": 25562,
       "chunks": [
         4
@@ -84,7 +84,7 @@
       "emitted": true
     },
     {
-      "name": "5.6c1d85e14851678c2a6d.fragment.js",
+      "name": "5.4450db51e4d65c998192.fragment.js",
       "size": 24292,
       "chunks": [
         5
@@ -93,7 +93,7 @@
       "emitted": true
     },
     {
-      "name": "6.6c1d85e14851678c2a6d.fragment.js",
+      "name": "6.4450db51e4d65c998192.fragment.js",
       "size": 16162,
       "chunks": [
         6
@@ -102,7 +102,7 @@
       "emitted": true
     },
     {
-      "name": "7.6c1d85e14851678c2a6d.fragment.js",
+      "name": "7.4450db51e4d65c998192.fragment.js",
       "size": 19527,
       "chunks": [
         7
@@ -111,7 +111,7 @@
       "emitted": true
     },
     {
-      "name": "8.6c1d85e14851678c2a6d.fragment.js",
+      "name": "8.4450db51e4d65c998192.fragment.js",
       "size": 23412,
       "chunks": [
         8
@@ -120,8 +120,8 @@
       "emitted": true
     },
     {
-      "name": "9.6c1d85e14851678c2a6d.fragment.js",
-      "size": 20968,
+      "name": "9.4450db51e4d65c998192.fragment.js",
+      "size": 21921,
       "chunks": [
         9
       ],
@@ -129,7 +129,7 @@
       "emitted": true
     },
     {
-      "name": "10.6c1d85e14851678c2a6d.fragment.js",
+      "name": "10.4450db51e4d65c998192.fragment.js",
       "size": 18351,
       "chunks": [
         10
@@ -138,7 +138,7 @@
       "emitted": true
     },
     {
-      "name": "11.6c1d85e14851678c2a6d.fragment.js",
+      "name": "11.4450db51e4d65c998192.fragment.js",
       "size": 17524,
       "chunks": [
         11
@@ -147,7 +147,7 @@
       "emitted": true
     },
     {
-      "name": "12.6c1d85e14851678c2a6d.fragment.js",
+      "name": "12.4450db51e4d65c998192.fragment.js",
       "size": 12974,
       "chunks": [
         12
@@ -156,7 +156,7 @@
       "emitted": true
     },
     {
-      "name": "13.6c1d85e14851678c2a6d.fragment.js",
+      "name": "13.4450db51e4d65c998192.fragment.js",
       "size": 23868,
       "chunks": [
         13
@@ -242,7 +242,7 @@
       "emitted": true
     },
     {
-      "name": "0.6c1d85e14851678c2a6d.fragment.js.map",
+      "name": "0.4450db51e4d65c998192.fragment.js.map",
       "size": 105782,
       "chunks": [
         0
@@ -251,7 +251,7 @@
       "emitted": true
     },
     {
-      "name": "1.6c1d85e14851678c2a6d.fragment.js.map",
+      "name": "1.4450db51e4d65c998192.fragment.js.map",
       "size": 25962,
       "chunks": [
         1
@@ -260,7 +260,7 @@
       "emitted": true
     },
     {
-      "name": "2.6c1d85e14851678c2a6d.fragment.js.map",
+      "name": "2.4450db51e4d65c998192.fragment.js.map",
       "size": 63486,
       "chunks": [
         2
@@ -269,8 +269,8 @@
       "emitted": true
     },
     {
-      "name": "3.6c1d85e14851678c2a6d.fragment.js.map",
-      "size": 28054,
+      "name": "3.4450db51e4d65c998192.fragment.js.map",
+      "size": 28071,
       "chunks": [
         3
       ],
@@ -278,7 +278,7 @@
       "emitted": true
     },
     {
-      "name": "4.6c1d85e14851678c2a6d.fragment.js.map",
+      "name": "4.4450db51e4d65c998192.fragment.js.map",
       "size": 29420,
       "chunks": [
         4
@@ -287,7 +287,7 @@
       "emitted": true
     },
     {
-      "name": "5.6c1d85e14851678c2a6d.fragment.js.map",
+      "name": "5.4450db51e4d65c998192.fragment.js.map",
       "size": 35380,
       "chunks": [
         5
@@ -296,7 +296,7 @@
       "emitted": true
     },
     {
-      "name": "6.6c1d85e14851678c2a6d.fragment.js.map",
+      "name": "6.4450db51e4d65c998192.fragment.js.map",
       "size": 19341,
       "chunks": [
         6
@@ -305,7 +305,7 @@
       "emitted": true
     },
     {
-      "name": "7.6c1d85e14851678c2a6d.fragment.js.map",
+      "name": "7.4450db51e4d65c998192.fragment.js.map",
       "size": 22035,
       "chunks": [
         7
@@ -314,7 +314,7 @@
       "emitted": true
     },
     {
-      "name": "8.6c1d85e14851678c2a6d.fragment.js.map",
+      "name": "8.4450db51e4d65c998192.fragment.js.map",
       "size": 29221,
       "chunks": [
         8
@@ -323,8 +323,8 @@
       "emitted": true
     },
     {
-      "name": "9.6c1d85e14851678c2a6d.fragment.js.map",
-      "size": 24615,
+      "name": "9.4450db51e4d65c998192.fragment.js.map",
+      "size": 25527,
       "chunks": [
         9
       ],
@@ -332,7 +332,7 @@
       "emitted": true
     },
     {
-      "name": "10.6c1d85e14851678c2a6d.fragment.js.map",
+      "name": "10.4450db51e4d65c998192.fragment.js.map",
       "size": 23242,
       "chunks": [
         10
@@ -341,7 +341,7 @@
       "emitted": true
     },
     {
-      "name": "11.6c1d85e14851678c2a6d.fragment.js.map",
+      "name": "11.4450db51e4d65c998192.fragment.js.map",
       "size": 20448,
       "chunks": [
         11
@@ -350,7 +350,7 @@
       "emitted": true
     },
     {
-      "name": "12.6c1d85e14851678c2a6d.fragment.js.map",
+      "name": "12.4450db51e4d65c998192.fragment.js.map",
       "size": 42931,
       "chunks": [
         12
@@ -359,7 +359,7 @@
       "emitted": true
     },
     {
-      "name": "13.6c1d85e14851678c2a6d.fragment.js.map",
+      "name": "13.4450db51e4d65c998192.fragment.js.map",
       "size": 27532,
       "chunks": [
         13
@@ -501,6 +501,13 @@
       "emitted": true
     },
     {
+      "name": "images/cup.png",
+      "size": 4306,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
       "name": "images/CHI 2018 Interactive Program.html",
       "size": 3457,
       "chunks": [],
@@ -508,8 +515,8 @@
       "emitted": true
     },
     {
-      "name": "images/cup.png",
-      "size": 4306,
+      "name": "images/favicon.png",
+      "size": 390,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -536,15 +543,15 @@
       "emitted": true
     },
     {
-      "name": "images/lower-right.svg",
-      "size": 2048,
+      "name": "images/networking.png",
+      "size": 5048,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
-      "name": "images/networking.png",
-      "size": 5048,
+      "name": "images/lower-right.svg",
+      "size": 2048,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -634,13 +641,6 @@
       "emitted": true
     },
     {
-      "name": "fonts/Inovato-Regular.woff",
-      "size": 26612,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "fonts/Inovato-Regular.eot",
       "size": 26832,
       "chunks": [],
@@ -648,11 +648,18 @@
       "emitted": true
     },
     {
-      "name": "1.6c1d85e14851678c2a6d.fragment.js",
+      "name": "1.4450db51e4d65c998192.fragment.js",
       "size": 22353,
       "chunks": [
         1
       ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "data/about/code-of-conduct.md",
+      "size": 332,
+      "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
@@ -671,13 +678,6 @@
       "emitted": true
     },
     {
-      "name": "data/about/how-to-get-there.md",
-      "size": 336,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
       "name": "data/about/masthead.json",
       "size": 682,
       "chunks": [],
@@ -685,8 +685,15 @@
       "emitted": true
     },
     {
+      "name": "data/about/how-to-get-there.md",
+      "size": 465,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
       "name": "data/about/nearby-accommodations.md",
-      "size": 268,
+      "size": 715,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -700,14 +707,7 @@
     },
     {
       "name": "data/about/venue.md",
-      "size": 115,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "data/convince/cost.md",
-      "size": 956,
+      "size": 482,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -720,15 +720,15 @@
       "emitted": true
     },
     {
-      "name": "data/convince/email.md",
-      "size": 2006,
+      "name": "data/convince/cost.md",
+      "size": 956,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
-      "name": "data/faq.json",
-      "size": 527,
+      "name": "data/convince/email.md",
+      "size": 2006,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -741,8 +741,8 @@
       "emitted": true
     },
     {
-      "name": "data/faq/after-the-conference.md",
-      "size": 760,
+      "name": "data/faq.json",
+      "size": 527,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -750,6 +750,13 @@
     {
       "name": "data/faq/anything-else.md",
       "size": 969,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "data/faq/after-the-conference.md",
+      "size": 760,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -769,8 +776,8 @@
       "emitted": true
     },
     {
-      "name": "data/faq/why-attend.md",
-      "size": 1229,
+      "name": "data/schedule.1.json",
+      "size": 1487,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -783,8 +790,8 @@
       "emitted": true
     },
     {
-      "name": "data/schedule.1.json",
-      "size": 1487,
+      "name": "data/faq/why-attend.md",
+      "size": 1229,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -818,15 +825,15 @@
       "emitted": true
     },
     {
-      "name": "data/sessions/new-adventures-in-responsive-web-design.md",
-      "size": 1906,
+      "name": "data/sessions/new-adventures-in-responsive-web-design.json",
+      "size": 137,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
-      "name": "data/sessions/new-adventures-in-responsive-web-design.json",
-      "size": 137,
+      "name": "data/sessions/new-adventures-in-responsive-web-design.md",
+      "size": 1906,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -846,15 +853,15 @@
       "emitted": true
     },
     {
-      "name": "data/speakers/holger-bartel.json",
-      "size": 131,
+      "name": "data/speakers.json",
+      "size": 123,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
-      "name": "data/speakers.json",
-      "size": 123,
+      "name": "data/speakers/holger-bartel.json",
+      "size": 131,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -874,15 +881,15 @@
       "emitted": true
     },
     {
-      "name": "data/speakers/hui-jing-chen.md",
-      "size": 261,
+      "name": "data/speakers/rsz_blank-avatar-220x220-400x400.jpg",
+      "size": 3679,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
-      "name": "data/speakers/rsz_blank-avatar-220x220-400x400.jpg",
-      "size": 3679,
+      "name": "data/speakers/hui-jing-chen.md",
+      "size": 261,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -951,15 +958,15 @@
       "emitted": true
     },
     {
-      "name": "data/sponsors/sponsors.json",
-      "size": 1545,
+      "name": "data/sponsors/images/webconfasia.png",
+      "size": 7378,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
-      "name": "data/sponsors/images/webconfasia.png",
-      "size": 7378,
+      "name": "data/sponsors/sponsors.json",
+      "size": 1545,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1049,15 +1056,15 @@
       "emitted": true
     },
     {
-      "name": "webcomponentsjs/webcomponents-sd-ce.js",
-      "size": 66394,
+      "name": "fonts/Inovato-Regular.ttf",
+      "size": 59456,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
     },
     {
-      "name": "fonts/Inovato-Regular.ttf",
-      "size": 59456,
+      "name": "webcomponentsjs/webcomponents-sd-ce.js",
+      "size": 66394,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -1317,8 +1324,8 @@
       "size": 88985,
       "names": [],
       "files": [
-        "0.6c1d85e14851678c2a6d.fragment.js",
-        "0.6c1d85e14851678c2a6d.fragment.js.map"
+        "0.4450db51e4d65c998192.fragment.js",
+        "0.4450db51e4d65c998192.fragment.js.map"
       ],
       "hash": "9bbfa9f218be2ee6f736",
       "siblings": [
@@ -2355,8 +2362,8 @@
       "size": 34454,
       "names": [],
       "files": [
-        "1.6c1d85e14851678c2a6d.fragment.js",
-        "1.6c1d85e14851678c2a6d.fragment.js.map"
+        "1.4450db51e4d65c998192.fragment.js",
+        "1.4450db51e4d65c998192.fragment.js.map"
       ],
       "hash": "5e2e4476da89d1f4e730",
       "siblings": [
@@ -4356,8 +4363,8 @@
       "size": 43658,
       "names": [],
       "files": [
-        "2.6c1d85e14851678c2a6d.fragment.js",
-        "2.6c1d85e14851678c2a6d.fragment.js.map"
+        "2.4450db51e4d65c998192.fragment.js",
+        "2.4450db51e4d65c998192.fragment.js.map"
       ],
       "hash": "cc02af16bf2bb40db2de",
       "siblings": [
@@ -4623,13 +4630,13 @@
       "rendered": true,
       "initial": false,
       "entry": false,
-      "size": 33383,
+      "size": 33400,
       "names": [],
       "files": [
-        "3.6c1d85e14851678c2a6d.fragment.js",
-        "3.6c1d85e14851678c2a6d.fragment.js.map"
+        "3.4450db51e4d65c998192.fragment.js",
+        "3.4450db51e4d65c998192.fragment.js.map"
       ],
-      "hash": "8f8847eb10bf17b0843c",
+      "hash": "6e91dbe669a5d940c8b3",
       "siblings": [
         0
       ],
@@ -5925,7 +5932,7 @@
           "name": "./app/pages/page-home/template.html",
           "index": 27,
           "index2": 23,
-          "size": 768,
+          "size": 785,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -6002,8 +6009,8 @@
       "size": 32329,
       "names": [],
       "files": [
-        "4.6c1d85e14851678c2a6d.fragment.js",
-        "4.6c1d85e14851678c2a6d.fragment.js.map"
+        "4.4450db51e4d65c998192.fragment.js",
+        "4.4450db51e4d65c998192.fragment.js.map"
       ],
       "hash": "f64f004f7ac94104e6db",
       "siblings": [
@@ -6831,8 +6838,8 @@
       "size": 36938,
       "names": [],
       "files": [
-        "5.6c1d85e14851678c2a6d.fragment.js",
-        "5.6c1d85e14851678c2a6d.fragment.js.map"
+        "5.4450db51e4d65c998192.fragment.js",
+        "5.4450db51e4d65c998192.fragment.js.map"
       ],
       "hash": "557c9c7776f0e590f6d7",
       "siblings": [
@@ -7464,8 +7471,8 @@
       "size": 20707,
       "names": [],
       "files": [
-        "6.6c1d85e14851678c2a6d.fragment.js",
-        "6.6c1d85e14851678c2a6d.fragment.js.map"
+        "6.4450db51e4d65c998192.fragment.js",
+        "6.4450db51e4d65c998192.fragment.js.map"
       ],
       "hash": "375711c501d4960edccd",
       "siblings": [
@@ -8009,8 +8016,8 @@
       "size": 23907,
       "names": [],
       "files": [
-        "7.6c1d85e14851678c2a6d.fragment.js",
-        "7.6c1d85e14851678c2a6d.fragment.js.map"
+        "7.4450db51e4d65c998192.fragment.js",
+        "7.4450db51e4d65c998192.fragment.js.map"
       ],
       "hash": "90d7788d95cc56423bfe",
       "siblings": [
@@ -8098,9 +8105,9 @@
             10,
             11
           ],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-          "issuerId": 93,
-          "issuerName": "./app/pages/page-tickets/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+          "issuerId": 92,
+          "issuerName": "./app/pages/page-sponsor/index.js",
           "issuerPath": [
             {
               "id": 32,
@@ -8118,9 +8125,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             }
           ],
           "failed": false,
@@ -8219,9 +8226,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             },
             {
               "id": 106,
@@ -8289,9 +8296,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             },
             {
               "id": 106,
@@ -8364,9 +8371,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             },
             {
               "id": 106,
@@ -8606,8 +8613,8 @@
       "size": 29463,
       "names": [],
       "files": [
-        "8.6c1d85e14851678c2a6d.fragment.js",
-        "8.6c1d85e14851678c2a6d.fragment.js.map"
+        "8.4450db51e4d65c998192.fragment.js",
+        "8.4450db51e4d65c998192.fragment.js.map"
       ],
       "hash": "3d242d6babceb694b968",
       "siblings": [
@@ -8695,9 +8702,9 @@
             10,
             11
           ],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-          "issuerId": 93,
-          "issuerName": "./app/pages/page-tickets/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+          "issuerId": 92,
+          "issuerName": "./app/pages/page-sponsor/index.js",
           "issuerPath": [
             {
               "id": 32,
@@ -8715,9 +8722,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             }
           ],
           "failed": false,
@@ -8816,9 +8823,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             },
             {
               "id": 106,
@@ -8886,9 +8893,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             },
             {
               "id": 106,
@@ -8961,9 +8968,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             },
             {
               "id": 106,
@@ -9261,13 +9268,13 @@
       "rendered": true,
       "initial": false,
       "entry": false,
-      "size": 26018,
+      "size": 26777,
       "names": [],
       "files": [
-        "9.6c1d85e14851678c2a6d.fragment.js",
-        "9.6c1d85e14851678c2a6d.fragment.js.map"
+        "9.4450db51e4d65c998192.fragment.js",
+        "9.4450db51e4d65c998192.fragment.js.map"
       ],
-      "hash": "054ed277e88afc479ac2",
+      "hash": "4eed84cf5681b387e941",
       "siblings": [
         0,
         1,
@@ -9285,7 +9292,7 @@
           "name": "./app/pages/page-about/index.js",
           "index": 119,
           "index2": 119,
-          "size": 4897,
+          "size": 4954,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -9353,9 +9360,9 @@
             10,
             11
           ],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-          "issuerId": 93,
-          "issuerName": "./app/pages/page-tickets/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+          "issuerId": 92,
+          "issuerName": "./app/pages/page-sponsor/index.js",
           "issuerPath": [
             {
               "id": 32,
@@ -9373,9 +9380,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             }
           ],
           "failed": false,
@@ -9474,9 +9481,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             },
             {
               "id": 106,
@@ -9544,9 +9551,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             },
             {
               "id": 106,
@@ -9619,9 +9626,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             },
             {
               "id": 106,
@@ -9718,7 +9725,7 @@
           "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-about/style.scss",
           "index": 121,
           "index2": 116,
-          "size": 7475,
+          "size": 8007,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -9784,7 +9791,7 @@
           "name": "./app/pages/page-about/template.html",
           "index": 122,
           "index2": 118,
-          "size": 4332,
+          "size": 4502,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -9861,8 +9868,8 @@
       "size": 23744,
       "names": [],
       "files": [
-        "10.6c1d85e14851678c2a6d.fragment.js",
-        "10.6c1d85e14851678c2a6d.fragment.js.map"
+        "10.4450db51e4d65c998192.fragment.js",
+        "10.4450db51e4d65c998192.fragment.js.map"
       ],
       "hash": "5bb3cfa691ac297ec99a",
       "siblings": [
@@ -9950,9 +9957,9 @@
             10,
             11
           ],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-          "issuerId": 93,
-          "issuerName": "./app/pages/page-tickets/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+          "issuerId": 92,
+          "issuerName": "./app/pages/page-sponsor/index.js",
           "issuerPath": [
             {
               "id": 32,
@@ -9970,9 +9977,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             }
           ],
           "failed": false,
@@ -10071,9 +10078,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             },
             {
               "id": 106,
@@ -10141,9 +10148,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             },
             {
               "id": 106,
@@ -10216,9 +10223,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             },
             {
               "id": 106,
@@ -10519,8 +10526,8 @@
       "size": 22399,
       "names": [],
       "files": [
-        "11.6c1d85e14851678c2a6d.fragment.js",
-        "11.6c1d85e14851678c2a6d.fragment.js.map"
+        "11.4450db51e4d65c998192.fragment.js",
+        "11.4450db51e4d65c998192.fragment.js.map"
       ],
       "hash": "b8d514f832dfabeaabaa",
       "siblings": [
@@ -10608,9 +10615,9 @@
             10,
             11
           ],
-          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-          "issuerId": 93,
-          "issuerName": "./app/pages/page-tickets/index.js",
+          "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+          "issuerId": 92,
+          "issuerName": "./app/pages/page-sponsor/index.js",
           "issuerPath": [
             {
               "id": 32,
@@ -10628,9 +10635,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             }
           ],
           "failed": false,
@@ -10729,9 +10736,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             },
             {
               "id": 106,
@@ -10799,9 +10806,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             },
             {
               "id": 106,
@@ -10874,9 +10881,9 @@
               "name": "./app/system/core/fragments/index.js"
             },
             {
-              "id": 93,
-              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-              "name": "./app/pages/page-tickets/index.js"
+              "id": 92,
+              "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+              "name": "./app/pages/page-sponsor/index.js"
             },
             {
               "id": 106,
@@ -11116,8 +11123,8 @@
       "size": 32398,
       "names": [],
       "files": [
-        "12.6c1d85e14851678c2a6d.fragment.js",
-        "12.6c1d85e14851678c2a6d.fragment.js.map"
+        "12.4450db51e4d65c998192.fragment.js",
+        "12.4450db51e4d65c998192.fragment.js.map"
       ],
       "hash": "8b24b082cd2bb5ae62e9",
       "siblings": [],
@@ -11954,8 +11961,8 @@
       "size": 32883,
       "names": [],
       "files": [
-        "13.6c1d85e14851678c2a6d.fragment.js",
-        "13.6c1d85e14851678c2a6d.fragment.js.map"
+        "13.4450db51e4d65c998192.fragment.js",
+        "13.4450db51e4d65c998192.fragment.js.map"
       ],
       "hash": "c21a10361d55c24b01ab",
       "siblings": [
@@ -26609,7 +26616,7 @@
       "name": "./app/pages/page-about/index.js",
       "index": 119,
       "index2": 119,
-      "size": 4897,
+      "size": 4954,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -28038,9 +28045,9 @@
         10,
         11
       ],
-      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-      "issuerId": 93,
-      "issuerName": "./app/pages/page-tickets/index.js",
+      "issuer": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+      "issuerId": 92,
+      "issuerName": "./app/pages/page-sponsor/index.js",
       "issuerPath": [
         {
           "id": 32,
@@ -28058,9 +28065,9 @@
           "name": "./app/system/core/fragments/index.js"
         },
         {
-          "id": 93,
-          "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-          "name": "./app/pages/page-tickets/index.js"
+          "id": 92,
+          "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+          "name": "./app/pages/page-sponsor/index.js"
         }
       ],
       "failed": false,
@@ -28159,9 +28166,9 @@
           "name": "./app/system/core/fragments/index.js"
         },
         {
-          "id": 93,
-          "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-          "name": "./app/pages/page-tickets/index.js"
+          "id": 92,
+          "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+          "name": "./app/pages/page-sponsor/index.js"
         },
         {
           "id": 106,
@@ -28229,9 +28236,9 @@
           "name": "./app/system/core/fragments/index.js"
         },
         {
-          "id": 93,
-          "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-          "name": "./app/pages/page-tickets/index.js"
+          "id": 92,
+          "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+          "name": "./app/pages/page-sponsor/index.js"
         },
         {
           "id": 106,
@@ -28304,9 +28311,9 @@
           "name": "./app/system/core/fragments/index.js"
         },
         {
-          "id": 93,
-          "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-tickets/index.js",
-          "name": "./app/pages/page-tickets/index.js"
+          "id": 92,
+          "identifier": "/home/tjmonsi/Projects/pwdo/ffc-pwdo/node_modules/babel-loader/lib/index.js??ref--5!/home/tjmonsi/Projects/pwdo/ffc-pwdo/app/pages/page-sponsor/index.js",
+          "name": "./app/pages/page-sponsor/index.js"
         },
         {
           "id": 106,
@@ -29902,7 +29909,7 @@
       "name": "./app/pages/page-home/template.html",
       "index": 27,
       "index2": 23,
-      "size": 768,
+      "size": 785,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -32507,7 +32514,7 @@
       "name": "./node_modules/css-loader!./node_modules/postcss-loader/lib!./node_modules/sass-loader/lib/loader.js!./app/pages/page-about/style.scss",
       "index": 121,
       "index2": 116,
-      "size": 7475,
+      "size": 8007,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -32573,7 +32580,7 @@
       "name": "./app/pages/page-about/template.html",
       "index": 122,
       "index2": 118,
-      "size": 4332,
+      "size": 4502,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -33496,7 +33503,7 @@
           "files": [
             "404.html"
           ],
-          "hash": "c70a0d1119e4492b1391",
+          "hash": "0ef1ab7f5d1daee3c370",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -34280,7 +34287,7 @@
           "files": [
             "index.html"
           ],
-          "hash": "791c3f50b72bfb11f417",
+          "hash": "73ab10e5ee36c35c429d",
           "siblings": [],
           "parents": [],
           "children": [],

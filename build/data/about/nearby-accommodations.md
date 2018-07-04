@@ -1,10 +1,10 @@
-- MySpace@BGC Dormitel
-- Avant Serviced Suites
-- Avant Apartments
-- MaxStays
-- F1 Hotel Manila
-- Seda Hotel
-- Ascott BGC Manila
-- Shangri-la at The Fort
+- [F1 Hotel Manila](http://www.f1hotelmanila.com/)
+- [Ascott BGC Manila](http://www.the-ascott.com/en/philippines/manila/ascott-bonifacio-global-city-manila/index.html)
+- [Avant Serviced Suites](https://avantservicedsuites.com/)
+- [Avant Apartments](http://www.avantapartmentsmanila.com/)
+- [MaxStays](http://www.maxstays.com/)
+- [MySpace@BGC Dormitel](http://bgcdormitel.ph/)
+- [Seda Hotel](http://www.sedahotels.com/bgc/)
+- [Shangri-la at The Fort](http://www.shangri-la.com/manila/shangrilaatthefort/)
 
-More options available from Airbnb. (You can also stay in the Makati area, it’ll just take longer to get there.)
+You can also check out rooms on [Airbnb](https://www.airbnb.com/s/bonifacio-global-city/homes?checkin=2017-09-15&checkout=2017-09-17). (Tip: you can also stay in Makati, it’ll just take longer to get there)
