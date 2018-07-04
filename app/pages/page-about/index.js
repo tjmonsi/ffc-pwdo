@@ -40,14 +40,14 @@ class Component extends PageMixin(FetchMixin(GestureEventListeners(Element))) {
 
     this.fetch('/data/about/ffc.md')
       .then(md => (this.ffc = md));
-    // this.fetch('/data/about/venue.md')
-    //   .then(md => (this.venue = md));
+    this.fetch('/data/about/venue.md')
+      .then(md => (this.venue = md));
     this.fetch('/data/about/code-of-conduct.md')
       .then(md => (this.codeOfConduct = md));
-    // this.fetch('/data/about/how-to-get-there.md')
-    //   .then(md => (this.howToGetThere = md));
-    // this.fetch('/data/about/nearby-accommodations.md')
-    //   .then(md => (this.nearbyAccommodations = md));
+    this.fetch('/data/about/how-to-get-there.md')
+      .then(md => (this.howToGetThere = md));
+    this.fetch('/data/about/nearby-accommodations.md')
+      .then(md => (this.nearbyAccommodations = md));
     // this.fetch('/data/about/organizer.md')
     //   .then(md => (this.organizer = md));
     this.fetch('/data/about/masthead.json')

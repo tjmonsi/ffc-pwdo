@@ -4,6 +4,7 @@
 @import '../../styles/components/_button.scss';
 @import '../../styles/components/_grid.scss';
 @import '../../styles/global/_variables.scss';
+@import '../../styles/components/_small-container.scss';
 
 .big-image {
   max-width: 1024px;
@@ -62,5 +63,15 @@
     width: 30px;
     height: 30px;
     fill: $light;
+  }
+}
+
+.flex-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 40px;
+
+  @media screen and (max-width: 1100px) {
+    display: block;
   }
 }
