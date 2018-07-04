@@ -34,6 +34,10 @@ class Component extends GestureEventListeners(Element) {
             label: 'FAQ'
           },
           {
+            href: '/convince',
+            label: 'Convince your Boss'
+          },
+          {
             href: '/sponsors',
             label: 'Sponsors'
           }
