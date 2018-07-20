@@ -1,6 +1,6 @@
 ##### How do I go to the conference? Where can I stay nearby?
 
-Read our venue info <a href="https://2018.formfunctionclass.com/about#venue-the-globe-tower-taguig" class="anchor blue">here &rsaquo;</a>
+Read our venue info <a href="about?id=venue-the-globe-tower-taguig" class="anchor blue">here &rsaquo;</a>
 
 ##### Do I need to print my ticket?
 
