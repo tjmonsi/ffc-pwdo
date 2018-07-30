@@ -60,7 +60,7 @@
     "karma-webpack": "2.0.9",
     "mocha": "4.1.0",
     "node-sass": "4.9.0",
-    "polymer-webpack-loader": "2.0.1",
+    "polymer-webpack-loader": "2.0.3",
     "postcss-loader": "2.0.10",
     "run-sequence": "2.2.1",
     "sass-loader": "6.0.6",
