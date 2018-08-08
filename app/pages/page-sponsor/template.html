@@ -17,7 +17,7 @@
       <template is="dom-repeat" items="[[group.sponsors]]">
         <template is="dom-if" if="[[item.src]]">
           <a href="[[item.href]]" title$="[[item.alt]]" class="sponsor-anchor " target="_blank" rel="noopener">
-            <img src="[[getHost()]]/data/sponsors/images/[[item.src]]" class$="sponsor-image [[item.background]]-background" alt="[[item.alt]]">
+            <img src="[[getHost()]]/data/sponsors/images/[[item.src]]" class$="sponsor-image [[item.background]]-background [[item.className]]" alt="[[item.alt]]">
           </a>
         </template>
         <template is="dom-if" if="[[item.name]]">

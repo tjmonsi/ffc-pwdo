@@ -118,6 +118,14 @@
   &.white-background {
     background: #fff
   }
+
+  &.square-image {
+    max-width: 160px;
+
+    @media screen and (max-width: 500px) {
+      max-width: 160px;
+    }
+  }
 }
 
 .sponsor-name {

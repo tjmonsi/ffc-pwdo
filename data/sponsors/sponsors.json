@@ -18,7 +18,8 @@
         "href": "http://www.axure.com/"
       },
       {
-        "name": "Proudcloud"                
+        "name": "Proudcloud",
+        "href": "#"                
       }
     ]
   },
@@ -68,7 +69,8 @@
       },
       {
         "src": "viyahe.png",
-        "alt": "Viyahe Inc."        
+        "alt": "Viyahe Inc.",
+        "href": "#"        
       }
     ]
   },
@@ -82,7 +84,9 @@
       },
       {
         "src": "redtomato.png",
-        "alt": "Red Tomato Design Studio"
+        "alt": "Red Tomato Design Studio",
+        "className": "square-image",
+        "href": "#"
       }
     ]
   },

@@ -16,6 +16,10 @@
         "src": "axurerp.png",
         "alt": "Axure",
         "href": "http://www.axure.com/"
+      },
+      {
+        "name": "Proudcloud",
+        "href": "#"                
       }
     ]
   },
@@ -62,6 +66,11 @@
         "src": "cambridgepress.png",
         "alt": "Cambridge University Press - Manila",
         "href": "https://cambridge.org"
+      },
+      {
+        "src": "viyahe.png",
+        "alt": "Viyahe Inc.",
+        "href": "#"        
       }
     ]
   },
@@ -72,6 +81,22 @@
         "src": "webconfasia.png",
         "alt": "Webconf.asia",
         "href": "https://webconf.asia"
+      },
+      {
+        "src": "redtomato.png",
+        "alt": "Red Tomato Design Studio",
+        "className": "square-image",
+        "href": "#"
+      }
+    ]
+  },
+  {
+    "group": "Media Partner",
+    "sponsors": [
+      {
+        "src": "tomasino.png",
+        "alt": "TomasinoWeb",
+        "href": "https://tomasinoweb.org/"
       }
     ]
   }
