@@ -63,7 +63,7 @@
     "polymer-webpack-loader": "2.0.1",
     "postcss-loader": "2.0.10",
     "run-sequence": "2.2.1",
-    "sass-loader": "6.0.6",
+    "sass-loader": "6.0.7",
     "semistandard": "11.0.0",
     "sentry-cli-binary": "1.25.0",
     "size-limit": "0.18.2",
