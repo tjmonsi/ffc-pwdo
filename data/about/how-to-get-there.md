@@ -1,6 +1,6 @@
 ### From EDSA Ayala
 
-At the BGC Bus Terminal, bus and alight at The Globe Tower bus stop. The building will be just a few meters away, across UnionBank.
+At the BGC Bus Terminal, take the bus and alight at The Globe Tower bus stop. The building will be just a few meters away, across UnionBank.
 
 ### From Market! Market!
 
