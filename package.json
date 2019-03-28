@@ -66,7 +66,7 @@
     "sass-loader": "6.0.6",
     "semistandard": "11.0.0",
     "sentry-cli-binary": "1.25.0",
-    "size-limit": "0.18.2",
+    "size-limit": "0.22.0",
     "stats-webpack-plugin": "0.6.1",
     "style-loader": "0.19.1",
     "text-loader": "0.0.1",
